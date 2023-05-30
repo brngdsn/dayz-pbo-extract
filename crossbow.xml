@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Archery_Crossbow>
+    <units type="array"><item>Crossbow</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Archery</item></requiredAddons>
+  </DZ_Weapons_Archery_Crossbow>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Archery_Base>
+  </Archery_Base>
+  <Crossbow_Base base="Archery_Base">
+    <scope>0</scope>
+    <displayName>STR_cfgWeapons_Crossbow0</displayName>
+    <descriptionShort>STR_cfgWeapons_Crossbow1</descriptionShort>
+    <model>
+      \dz\weapons\archery\crossbow\crossbow.p3d
+    </model>
+    <animName>Crossbow</animName>
+    <animClass></animClass>
+    <rotationFlags>34</rotationFlags>
+    <weight>2700</weight>
+    <repairableWithKits type="array"><item>8</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.1</item>
+      <item>4.5</item>
+      <item>145</item>
+      <item>6</item>
+      <item>25</item>
+    </PPDOFProperties>
+    <WeaponLength>1</WeaponLength>
+    <barrelArmor>1.7</barrelArmor>
+    <itemSize type="array"><item>9</item><item>5</item></itemSize>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_HuntingBolt</item><item>Ammo_ImprovisedBolt_1</item><item>Ammo_ImprovisedBolt_2</item></chamberableFrom>
+    <magazines type="array"></magazines>
+    <DisplayMagazine>0</DisplayMagazine>
+    <ejectType>4</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>1.3</item><item>1.3</item><item>0.8</item></swayModifier>
+    <attachments type="array"><item>weaponOptics</item></attachments>
+    <distanceZoomMin>30</distanceZoomMin>
+    <distanceZoomMax>30</distanceZoomMax>
+    <discreteDistance type="array"><item>30</item></discreteDistance>
+    <discreteDistanceInitIndex>1</discreteDistanceInitIndex>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <simpleHiddenSelections type="array">
+      <item>bullet</item>
+      <item>bullet2</item>
+      <item>bullet3</item>
+      <item>bullet4</item>
+      <item>bullet5</item>
+    </simpleHiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\archery\crossbow\data\crossbow_leaves_co.paa</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\archery\crossbow\data\crossbow.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\archery\crossbow\data\crossbow.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\archery\crossbow\data\crossbow_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\archery\crossbow\data\crossbow_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\archery\crossbow\data\crossbow_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Single base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>Crossbow_Shot_SoundSet</item></soundSetShot>
+      <reloadTime>5.3333</reloadTime>
+      <recoil>recoil_crossbow</recoil>
+      <recoilProne>recoil_crossbow</recoilProne>
+      <dispersion>0.00075</dispersion>
+      <magazineSlot></magazineSlot>
+    </Single>
+    <NoiseShoot>
+      <strength>2</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <OpticsInfo base="OpticsInfoRifle">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <discreteDistance type="array"><item>25</item><item>50</item><item>75</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <discreteDistanceClampOpticsMax>100</discreteDistanceClampOpticsMax>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>25</distanceZoomMin>
+      <distanceZoomMax>25</distanceZoomMax>
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>0</item><item>0.07</item><item>-0.05</item></position>
+        <orientation type="array"><item>0</item><item>-80</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>0</item><item>0.1</item><item>0.03</item></position>
+        <orientation type="array"><item>0</item><item>80</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\Crossbow\crossbow_states.anm
+    </weaponStateAnim>
+    <boneRemap type="array">
+      <item>bullet</item>
+      <item>Weapon_Bullet</item>
+      <item>trigger</item>
+      <item>Weapon_Trigger</item>
+      <item>chord</item>
+      <item>Weapon_Bone_01</item>
+      <item>shutter</item>
+      <item>Weapon_Bolt</item>
+    </boneRemap>
+  </Crossbow_Base>
+  <Crossbow base="Crossbow_Base">
+    <scope>2</scope>
+  </Crossbow>
+  <Crossbow_Autumn base="Crossbow_Base">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\archery\crossbow\data\crossbow_autumn_co.paa</item></hiddenSelectionsTextures>
+  </Crossbow_Autumn>
+  <Crossbow_Black base="Crossbow_Base">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\archery\crossbow\data\crossbow_black_co.paa</item></hiddenSelectionsTextures>
+  </Crossbow_Black>
+  <Crossbow_Summer base="Crossbow_Base">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\archery\crossbow\data\crossbow_summer_co.paa</item></hiddenSelectionsTextures>
+  </Crossbow_Summer>
+  <Crossbow_Wood base="Crossbow_Base">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\archery\crossbow\data\crossbow_wood_co.paa</item></hiddenSelectionsTextures>
+  </Crossbow_Wood>
+</cfgWeapons>

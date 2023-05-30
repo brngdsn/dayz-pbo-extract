@@ -1,0 +1,3128 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Projectiles>
+    <units type="array"></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"></requiredAddons>
+  </DZ_Weapons_Projectiles>
+</CfgPatches>
+<Entity>
+</Entity>
+<CfgAmmo>
+  <ShotgunCore>
+  </ShotgunCore>
+  <DefaultAmmo>
+  </DefaultAmmo>
+  <BulletCore>
+  </BulletCore>
+  <Bullet_Base base="BulletCore">
+    <scope>0</scope>
+    <hit>8</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <model>\dz\weapons\projectiles\empty.p3d</model>
+    <soundFly type="array"><item></item><item>1e-08</item><item>1</item></soundFly>
+    <soundDefault1 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_1</item><item>0.5</item><item>1</item><item>40</item></soundDefault1>
+    <soundDefault2 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_2</item><item>0.5</item><item>1</item><item>40</item></soundDefault2>
+    <soundDefault3 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_3</item><item>0.5</item><item>1</item><item>40</item></soundDefault3>
+    <soundDefault4 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_4</item><item>0.5</item><item>1</item><item>40</item></soundDefault4>
+    <soundDefault5 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_5</item><item>0.5</item><item>1</item><item>40</item></soundDefault5>
+    <soundDefault6 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_6</item><item>0.5</item><item>1</item><item>40</item></soundDefault6>
+    <soundDefault7 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_7</item><item>0.5</item><item>1</item><item>40</item></soundDefault7>
+    <soundDefault8 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_8</item><item>0.5</item><item>1</item><item>40</item></soundDefault8>
+    <soundGroundSoft1 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_1</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft1>
+    <soundGroundSoft2 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_2</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft2>
+    <soundGroundSoft3 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_3</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft3>
+    <soundGroundSoft4 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_4</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft4>
+    <soundGroundSoft5 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_5</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft5>
+    <soundGroundSoft6 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_6</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft6>
+    <soundGroundSoft7 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_7</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft7>
+    <soundGroundSoft8 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_8</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft8>
+    <soundGroundHard1 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_1</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard1>
+    <soundGroundHard2 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_2</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard2>
+    <soundGroundHard3 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_3</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard3>
+    <soundGroundHard4 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_4</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard4>
+    <soundGroundHard5 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_5</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard5>
+    <soundGroundHard6 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_6</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard6>
+    <soundGroundHard7 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_7</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard7>
+    <soundGroundHard8 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_8</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard8>
+    <soundMetal1 type="array"><item>dz\sounds\weapons\hits\bullet\metal_1</item><item>0.5</item><item>1</item><item>40</item></soundMetal1>
+    <soundMetal2 type="array"><item>dz\sounds\weapons\hits\bullet\metal_2</item><item>0.5</item><item>1</item><item>40</item></soundMetal2>
+    <soundMetal3 type="array"><item>dz\sounds\weapons\hits\bullet\metal_3</item><item>0.5</item><item>1</item><item>40</item></soundMetal3>
+    <soundMetal4 type="array"><item>dz\sounds\weapons\hits\bullet\metal_4</item><item>0.5</item><item>1</item><item>40</item></soundMetal4>
+    <soundMetal5 type="array"><item>dz\sounds\weapons\hits\bullet\metal_5</item><item>0.5</item><item>1</item><item>40</item></soundMetal5>
+    <soundMetal6 type="array"><item>dz\sounds\weapons\hits\bullet\metal_6</item><item>0.5</item><item>1</item><item>40</item></soundMetal6>
+    <soundMetal7 type="array"><item>dz\sounds\weapons\hits\bullet\metal_7</item><item>0.5</item><item>1</item><item>40</item></soundMetal7>
+    <soundMetal8 type="array"><item>dz\sounds\weapons\hits\bullet\metal_8</item><item>0.5</item><item>1</item><item>40</item></soundMetal8>
+    <soundGlass1 type="array"><item>dz\sounds\weapons\hits\bullet\glass_1</item><item>0.5</item><item>1</item><item>40</item></soundGlass1>
+    <soundGlass2 type="array"><item>dz\sounds\weapons\hits\bullet\glass_2</item><item>0.5</item><item>1</item><item>40</item></soundGlass2>
+    <soundGlass3 type="array"><item>dz\sounds\weapons\hits\bullet\glass_3</item><item>0.5</item><item>1</item><item>40</item></soundGlass3>
+    <soundGlass4 type="array"><item>dz\sounds\weapons\hits\bullet\glass_4</item><item>0.5</item><item>1</item><item>40</item></soundGlass4>
+    <soundGlass5 type="array"><item>dz\sounds\weapons\hits\bullet\glass_5</item><item>0.5</item><item>1</item><item>40</item></soundGlass5>
+    <soundGlass6 type="array"><item>dz\sounds\weapons\hits\bullet\glass_6</item><item>0.5</item><item>1</item><item>40</item></soundGlass6>
+    <soundGlass7 type="array"><item>dz\sounds\weapons\hits\bullet\glass_7</item><item>0.5</item><item>1</item><item>40</item></soundGlass7>
+    <soundGlass8 type="array"><item>dz\sounds\weapons\hits\bullet\glass_8</item><item>0.5</item><item>1</item><item>40</item></soundGlass8>
+    <soundGlassArmored1 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_1</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored1>
+    <soundGlassArmored2 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_2</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored2>
+    <soundGlassArmored3 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_3</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored3>
+    <soundGlassArmored4 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_4</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored4>
+    <soundGlassArmored5 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_5</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored5>
+    <soundGlassArmored6 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_6</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored6>
+    <soundGlassArmored7 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_7</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored7>
+    <soundGlassArmored8 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_8</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored8>
+    <soundVehiclePlate1 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_1</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate1>
+    <soundVehiclePlate2 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_2</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate2>
+    <soundVehiclePlate3 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_3</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate3>
+    <soundVehiclePlate4 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_4</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate4>
+    <soundVehiclePlate5 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_5</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate5>
+    <soundVehiclePlate6 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_6</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate6>
+    <soundVehiclePlate7 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_7</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate7>
+    <soundVehiclePlate8 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_8</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate8>
+    <soundWood1 type="array"><item>dz\sounds\weapons\hits\bullet\wood_1</item><item>0.5</item><item>1</item><item>40</item></soundWood1>
+    <soundWood2 type="array"><item>dz\sounds\weapons\hits\bullet\wood_2</item><item>0.5</item><item>1</item><item>40</item></soundWood2>
+    <soundWood3 type="array"><item>dz\sounds\weapons\hits\bullet\wood_3</item><item>0.5</item><item>1</item><item>40</item></soundWood3>
+    <soundWood4 type="array"><item>dz\sounds\weapons\hits\bullet\wood_4</item><item>0.5</item><item>1</item><item>40</item></soundWood4>
+    <soundWood5 type="array"><item>dz\sounds\weapons\hits\bullet\wood_5</item><item>0.5</item><item>1</item><item>40</item></soundWood5>
+    <soundWood6 type="array"><item>dz\sounds\weapons\hits\bullet\wood_6</item><item>0.5</item><item>1</item><item>40</item></soundWood6>
+    <soundWood7 type="array"><item>dz\sounds\weapons\hits\bullet\wood_7</item><item>0.5</item><item>1</item><item>40</item></soundWood7>
+    <soundWood8 type="array"><item>dz\sounds\weapons\hits\bullet\wood_8</item><item>0.5</item><item>1</item><item>40</item></soundWood8>
+    <soundHitBody1 type="array"><item>dz\sounds\weapons\hits\bullet\body_1</item><item>1</item><item>1</item><item>20</item></soundHitBody1>
+    <soundHitBody2 type="array"><item>dz\sounds\weapons\hits\bullet\body_2</item><item>1</item><item>1</item><item>20</item></soundHitBody2>
+    <soundHitBody3 type="array"><item>dz\sounds\weapons\hits\bullet\body_3</item><item>1</item><item>1</item><item>20</item></soundHitBody3>
+    <soundHitBody4 type="array"><item>dz\sounds\weapons\hits\bullet\body_4</item><item>1</item><item>1</item><item>20</item></soundHitBody4>
+    <soundHitBody5 type="array"><item>dz\sounds\weapons\hits\bullet\body_5</item><item>1</item><item>1</item><item>20</item></soundHitBody5>
+    <soundHitBody6 type="array"><item>dz\sounds\weapons\hits\bullet\body_6</item><item>1</item><item>1</item><item>20</item></soundHitBody6>
+    <soundHitBody7 type="array"><item>dz\sounds\weapons\hits\bullet\body_7</item><item>1</item><item>1</item><item>20</item></soundHitBody7>
+    <soundHitBody8 type="array"><item>dz\sounds\weapons\hits\bullet\body_8</item><item>1</item><item>1</item><item>20</item></soundHitBody8>
+    <soundHitBuilding1 type="array"><item>dz\sounds\weapons\hits\bullet\building_1</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding1>
+    <soundHitBuilding2 type="array"><item>dz\sounds\weapons\hits\bullet\building_2</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding2>
+    <soundHitBuilding3 type="array"><item>dz\sounds\weapons\hits\bullet\building_3</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding3>
+    <soundHitBuilding4 type="array"><item>dz\sounds\weapons\hits\bullet\building_4</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding4>
+    <soundHitBuilding5 type="array"><item>dz\sounds\weapons\hits\bullet\building_5</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding5>
+    <soundHitBuilding6 type="array"><item>dz\sounds\weapons\hits\bullet\building_6</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding6>
+    <soundHitBuilding7 type="array"><item>dz\sounds\weapons\hits\bullet\building_7</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding7>
+    <soundHitBuilding8 type="array"><item>dz\sounds\weapons\hits\bullet\building_8</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding8>
+    <soundHitFoliage1 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_1</item><item>1</item><item>1</item><item>20</item></soundHitFoliage1>
+    <soundHitFoliage2 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_2</item><item>1</item><item>1</item><item>20</item></soundHitFoliage2>
+    <soundHitFoliage3 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_3</item><item>1</item><item>1</item><item>20</item></soundHitFoliage3>
+    <soundHitFoliage4 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_4</item><item>1</item><item>1</item><item>20</item></soundHitFoliage4>
+    <soundHitFoliage5 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_5</item><item>1</item><item>1</item><item>20</item></soundHitFoliage5>
+    <soundHitFoliage6 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_6</item><item>1</item><item>1</item><item>20</item></soundHitFoliage6>
+    <soundHitFoliage7 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_7</item><item>1</item><item>1</item><item>20</item></soundHitFoliage7>
+    <soundHitFoliage8 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_8</item><item>1</item><item>1</item><item>20</item></soundHitFoliage8>
+    <soundPlastic1 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_1</item><item>0.5</item><item>1</item><item>40</item></soundPlastic1>
+    <soundPlastic2 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_2</item><item>0.5</item><item>1</item><item>40</item></soundPlastic2>
+    <soundPlastic3 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_3</item><item>0.5</item><item>1</item><item>40</item></soundPlastic3>
+    <soundPlastic4 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_4</item><item>0.5</item><item>1</item><item>40</item></soundPlastic4>
+    <soundPlastic5 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_5</item><item>0.5</item><item>1</item><item>40</item></soundPlastic5>
+    <soundPlastic6 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_6</item><item>0.5</item><item>1</item><item>40</item></soundPlastic6>
+    <soundPlastic7 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_7</item><item>0.5</item><item>1</item><item>40</item></soundPlastic7>
+    <soundPlastic8 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_8</item><item>0.5</item><item>1</item><item>40</item></soundPlastic8>
+    <soundConcrete1 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_1</item><item>0.5</item><item>1</item><item>40</item></soundConcrete1>
+    <soundConcrete2 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_2</item><item>0.5</item><item>1</item><item>40</item></soundConcrete2>
+    <soundConcrete3 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_3</item><item>0.5</item><item>1</item><item>40</item></soundConcrete3>
+    <soundConcrete4 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_4</item><item>0.5</item><item>1</item><item>40</item></soundConcrete4>
+    <soundConcrete5 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_5</item><item>0.5</item><item>1</item><item>40</item></soundConcrete5>
+    <soundConcrete6 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_6</item><item>0.5</item><item>1</item><item>40</item></soundConcrete6>
+    <soundConcrete7 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_7</item><item>0.5</item><item>1</item><item>40</item></soundConcrete7>
+    <soundConcrete8 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_8</item><item>0.5</item><item>1</item><item>40</item></soundConcrete8>
+    <soundRubber1 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_1</item><item>0.5</item><item>1</item><item>40</item></soundRubber1>
+    <soundRubber2 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_2</item><item>0.5</item><item>1</item><item>40</item></soundRubber2>
+    <soundRubber3 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_3</item><item>0.5</item><item>1</item><item>40</item></soundRubber3>
+    <soundRubber4 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_4</item><item>0.5</item><item>1</item><item>40</item></soundRubber4>
+    <soundRubber5 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_5</item><item>0.5</item><item>1</item><item>40</item></soundRubber5>
+    <soundRubber6 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_6</item><item>0.5</item><item>1</item><item>40</item></soundRubber6>
+    <soundRubber7 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_7</item><item>0.5</item><item>1</item><item>40</item></soundRubber7>
+    <soundRubber8 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_8</item><item>0.5</item><item>1</item><item>40</item></soundRubber8>
+    <soundWater1 type="array"><item>dz\sounds\weapons\hits\bullet\water_1</item><item>0.5</item><item>1</item><item>40</item></soundWater1>
+    <soundWater2 type="array"><item>dz\sounds\weapons\hits\bullet\water_2</item><item>0.5</item><item>1</item><item>40</item></soundWater2>
+    <soundWater3 type="array"><item>dz\sounds\weapons\hits\bullet\water_3</item><item>0.5</item><item>1</item><item>40</item></soundWater3>
+    <soundWater4 type="array"><item>dz\sounds\weapons\hits\bullet\water_4</item><item>0.5</item><item>1</item><item>40</item></soundWater4>
+    <soundWater5 type="array"><item>dz\sounds\weapons\hits\bullet\water_5</item><item>0.5</item><item>1</item><item>40</item></soundWater5>
+    <soundWater6 type="array"><item>dz\sounds\weapons\hits\bullet\water_6</item><item>0.5</item><item>1</item><item>40</item></soundWater6>
+    <soundWater7 type="array"><item>dz\sounds\weapons\hits\bullet\water_7</item><item>0.5</item><item>1</item><item>40</item></soundWater7>
+    <soundWater8 type="array"><item>dz\sounds\weapons\hits\bullet\water_8</item><item>0.5</item><item>1</item><item>40</item></soundWater8>
+    <hitGroundSoft type="array">
+      <item>soundGroundSoft1</item>
+      <item>0.125</item>
+      <item>soundGroundSoft2</item>
+      <item>0.125</item>
+      <item>soundGroundSoft3</item>
+      <item>0.125</item>
+      <item>soundGroundSoft4</item>
+      <item>0.125</item>
+      <item>soundGroundSoft5</item>
+      <item>0.125</item>
+      <item>soundGroundSoft6</item>
+      <item>0.125</item>
+      <item>soundGroundSoft7</item>
+      <item>0.125</item>
+      <item>soundGroundSoft8</item>
+      <item>0.125</item>
+    </hitGroundSoft>
+    <hitGroundHard type="array">
+      <item>soundGroundHard1</item>
+      <item>0.125</item>
+      <item>soundGroundHard2</item>
+      <item>0.125</item>
+      <item>soundGroundHard3</item>
+      <item>0.125</item>
+      <item>soundGroundHard4</item>
+      <item>0.125</item>
+      <item>soundGroundHard5</item>
+      <item>0.125</item>
+      <item>soundGroundHard6</item>
+      <item>0.125</item>
+      <item>soundGroundHard7</item>
+      <item>0.125</item>
+      <item>soundGroundHard8</item>
+      <item>0.125</item>
+    </hitGroundHard>
+    <hitMan type="array">
+      <item>soundHitBody1</item>
+      <item>0.125</item>
+      <item>soundHitBody2</item>
+      <item>0.125</item>
+      <item>soundHitBody3</item>
+      <item>0.125</item>
+      <item>soundHitBody4</item>
+      <item>0.125</item>
+      <item>soundHitBody5</item>
+      <item>0.125</item>
+      <item>soundHitBody6</item>
+      <item>0.125</item>
+      <item>soundHitBody7</item>
+      <item>0.125</item>
+      <item>soundHitBody8</item>
+      <item>0.125</item>
+    </hitMan>
+    <hitArmor type="array">
+      <item>soundVehiclePlate1</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate2</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate3</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate4</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate5</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate6</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate7</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate8</item>
+      <item>0.125</item>
+    </hitArmor>
+    <hitBuilding type="array">
+      <item>soundHitBuilding1</item>
+      <item>0.125</item>
+      <item>soundHitBuilding2</item>
+      <item>0.125</item>
+      <item>soundHitBuilding3</item>
+      <item>0.125</item>
+      <item>soundHitBuilding4</item>
+      <item>0.125</item>
+      <item>soundHitBuilding5</item>
+      <item>0.125</item>
+      <item>soundHitBuilding6</item>
+      <item>0.125</item>
+      <item>soundHitBuilding7</item>
+      <item>0.125</item>
+      <item>soundHitBuilding8</item>
+      <item>0.125</item>
+    </hitBuilding>
+    <hitFoliage type="array">
+      <item>soundHitFoliage1</item>
+      <item>0.125</item>
+      <item>soundHitFoliage2</item>
+      <item>0.125</item>
+      <item>soundHitFoliage3</item>
+      <item>0.125</item>
+      <item>soundHitFoliage4</item>
+      <item>0.125</item>
+      <item>soundHitFoliage5</item>
+      <item>0.125</item>
+      <item>soundHitFoliage6</item>
+      <item>0.125</item>
+      <item>soundHitFoliage7</item>
+      <item>0.125</item>
+      <item>soundHitFoliage8</item>
+      <item>0.125</item>
+    </hitFoliage>
+    <hitWood type="array">
+      <item>soundWood1</item>
+      <item>0.125</item>
+      <item>soundWood2</item>
+      <item>0.125</item>
+      <item>soundWood3</item>
+      <item>0.125</item>
+      <item>soundWood4</item>
+      <item>0.125</item>
+      <item>soundWood5</item>
+      <item>0.125</item>
+      <item>soundWood6</item>
+      <item>0.125</item>
+      <item>soundWood7</item>
+      <item>0.125</item>
+      <item>soundWood8</item>
+      <item>0.125</item>
+    </hitWood>
+    <hitGlass type="array">
+      <item>soundGlass1</item>
+      <item>0.125</item>
+      <item>soundGlass2</item>
+      <item>0.125</item>
+      <item>soundGlass3</item>
+      <item>0.125</item>
+      <item>soundGlass4</item>
+      <item>0.125</item>
+      <item>soundGlass5</item>
+      <item>0.125</item>
+      <item>soundGlass6</item>
+      <item>0.125</item>
+      <item>soundGlass7</item>
+      <item>0.125</item>
+      <item>soundGlass8</item>
+      <item>0.125</item>
+    </hitGlass>
+    <hitGlassArmored type="array">
+      <item>soundGlassArmored1</item>
+      <item>0.125</item>
+      <item>soundGlassArmored2</item>
+      <item>0.125</item>
+      <item>soundGlassArmored3</item>
+      <item>0.125</item>
+      <item>soundGlassArmored4</item>
+      <item>0.125</item>
+      <item>soundGlassArmored5</item>
+      <item>0.125</item>
+      <item>soundGlassArmored6</item>
+      <item>0.125</item>
+      <item>soundGlassArmored7</item>
+      <item>0.125</item>
+      <item>soundGlassArmored8</item>
+      <item>0.125</item>
+    </hitGlassArmored>
+    <hitConcrete type="array">
+      <item>soundConcrete1</item>
+      <item>0.125</item>
+      <item>soundConcrete2</item>
+      <item>0.125</item>
+      <item>soundConcrete3</item>
+      <item>0.125</item>
+      <item>soundConcrete4</item>
+      <item>0.125</item>
+      <item>soundConcrete5</item>
+      <item>0.125</item>
+      <item>soundConcrete6</item>
+      <item>0.125</item>
+      <item>soundConcrete7</item>
+      <item>0.125</item>
+      <item>soundConcrete8</item>
+      <item>0.125</item>
+    </hitConcrete>
+    <hitRubber type="array">
+      <item>soundRubber1</item>
+      <item>0.25</item>
+      <item>soundRubber2</item>
+      <item>0.25</item>
+      <item>soundRubber3</item>
+      <item>0.25</item>
+      <item>soundRubber4</item>
+      <item>0.25</item>
+    </hitRubber>
+    <hitPlastic type="array">
+      <item>soundPlastic1</item>
+      <item>0.125</item>
+      <item>soundPlastic2</item>
+      <item>0.125</item>
+      <item>soundPlastic3</item>
+      <item>0.125</item>
+      <item>soundPlastic4</item>
+      <item>0.125</item>
+      <item>soundPlastic5</item>
+      <item>0.125</item>
+      <item>soundPlastic6</item>
+      <item>0.125</item>
+      <item>soundPlastic7</item>
+      <item>0.125</item>
+      <item>soundPlastic8</item>
+      <item>0.125</item>
+    </hitPlastic>
+    <hitDefault type="array">
+      <item>soundDefault1</item>
+      <item>0.125</item>
+      <item>soundDefault2</item>
+      <item>0.125</item>
+      <item>soundDefault3</item>
+      <item>0.125</item>
+      <item>soundDefault4</item>
+      <item>0.125</item>
+      <item>soundDefault5</item>
+      <item>0.125</item>
+      <item>soundDefault6</item>
+      <item>0.125</item>
+      <item>soundDefault7</item>
+      <item>0.125</item>
+      <item>soundDefault8</item>
+      <item>0.125</item>
+    </hitDefault>
+    <hitMetal type="array">
+      <item>soundMetal1</item>
+      <item>0.125</item>
+      <item>soundMetal2</item>
+      <item>0.125</item>
+      <item>soundMetal3</item>
+      <item>0.125</item>
+      <item>soundMetal4</item>
+      <item>0.125</item>
+      <item>soundMetal5</item>
+      <item>0.125</item>
+      <item>soundMetal6</item>
+      <item>0.125</item>
+      <item>soundMetal7</item>
+      <item>0.125</item>
+      <item>soundMetal8</item>
+      <item>0.125</item>
+    </hitMetal>
+    <hitMetalplate type="array">
+      <item>soundVehiclePlate1</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate2</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate3</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate4</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate5</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate6</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate7</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate8</item>
+      <item>0.125</item>
+    </hitMetalplate>
+    <hitWater type="array">
+      <item>soundWater1</item>
+      <item>0.125</item>
+      <item>soundWater2</item>
+      <item>0.125</item>
+      <item>soundWater3</item>
+      <item>0.125</item>
+      <item>soundWater4</item>
+      <item>0.125</item>
+      <item>soundWater5</item>
+      <item>0.125</item>
+      <item>soundWater6</item>
+      <item>0.125</item>
+      <item>soundWater7</item>
+      <item>0.125</item>
+      <item>soundWater8</item>
+      <item>0.125</item>
+    </hitWater>
+    <soundSetBulletFly type="array"><item>bulletFlyBy_SoundSet</item></soundSetBulletFly>
+    <soundSetSuperSonic type="array"><item>SuperSonicCrack_SoundSet</item><item>SuperSonicCrackTail_SoundSet</item></soundSetSuperSonic>
+    <SoundSetsGroundHits>
+      <default type="array"><item>Shell_39mm_default_SoundSet</item></default>
+      <asphalt_ext type="array"><item>Shell_39mm_default_SoundSet</item></asphalt_ext>
+      <asphalt_destroyed_ext type="array"><item>Shell_39mm_default_SoundSet</item></asphalt_destroyed_ext>
+      <asphalt_int type="array"><item>Shell_39mm_default_int_SoundSet</item></asphalt_int>
+      <asphalt_destroyed_int type="array"><item>Shell_39mm_default_int_SoundSet</item></asphalt_destroyed_int>
+      <asphalt_felt type="array"><item>Shell_39mm_default_SoundSet</item></asphalt_felt>
+      <asphalt_felt_int type="array"><item>Shell_39mm_default_int_SoundSet</item></asphalt_felt_int>
+      <cp_broadleaf_dense1 type="array"><item>Shell_39mm_leaves_SoundSet</item></cp_broadleaf_dense1>
+      <cp_broadleaf_dense2 type="array"><item>Shell_39mm_leaves_SoundSet</item></cp_broadleaf_dense2>
+      <cp_broadleaf_sparse1 type="array"><item>Shell_39mm_leaves_SoundSet</item></cp_broadleaf_sparse1>
+      <cp_broadleaf_sparse2 type="array"><item>Shell_39mm_leaves_SoundSet</item></cp_broadleaf_sparse2>
+      <cp_conifer_common1 type="array"><item>Shell_39mm_leaves_SoundSet</item></cp_conifer_common1>
+      <cp_conifer_common2 type="array"><item>Shell_39mm_leaves_SoundSet</item></cp_conifer_common2>
+      <cp_conifer_moss1 type="array"><item>Shell_39mm_leaves_SoundSet</item></cp_conifer_moss1>
+      <cp_conifer_moss2 type="array"><item>Shell_39mm_leaves_SoundSet</item></cp_conifer_moss2>
+      <cp_concrete1 type="array"><item>Shell_39mm_default_SoundSet</item></cp_concrete1>
+      <cp_concrete2 type="array"><item>Shell_39mm_default_SoundSet</item></cp_concrete2>
+      <concrete_ext type="array"><item>Shell_39mm_default_SoundSet</item></concrete_ext>
+      <concrete_stairs_ext type="array"><item>Shell_39mm_default_SoundSet</item></concrete_stairs_ext>
+      <concrete_int type="array"><item>Shell_39mm_default_int_SoundSet</item></concrete_int>
+      <concrete_stairs type="array"><item>Shell_39mm_default_SoundSet</item></concrete_stairs>
+      <ceramic_tiles_ext type="array"><item>Shell_39mm_default_SoundSet</item></ceramic_tiles_ext>
+      <ceramic_tiles_int type="array"><item>Shell_39mm_default_int_SoundSet</item></ceramic_tiles_int>
+      <ceramic_tiles_roof_ext type="array"><item>Shell_39mm_default_SoundSet</item></ceramic_tiles_roof_ext>
+      <ceramic_tiles_roof_int type="array"><item>Shell_39mm_default_int_SoundSet</item></ceramic_tiles_roof_int>
+      <cp_dirt type="array"><item>Shell_39mm_dirt_SoundSet</item></cp_dirt>
+      <dirt_ext type="array"><item>Shell_39mm_dirt_SoundSet</item></dirt_ext>
+      <dirt_int type="array"><item>Shell_39mm_dirt_int_SoundSet</item></dirt_int>
+      <cp_grass type="array"><item>Shell_39mm_grass_SoundSet</item></cp_grass>
+      <grass_dry_ext type="array"><item>Shell_39mm_grass_SoundSet</item></grass_dry_ext>
+      <grass_dry_int type="array"><item>Shell_39mm_grass_int_SoundSet</item></grass_dry_int>
+      <cp_grass_tall type="array"><item>Shell_39mm_grass_SoundSet</item></cp_grass_tall>
+      <cp_gravel type="array"><item>Shell_39mm_gravel_SoundSet</item></cp_gravel>
+      <gravel_small_ext type="array"><item>Shell_39mm_gravel_SoundSet</item></gravel_small_ext>
+      <gravel_small_int type="array"><item>Shell_39mm_gravel_int_SoundSet</item></gravel_small_int>
+      <gravel_large_ext type="array"><item>Shell_39mm_gravel_SoundSet</item></gravel_large_ext>
+      <gravel_large_int type="array"><item>Shell_39mm_gravel_int_SoundSet</item></gravel_large_int>
+      <lino_ext type="array"><item>Shell_39mm_default_SoundSet</item></lino_ext>
+      <lino_int type="array"><item>Shell_39mm_default_int_SoundSet</item></lino_int>
+      <metal_thick_ext type="array"><item>Shell_39mm_metal_SoundSet</item></metal_thick_ext>
+      <metal_stairs_ext type="array"><item>Shell_39mm_metal_SoundSet</item></metal_stairs_ext>
+      <metal_thick_int type="array"><item>Shell_39mm_metal_int_SoundSet</item></metal_thick_int>
+      <metal_thin_ext type="array"><item>Shell_39mm_metal_SoundSet</item></metal_thin_ext>
+      <metal_thin_int type="array"><item>Shell_39mm_metal_int_SoundSet</item></metal_thin_int>
+      <metal_thin_mesh_ext type="array"><item>Shell_39mm_metal_SoundSet</item></metal_thin_mesh_ext>
+      <metal_thin_mesh_int type="array"><item>Shell_39mm_metal_int_SoundSet</item></metal_thin_mesh_int>
+      <cp_rock type="array"><item>Shell_39mm_default_SoundSet</item></cp_rock>
+      <rubble_large_ext type="array"><item>Shell_39mm_gravel_SoundSet</item></rubble_large_ext>
+      <rubble_large_int type="array"><item>Shell_39mm_gravel_int_SoundSet</item></rubble_large_int>
+      <rubble_small_ext type="array"><item>Shell_39mm_gravel_SoundSet</item></rubble_small_ext>
+      <rubble_small_int type="array"><item>Shell_39mm_gravel_int_SoundSet</item></rubble_small_int>
+      <sand_ext type="array"><item>Shell_39mm_sand_SoundSet</item></sand_ext>
+      <sand_int type="array"><item>Shell_39mm_sand_int_SoundSet</item></sand_int>
+      <stone_ext type="array"><item>Shell_39mm_sand_SoundSet</item></stone_ext>
+      <stone_int type="array"><item>Shell_39mm_sand_int_SoundSet</item></stone_int>
+      <textile_carpet_ext type="array"><item>Shell_39mm_carpet_SoundSet</item></textile_carpet_ext>
+      <textile_carpet_int type="array"><item>Shell_39mm_carpet_int_SoundSet</item></textile_carpet_int>
+      <trash_ext type="array"><item>Shell_39mm_default_SoundSet</item></trash_ext>
+      <trash_int type="array"><item>Shell_39mm_default_int_SoundSet</item></trash_int>
+      <wood_parquet_ext type="array"><item>Shell_39mm_wood_SoundSet</item></wood_parquet_ext>
+      <wood_parquet_int type="array"><item>Shell_39mm_wood_int_SoundSet</item></wood_parquet_int>
+      <wood_planks_ext type="array"><item>Shell_39mm_wood_SoundSet</item></wood_planks_ext>
+      <wood_planks_stairs_ext type="array"><item>Shell_39mm_wood_SoundSet</item></wood_planks_stairs_ext>
+      <wood_planks_int type="array"><item>Shell_39mm_wood_int_SoundSet</item></wood_planks_int>
+      <wood_planks_stairs_int type="array"><item>Shell_39mm_wood_int_SoundSet</item></wood_planks_stairs_int>
+      <fresh_water_ext type="array"><item>Shell_39mm_water_SoundSet</item></fresh_water_ext>
+      <fresh_water_int type="array"><item>Shell_39mm_water_int_SoundSet</item></fresh_water_int>
+      <water type="array"><item>Shell_39mm_water_SoundSet</item></water>
+    </SoundSetsGroundHits>
+    <supersonicCrackNear type="array"></supersonicCrackNear>
+    <supersonicCrackFar type="array"></supersonicCrackFar>
+    <unconRefillModifier>6</unconRefillModifier>
+    <casing>FxCartridge_556</casing>
+    <round>FxRound_556</round>
+    <timeToLive>6</timeToLive>
+    <deflecting>10</deflecting>
+    <tracerStartTime>-1</tracerStartTime>
+    <muzzleEffect>BIS_Effects_Rifle</muzzleEffect>
+    <maxLeadSpeed>23</maxLeadSpeed>
+    <typicalSpeed>900</typicalSpeed>
+    <initSpeed>900</initSpeed>
+    <damageBarrel>100</damageBarrel>
+    <damageBarrelDestroyed>100</damageBarrelDestroyed>
+    <weight>0.015</weight>
+    <impactBehaviour>0</impactBehaviour>
+    <SimulationScriptClass></SimulationScriptClass>
+    <dmgPerUse>0</dmgPerUse>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.5</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>99</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"></item></item>
+            <item type="array"><item>0.7</item><item type="array"></item></item>
+            <item type="array"><item>0.5</item><item type="array"></item></item>
+            <item type="array"><item>0.3</item><item type="array"></item></item>
+            <item type="array"><item>0</item><item type="array"></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Bullet_Base>
+  <Shotgun_Base base="ShotgunCore">
+    <scope>0</scope>
+    <model>\dz\weapons\projectiles\empty.p3d</model>
+    <waterEffectOffset>-0.8</waterEffectOffset>
+    <soundDefault1 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_1</item><item>0.5</item><item>1</item><item>40</item></soundDefault1>
+    <soundDefault2 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_2</item><item>0.5</item><item>1</item><item>40</item></soundDefault2>
+    <soundDefault3 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_3</item><item>0.5</item><item>1</item><item>40</item></soundDefault3>
+    <soundDefault4 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_4</item><item>0.5</item><item>1</item><item>40</item></soundDefault4>
+    <soundDefault5 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_5</item><item>0.5</item><item>1</item><item>40</item></soundDefault5>
+    <soundDefault6 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_6</item><item>0.5</item><item>1</item><item>40</item></soundDefault6>
+    <soundDefault7 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_7</item><item>0.5</item><item>1</item><item>40</item></soundDefault7>
+    <soundDefault8 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_8</item><item>0.5</item><item>1</item><item>40</item></soundDefault8>
+    <soundGroundSoft1 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_1</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft1>
+    <soundGroundSoft2 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_2</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft2>
+    <soundGroundSoft3 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_3</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft3>
+    <soundGroundSoft4 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_4</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft4>
+    <soundGroundSoft5 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_5</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft5>
+    <soundGroundSoft6 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_6</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft6>
+    <soundGroundSoft7 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_7</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft7>
+    <soundGroundSoft8 type="array"><item>dz\sounds\weapons\hits\bullet\soft_ground_8</item><item>0.5</item><item>1</item><item>40</item></soundGroundSoft8>
+    <soundGroundHard1 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_1</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard1>
+    <soundGroundHard2 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_2</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard2>
+    <soundGroundHard3 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_3</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard3>
+    <soundGroundHard4 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_4</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard4>
+    <soundGroundHard5 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_5</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard5>
+    <soundGroundHard6 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_6</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard6>
+    <soundGroundHard7 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_7</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard7>
+    <soundGroundHard8 type="array"><item>dz\sounds\weapons\hits\bullet\hard_ground_8</item><item>0.5</item><item>1</item><item>40</item></soundGroundHard8>
+    <soundMetal1 type="array"><item>dz\sounds\weapons\hits\bullet\metal_1</item><item>0.5</item><item>1</item><item>40</item></soundMetal1>
+    <soundMetal2 type="array"><item>dz\sounds\weapons\hits\bullet\metal_2</item><item>0.5</item><item>1</item><item>40</item></soundMetal2>
+    <soundMetal3 type="array"><item>dz\sounds\weapons\hits\bullet\metal_3</item><item>0.5</item><item>1</item><item>40</item></soundMetal3>
+    <soundMetal4 type="array"><item>dz\sounds\weapons\hits\bullet\metal_4</item><item>0.5</item><item>1</item><item>40</item></soundMetal4>
+    <soundMetal5 type="array"><item>dz\sounds\weapons\hits\bullet\metal_5</item><item>0.5</item><item>1</item><item>40</item></soundMetal5>
+    <soundMetal6 type="array"><item>dz\sounds\weapons\hits\bullet\metal_6</item><item>0.5</item><item>1</item><item>40</item></soundMetal6>
+    <soundMetal7 type="array"><item>dz\sounds\weapons\hits\bullet\metal_7</item><item>0.5</item><item>1</item><item>40</item></soundMetal7>
+    <soundMetal8 type="array"><item>dz\sounds\weapons\hits\bullet\metal_8</item><item>0.5</item><item>1</item><item>40</item></soundMetal8>
+    <soundGlass1 type="array"><item>dz\sounds\weapons\hits\bullet\glass_1</item><item>0.5</item><item>1</item><item>40</item></soundGlass1>
+    <soundGlass2 type="array"><item>dz\sounds\weapons\hits\bullet\glass_2</item><item>0.5</item><item>1</item><item>40</item></soundGlass2>
+    <soundGlass3 type="array"><item>dz\sounds\weapons\hits\bullet\glass_3</item><item>0.5</item><item>1</item><item>40</item></soundGlass3>
+    <soundGlass4 type="array"><item>dz\sounds\weapons\hits\bullet\glass_4</item><item>0.5</item><item>1</item><item>40</item></soundGlass4>
+    <soundGlass5 type="array"><item>dz\sounds\weapons\hits\bullet\glass_5</item><item>0.5</item><item>1</item><item>40</item></soundGlass5>
+    <soundGlass6 type="array"><item>dz\sounds\weapons\hits\bullet\glass_6</item><item>0.5</item><item>1</item><item>40</item></soundGlass6>
+    <soundGlass7 type="array"><item>dz\sounds\weapons\hits\bullet\glass_7</item><item>0.5</item><item>1</item><item>40</item></soundGlass7>
+    <soundGlass8 type="array"><item>dz\sounds\weapons\hits\bullet\glass_8</item><item>0.5</item><item>1</item><item>40</item></soundGlass8>
+    <soundGlassArmored1 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_1</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored1>
+    <soundGlassArmored2 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_2</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored2>
+    <soundGlassArmored3 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_3</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored3>
+    <soundGlassArmored4 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_4</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored4>
+    <soundGlassArmored5 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_5</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored5>
+    <soundGlassArmored6 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_6</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored6>
+    <soundGlassArmored7 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_7</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored7>
+    <soundGlassArmored8 type="array"><item>dz\sounds\weapons\hits\bullet\glass_arm_8</item><item>0.5</item><item>1</item><item>40</item></soundGlassArmored8>
+    <soundVehiclePlate1 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_1</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate1>
+    <soundVehiclePlate2 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_2</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate2>
+    <soundVehiclePlate3 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_3</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate3>
+    <soundVehiclePlate4 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_4</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate4>
+    <soundVehiclePlate5 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_5</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate5>
+    <soundVehiclePlate6 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_6</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate6>
+    <soundVehiclePlate7 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_7</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate7>
+    <soundVehiclePlate8 type="array"><item>dz\sounds\weapons\hits\bullet\metal_plate_8</item><item>0.5</item><item>1</item><item>40</item></soundVehiclePlate8>
+    <soundWood1 type="array"><item>dz\sounds\weapons\hits\bullet\wood_1</item><item>0.5</item><item>1</item><item>40</item></soundWood1>
+    <soundWood2 type="array"><item>dz\sounds\weapons\hits\bullet\wood_2</item><item>0.5</item><item>1</item><item>40</item></soundWood2>
+    <soundWood3 type="array"><item>dz\sounds\weapons\hits\bullet\wood_3</item><item>0.5</item><item>1</item><item>40</item></soundWood3>
+    <soundWood4 type="array"><item>dz\sounds\weapons\hits\bullet\wood_4</item><item>0.5</item><item>1</item><item>40</item></soundWood4>
+    <soundWood5 type="array"><item>dz\sounds\weapons\hits\bullet\wood_5</item><item>0.5</item><item>1</item><item>40</item></soundWood5>
+    <soundWood6 type="array"><item>dz\sounds\weapons\hits\bullet\wood_6</item><item>0.5</item><item>1</item><item>40</item></soundWood6>
+    <soundWood7 type="array"><item>dz\sounds\weapons\hits\bullet\wood_7</item><item>0.5</item><item>1</item><item>40</item></soundWood7>
+    <soundWood8 type="array"><item>dz\sounds\weapons\hits\bullet\wood_8</item><item>0.5</item><item>1</item><item>40</item></soundWood8>
+    <soundHitBody1 type="array"><item>dz\sounds\weapons\hits\bullet\body_1</item><item>1</item><item>1</item><item>20</item></soundHitBody1>
+    <soundHitBody2 type="array"><item>dz\sounds\weapons\hits\bullet\body_2</item><item>1</item><item>1</item><item>20</item></soundHitBody2>
+    <soundHitBody3 type="array"><item>dz\sounds\weapons\hits\bullet\body_3</item><item>1</item><item>1</item><item>20</item></soundHitBody3>
+    <soundHitBody4 type="array"><item>dz\sounds\weapons\hits\bullet\body_4</item><item>1</item><item>1</item><item>20</item></soundHitBody4>
+    <soundHitBody5 type="array"><item>dz\sounds\weapons\hits\bullet\body_5</item><item>1</item><item>1</item><item>20</item></soundHitBody5>
+    <soundHitBody6 type="array"><item>dz\sounds\weapons\hits\bullet\body_6</item><item>1</item><item>1</item><item>20</item></soundHitBody6>
+    <soundHitBody7 type="array"><item>dz\sounds\weapons\hits\bullet\body_7</item><item>1</item><item>1</item><item>20</item></soundHitBody7>
+    <soundHitBody8 type="array"><item>dz\sounds\weapons\hits\bullet\body_8</item><item>1</item><item>1</item><item>20</item></soundHitBody8>
+    <soundHitBuilding1 type="array"><item>dz\sounds\weapons\hits\bullet\building_1</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding1>
+    <soundHitBuilding2 type="array"><item>dz\sounds\weapons\hits\bullet\building_2</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding2>
+    <soundHitBuilding3 type="array"><item>dz\sounds\weapons\hits\bullet\building_3</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding3>
+    <soundHitBuilding4 type="array"><item>dz\sounds\weapons\hits\bullet\building_4</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding4>
+    <soundHitBuilding5 type="array"><item>dz\sounds\weapons\hits\bullet\building_5</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding5>
+    <soundHitBuilding6 type="array"><item>dz\sounds\weapons\hits\bullet\building_6</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding6>
+    <soundHitBuilding7 type="array"><item>dz\sounds\weapons\hits\bullet\building_7</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding7>
+    <soundHitBuilding8 type="array"><item>dz\sounds\weapons\hits\bullet\building_8</item><item>0.5</item><item>1</item><item>40</item></soundHitBuilding8>
+    <soundHitFoliage1 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_1</item><item>1</item><item>1</item><item>20</item></soundHitFoliage1>
+    <soundHitFoliage2 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_2</item><item>1</item><item>1</item><item>20</item></soundHitFoliage2>
+    <soundHitFoliage3 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_3</item><item>1</item><item>1</item><item>20</item></soundHitFoliage3>
+    <soundHitFoliage4 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_4</item><item>1</item><item>1</item><item>20</item></soundHitFoliage4>
+    <soundHitFoliage5 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_5</item><item>1</item><item>1</item><item>20</item></soundHitFoliage5>
+    <soundHitFoliage6 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_6</item><item>1</item><item>1</item><item>20</item></soundHitFoliage6>
+    <soundHitFoliage7 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_7</item><item>1</item><item>1</item><item>20</item></soundHitFoliage7>
+    <soundHitFoliage8 type="array"><item>dz\sounds\weapons\hits\bullet\foliage_8</item><item>1</item><item>1</item><item>20</item></soundHitFoliage8>
+    <soundPlastic1 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_1</item><item>0.5</item><item>1</item><item>40</item></soundPlastic1>
+    <soundPlastic2 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_2</item><item>0.5</item><item>1</item><item>40</item></soundPlastic2>
+    <soundPlastic3 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_3</item><item>0.5</item><item>1</item><item>40</item></soundPlastic3>
+    <soundPlastic4 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_4</item><item>0.5</item><item>1</item><item>40</item></soundPlastic4>
+    <soundPlastic5 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_5</item><item>0.5</item><item>1</item><item>40</item></soundPlastic5>
+    <soundPlastic6 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_6</item><item>0.5</item><item>1</item><item>40</item></soundPlastic6>
+    <soundPlastic7 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_7</item><item>0.5</item><item>1</item><item>40</item></soundPlastic7>
+    <soundPlastic8 type="array"><item>dz\sounds\weapons\hits\bullet\plastic_8</item><item>0.5</item><item>1</item><item>40</item></soundPlastic8>
+    <soundConcrete1 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_1</item><item>0.5</item><item>1</item><item>40</item></soundConcrete1>
+    <soundConcrete2 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_2</item><item>0.5</item><item>1</item><item>40</item></soundConcrete2>
+    <soundConcrete3 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_3</item><item>0.5</item><item>1</item><item>40</item></soundConcrete3>
+    <soundConcrete4 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_4</item><item>0.5</item><item>1</item><item>40</item></soundConcrete4>
+    <soundConcrete5 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_5</item><item>0.5</item><item>1</item><item>40</item></soundConcrete5>
+    <soundConcrete6 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_6</item><item>0.5</item><item>1</item><item>40</item></soundConcrete6>
+    <soundConcrete7 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_7</item><item>0.5</item><item>1</item><item>40</item></soundConcrete7>
+    <soundConcrete8 type="array"><item>dz\sounds\weapons\hits\bullet\concrete_8</item><item>0.5</item><item>1</item><item>40</item></soundConcrete8>
+    <soundRubber1 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_1</item><item>0.5</item><item>1</item><item>40</item></soundRubber1>
+    <soundRubber2 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_2</item><item>0.5</item><item>1</item><item>40</item></soundRubber2>
+    <soundRubber3 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_3</item><item>0.5</item><item>1</item><item>40</item></soundRubber3>
+    <soundRubber4 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_4</item><item>0.5</item><item>1</item><item>40</item></soundRubber4>
+    <soundRubber5 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_5</item><item>0.5</item><item>1</item><item>40</item></soundRubber5>
+    <soundRubber6 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_6</item><item>0.5</item><item>1</item><item>40</item></soundRubber6>
+    <soundRubber7 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_7</item><item>0.5</item><item>1</item><item>40</item></soundRubber7>
+    <soundRubber8 type="array"><item>dz\sounds\weapons\hits\bullet\tyre_8</item><item>0.5</item><item>1</item><item>40</item></soundRubber8>
+    <soundWater1 type="array"><item>dz\sounds\weapons\hits\bullet\water_1</item><item>0.5</item><item>1</item><item>40</item></soundWater1>
+    <soundWater2 type="array"><item>dz\sounds\weapons\hits\bullet\water_2</item><item>0.5</item><item>1</item><item>40</item></soundWater2>
+    <soundWater3 type="array"><item>dz\sounds\weapons\hits\bullet\water_3</item><item>0.5</item><item>1</item><item>40</item></soundWater3>
+    <soundWater4 type="array"><item>dz\sounds\weapons\hits\bullet\water_4</item><item>0.5</item><item>1</item><item>40</item></soundWater4>
+    <soundWater5 type="array"><item>dz\sounds\weapons\hits\bullet\water_5</item><item>0.5</item><item>1</item><item>40</item></soundWater5>
+    <soundWater6 type="array"><item>dz\sounds\weapons\hits\bullet\water_6</item><item>0.5</item><item>1</item><item>40</item></soundWater6>
+    <soundWater7 type="array"><item>dz\sounds\weapons\hits\bullet\water_7</item><item>0.5</item><item>1</item><item>40</item></soundWater7>
+    <soundWater8 type="array"><item>dz\sounds\weapons\hits\bullet\water_8</item><item>0.5</item><item>1</item><item>40</item></soundWater8>
+    <hitGroundSoft type="array">
+      <item>soundGroundSoft1</item>
+      <item>0.125</item>
+      <item>soundGroundSoft2</item>
+      <item>0.125</item>
+      <item>soundGroundSoft3</item>
+      <item>0.125</item>
+      <item>soundGroundSoft4</item>
+      <item>0.125</item>
+      <item>soundGroundSoft5</item>
+      <item>0.125</item>
+      <item>soundGroundSoft6</item>
+      <item>0.125</item>
+      <item>soundGroundSoft7</item>
+      <item>0.125</item>
+      <item>soundGroundSoft8</item>
+      <item>0.125</item>
+    </hitGroundSoft>
+    <hitGroundHard type="array">
+      <item>soundGroundHard1</item>
+      <item>0.125</item>
+      <item>soundGroundHard2</item>
+      <item>0.125</item>
+      <item>soundGroundHard3</item>
+      <item>0.125</item>
+      <item>soundGroundHard4</item>
+      <item>0.125</item>
+      <item>soundGroundHard5</item>
+      <item>0.125</item>
+      <item>soundGroundHard6</item>
+      <item>0.125</item>
+      <item>soundGroundHard7</item>
+      <item>0.125</item>
+      <item>soundGroundHard8</item>
+      <item>0.125</item>
+    </hitGroundHard>
+    <hitMan type="array">
+      <item>soundHitBody1</item>
+      <item>0.125</item>
+      <item>soundHitBody2</item>
+      <item>0.125</item>
+      <item>soundHitBody3</item>
+      <item>0.125</item>
+      <item>soundHitBody4</item>
+      <item>0.125</item>
+      <item>soundHitBody5</item>
+      <item>0.125</item>
+      <item>soundHitBody6</item>
+      <item>0.125</item>
+      <item>soundHitBody7</item>
+      <item>0.125</item>
+      <item>soundHitBody8</item>
+      <item>0.125</item>
+    </hitMan>
+    <hitArmor type="array">
+      <item>soundVehiclePlate1</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate2</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate3</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate4</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate5</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate6</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate7</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate8</item>
+      <item>0.125</item>
+    </hitArmor>
+    <hitBuilding type="array">
+      <item>soundHitBuilding1</item>
+      <item>0.125</item>
+      <item>soundHitBuilding2</item>
+      <item>0.125</item>
+      <item>soundHitBuilding3</item>
+      <item>0.125</item>
+      <item>soundHitBuilding4</item>
+      <item>0.125</item>
+      <item>soundHitBuilding5</item>
+      <item>0.125</item>
+      <item>soundHitBuilding6</item>
+      <item>0.125</item>
+      <item>soundHitBuilding7</item>
+      <item>0.125</item>
+      <item>soundHitBuilding8</item>
+      <item>0.125</item>
+    </hitBuilding>
+    <hitFoliage type="array">
+      <item>soundHitFoliage1</item>
+      <item>0.125</item>
+      <item>soundHitFoliage2</item>
+      <item>0.125</item>
+      <item>soundHitFoliage3</item>
+      <item>0.125</item>
+      <item>soundHitFoliage4</item>
+      <item>0.125</item>
+      <item>soundHitFoliage5</item>
+      <item>0.125</item>
+      <item>soundHitFoliage6</item>
+      <item>0.125</item>
+      <item>soundHitFoliage7</item>
+      <item>0.125</item>
+      <item>soundHitFoliage8</item>
+      <item>0.125</item>
+    </hitFoliage>
+    <hitWood type="array">
+      <item>soundWood1</item>
+      <item>0.125</item>
+      <item>soundWood2</item>
+      <item>0.125</item>
+      <item>soundWood3</item>
+      <item>0.125</item>
+      <item>soundWood4</item>
+      <item>0.125</item>
+      <item>soundWood5</item>
+      <item>0.125</item>
+      <item>soundWood6</item>
+      <item>0.125</item>
+      <item>soundWood7</item>
+      <item>0.125</item>
+      <item>soundWood8</item>
+      <item>0.125</item>
+    </hitWood>
+    <hitGlass type="array">
+      <item>soundGlass1</item>
+      <item>0.125</item>
+      <item>soundGlass2</item>
+      <item>0.125</item>
+      <item>soundGlass3</item>
+      <item>0.125</item>
+      <item>soundGlass4</item>
+      <item>0.125</item>
+      <item>soundGlass5</item>
+      <item>0.125</item>
+      <item>soundGlass6</item>
+      <item>0.125</item>
+      <item>soundGlass7</item>
+      <item>0.125</item>
+      <item>soundGlass8</item>
+      <item>0.125</item>
+    </hitGlass>
+    <hitGlassArmored type="array">
+      <item>soundGlassArmored1</item>
+      <item>0.125</item>
+      <item>soundGlassArmored2</item>
+      <item>0.125</item>
+      <item>soundGlassArmored3</item>
+      <item>0.125</item>
+      <item>soundGlassArmored4</item>
+      <item>0.125</item>
+      <item>soundGlassArmored5</item>
+      <item>0.125</item>
+      <item>soundGlassArmored6</item>
+      <item>0.125</item>
+      <item>soundGlassArmored7</item>
+      <item>0.125</item>
+      <item>soundGlassArmored8</item>
+      <item>0.125</item>
+    </hitGlassArmored>
+    <hitConcrete type="array">
+      <item>soundConcrete1</item>
+      <item>0.125</item>
+      <item>soundConcrete2</item>
+      <item>0.125</item>
+      <item>soundConcrete3</item>
+      <item>0.125</item>
+      <item>soundConcrete4</item>
+      <item>0.125</item>
+      <item>soundConcrete5</item>
+      <item>0.125</item>
+      <item>soundConcrete6</item>
+      <item>0.125</item>
+      <item>soundConcrete7</item>
+      <item>0.125</item>
+      <item>soundConcrete8</item>
+      <item>0.125</item>
+    </hitConcrete>
+    <hitRubber type="array">
+      <item>soundRubber1</item>
+      <item>0.25</item>
+      <item>soundRubber2</item>
+      <item>0.25</item>
+      <item>soundRubber3</item>
+      <item>0.25</item>
+      <item>soundRubber4</item>
+      <item>0.25</item>
+    </hitRubber>
+    <hitPlastic type="array">
+      <item>soundPlastic1</item>
+      <item>0.125</item>
+      <item>soundPlastic2</item>
+      <item>0.125</item>
+      <item>soundPlastic3</item>
+      <item>0.125</item>
+      <item>soundPlastic4</item>
+      <item>0.125</item>
+      <item>soundPlastic5</item>
+      <item>0.125</item>
+      <item>soundPlastic6</item>
+      <item>0.125</item>
+      <item>soundPlastic7</item>
+      <item>0.125</item>
+      <item>soundPlastic8</item>
+      <item>0.125</item>
+    </hitPlastic>
+    <hitDefault type="array">
+      <item>soundDefault1</item>
+      <item>0.125</item>
+      <item>soundDefault2</item>
+      <item>0.125</item>
+      <item>soundDefault3</item>
+      <item>0.125</item>
+      <item>soundDefault4</item>
+      <item>0.125</item>
+      <item>soundDefault5</item>
+      <item>0.125</item>
+      <item>soundDefault6</item>
+      <item>0.125</item>
+      <item>soundDefault7</item>
+      <item>0.125</item>
+      <item>soundDefault8</item>
+      <item>0.125</item>
+    </hitDefault>
+    <hitMetal type="array">
+      <item>soundMetal1</item>
+      <item>0.125</item>
+      <item>soundMetal2</item>
+      <item>0.125</item>
+      <item>soundMetal3</item>
+      <item>0.125</item>
+      <item>soundMetal4</item>
+      <item>0.125</item>
+      <item>soundMetal5</item>
+      <item>0.125</item>
+      <item>soundMetal6</item>
+      <item>0.125</item>
+      <item>soundMetal7</item>
+      <item>0.125</item>
+      <item>soundMetal8</item>
+      <item>0.125</item>
+    </hitMetal>
+    <hitMetalplate type="array">
+      <item>soundVehiclePlate1</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate2</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate3</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate4</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate5</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate6</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate7</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate8</item>
+      <item>0.125</item>
+    </hitMetalplate>
+    <hitWater type="array">
+      <item>soundWater1</item>
+      <item>0.125</item>
+      <item>soundWater2</item>
+      <item>0.125</item>
+      <item>soundWater3</item>
+      <item>0.125</item>
+      <item>soundWater4</item>
+      <item>0.125</item>
+      <item>soundWater5</item>
+      <item>0.125</item>
+      <item>soundWater6</item>
+      <item>0.125</item>
+      <item>soundWater7</item>
+      <item>0.125</item>
+      <item>soundWater8</item>
+      <item>0.125</item>
+    </hitWater>
+    <soundSetBulletFly type="array"><item>bulletFlyBy_SoundSet</item></soundSetBulletFly>
+    <impactBehaviour>1</impactBehaviour>
+    <SoundSetsGroundHits>
+      <default type="array"><item>Shell_12ga_default_SoundSet</item></default>
+      <asphalt_ext type="array"><item>Shell_12ga_default_SoundSet</item></asphalt_ext>
+      <asphalt_destroyed_ext type="array"><item>Shell_12ga_default_SoundSet</item></asphalt_destroyed_ext>
+      <asphalt_int type="array"><item>Shell_12ga_default_int_SoundSet</item></asphalt_int>
+      <asphalt_destroyed_int type="array"><item>Shell_12ga_default_int_SoundSet</item></asphalt_destroyed_int>
+      <asphalt_felt type="array"><item>Shell_12ga_default_SoundSet</item></asphalt_felt>
+      <asphalt_felt_int type="array"><item>Shell_12ga_default_int_SoundSet</item></asphalt_felt_int>
+      <cp_broadleaf_dense1 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_broadleaf_dense1>
+      <cp_broadleaf_dense2 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_broadleaf_dense2>
+      <cp_broadleaf_sparse1 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_broadleaf_sparse1>
+      <cp_broadleaf_sparse2 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_broadleaf_sparse2>
+      <cp_conifer_common1 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_conifer_common1>
+      <cp_conifer_common2 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_conifer_common2>
+      <cp_conifer_moss1 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_conifer_moss1>
+      <cp_conifer_moss2 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_conifer_moss2>
+      <cp_concrete1 type="array"><item>Shell_12ga_default_SoundSet</item></cp_concrete1>
+      <cp_concrete2 type="array"><item>Shell_12ga_default_SoundSet</item></cp_concrete2>
+      <concrete_ext type="array"><item>Shell_12ga_default_SoundSet</item></concrete_ext>
+      <concrete_stairs_ext type="array"><item>Shell_12ga_default_SoundSet</item></concrete_stairs_ext>
+      <concrete_int type="array"><item>Shell_12ga_default_int_SoundSet</item></concrete_int>
+      <concrete_stairs type="array"><item>Shell_12ga_default_SoundSet</item></concrete_stairs>
+      <ceramic_tiles_ext type="array"><item>Shell_12ga_default_SoundSet</item></ceramic_tiles_ext>
+      <ceramic_tiles_int type="array"><item>Shell_12ga_default_SoundSet</item></ceramic_tiles_int>
+      <ceramic_tiles_roof_ext type="array"><item>Shell_12ga_default_SoundSet</item></ceramic_tiles_roof_ext>
+      <ceramic_tiles_roof_int type="array"><item>Shell_12ga_default_SoundSet</item></ceramic_tiles_roof_int>
+      <cp_dirt type="array"><item>Shell_12ga_dirt_SoundSet</item></cp_dirt>
+      <dirt_ext type="array"><item>Shell_12ga_dirt_SoundSet</item></dirt_ext>
+      <dirt_int type="array"><item>Shell_12ga_dirt_int_SoundSet</item></dirt_int>
+      <cp_grass type="array"><item>Shell_12ga_grass_SoundSet</item></cp_grass>
+      <grass_dry_ext type="array"><item>Shell_12ga_grass_SoundSet</item></grass_dry_ext>
+      <grass_dry_int type="array"><item>Shell_12ga_grass_int_SoundSet</item></grass_dry_int>
+      <cp_grass_tall type="array"><item>Shell_12ga_grass_SoundSet</item></cp_grass_tall>
+      <cp_gravel type="array"><item>Shell_12ga_gravel_SoundSet</item></cp_gravel>
+      <gravel_small_ext type="array"><item>Shell_12ga_gravel_SoundSet</item></gravel_small_ext>
+      <gravel_small_int type="array"><item>Shell_12ga_gravel_int_SoundSet</item></gravel_small_int>
+      <gravel_large_ext type="array"><item>Shell_12ga_gravel_SoundSet</item></gravel_large_ext>
+      <gravel_large_int type="array"><item>Shell_12ga_gravel_int_SoundSet</item></gravel_large_int>
+      <lino_ext type="array"><item>Shell_12ga_default_SoundSet</item></lino_ext>
+      <lino_int type="array"><item>Shell_12ga_default_SoundSet</item></lino_int>
+      <metal_thick_ext type="array"><item>Shell_12ga_metal_SoundSet</item></metal_thick_ext>
+      <metal_stairs_ext type="array"><item>Shell_12ga_metal_SoundSet</item></metal_stairs_ext>
+      <metal_thick_int type="array"><item>Shell_12ga_metal_int_SoundSet</item></metal_thick_int>
+      <metal_thin_ext type="array"><item>Shell_12ga_metal_SoundSet</item></metal_thin_ext>
+      <metal_thin_int type="array"><item>Shell_12ga_metal_int_SoundSet</item></metal_thin_int>
+      <metal_thin_mesh_ext type="array"><item>Shell_12ga_metal_SoundSet</item></metal_thin_mesh_ext>
+      <metal_thin_mesh_int type="array"><item>Shell_12ga_metal_int_SoundSet</item></metal_thin_mesh_int>
+      <cp_rock type="array"><item>Shell_12ga_default_SoundSet</item></cp_rock>
+      <rubble_large_ext type="array"><item>Shell_12ga_gravel_SoundSet</item></rubble_large_ext>
+      <rubble_large_int type="array"><item>Shell_12ga_gravel_SoundSet</item></rubble_large_int>
+      <rubble_small_ext type="array"><item>Shell_12ga_gravel_SoundSet</item></rubble_small_ext>
+      <rubble_small_int type="array"><item>Shell_12ga_gravel_SoundSet</item></rubble_small_int>
+      <sand_ext type="array"><item>Shell_12ga_sand_SoundSet</item></sand_ext>
+      <sand_int type="array"><item>Shell_12ga_sand_int_SoundSet</item></sand_int>
+      <stone_ext type="array"><item>Shell_12ga_sand_SoundSet</item></stone_ext>
+      <stone_int type="array"><item>Shell_12ga_sand_int_SoundSet</item></stone_int>
+      <textile_carpet_ext type="array"><item>Shell_12ga_carpet_SoundSet</item></textile_carpet_ext>
+      <textile_carpet_int type="array"><item>Shell_12ga_carpet_int_SoundSet</item></textile_carpet_int>
+      <trash_ext type="array"><item>Shell_12ga_default_SoundSet</item></trash_ext>
+      <trash_int type="array"><item>Shell_12ga_default_SoundSet</item></trash_int>
+      <wood_parquet_ext type="array"><item>Shell_12ga_wood_SoundSet</item></wood_parquet_ext>
+      <wood_parquet_int type="array"><item>Shell_12ga_wood_int_SoundSet</item></wood_parquet_int>
+      <wood_planks_ext type="array"><item>Shell_12ga_wood_SoundSet</item></wood_planks_ext>
+      <wood_planks_stairs_ext type="array"><item>Shell_12ga_wood_SoundSet</item></wood_planks_stairs_ext>
+      <wood_planks_int type="array"><item>Shell_12ga_wood_int_SoundSet</item></wood_planks_int>
+      <wood_planks_stairs_int type="array"><item>Shell_12ga_wood_int_SoundSet</item></wood_planks_stairs_int>
+      <fresh_water_ext type="array"><item>Shell_12ga_water_SoundSet</item></fresh_water_ext>
+      <fresh_water_int type="array"><item>Shell_12ga_water_int_SoundSet</item></fresh_water_int>
+      <water_int type="array"><item>Shell_12ga_water_int_SoundSet</item></water_int>
+      <water type="array"><item>Shell_12ga_water_int_SoundSet</item></water>
+    </SoundSetsGroundHits>
+    <damageBarrel>100</damageBarrel>
+    <damageBarrelDestroyed>100</damageBarrelDestroyed>
+    <unconRefillModifier>2.75</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.5</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>99</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"></item></item>
+            <item type="array"><item>0.7</item><item type="array"></item></item>
+            <item type="array"><item>0.5</item><item type="array"></item></item>
+            <item type="array"><item>0.3</item><item type="array"></item></item>
+            <item type="array"><item>0</item><item type="array"></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Shotgun_Base>
+  <Bullet_12GaugePellets base="Shotgun_Base">
+    <scope>1</scope>
+    <proxyShape>
+      \dz\weapons\projectiles\shotgunshell_pellets.p3d
+    </proxyShape>
+    <muzzleFlashParticle>weapon_shot_pellets</muzzleFlashParticle>
+    <casing>FxCartridge_12Pellet</casing>
+    <round>FxRound_12Pellet</round>
+    <spawnPileType>Ammo_12gaPellets</spawnPileType>
+    <initSpeed>340</initSpeed>
+    <typicalSpeed>420</typicalSpeed>
+    <airFriction>-0.00575</airFriction>
+    <caliber>0.5</caliber>
+    <deflecting>0</deflecting>
+    <dispersion>0.05</dispersion>
+    <projectilesCount>8</projectilesCount>
+    <damageBarrel>600</damageBarrel>
+    <damageBarrelDestroyed>600</damageBarrelDestroyed>
+    <weight>0.005</weight>
+    <impactBehaviour>0</impactBehaviour>
+    <hitAnimation>0</hitAnimation>
+    <unconRefillModifier>1.75</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.9</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>35</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>35</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>2</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_12GaugePellets>
+  <Bullet_12GaugeSlug base="Bullet_Base">
+    <scope>1</scope>
+    <proxyShape>
+      \dz\weapons\projectiles\shotgunshell_slug.p3d
+    </proxyShape>
+    <casing>FxCartridge_12Slug</casing>
+    <round>FxRound_12Slug</round>
+    <spawnPileType>Ammo_12gaSlug</spawnPileType>
+    <hit>11</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <initSpeed>380</initSpeed>
+    <typicalSpeed>420</typicalSpeed>
+    <airFriction>-0.005</airFriction>
+    <caliber>1</caliber>
+    <deflecting>0</deflecting>
+    <damageBarrel>600</damageBarrel>
+    <damageBarrelDestroyed>600</damageBarrelDestroyed>
+    <weight>0.028</weight>
+    <impactBehaviour>0</impactBehaviour>
+    <hitAnimation>1</hitAnimation>
+    <unconRefillModifier>1.75</unconRefillModifier>
+    <SoundSetsGroundHits>
+      <default type="array"><item>Shell_12ga_default_SoundSet</item></default>
+      <asphalt_ext type="array"><item>Shell_12ga_default_SoundSet</item></asphalt_ext>
+      <asphalt_destroyed_ext type="array"><item>Shell_12ga_default_SoundSet</item></asphalt_destroyed_ext>
+      <asphalt_int type="array"><item>Shell_12ga_default_int_SoundSet</item></asphalt_int>
+      <asphalt_destroyed_int type="array"><item>Shell_12ga_default_int_SoundSet</item></asphalt_destroyed_int>
+      <asphalt_felt type="array"><item>Shell_12ga_default_SoundSet</item></asphalt_felt>
+      <asphalt_felt_int type="array"><item>Shell_12ga_default_int_SoundSet</item></asphalt_felt_int>
+      <cp_broadleaf_dense1 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_broadleaf_dense1>
+      <cp_broadleaf_dense2 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_broadleaf_dense2>
+      <cp_broadleaf_sparse1 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_broadleaf_sparse1>
+      <cp_broadleaf_sparse2 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_broadleaf_sparse2>
+      <cp_conifer_common1 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_conifer_common1>
+      <cp_conifer_common2 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_conifer_common2>
+      <cp_conifer_moss1 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_conifer_moss1>
+      <cp_conifer_moss2 type="array"><item>Shell_12ga_leaves_SoundSet</item></cp_conifer_moss2>
+      <cp_concrete1 type="array"><item>Shell_12ga_default_SoundSet</item></cp_concrete1>
+      <cp_concrete2 type="array"><item>Shell_12ga_default_SoundSet</item></cp_concrete2>
+      <concrete_ext type="array"><item>Shell_12ga_default_SoundSet</item></concrete_ext>
+      <concrete_stairs_ext type="array"><item>Shell_12ga_default_SoundSet</item></concrete_stairs_ext>
+      <concrete_int type="array"><item>Shell_12ga_default_int_SoundSet</item></concrete_int>
+      <concrete_stairs type="array"><item>Shell_12ga_default_SoundSet</item></concrete_stairs>
+      <ceramic_tiles_ext type="array"><item>Shell_12ga_default_SoundSet</item></ceramic_tiles_ext>
+      <ceramic_tiles_int type="array"><item>Shell_12ga_default_SoundSet</item></ceramic_tiles_int>
+      <ceramic_tiles_roof_ext type="array"><item>Shell_12ga_default_SoundSet</item></ceramic_tiles_roof_ext>
+      <ceramic_tiles_roof_int type="array"><item>Shell_12ga_default_SoundSet</item></ceramic_tiles_roof_int>
+      <cp_dirt type="array"><item>Shell_12ga_dirt_SoundSet</item></cp_dirt>
+      <dirt_ext type="array"><item>Shell_12ga_dirt_SoundSet</item></dirt_ext>
+      <dirt_int type="array"><item>Shell_12ga_dirt_int_SoundSet</item></dirt_int>
+      <cp_grass type="array"><item>Shell_12ga_grass_SoundSet</item></cp_grass>
+      <grass_dry_ext type="array"><item>Shell_12ga_grass_SoundSet</item></grass_dry_ext>
+      <grass_dry_int type="array"><item>Shell_12ga_grass_int_SoundSet</item></grass_dry_int>
+      <cp_grass_tall type="array"><item>Shell_12ga_grass_SoundSet</item></cp_grass_tall>
+      <cp_gravel type="array"><item>Shell_12ga_gravel_SoundSet</item></cp_gravel>
+      <gravel_small_ext type="array"><item>Shell_12ga_gravel_SoundSet</item></gravel_small_ext>
+      <gravel_small_int type="array"><item>Shell_12ga_gravel_int_SoundSet</item></gravel_small_int>
+      <gravel_large_ext type="array"><item>Shell_12ga_gravel_SoundSet</item></gravel_large_ext>
+      <gravel_large_int type="array"><item>Shell_12ga_gravel_int_SoundSet</item></gravel_large_int>
+      <lino_ext type="array"><item>Shell_12ga_default_SoundSet</item></lino_ext>
+      <lino_int type="array"><item>Shell_12ga_default_SoundSet</item></lino_int>
+      <metal_thick_ext type="array"><item>Shell_12ga_metal_SoundSet</item></metal_thick_ext>
+      <metal_stairs_ext type="array"><item>Shell_12ga_metal_SoundSet</item></metal_stairs_ext>
+      <metal_thick_int type="array"><item>Shell_12ga_metal_int_SoundSet</item></metal_thick_int>
+      <metal_thin_ext type="array"><item>Shell_12ga_metal_SoundSet</item></metal_thin_ext>
+      <metal_thin_int type="array"><item>Shell_12ga_metal_int_SoundSet</item></metal_thin_int>
+      <metal_thin_mesh_ext type="array"><item>Shell_12ga_metal_SoundSet</item></metal_thin_mesh_ext>
+      <metal_thin_mesh_int type="array"><item>Shell_12ga_metal_int_SoundSet</item></metal_thin_mesh_int>
+      <cp_rock type="array"><item>Shell_12ga_default_SoundSet</item></cp_rock>
+      <rubble_large_ext type="array"><item>Shell_12ga_gravel_SoundSet</item></rubble_large_ext>
+      <rubble_large_int type="array"><item>Shell_12ga_gravel_SoundSet</item></rubble_large_int>
+      <rubble_small_ext type="array"><item>Shell_12ga_gravel_SoundSet</item></rubble_small_ext>
+      <rubble_small_int type="array"><item>Shell_12ga_gravel_SoundSet</item></rubble_small_int>
+      <sand_ext type="array"><item>Shell_12ga_sand_SoundSet</item></sand_ext>
+      <sand_int type="array"><item>Shell_12ga_sand_int_SoundSet</item></sand_int>
+      <stone_ext type="array"><item>Shell_12ga_sand_SoundSet</item></stone_ext>
+      <stone_int type="array"><item>Shell_12ga_sand_int_SoundSet</item></stone_int>
+      <textile_carpet_ext type="array"><item>Shell_12ga_carpet_SoundSet</item></textile_carpet_ext>
+      <textile_carpet_int type="array"><item>Shell_12ga_carpet_int_SoundSet</item></textile_carpet_int>
+      <trash_ext type="array"><item>Shell_12ga_default_SoundSet</item></trash_ext>
+      <trash_int type="array"><item>Shell_12ga_default_SoundSet</item></trash_int>
+      <wood_parquet_ext type="array"><item>Shell_12ga_wood_SoundSet</item></wood_parquet_ext>
+      <wood_parquet_int type="array"><item>Shell_12ga_wood_int_SoundSet</item></wood_parquet_int>
+      <wood_planks_ext type="array"><item>Shell_12ga_wood_SoundSet</item></wood_planks_ext>
+      <wood_planks_stairs_ext type="array"><item>Shell_12ga_wood_SoundSet</item></wood_planks_stairs_ext>
+      <wood_planks_int type="array"><item>Shell_12ga_wood_int_SoundSet</item></wood_planks_int>
+      <wood_planks_stairs_int type="array"><item>Shell_12ga_wood_int_SoundSet</item></wood_planks_stairs_int>
+      <fresh_water_ext type="array"><item>Shell_12ga_water_SoundSet</item></fresh_water_ext>
+      <fresh_water_int type="array"><item>Shell_12ga_water_int_SoundSet</item></fresh_water_int>
+      <water_int type="array"><item>Shell_12ga_water_int_SoundSet</item></water_int>
+      <water type="array"><item>Shell_12ga_water_int_SoundSet</item></water>
+    </SoundSetsGroundHits>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <Health>
+        <damage>110</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>110</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_12GaugeSlug>
+  <Bullet_12GaugeRubberSlug base="Bullet_12GaugeSlug">
+    <scope>1</scope>
+    <proxyShape>
+      \dz\weapons\projectiles\shotgunshell_rubber.p3d
+    </proxyShape>
+    <model>
+      \dz\weapons\projectiles\tracer_rubberslug.p3d
+    </model>
+    <casing>FxCartridge_12RubberSlug</casing>
+    <round>FxRound_12RubberSlug</round>
+    <spawnPileType>Ammo_12gaRubberSlug</spawnPileType>
+    <initSpeed>60</initSpeed>
+    <typicalSpeed>80</typicalSpeed>
+    <airFriction>-0.02</airFriction>
+    <caliber>0.1</caliber>
+    <deflecting>30</deflecting>
+    <damageBarrel>480</damageBarrel>
+    <damageBarrelDestroyed>480</damageBarrelDestroyed>
+    <weight>0.005</weight>
+    <unconRefillModifier>1.75</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0.05</dispersion>
+      <bleedThreshold>0</bleedThreshold>
+      <Health>
+        <damage>0</damage>
+      </Health>
+      <Blood>
+        <damage>0</damage>
+      </Blood>
+      <Shock>
+        <damage>150</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>2</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_12GaugeRubberSlug>
+  <Bullet_12GaugeBeanbag base="Bullet_12GaugeSlug">
+    <scope>1</scope>
+    <proxyShape>
+      \dz\weapons\projectiles\shotgunshell_beanbag.p3d
+    </proxyShape>
+    <model>
+      \dz\weapons\projectiles\tracer_beanbag.p3d
+    </model>
+    <casing>FxCartridge_12Beanbag</casing>
+    <round>FxRound_12Beanbag</round>
+    <spawnPileType>Ammo_12gaBeanbag</spawnPileType>
+    <initSpeed>240</initSpeed>
+    <typicalSpeed>240</typicalSpeed>
+    <airFriction>-0.006</airFriction>
+    <caliber>0.1</caliber>
+    <deflecting>30</deflecting>
+    <dispersion>0.05</dispersion>
+    <damageBarrel>500</damageBarrel>
+    <damageBarrelDestroyed>500</damageBarrelDestroyed>
+    <weight>0.005</weight>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0.1</dispersion>
+      <bleedThreshold>0</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.5</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>0</damage>
+      </Health>
+      <Blood>
+        <damage>0</damage>
+      </Blood>
+      <Shock>
+        <damage>100</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>2</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_12GaugeBeanbag>
+  <Bullet_556x45 base="Bullet_Base">
+    <scope>1</scope>
+    <spawnPileType>Ammo_556x45</spawnPileType>
+    <casing>FxCartridge_556</casing>
+    <round>FxRound_556</round>
+    <hit>8</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <initSpeed>850</initSpeed>
+    <typicalSpeed>1000</typicalSpeed>
+    <airFriction>-0.00125</airFriction>
+    <caliber>1</caliber>
+    <deflecting>10</deflecting>
+    <tracerScale>1</tracerScale>
+    <tracerStartTime>-1</tracerStartTime>
+    <tracerEndTime>1</tracerEndTime>
+    <nvgOnly>1</nvgOnly>
+    <damageBarrel>250</damageBarrel>
+    <damageBarrelDestroyed>250</damageBarrelDestroyed>
+    <weight>0.004</weight>
+    <impactBehaviour>0</impactBehaviour>
+    <hitAnimation>1</hitAnimation>
+    <unconRefillModifier>4</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.87</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>110</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>110</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_556x45>
+  <Bullet_556x45Tracer base="Bullet_556x45">
+    <scope>1</scope>
+    <model>\dz\weapons\projectiles\tracer_red.p3d</model>
+    <spawnPileType>Ammo_556x45Tracer</spawnPileType>
+    <tracerScale>1</tracerScale>
+    <tracerStartTime>0.075</tracerStartTime>
+    <tracerEndTime>3</tracerEndTime>
+  </Bullet_556x45Tracer>
+  <Bullet_545x39 base="Bullet_Base">
+    <scope>1</scope>
+    <spawnPileType>Ammo_545x39</spawnPileType>
+    <casing>FxCartridge_556</casing>
+    <round>FxRound_556</round>
+    <hit>7.2</hit>
+    <airFriction>-0.00125</airFriction>
+    <typicalSpeed>880</typicalSpeed>
+    <initSpeed>880</initSpeed>
+    <caliber>0.9</caliber>
+    <deflecting>10</deflecting>
+    <damageBarrel>214.286</damageBarrel>
+    <damageBarrelDestroyed>214.286</damageBarrelDestroyed>
+    <weight>0.00343</weight>
+    <impactBehaviour>0</impactBehaviour>
+    <hitAnimation>1</hitAnimation>
+    <unconRefillModifier>4</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <Health>
+        <damage>115</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>115</damage>
+        <damageOverride type="array"><item type="array"><item>0.9</item><item>1</item></item></damageOverride>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_545x39>
+  <Bullet_545x39Tracer base="Bullet_545x39">
+    <scope>1</scope>
+    <model>\dz\weapons\projectiles\tracer_green.p3d</model>
+    <spawnPileType>Ammo_545x39Tracer</spawnPileType>
+    <tracerScale>1.2</tracerScale>
+    <tracerStartTime>0.075</tracerStartTime>
+    <tracerEndTime>3</tracerEndTime>
+  </Bullet_545x39Tracer>
+  <Bullet_762x54 base="Bullet_Base">
+    <scope>1</scope>
+    <casing>FxCartridge_762</casing>
+    <round>FxRound_762</round>
+    <spawnPileType>Ammo_762x54</spawnPileType>
+    <hit>12</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <airLock>1</airLock>
+    <initSpeed>785</initSpeed>
+    <typicalSpeed>865</typicalSpeed>
+    <airFriction>-0.001</airFriction>
+    <caliber>1</caliber>
+    <deflecting>10</deflecting>
+    <damageBarrel>500</damageBarrel>
+    <damageBarrelDestroyed>500</damageBarrelDestroyed>
+    <weight>0.012</weight>
+    <impactBehaviour>1</impactBehaviour>
+    <hitAnimation>1</hitAnimation>
+    <unconRefillModifier>2.75</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.94</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>150</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>150</damage>
+        <damageOverride type="array"><item type="array"><item>0.86</item><item>1</item></item></damageOverride>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_762x54>
+  <Bullet_762x54Tracer base="Bullet_762x54">
+    <scope>1</scope>
+    <model>\dz\weapons\projectiles\tracer_green.p3d</model>
+    <spawnPileType>Ammo_762x54Tracer</spawnPileType>
+    <tracerScale>1.2</tracerScale>
+    <tracerStartTime>0.075</tracerStartTime>
+    <tracerEndTime>3</tracerEndTime>
+  </Bullet_762x54Tracer>
+  <Bullet_308Win base="Bullet_Base">
+    <scope>1</scope>
+    <casing>FxCartridge_762</casing>
+    <round>FxRound_308Win</round>
+    <spawnPileType>Ammo_308Win</spawnPileType>
+    <hit>12</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <airLock>1</airLock>
+    <initSpeed>770</initSpeed>
+    <typicalSpeed>940</typicalSpeed>
+    <tracerScale>1.2</tracerScale>
+    <tracerStartTime>-1</tracerStartTime>
+    <tracerEndTime>1</tracerEndTime>
+    <airFriction>-0.001</airFriction>
+    <caliber>1</caliber>
+    <deflecting>10</deflecting>
+    <damageBarrel>500</damageBarrel>
+    <damageBarrelDestroyed>500</damageBarrelDestroyed>
+    <weight>0.01</weight>
+    <impactBehaviour>1</impactBehaviour>
+    <hitAnimation>1</hitAnimation>
+    <unconRefillModifier>2.75</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.9</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>150</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>150</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_308Win>
+  <Bullet_308WinTracer base="Bullet_308Win">
+    <scope>1</scope>
+    <model>\dz\weapons\projectiles\tracer_red.p3d</model>
+    <spawnPileType>Ammo_308WinTracer</spawnPileType>
+    <tracerScale>1.2</tracerScale>
+    <tracerStartTime>0.075</tracerStartTime>
+    <tracerEndTime>3</tracerEndTime>
+  </Bullet_308WinTracer>
+  <Bullet_762x39 base="Bullet_Base">
+    <scope>1</scope>
+    <casing>FxCartridge_762x39</casing>
+    <round>FxRound_762x39</round>
+    <spawnPileType>Ammo_762x39</spawnPileType>
+    <hit>9.5</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <airLock>1</airLock>
+    <initSpeed>640</initSpeed>
+    <typicalSpeed>740</typicalSpeed>
+    <airFriction>-0.0015</airFriction>
+    <caliber>1</caliber>
+    <deflecting>10</deflecting>
+    <damageBarrel>500</damageBarrel>
+    <damageBarrelDestroyed>500</damageBarrelDestroyed>
+    <weight>0.008</weight>
+    <impactBehaviour>0</impactBehaviour>
+    <hitAnimation>1</hitAnimation>
+    <unconRefillModifier>4</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.95</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>110</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>110</damage>
+        <damageOverride type="array"><item type="array"><item>0.8</item><item>1</item></item></damageOverride>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_762x39>
+  <Bullet_762x39Tracer base="Bullet_762x39">
+    <scope>1</scope>
+    <model>\dz\weapons\projectiles\tracer_green.p3d</model>
+    <spawnPileType>Ammo_762x39Tracer</spawnPileType>
+    <tracerScale>1.2</tracerScale>
+    <tracerStartTime>0.075</tracerStartTime>
+    <tracerEndTime>3</tracerEndTime>
+  </Bullet_762x39Tracer>
+  <Bullet_45ACP base="Bullet_Base">
+    <scope>1</scope>
+    <casing>FxCartridge_9mm</casing>
+    <round>FxRound_45acp</round>
+    <spawnPileType>Ammo_45ACP</spawnPileType>
+    <hit>0</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <tracerScale>1</tracerScale>
+    <caliber>0.8</caliber>
+    <deflecting>30</deflecting>
+    <initSpeed>260</initSpeed>
+    <typicalSpeed>290</typicalSpeed>
+    <airFriction>-0.001</airFriction>
+    <supersonicCrackNear type="array"></supersonicCrackNear>
+    <supersonicCrackFar type="array"></supersonicCrackFar>
+    <damageBarrel>187.5</damageBarrel>
+    <damageBarrelDestroyed>187.5</damageBarrelDestroyed>
+    <weight>0.0149</weight>
+    <impactBehaviour>0</impactBehaviour>
+    <hitAnimation>1</hitAnimation>
+    <unconRefillModifier>6</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <Health>
+        <damage>40</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>40</damage>
+        <damageOverride type="array"><item type="array"><item>0.9</item><item>1</item></item></damageOverride>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_45ACP>
+  <Bullet_357 base="Bullet_Base">
+    <scope>1</scope>
+    <casing>FxCartridge_357</casing>
+    <round>FxRound_357</round>
+    <spawnPileType>Ammo_357</spawnPileType>
+    <hit>9</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <tracerScale>1</tracerScale>
+    <caliber>1</caliber>
+    <deflecting>30</deflecting>
+    <airFriction>-0.0025</airFriction>
+    <typicalSpeed>520</typicalSpeed>
+    <initSpeed>440</initSpeed>
+    <damageBarrel>187.5</damageBarrel>
+    <damageBarrelDestroyed>187.5</damageBarrelDestroyed>
+    <weight>0.0102</weight>
+    <impactBehaviour>0</impactBehaviour>
+    <hitAnimation>1</hitAnimation>
+    <unconRefillModifier>2.75</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.85</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>65</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>90</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_357>
+  <Bullet_9x19 base="Bullet_Base">
+    <scope>1</scope>
+    <casing>FxCartridge_9mm</casing>
+    <round>FxRound_9mm</round>
+    <spawnPileType>Ammo_9x19</spawnPileType>
+    <hit>7</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <tracerScale>1</tracerScale>
+    <caliber>0.8</caliber>
+    <deflecting>30</deflecting>
+    <initSpeed>350</initSpeed>
+    <typicalSpeed>380</typicalSpeed>
+    <airFriction>-0.0023</airFriction>
+    <supersonicCrackNear type="array"></supersonicCrackNear>
+    <supersonicCrackFar type="array"></supersonicCrackFar>
+    <damageBarrel>166.667</damageBarrel>
+    <damageBarrelDestroyed>166.667</damageBarrelDestroyed>
+    <weight>0.0084</weight>
+    <impactBehaviour>0</impactBehaviour>
+    <hitAnimation>0</hitAnimation>
+    <unconRefillModifier>6</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.95</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>40</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>40</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_9x19>
+  <Bullet_380 base="Bullet_Base">
+    <scope>1</scope>
+    <casing>FxCartridge_9mm</casing>
+    <round>FxRound_9mm</round>
+    <spawnPileType>Ammo_380</spawnPileType>
+    <hit>5.5</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <tracerScale>1</tracerScale>
+    <caliber>0.8</caliber>
+    <deflecting>30</deflecting>
+    <initSpeed>300</initSpeed>
+    <typicalSpeed>345</typicalSpeed>
+    <airFriction>-0.0015</airFriction>
+    <supersonicCrackNear type="array"></supersonicCrackNear>
+    <supersonicCrackFar type="array"></supersonicCrackFar>
+    <damageBarrel>150</damageBarrel>
+    <damageBarrelDestroyed>150</damageBarrelDestroyed>
+    <weight>0.006</weight>
+    <hitAnimation>0</hitAnimation>
+    <unconRefillModifier>6</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <Health>
+        <damage>35</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>35</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_380>
+  <Bullet_22 base="Bullet_Base">
+    <scope>1</scope>
+    <casing>FxCartridge_22</casing>
+    <round>FxRound_22</round>
+    <spawnPileType>Ammo_22</spawnPileType>
+    <hit>4.5</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <tracerScale>0.6</tracerScale>
+    <tracerStartTime>-1</tracerStartTime>
+    <tracerEndTime>1</tracerEndTime>
+    <deflecting>30</deflecting>
+    <caliber>0.7</caliber>
+    <airFriction>-0.0025</airFriction>
+    <typicalSpeed>440</typicalSpeed>
+    <initSpeed>370</initSpeed>
+    <damageBarrel>115.385</damageBarrel>
+    <damageBarrelDestroyed>115.385</damageBarrelDestroyed>
+    <weight>0.0025</weight>
+    <soundFly type="array"></soundFly>
+    <supersonicCrackNear type="array"></supersonicCrackNear>
+    <supersonicCrackFar type="array"></supersonicCrackFar>
+    <unconRefillModifier>6</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.7</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>20</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>20</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_22>
+  <Bullet_9x39AP base="Bullet_Base">
+    <scope>1</scope>
+    <casing>FxCartridge_762x39</casing>
+    <round>FxRound_762x39</round>
+    <spawnPileType>Ammo_9x39AP</spawnPileType>
+    <hit>11</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <tracerScale>1</tracerScale>
+    <caliber>1.2</caliber>
+    <deflecting>15</deflecting>
+    <typicalSpeed>320</typicalSpeed>
+    <airFriction>-0.0015</airFriction>
+    <initSpeed>320</initSpeed>
+    <damageBarrel>250</damageBarrel>
+    <damageBarrelDestroyed>250</damageBarrelDestroyed>
+    <weight>0.018</weight>
+    <supersonicCrackNear type="array"></supersonicCrackNear>
+    <supersonicCrackFar type="array"></supersonicCrackFar>
+    <impactBehaviour>0</impactBehaviour>
+    <hitAnimation>1</hitAnimation>
+    <unconRefillModifier>4</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.95</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>75</damage>
+        <armorDamage>3</armorDamage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>75</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_9x39AP>
+  <Bullet_9x39 base="Bullet_Base">
+    <scope>1</scope>
+    <casing>FxCartridge_762x39</casing>
+    <round>FxRound_762x39</round>
+    <spawnPileType>Ammo_9x39</spawnPileType>
+    <hit>11</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <tracerScale>1</tracerScale>
+    <caliber>0.9</caliber>
+    <deflecting>20</deflecting>
+    <typicalSpeed>280</typicalSpeed>
+    <airFriction>-0.0015</airFriction>
+    <initSpeed>280</initSpeed>
+    <damageBarrel>250</damageBarrel>
+    <damageBarrelDestroyed>250</damageBarrelDestroyed>
+    <weight>0.017</weight>
+    <supersonicCrackNear type="array"></supersonicCrackNear>
+    <supersonicCrackFar type="array"></supersonicCrackFar>
+    <impactBehaviour>0</impactBehaviour>
+    <hitAnimation>1</hitAnimation>
+    <unconRefillModifier>4</unconRefillModifier>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <Health>
+        <damage>75</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>75</damage>
+        <damageOverride type="array"><item type="array"><item>0.9</item><item>1</item></item></damageOverride>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_9x39>
+  <Bolt_Base base="BulletCore">
+    <scope>0</scope>
+    <hit>8</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <model>\dz\weapons\projectiles\empty.p3d</model>
+    <soundFly type="array"><item></item><item>1e-08</item><item>1</item></soundFly>
+    <soundDefault1 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_1</item><item>10</item><item>1</item><item>80</item></soundDefault1>
+    <soundDefault2 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_2</item><item>10</item><item>1</item><item>80</item></soundDefault2>
+    <soundDefault3 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_3</item><item>10</item><item>1</item><item>80</item></soundDefault3>
+    <soundDefault4 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_4</item><item>10</item><item>1</item><item>80</item></soundDefault4>
+    <soundDefault5 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_5</item><item>10</item><item>1</item><item>80</item></soundDefault5>
+    <soundDefault6 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_6</item><item>10</item><item>1</item><item>80</item></soundDefault6>
+    <soundDefault7 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_7</item><item>10</item><item>1</item><item>80</item></soundDefault7>
+    <soundDefault8 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_8</item><item>10</item><item>1</item><item>80</item></soundDefault8>
+    <soundGroundSoft1 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_1</item><item>10</item><item>1</item><item>80</item></soundGroundSoft1>
+    <soundGroundSoft2 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_2</item><item>10</item><item>1</item><item>80</item></soundGroundSoft2>
+    <soundGroundSoft3 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_3</item><item>10</item><item>1</item><item>80</item></soundGroundSoft3>
+    <soundGroundSoft4 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_4</item><item>10</item><item>1</item><item>80</item></soundGroundSoft4>
+    <soundGroundSoft5 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_5</item><item>10</item><item>1</item><item>80</item></soundGroundSoft5>
+    <soundGroundSoft6 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_6</item><item>10</item><item>1</item><item>80</item></soundGroundSoft6>
+    <soundGroundSoft7 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_7</item><item>10</item><item>1</item><item>80</item></soundGroundSoft7>
+    <soundGroundSoft8 type="array"><item>dz\sounds\weapons\hits\arrow\soft_ground_8</item><item>10</item><item>1</item><item>80</item></soundGroundSoft8>
+    <soundGroundHard1 type="array"><item>dz\sounds\weapons\hits\arrow\hard_ground_1</item><item>10</item><item>1</item><item>80</item></soundGroundHard1>
+    <soundGroundHard2 type="array"><item>dz\sounds\weapons\hits\arrow\hard_ground_2</item><item>10</item><item>1</item><item>80</item></soundGroundHard2>
+    <soundGroundHard3 type="array"><item>dz\sounds\weapons\hits\arrow\hard_ground_3</item><item>10</item><item>1</item><item>80</item></soundGroundHard3>
+    <soundGroundHard4 type="array"><item>dz\sounds\weapons\hits\arrow\hard_ground_4</item><item>10</item><item>1</item><item>80</item></soundGroundHard4>
+    <soundGroundHard5 type="array"><item>dz\sounds\weapons\hits\arrow\hard_ground_5</item><item>10</item><item>1</item><item>80</item></soundGroundHard5>
+    <soundGroundHard6 type="array"><item>dz\sounds\weapons\hits\arrow\hard_ground_6</item><item>10</item><item>1</item><item>80</item></soundGroundHard6>
+    <soundGroundHard7 type="array"><item>dz\sounds\weapons\hits\arrow\hard_ground_7</item><item>10</item><item>1</item><item>80</item></soundGroundHard7>
+    <soundGroundHard8 type="array"><item>dz\sounds\weapons\hits\arrow\hard_ground_8</item><item>10</item><item>1</item><item>80</item></soundGroundHard8>
+    <soundMetal1 type="array"><item>dz\sounds\weapons\hits\arrow\metal_1</item><item>7</item><item>1</item><item>80</item></soundMetal1>
+    <soundMetal2 type="array"><item>dz\sounds\weapons\hits\arrow\metal_2</item><item>7</item><item>1</item><item>80</item></soundMetal2>
+    <soundMetal3 type="array"><item>dz\sounds\weapons\hits\arrow\metal_3</item><item>7</item><item>1</item><item>80</item></soundMetal3>
+    <soundMetal4 type="array"><item>dz\sounds\weapons\hits\arrow\metal_4</item><item>7</item><item>1</item><item>80</item></soundMetal4>
+    <soundMetal5 type="array"><item>dz\sounds\weapons\hits\arrow\metal_5</item><item>7</item><item>1</item><item>80</item></soundMetal5>
+    <soundMetal6 type="array"><item>dz\sounds\weapons\hits\arrow\metal_6</item><item>7</item><item>1</item><item>80</item></soundMetal6>
+    <soundMetal7 type="array"><item>dz\sounds\weapons\hits\arrow\metal_7</item><item>7</item><item>1</item><item>80</item></soundMetal7>
+    <soundMetal8 type="array"><item>dz\sounds\weapons\hits\arrow\metal_8</item><item>7</item><item>1</item><item>80</item></soundMetal8>
+    <soundGlass1 type="array"><item>dz\sounds\weapons\hits\arrow\glass_1</item><item>10</item><item>1</item><item>80</item></soundGlass1>
+    <soundGlass2 type="array"><item>dz\sounds\weapons\hits\arrow\glass_2</item><item>10</item><item>1</item><item>80</item></soundGlass2>
+    <soundGlass3 type="array"><item>dz\sounds\weapons\hits\arrow\glass_3</item><item>10</item><item>1</item><item>80</item></soundGlass3>
+    <soundGlass4 type="array"><item>dz\sounds\weapons\hits\arrow\glass_4</item><item>10</item><item>1</item><item>80</item></soundGlass4>
+    <soundGlass5 type="array"><item>dz\sounds\weapons\hits\arrow\glass_5</item><item>10</item><item>1</item><item>80</item></soundGlass5>
+    <soundGlass6 type="array"><item>dz\sounds\weapons\hits\arrow\glass_6</item><item>10</item><item>1</item><item>80</item></soundGlass6>
+    <soundGlass7 type="array"><item>dz\sounds\weapons\hits\arrow\glass_7</item><item>10</item><item>1</item><item>80</item></soundGlass7>
+    <soundGlass8 type="array"><item>dz\sounds\weapons\hits\arrow\glass_8</item><item>10</item><item>1</item><item>80</item></soundGlass8>
+    <soundGlassArmored1 type="array"><item>dz\sounds\weapons\hits\arrow\glass_arm_1</item><item>10</item><item>1</item><item>80</item></soundGlassArmored1>
+    <soundGlassArmored2 type="array"><item>dz\sounds\weapons\hits\arrow\glass_arm_2</item><item>10</item><item>1</item><item>80</item></soundGlassArmored2>
+    <soundGlassArmored3 type="array"><item>dz\sounds\weapons\hits\arrow\glass_arm_3</item><item>10</item><item>1</item><item>80</item></soundGlassArmored3>
+    <soundGlassArmored4 type="array"><item>dz\sounds\weapons\hits\arrow\glass_arm_4</item><item>10</item><item>1</item><item>80</item></soundGlassArmored4>
+    <soundGlassArmored5 type="array"><item>dz\sounds\weapons\hits\arrow\glass_arm_5</item><item>10</item><item>1</item><item>80</item></soundGlassArmored5>
+    <soundGlassArmored6 type="array"><item>dz\sounds\weapons\hits\arrow\glass_arm_6</item><item>10</item><item>1</item><item>80</item></soundGlassArmored6>
+    <soundGlassArmored7 type="array"><item>dz\sounds\weapons\hits\arrow\glass_arm_7</item><item>10</item><item>1</item><item>80</item></soundGlassArmored7>
+    <soundGlassArmored8 type="array"><item>dz\sounds\weapons\hits\arrow\glass_arm_8</item><item>10</item><item>1</item><item>80</item></soundGlassArmored8>
+    <soundVehiclePlate1 type="array"><item>dz\sounds\weapons\hits\arrow\metal_plate_1</item><item>7</item><item>1</item><item>80</item></soundVehiclePlate1>
+    <soundVehiclePlate2 type="array"><item>dz\sounds\weapons\hits\arrow\metal_plate_2</item><item>7</item><item>1</item><item>80</item></soundVehiclePlate2>
+    <soundVehiclePlate3 type="array"><item>dz\sounds\weapons\hits\arrow\metal_plate_3</item><item>7</item><item>1</item><item>80</item></soundVehiclePlate3>
+    <soundVehiclePlate4 type="array"><item>dz\sounds\weapons\hits\arrow\metal_plate_4</item><item>7</item><item>1</item><item>80</item></soundVehiclePlate4>
+    <soundVehiclePlate5 type="array"><item>dz\sounds\weapons\hits\arrow\metal_plate_5</item><item>7</item><item>1</item><item>80</item></soundVehiclePlate5>
+    <soundVehiclePlate6 type="array"><item>dz\sounds\weapons\hits\arrow\metal_plate_6</item><item>7</item><item>1</item><item>80</item></soundVehiclePlate6>
+    <soundVehiclePlate7 type="array"><item>dz\sounds\weapons\hits\arrow\metal_plate_7</item><item>7</item><item>1</item><item>80</item></soundVehiclePlate7>
+    <soundVehiclePlate8 type="array"><item>dz\sounds\weapons\hits\arrow\metal_plate_8</item><item>7</item><item>1</item><item>80</item></soundVehiclePlate8>
+    <soundWood1 type="array"><item>dz\sounds\weapons\hits\arrow\wood_1</item><item>7</item><item>1</item><item>80</item></soundWood1>
+    <soundWood2 type="array"><item>dz\sounds\weapons\hits\arrow\wood_2</item><item>7</item><item>1</item><item>80</item></soundWood2>
+    <soundWood3 type="array"><item>dz\sounds\weapons\hits\arrow\wood_3</item><item>7</item><item>1</item><item>80</item></soundWood3>
+    <soundWood4 type="array"><item>dz\sounds\weapons\hits\arrow\wood_4</item><item>7</item><item>1</item><item>80</item></soundWood4>
+    <soundWood5 type="array"><item>dz\sounds\weapons\hits\arrow\wood_5</item><item>7</item><item>1</item><item>80</item></soundWood5>
+    <soundWood6 type="array"><item>dz\sounds\weapons\hits\arrow\wood_6</item><item>7</item><item>1</item><item>80</item></soundWood6>
+    <soundWood7 type="array"><item>dz\sounds\weapons\hits\arrow\wood_7</item><item>7</item><item>1</item><item>80</item></soundWood7>
+    <soundWood8 type="array"><item>dz\sounds\weapons\hits\arrow\wood_8</item><item>7</item><item>1</item><item>80</item></soundWood8>
+    <soundHitBody1 type="array"><item>dz\sounds\weapons\hits\arrow\body_1</item><item>8</item><item>1</item><item>80</item></soundHitBody1>
+    <soundHitBody2 type="array"><item>dz\sounds\weapons\hits\arrow\body_2</item><item>8</item><item>1</item><item>80</item></soundHitBody2>
+    <soundHitBody3 type="array"><item>dz\sounds\weapons\hits\arrow\body_3</item><item>8</item><item>1</item><item>80</item></soundHitBody3>
+    <soundHitBody4 type="array"><item>dz\sounds\weapons\hits\arrow\body_4</item><item>8</item><item>1</item><item>80</item></soundHitBody4>
+    <soundHitBody5 type="array"><item>dz\sounds\weapons\hits\arrow\body_5</item><item>8</item><item>1</item><item>80</item></soundHitBody5>
+    <soundHitBody6 type="array"><item>dz\sounds\weapons\hits\arrow\body_6</item><item>8</item><item>1</item><item>80</item></soundHitBody6>
+    <soundHitBody7 type="array"><item>dz\sounds\weapons\hits\arrow\body_7</item><item>8</item><item>1</item><item>80</item></soundHitBody7>
+    <soundHitBody8 type="array"><item>dz\sounds\weapons\hits\arrow\body_8</item><item>8</item><item>1</item><item>80</item></soundHitBody8>
+    <soundHitBuilding1 type="array"><item>dz\sounds\weapons\hits\arrow\building_1</item><item>10</item><item>1</item><item>80</item></soundHitBuilding1>
+    <soundHitBuilding2 type="array"><item>dz\sounds\weapons\hits\arrow\building_2</item><item>10</item><item>1</item><item>80</item></soundHitBuilding2>
+    <soundHitBuilding3 type="array"><item>dz\sounds\weapons\hits\arrow\building_3</item><item>10</item><item>1</item><item>80</item></soundHitBuilding3>
+    <soundHitBuilding4 type="array"><item>dz\sounds\weapons\hits\arrow\building_4</item><item>10</item><item>1</item><item>80</item></soundHitBuilding4>
+    <soundHitBuilding5 type="array"><item>dz\sounds\weapons\hits\arrow\building_5</item><item>10</item><item>1</item><item>80</item></soundHitBuilding5>
+    <soundHitBuilding6 type="array"><item>dz\sounds\weapons\hits\arrow\building_6</item><item>10</item><item>1</item><item>80</item></soundHitBuilding6>
+    <soundHitBuilding7 type="array"><item>dz\sounds\weapons\hits\arrow\building_7</item><item>10</item><item>1</item><item>80</item></soundHitBuilding7>
+    <soundHitBuilding8 type="array"><item>dz\sounds\weapons\hits\arrow\building_8</item><item>10</item><item>1</item><item>80</item></soundHitBuilding8>
+    <soundHitFoliage1 type="array"><item>dz\sounds\weapons\hits\arrow\foliage_1</item><item>10</item><item>1</item><item>60</item></soundHitFoliage1>
+    <soundHitFoliage2 type="array"><item>dz\sounds\weapons\hits\arrow\foliage_2</item><item>10</item><item>1</item><item>60</item></soundHitFoliage2>
+    <soundHitFoliage3 type="array"><item>dz\sounds\weapons\hits\arrow\foliage_3</item><item>10</item><item>1</item><item>60</item></soundHitFoliage3>
+    <soundHitFoliage4 type="array"><item>dz\sounds\weapons\hits\arrow\foliage_4</item><item>10</item><item>1</item><item>60</item></soundHitFoliage4>
+    <soundHitFoliage5 type="array"><item>dz\sounds\weapons\hits\arrow\foliage_5</item><item>10</item><item>1</item><item>60</item></soundHitFoliage5>
+    <soundHitFoliage6 type="array"><item>dz\sounds\weapons\hits\arrow\foliage_6</item><item>10</item><item>1</item><item>60</item></soundHitFoliage6>
+    <soundHitFoliage7 type="array"><item>dz\sounds\weapons\hits\arrow\foliage_7</item><item>10</item><item>1</item><item>60</item></soundHitFoliage7>
+    <soundHitFoliage8 type="array"><item>dz\sounds\weapons\hits\arrow\foliage_8</item><item>10</item><item>1</item><item>60</item></soundHitFoliage8>
+    <soundPlastic1 type="array"><item>dz\sounds\weapons\hits\arrow\plastic_1</item><item>10</item><item>1</item><item>80</item></soundPlastic1>
+    <soundPlastic2 type="array"><item>dz\sounds\weapons\hits\arrow\plastic_2</item><item>10</item><item>1</item><item>80</item></soundPlastic2>
+    <soundPlastic3 type="array"><item>dz\sounds\weapons\hits\arrow\plastic_3</item><item>10</item><item>1</item><item>80</item></soundPlastic3>
+    <soundPlastic4 type="array"><item>dz\sounds\weapons\hits\arrow\plastic_4</item><item>10</item><item>1</item><item>80</item></soundPlastic4>
+    <soundPlastic5 type="array"><item>dz\sounds\weapons\hits\arrow\plastic_5</item><item>10</item><item>1</item><item>80</item></soundPlastic5>
+    <soundPlastic6 type="array"><item>dz\sounds\weapons\hits\arrow\plastic_6</item><item>10</item><item>1</item><item>80</item></soundPlastic6>
+    <soundPlastic7 type="array"><item>dz\sounds\weapons\hits\arrow\plastic_7</item><item>10</item><item>1</item><item>80</item></soundPlastic7>
+    <soundPlastic8 type="array"><item>dz\sounds\weapons\hits\arrow\plastic_8</item><item>10</item><item>1</item><item>80</item></soundPlastic8>
+    <soundConcrete1 type="array"><item>dz\sounds\weapons\hits\arrow\concrete_1</item><item>10</item><item>1</item><item>80</item></soundConcrete1>
+    <soundConcrete2 type="array"><item>dz\sounds\weapons\hits\arrow\concrete_2</item><item>10</item><item>1</item><item>80</item></soundConcrete2>
+    <soundConcrete3 type="array"><item>dz\sounds\weapons\hits\arrow\concrete_3</item><item>10</item><item>1</item><item>80</item></soundConcrete3>
+    <soundConcrete4 type="array"><item>dz\sounds\weapons\hits\arrow\concrete_4</item><item>10</item><item>1</item><item>80</item></soundConcrete4>
+    <soundConcrete5 type="array"><item>dz\sounds\weapons\hits\arrow\concrete_5</item><item>10</item><item>1</item><item>80</item></soundConcrete5>
+    <soundConcrete6 type="array"><item>dz\sounds\weapons\hits\arrow\concrete_6</item><item>10</item><item>1</item><item>80</item></soundConcrete6>
+    <soundConcrete7 type="array"><item>dz\sounds\weapons\hits\arrow\concrete_7</item><item>10</item><item>1</item><item>80</item></soundConcrete7>
+    <soundConcrete8 type="array"><item>dz\sounds\weapons\hits\arrow\concrete_8</item><item>10</item><item>1</item><item>80</item></soundConcrete8>
+    <soundRubber1 type="array"><item>dz\sounds\weapons\hits\arrow\tyre_1</item><item>10</item><item>1</item><item>80</item></soundRubber1>
+    <soundRubber2 type="array"><item>dz\sounds\weapons\hits\arrow\tyre_2</item><item>10</item><item>1</item><item>80</item></soundRubber2>
+    <soundRubber3 type="array"><item>dz\sounds\weapons\hits\arrow\tyre_3</item><item>10</item><item>1</item><item>80</item></soundRubber3>
+    <soundRubber4 type="array"><item>dz\sounds\weapons\hits\arrow\tyre_4</item><item>10</item><item>1</item><item>80</item></soundRubber4>
+    <soundRubber5 type="array"><item>dz\sounds\weapons\hits\arrow\tyre_5</item><item>10</item><item>1</item><item>80</item></soundRubber5>
+    <soundRubber6 type="array"><item>dz\sounds\weapons\hits\arrow\tyre_6</item><item>10</item><item>1</item><item>80</item></soundRubber6>
+    <soundRubber7 type="array"><item>dz\sounds\weapons\hits\arrow\tyre_7</item><item>10</item><item>1</item><item>80</item></soundRubber7>
+    <soundRubber8 type="array"><item>dz\sounds\weapons\hits\arrow\tyre_8</item><item>10</item><item>1</item><item>80</item></soundRubber8>
+    <soundWater1 type="array"><item>dz\sounds\weapons\hits\arrow\water_1</item><item>7</item><item>1</item><item>60</item></soundWater1>
+    <soundWater2 type="array"><item>dz\sounds\weapons\hits\arrow\water_2</item><item>7</item><item>1</item><item>60</item></soundWater2>
+    <soundWater3 type="array"><item>dz\sounds\weapons\hits\arrow\water_3</item><item>7</item><item>1</item><item>60</item></soundWater3>
+    <soundWater4 type="array"><item>dz\sounds\weapons\hits\arrow\water_4</item><item>7</item><item>1</item><item>60</item></soundWater4>
+    <soundWater5 type="array"><item>dz\sounds\weapons\hits\arrow\water_5</item><item>7</item><item>1</item><item>60</item></soundWater5>
+    <soundWater6 type="array"><item>dz\sounds\weapons\hits\arrow\water_6</item><item>7</item><item>1</item><item>60</item></soundWater6>
+    <soundWater7 type="array"><item>dz\sounds\weapons\hits\arrow\water_7</item><item>7</item><item>1</item><item>60</item></soundWater7>
+    <soundWater8 type="array"><item>dz\sounds\weapons\hits\arrow\water_8</item><item>7</item><item>1</item><item>60</item></soundWater8>
+    <hitGroundSoft type="array">
+      <item>soundGroundSoft1</item>
+      <item>0.125</item>
+      <item>soundGroundSoft2</item>
+      <item>0.125</item>
+      <item>soundGroundSoft3</item>
+      <item>0.125</item>
+      <item>soundGroundSoft4</item>
+      <item>0.125</item>
+      <item>soundGroundSoft5</item>
+      <item>0.125</item>
+      <item>soundGroundSoft6</item>
+      <item>0.125</item>
+      <item>soundGroundSoft7</item>
+      <item>0.125</item>
+      <item>soundGroundSoft8</item>
+      <item>0.125</item>
+    </hitGroundSoft>
+    <hitGroundHard type="array">
+      <item>soundGroundHard1</item>
+      <item>0.125</item>
+      <item>soundGroundHard2</item>
+      <item>0.125</item>
+      <item>soundGroundHard3</item>
+      <item>0.125</item>
+      <item>soundGroundHard4</item>
+      <item>0.125</item>
+      <item>soundGroundHard5</item>
+      <item>0.125</item>
+      <item>soundGroundHard6</item>
+      <item>0.125</item>
+      <item>soundGroundHard7</item>
+      <item>0.125</item>
+      <item>soundGroundHard8</item>
+      <item>0.125</item>
+    </hitGroundHard>
+    <hitMan type="array">
+      <item>soundHitBody1</item>
+      <item>0.125</item>
+      <item>soundHitBody2</item>
+      <item>0.125</item>
+      <item>soundHitBody3</item>
+      <item>0.125</item>
+      <item>soundHitBody4</item>
+      <item>0.125</item>
+      <item>soundHitBody5</item>
+      <item>0.125</item>
+      <item>soundHitBody6</item>
+      <item>0.125</item>
+      <item>soundHitBody7</item>
+      <item>0.125</item>
+      <item>soundHitBody8</item>
+      <item>0.125</item>
+    </hitMan>
+    <hitArmor type="array">
+      <item>soundVehiclePlate1</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate2</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate3</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate4</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate5</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate6</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate7</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate8</item>
+      <item>0.125</item>
+    </hitArmor>
+    <hitBuilding type="array">
+      <item>soundHitBuilding1</item>
+      <item>0.125</item>
+      <item>soundHitBuilding2</item>
+      <item>0.125</item>
+      <item>soundHitBuilding3</item>
+      <item>0.125</item>
+      <item>soundHitBuilding4</item>
+      <item>0.125</item>
+      <item>soundHitBuilding5</item>
+      <item>0.125</item>
+      <item>soundHitBuilding6</item>
+      <item>0.125</item>
+      <item>soundHitBuilding7</item>
+      <item>0.125</item>
+      <item>soundHitBuilding8</item>
+      <item>0.125</item>
+    </hitBuilding>
+    <hitFoliage type="array">
+      <item>soundHitFoliage1</item>
+      <item>0.125</item>
+      <item>soundHitFoliage2</item>
+      <item>0.125</item>
+      <item>soundHitFoliage3</item>
+      <item>0.125</item>
+      <item>soundHitFoliage4</item>
+      <item>0.125</item>
+      <item>soundHitFoliage5</item>
+      <item>0.125</item>
+      <item>soundHitFoliage6</item>
+      <item>0.125</item>
+      <item>soundHitFoliage7</item>
+      <item>0.125</item>
+      <item>soundHitFoliage8</item>
+      <item>0.125</item>
+    </hitFoliage>
+    <hitWood type="array">
+      <item>soundWood1</item>
+      <item>0.125</item>
+      <item>soundWood2</item>
+      <item>0.125</item>
+      <item>soundWood3</item>
+      <item>0.125</item>
+      <item>soundWood4</item>
+      <item>0.125</item>
+      <item>soundWood5</item>
+      <item>0.125</item>
+      <item>soundWood6</item>
+      <item>0.125</item>
+      <item>soundWood7</item>
+      <item>0.125</item>
+      <item>soundWood8</item>
+      <item>0.125</item>
+    </hitWood>
+    <hitGlass type="array">
+      <item>soundGlass1</item>
+      <item>0.125</item>
+      <item>soundGlass2</item>
+      <item>0.125</item>
+      <item>soundGlass3</item>
+      <item>0.125</item>
+      <item>soundGlass4</item>
+      <item>0.125</item>
+      <item>soundGlass5</item>
+      <item>0.125</item>
+      <item>soundGlass6</item>
+      <item>0.125</item>
+      <item>soundGlass7</item>
+      <item>0.125</item>
+      <item>soundGlass8</item>
+      <item>0.125</item>
+    </hitGlass>
+    <hitGlassArmored type="array">
+      <item>soundGlassArmored1</item>
+      <item>0.125</item>
+      <item>soundGlassArmored2</item>
+      <item>0.125</item>
+      <item>soundGlassArmored3</item>
+      <item>0.125</item>
+      <item>soundGlassArmored4</item>
+      <item>0.125</item>
+      <item>soundGlassArmored5</item>
+      <item>0.125</item>
+      <item>soundGlassArmored6</item>
+      <item>0.125</item>
+      <item>soundGlassArmored7</item>
+      <item>0.125</item>
+      <item>soundGlassArmored8</item>
+      <item>0.125</item>
+    </hitGlassArmored>
+    <hitConcrete type="array">
+      <item>soundConcrete1</item>
+      <item>0.125</item>
+      <item>soundConcrete2</item>
+      <item>0.125</item>
+      <item>soundConcrete3</item>
+      <item>0.125</item>
+      <item>soundConcrete4</item>
+      <item>0.125</item>
+      <item>soundConcrete5</item>
+      <item>0.125</item>
+      <item>soundConcrete6</item>
+      <item>0.125</item>
+      <item>soundConcrete7</item>
+      <item>0.125</item>
+      <item>soundConcrete8</item>
+      <item>0.125</item>
+    </hitConcrete>
+    <hitRubber type="array">
+      <item>soundRubber1</item>
+      <item>0.25</item>
+      <item>soundRubber2</item>
+      <item>0.25</item>
+      <item>soundRubber3</item>
+      <item>0.25</item>
+      <item>soundRubber4</item>
+      <item>0.25</item>
+    </hitRubber>
+    <hitPlastic type="array">
+      <item>soundPlastic1</item>
+      <item>0.125</item>
+      <item>soundPlastic2</item>
+      <item>0.125</item>
+      <item>soundPlastic3</item>
+      <item>0.125</item>
+      <item>soundPlastic4</item>
+      <item>0.125</item>
+      <item>soundPlastic5</item>
+      <item>0.125</item>
+      <item>soundPlastic6</item>
+      <item>0.125</item>
+      <item>soundPlastic7</item>
+      <item>0.125</item>
+      <item>soundPlastic8</item>
+      <item>0.125</item>
+    </hitPlastic>
+    <hitDefault type="array">
+      <item>soundDefault1</item>
+      <item>0.125</item>
+      <item>soundDefault2</item>
+      <item>0.125</item>
+      <item>soundDefault3</item>
+      <item>0.125</item>
+      <item>soundDefault4</item>
+      <item>0.125</item>
+      <item>soundDefault5</item>
+      <item>0.125</item>
+      <item>soundDefault6</item>
+      <item>0.125</item>
+      <item>soundDefault7</item>
+      <item>0.125</item>
+      <item>soundDefault8</item>
+      <item>0.125</item>
+    </hitDefault>
+    <hitMetal type="array">
+      <item>soundMetal1</item>
+      <item>0.125</item>
+      <item>soundMetal2</item>
+      <item>0.125</item>
+      <item>soundMetal3</item>
+      <item>0.125</item>
+      <item>soundMetal4</item>
+      <item>0.125</item>
+      <item>soundMetal5</item>
+      <item>0.125</item>
+      <item>soundMetal6</item>
+      <item>0.125</item>
+      <item>soundMetal7</item>
+      <item>0.125</item>
+      <item>soundMetal8</item>
+      <item>0.125</item>
+    </hitMetal>
+    <hitMetalplate type="array">
+      <item>soundVehiclePlate1</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate2</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate3</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate4</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate5</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate6</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate7</item>
+      <item>0.125</item>
+      <item>soundVehiclePlate8</item>
+      <item>0.125</item>
+    </hitMetalplate>
+    <hitWater type="array">
+      <item>soundWater1</item>
+      <item>0.125</item>
+      <item>soundWater2</item>
+      <item>0.125</item>
+      <item>soundWater3</item>
+      <item>0.125</item>
+      <item>soundWater4</item>
+      <item>0.125</item>
+      <item>soundWater5</item>
+      <item>0.125</item>
+      <item>soundWater6</item>
+      <item>0.125</item>
+      <item>soundWater7</item>
+      <item>0.125</item>
+      <item>soundWater8</item>
+      <item>0.125</item>
+    </hitWater>
+    <soundSetBulletFly type="array"><item>bulletFlyBy_SoundSet</item></soundSetBulletFly>
+    <soundSetSuperSonic type="array"><item>SuperSonicCrack_SoundSet</item><item>SuperSonicCrackTail_SoundSet</item></soundSetSuperSonic>
+    <supersonicCrackNear type="array"></supersonicCrackNear>
+    <supersonicCrackFar type="array"></supersonicCrackFar>
+    <unconRefillModifier>6</unconRefillModifier>
+    <casing>FxCartridge_556</casing>
+    <round>FxRound_556</round>
+    <timeToLive>20</timeToLive>
+    <tracerStartTime>-1</tracerStartTime>
+    <muzzleEffect>BIS_Effects_Rifle</muzzleEffect>
+    <damageBarrel>100</damageBarrel>
+    <damageBarrelDestroyed>100</damageBarrelDestroyed>
+    <SimulationScriptClass></SimulationScriptClass>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.5</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>99</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"></item></item>
+            <item type="array"><item>0.7</item><item type="array"></item></item>
+            <item type="array"><item>0.5</item><item type="array"></item></item>
+            <item type="array"><item>0.3</item><item type="array"></item></item>
+            <item type="array"><item>0</item><item type="array"></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Bolt_Base>
+  <Bullet_HuntingBolt base="Bolt_Base">
+    <scope>1</scope>
+    <model>\dz\weapons\projectiles\bolt_flying.p3d</model>
+    <proxyShape>\dz\weapons\projectiles\bolt_biggame.p3d</proxyShape>
+    <simulation>shotArrow</simulation>
+    <hit>12</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <casing></casing>
+    <round>FxRound_HuntingBolt</round>
+    <deflecting>25</deflecting>
+    <dispersion>0.0015</dispersion>
+    <initSpeed>105</initSpeed>
+    <typicalSpeed>105</typicalSpeed>
+    <caliber>3.1</caliber>
+    <airFriction>-0.0013</airFriction>
+    <weight>0.03</weight>
+    <impactBehaviour>1</impactBehaviour>
+    <hitAnimation>1</hitAnimation>
+    <unconRefillModifier>4</unconRefillModifier>
+    <spawnPileType>Ammo_HuntingBolt</spawnPileType>
+    <dmgPerUse>0.09</dmgPerUse>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array">
+        <item type="array"><item>0.98</item><item>0.96</item></item>
+        <item type="array"><item>0.961</item><item>0.96</item></item>
+        <item type="array"><item>0.935</item><item>0.925</item></item>
+        <item type="array"><item>0.905</item><item>0.71</item></item>
+        <item type="array"><item>0.87</item><item>0.56</item></item>
+      </defaultDamageOverride>
+      <Health>
+        <damage>125</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>95</damage>
+      </Shock>
+    </DamageApplied>
+  </Bullet_HuntingBolt>
+  <Bullet_ImprovisedBolt_1 base="Bolt_Base">
+    <scope>1</scope>
+    <model>\dz\weapons\projectiles\bolt_flying.p3d</model>
+    <proxyShape>\dz\weapons\projectiles\bolt_crude.p3d</proxyShape>
+    <simulation>shotArrow</simulation>
+    <hit>10</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <round>FxRound_ImprovisedBolt_1</round>
+    <deflecting>35</deflecting>
+    <dispersion>0.038</dispersion>
+    <initSpeed>85</initSpeed>
+    <typicalSpeed>85</typicalSpeed>
+    <caliber>1.19</caliber>
+    <airFriction>-0.01</airFriction>
+    <weight>0.045</weight>
+    <impactBehaviour>1</impactBehaviour>
+    <hitAnimation>1</hitAnimation>
+    <unconRefillModifier>4</unconRefillModifier>
+    <spawnPileType>Ammo_ImprovisedBolt_1</spawnPileType>
+    <dmgPerUse>0.2</dmgPerUse>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>0.55</bleedThreshold>
+      <defaultDamageOverride type="array">
+        <item type="array"><item>0.9</item><item>0.96</item></item>
+        <item type="array"><item>0.78</item><item>0.8</item></item>
+        <item type="array"><item>0.61</item><item>0.52</item></item>
+        <item type="array"><item>0.5</item><item>0.1</item></item>
+        <item type="array"><item>0.4</item><item>0</item></item>
+      </defaultDamageOverride>
+      <Health>
+        <damage>125</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>85</damage>
+      </Shock>
+    </DamageApplied>
+  </Bullet_ImprovisedBolt_1>
+  <Bullet_ImprovisedBolt_2 base="Bolt_Base">
+    <scope>1</scope>
+    <model>\dz\weapons\projectiles\bolt_flying.p3d</model>
+    <proxyShape>\dz\weapons\projectiles\bolt_crafted.p3d</proxyShape>
+    <simulation>shotArrow</simulation>
+    <hit>10</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <round>FxRound_ImprovisedBolt_2</round>
+    <deflecting>35</deflecting>
+    <dispersion>0.0065</dispersion>
+    <initSpeed>90</initSpeed>
+    <typicalSpeed>90</typicalSpeed>
+    <caliber>1.19</caliber>
+    <airFriction>-0.004</airFriction>
+    <weight>0.03</weight>
+    <impactBehaviour>1</impactBehaviour>
+    <hitAnimation>1</hitAnimation>
+    <unconRefillModifier>4</unconRefillModifier>
+    <spawnPileType>Ammo_ImprovisedBolt_2</spawnPileType>
+    <dmgPerUse>0.25</dmgPerUse>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>0.65</bleedThreshold>
+      <defaultDamageOverride type="array">
+        <item type="array"><item>0.965</item><item>0.96</item></item>
+        <item type="array"><item>0.905</item><item>0.81</item></item>
+        <item type="array"><item>0.8</item><item>0.65</item></item>
+        <item type="array"><item>0.746</item><item>0.6</item></item>
+        <item type="array"><item>0.67</item><item>0.36</item></item>
+      </defaultDamageOverride>
+      <Health>
+        <damage>125</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>85</damage>
+      </Shock>
+    </DamageApplied>
+  </Bullet_ImprovisedBolt_2>
+  <Dart_Syringe base="Bullet_Base">
+    <scope>1</scope>
+    <model>\dz\weapons\projectiles\dart_syringe.p3d</model>
+    <spawnPileType>Ammo_DartSyringe</spawnPileType>
+    <hit>9</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <casing></casing>
+    <round></round>
+    <deflecting>20</deflecting>
+    <caliber>0.5</caliber>
+    <airFriction>-0.00215</airFriction>
+    <typicalSpeed>100</typicalSpeed>
+    <weight>0.025</weight>
+    <soundFly type="array"></soundFly>
+    <supersonicCrackNear type="array"></supersonicCrackNear>
+    <supersonicCrackFar type="array"></supersonicCrackFar>
+    <initSpeed>30</initSpeed>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.5</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>35</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+  </Dart_Syringe>
+  <Bullet_Flare base="Bullet_Base">
+    <scope>1</scope>
+    <model>
+      \dz\weapons\projectiles\Flare_Projectile.p3d
+    </model>
+    <proxyShape>
+      \dz\weapons\projectiles\Flare_SingleRound.p3d
+    </proxyShape>
+    <casing>FxCartridge_Flare</casing>
+    <round>FxRound_Flare</round>
+    <spawnPileType>Ammo_Flare</spawnPileType>
+    <caliber>0</caliber>
+    <airFriction>-0.06</airFriction>
+    <airFrictionChangeOnActivation>-0.2</airFrictionChangeOnActivation>
+    <typicalSpeed>80</typicalSpeed>
+    <initSpeed>80</initSpeed>
+    <weight>0.005</weight>
+    <coefGravity>0.1</coefGravity>
+    <soundFly type="array"></soundFly>
+    <supersonicCrackNear type="array"></supersonicCrackNear>
+    <supersonicCrackFar type="array"></supersonicCrackFar>
+    <hit>5</hit>
+    <indirectHit>2</indirectHit>
+    <indirectHitRange>0.2</indirectHitRange>
+    <simulation>shotIlluminating</simulation>
+    <simulationStep>0.05</simulationStep>
+    <explosive>0</explosive>
+    <soundHit type="array"><item></item><item>0</item><item>1</item></soundHit>
+    <SimulationScriptClass>FlareSimulation</SimulationScriptClass>
+    <deflecting>30</deflecting>
+    <timeToLive>40</timeToLive>
+    <explosionTime>40</explosionTime>
+    <radius>300</radius>
+    <soundEngine type="array"><item>dz\sounds\effects\crafting\fire\flare_1</item><item>0.1</item><item>1</item><item>100</item></soundEngine>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>0</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.5</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>10</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+  </Bullet_Flare>
+  <Bullet_FlareRed base="Bullet_Flare">
+    <SimulationScriptClass>FlareSimulation_Red</SimulationScriptClass>
+    <spawnPileType>Ammo_FlareRed</spawnPileType>
+    <casing>FxCartridge_Flare_Red</casing>
+    <round>FxRound_Flare_Red</round>
+    <proxyShape>
+      \dz\weapons\projectiles\Flare_SingleRound_Red.p3d
+    </proxyShape>
+  </Bullet_FlareRed>
+  <Bullet_FlareGreen base="Bullet_Flare">
+    <SimulationScriptClass>FlareSimulation_Green</SimulationScriptClass>
+    <spawnPileType>Ammo_FlareGreen</spawnPileType>
+    <casing>FxCartridge_Flare_Green</casing>
+    <round>FxRound_Flare_Green</round>
+    <proxyShape>
+      \dz\weapons\projectiles\Flare_SingleRound_Green.p3d
+    </proxyShape>
+  </Bullet_FlareGreen>
+  <Bullet_FlareBlue base="Bullet_Flare">
+    <SimulationScriptClass>FlareSimulation_Blue</SimulationScriptClass>
+    <spawnPileType>Ammo_FlareBlue</spawnPileType>
+    <casing>FxCartridge_Flare_Blue</casing>
+    <round>FxRound_Flare_Blue</round>
+    <proxyShape>
+      \dz\weapons\projectiles\Flare_SingleRound_Blue.p3d
+    </proxyShape>
+  </Bullet_FlareBlue>
+  <FlareSimulation base="Entity">
+  </FlareSimulation>
+  <FlareSimulation_Red base="FlareSimulation">
+  </FlareSimulation_Red>
+  <FlareSimulation_Green base="FlareSimulation">
+  </FlareSimulation_Green>
+  <FlareSimulation_Blue base="FlareSimulation">
+  </FlareSimulation_Blue>
+  <SmokeSimulation base="Entity">
+  </SmokeSimulation>
+  <SmokeSimulation_White base="SmokeSimulation">
+  </SmokeSimulation_White>
+  <SmokeSimulation_Black base="SmokeSimulation">
+  </SmokeSimulation_Black>
+  <SmokeSimulation_Green base="SmokeSimulation">
+  </SmokeSimulation_Green>
+  <SmokeSimulation_Red base="SmokeSimulation">
+  </SmokeSimulation_Red>
+  <GrenadeM4 base="Bullet_Base">
+    <scope>1</scope>
+    <simulation>shotShell</simulation>
+    <simulationStep>0.05</simulationStep>
+    <soundFly type="array"><item>dz\sounds\weapons\effects\bullet_crack_mid</item><item>1e-08</item><item>1</item></soundFly>
+    <model>
+      \dz\weapons\ammunition\rocket_rpg7_inflight.p3d
+    </model>
+    <proxyShape>
+      \dz\weapons\projectiles\rocket_rpg7_inflight.p3d
+    </proxyShape>
+    <spawnPileType>Ammo_GrenadeM4</spawnPileType>
+    <hit>60</hit>
+    <indirectHit>28</indirectHit>
+    <indirectHitRange>7</indirectHitRange>
+    <explosive>1</explosive>
+    <typicalSpeed>3</typicalSpeed>
+    <initSpeed>3</initSpeed>
+    <weight>0.2</weight>
+    <fuseDistance>5</fuseDistance>
+    <soundHit type="array"><item></item><item>10</item><item>1</item></soundHit>
+    <soundEngine type="array"><item></item><item>0.0001</item><item>4</item></soundEngine>
+    <timeToLive>20</timeToLive>
+    <deflecting>60</deflecting>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>0.75</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.5</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>99</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+  </GrenadeM4>
+  <Rocket_RPG7_Base base="Bullet_Base">
+    <scope>1</scope>
+    <model>
+      \dz\weapons\ammunition\rocket_rpg7_inflight.p3d
+    </model>
+    <proxyShape>
+      \dz\weapons\projectiles\rocket_rpg7_inflight.p3d
+    </proxyShape>
+    <casing>-</casing>
+    <round>-</round>
+    <caliber>0.2</caliber>
+    <airFriction>-0.00215</airFriction>
+    <typicalSpeed>180</typicalSpeed>
+    <initSpeed>180</initSpeed>
+    <soundFly type="array"></soundFly>
+    <supersonicCrackNear type="array"></supersonicCrackNear>
+    <supersonicCrackFar type="array"></supersonicCrackFar>
+    <simulationStep>0.05</simulationStep>
+    <soundHit type="array"><item></item><item>0</item><item>1</item></soundHit>
+    <soundEngine type="array"><item>dz\sounds\effects\crafting\fire\flare_1</item><item>0.1</item><item>1</item><item>100</item></soundEngine>
+    <explosive>1</explosive>
+    <hit>500</hit>
+    <indirectHit>150</indirectHit>
+    <indirectHitRange>2</indirectHitRange>
+    <maxSpeed>1</maxSpeed>
+    <initTime>0</initTime>
+    <thrustTime>0.2</thrustTime>
+    <thrust>2000</thrust>
+    <timeToLive>20</timeToLive>
+    <explosionTime>20</explosionTime>
+    <maneuvrability>0</maneuvrability>
+    <maxControlRange>0</maxControlRange>
+    <deflecting>5</deflecting>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>0.8</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.5</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>150</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+  </Rocket_RPG7_Base>
+  <Rocket_RPG7_HE base="Rocket_RPG7_Base">
+    <hit>208</hit>
+    <indirectHit>20</indirectHit>
+    <indirectHitRange>2</indirectHitRange>
+    <model>
+      \dz\weapons\ammunition\rocket_rpg7_inflight.p3d
+    </model>
+    <spawnPileType>Ammo_RPG7_HE</spawnPileType>
+    <initTime>0.1</initTime>
+    <thrust>280</thrust>
+    <thrustTime>1</thrustTime>
+    <maxSpeed>295</maxSpeed>
+    <sideAirFriction>0.5</sideAirFriction>
+    <timeToLive>4.5</timeToLive>
+    <fuseDistance>5</fuseDistance>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>0.8</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.5</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>150</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+  </Rocket_RPG7_HE>
+  <Rocket_RPG7_AP base="Rocket_RPG7_Base">
+    <hit>128</hit>
+    <indirectHit>80</indirectHit>
+    <indirectHitRange>30</indirectHitRange>
+    <model>
+      \dz\weapons\ammunition\rocket_rpg7_inflight.p3d
+    </model>
+    <spawnPileType>Ammo_RPG7_AP</spawnPileType>
+    <initTime>0.1</initTime>
+    <thrust>280</thrust>
+    <thrustTime>1</thrustTime>
+    <maxSpeed>295</maxSpeed>
+    <sideAirFriction>0.5</sideAirFriction>
+    <timeToLive>4.5</timeToLive>
+    <fuseDistance>5</fuseDistance>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>0.8</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.5</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>150</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+  </Rocket_RPG7_AP>
+  <Rocket_LAW_Base base="Bullet_Base">
+    <scope>1</scope>
+    <model>
+      \dz\weapons\ammunition\rocket_rpg7_inflight.p3d
+    </model>
+    <proxyShape>
+      \dz\weapons\projectiles\rocket_rpg7_inflight.p3d
+    </proxyShape>
+    <casing>-</casing>
+    <round>-</round>
+    <caliber>0.2</caliber>
+    <airFriction>-0.00215</airFriction>
+    <typicalSpeed>145</typicalSpeed>
+    <initSpeed>145</initSpeed>
+    <soundFly type="array"></soundFly>
+    <supersonicCrackNear type="array"></supersonicCrackNear>
+    <supersonicCrackFar type="array"></supersonicCrackFar>
+    <simulationStep>0.05</simulationStep>
+    <soundHit type="array"><item></item><item>0</item><item>1</item></soundHit>
+    <soundEngine type="array"><item>dz\sounds\effects\crafting\fire\flare_1</item><item>0.1</item><item>1</item><item>100</item></soundEngine>
+    <explosive>1</explosive>
+    <hit>500</hit>
+    <indirectHit>150</indirectHit>
+    <indirectHitRange>2</indirectHitRange>
+    <maxSpeed>1</maxSpeed>
+    <initTime>0</initTime>
+    <thrustTime>0.2</thrustTime>
+    <thrust>2000</thrust>
+    <timeToLive>20</timeToLive>
+    <explosionTime>20</explosionTime>
+    <maneuvrability>0</maneuvrability>
+    <maxControlRange>0</maxControlRange>
+    <deflecting>5</deflecting>
+    <explosionEffects>VehicleExplosionEffects</explosionEffects>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>0.8</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.5</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>150</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+  </Rocket_LAW_Base>
+  <Rocket_LAW_HE base="Rocket_LAW_Base">
+    <hit>208</hit>
+    <indirectHit>20</indirectHit>
+    <indirectHitRange>2</indirectHitRange>
+    <model>
+      \dz\weapons\ammunition\rocket_rpg7_inflight.p3d
+    </model>
+    <spawnPileType>Ammo_LAW_HE</spawnPileType>
+    <initTime>0.1</initTime>
+    <thrust>280</thrust>
+    <thrustTime>1</thrustTime>
+    <maxSpeed>295</maxSpeed>
+    <sideAirFriction>0.5</sideAirFriction>
+    <timeToLive>4.5</timeToLive>
+    <fuseDistance>5</fuseDistance>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>0.8</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.5</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>150</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+  </Rocket_LAW_HE>
+  <Bullet_40mm_Base base="Bullet_Base">
+    <scope>1</scope>
+    <model>
+      \dz\weapons\projectiles\tracer_40mm_grenade.p3d
+    </model>
+    <proxyShape>
+      \dz\weapons\projectiles\40mm_grenade_SingleRound.p3d
+    </proxyShape>
+    <casing>FxCartridge_40mm</casing>
+    <round>FxRound_40mm</round>
+    <hit>9.5</hit>
+    <indirectHit>0</indirectHit>
+    <indirectHitRange>0</indirectHitRange>
+    <timeToLive>20</timeToLive>
+    <airLock>0</airLock>
+    <initSpeed>76</initSpeed>
+    <typicalSpeed>76</typicalSpeed>
+    <airFriction>-0.0013</airFriction>
+    <airFrictionChangeOnActivation>-0.0013</airFrictionChangeOnActivation>
+    <tracerScale>1.2</tracerScale>
+    <tracerStartTime>1e-05</tracerStartTime>
+    <tracerEndTime>3</tracerEndTime>
+    <caliber>0</caliber>
+    <deflecting>90</deflecting>
+    <deflectingMultiplier>3f</deflectingMultiplier>
+    <deflectionSlowDown>0.45f</deflectionSlowDown>
+    <damageBarrel>500</damageBarrel>
+    <damageBarrelDestroyed>500</damageBarrelDestroyed>
+    <weight>0.23</weight>
+    <impactBehaviour>0</impactBehaviour>
+    <hitAnimation>1</hitAnimation>
+    <unconRefillModifier>4</unconRefillModifier>
+    <spawnPileType>Ammo_40mm_Base</spawnPileType>
+    <DamageApplied>
+      <type>Projectile</type>
+      <dispersion>0</dispersion>
+      <bleedThreshold>1</bleedThreshold>
+      <defaultDamageOverride type="array"><item type="array"><item>0.95</item><item>1</item></item></defaultDamageOverride>
+      <Health>
+        <damage>110</damage>
+      </Health>
+      <Blood>
+        <damage>100</damage>
+      </Blood>
+      <Shock>
+        <damage>110</damage>
+        <damageOverride type="array"><item type="array"><item>0.8</item><item>1</item></item></damageOverride>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Bullet_40mm_Base>
+  <Bullet_40mm_Explosive base="Bullet_40mm_Base">
+    <hit>5</hit>
+    <indirectHit>1</indirectHit>
+    <indirectHitRange>10</indirectHitRange>
+    <indirectHitRangeMultiplier>1</indirectHitRangeMultiplier>
+    <explosive>1</explosive>
+    <caliber>1</caliber>
+    <deflecting>0</deflecting>
+    <spawnPileType>Ammo_40mm_Explosive</spawnPileType>
+    <soundSetExplosion type="array"></soundSetExplosion>
+  </Bullet_40mm_Explosive>
+  <Bullet_40mm_ChemGas base="Bullet_40mm_Base">
+    <caliber>1</caliber>
+    <deflecting>0</deflecting>
+    <spawnPileType>Ammo_40mm_ChemGas</spawnPileType>
+    <model>
+      \dz\weapons\projectiles\tracer_40mm_grenade_ChemGas.p3d
+    </model>
+    <proxyShape>
+      \dz\weapons\projectiles\40mm_grenade_ChemGas_SingleRound.p3d
+    </proxyShape>
+    <round>FxRound_40mmChemGas</round>
+  </Bullet_40mm_ChemGas>
+  <Bullet_40mm_Smoke_Red base="Bullet_40mm_Base">
+    <timeToLive>40</timeToLive>
+    <explosionTime>40</explosionTime>
+    <simulation>shotIlluminating</simulation>
+    <spawnPileType>Ammo_40mm_Smoke_Red</spawnPileType>
+    <SimulationScriptClass>SmokeSimulation_Red</SimulationScriptClass>
+    <model>
+      \dz\weapons\projectiles\tracer_40mm_grenade.p3d
+    </model>
+    <proxyShape>
+      \dz\weapons\projectiles\tracer_40mm_grenade_smoke_r.p3d
+    </proxyShape>
+    <round>FxRound_40mmRed</round>
+  </Bullet_40mm_Smoke_Red>
+  <Bullet_40mm_Smoke_Green base="Bullet_40mm_Base">
+    <timeToLive>40</timeToLive>
+    <explosionTime>40</explosionTime>
+    <simulation>shotIlluminating</simulation>
+    <spawnPileType>Ammo_40mm_Smoke_Green</spawnPileType>
+    <SimulationScriptClass>SmokeSimulation_Green</SimulationScriptClass>
+    <model>
+      \dz\weapons\projectiles\tracer_40mm_grenade.p3d
+    </model>
+    <proxyShape>
+      \dz\weapons\projectiles\tracer_40mm_grenade_smoke_g.p3d
+    </proxyShape>
+    <round>FxRound_40mmGreen</round>
+  </Bullet_40mm_Smoke_Green>
+  <Bullet_40mm_Smoke_White base="Bullet_40mm_Base">
+    <timeToLive>40</timeToLive>
+    <explosionTime>40</explosionTime>
+    <simulation>shotIlluminating</simulation>
+    <spawnPileType>Ammo_40mm_Smoke_White</spawnPileType>
+    <SimulationScriptClass>SmokeSimulation_White</SimulationScriptClass>
+    <model>
+      \dz\weapons\projectiles\tracer_40mm_grenade.p3d
+    </model>
+    <proxyShape>
+      \dz\weapons\projectiles\tracer_40mm_grenade_smoke_w.p3d
+    </proxyShape>
+    <round>FxRound_40mmWhite</round>
+  </Bullet_40mm_Smoke_White>
+  <Bullet_40mm_Smoke_Black base="Bullet_40mm_Base">
+    <timeToLive>40</timeToLive>
+    <explosionTime>40</explosionTime>
+    <simulation>shotIlluminating</simulation>
+    <spawnPileType>Ammo_40mm_Smoke_Black</spawnPileType>
+    <SimulationScriptClass>SmokeSimulation_Black</SimulationScriptClass>
+    <model>
+      \dz\weapons\projectiles\tracer_40mm_grenade_smoke_b.p3d
+    </model>
+    <proxyShape>
+      \dz\weapons\projectiles\40mm_grenade_smoke_b_SingleRound.p3d
+    </proxyShape>
+    <round>FxRound_40mmBlack</round>
+  </Bullet_40mm_Smoke_Black>
+</CfgAmmo>
+<CfgVehicles>
+  <All>
+  </All>
+  <Strategic>
+  </Strategic>
+  <ThingEffect>
+  </ThingEffect>
+  <FxCartridge base="ThingEffect">
+    <model>
+      \dz\weapons\projectiles\nabojnice_556.p3d
+    </model>
+    <displayName></displayName>
+    <submerged>0</submerged>
+    <submergeSpeed>0</submergeSpeed>
+    <timeToLive>5</timeToLive>
+    <disappearAtContact>1</disappearAtContact>
+    <airRotation>1.5</airRotation>
+  </FxCartridge>
+  <FxCartridge_Small base="ThingEffect">
+    <model>
+      \dz\weapons\projectiles\nabojnice_small.p3d
+    </model>
+    <displayName></displayName>
+    <submerged>0</submerged>
+    <submergeSpeed>0</submergeSpeed>
+    <timeToLive>5</timeToLive>
+    <disappearAtContact>1</disappearAtContact>
+    <airRotation>1.5</airRotation>
+  </FxCartridge_Small>
+  <FxCartridge_9mm base="FxCartridge_Small">
+  </FxCartridge_9mm>
+  <FxCartridge_556 base="FxCartridge">
+  </FxCartridge_556>
+  <FxCartridge_357 base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\nabojnice_357.p3d
+    </model>
+  </FxCartridge_357>
+  <FxCartridge_762 base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\nabojnice_762.p3d
+    </model>
+  </FxCartridge_762>
+  <FxCartridge_762x39 base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\nabojnice_762x39.p3d
+    </model>
+  </FxCartridge_762x39>
+  <FxCartridge_12Pellet base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\shotgunshell_pellets.p3d
+    </model>
+  </FxCartridge_12Pellet>
+  <FxCartridge_12Slug base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\shotgunshell_slug.p3d
+    </model>
+  </FxCartridge_12Slug>
+  <FxCartridge_12RubberSlug base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\shotgunshell_rubber.p3d
+    </model>
+  </FxCartridge_12RubberSlug>
+  <FxCartridge_12Beanbag base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\shotgunshell_beanbag.p3d
+    </model>
+  </FxCartridge_12Beanbag>
+  <FxCartridge_22 base="FxCartridge">
+    <model>\dz\weapons\projectiles\nabojnice_22.p3d</model>
+  </FxCartridge_22>
+  <FxCartridge_Flare base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\Flare_SingleRound.p3d
+    </model>
+  </FxCartridge_Flare>
+  <FxCartridge_Flare_Red base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\Flare_SingleRound_Red.p3d
+    </model>
+  </FxCartridge_Flare_Red>
+  <FxCartridge_Flare_Green base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\Flare_SingleRound_Green.p3d
+    </model>
+  </FxCartridge_Flare_Green>
+  <FxCartridge_Flare_Blue base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\Flare_SingleRound_Blue.p3d
+    </model>
+  </FxCartridge_Flare_Blue>
+  <FxCartridge_40mm base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\40mm_grenade_shell.p3d
+    </model>
+  </FxCartridge_40mm>
+  <FxRound base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\556_SingleRound.p3d
+    </model>
+    <displayName></displayName>
+    <submerged>0</submerged>
+    <submergeSpeed>0</submergeSpeed>
+    <timeToLive>5</timeToLive>
+    <disappearAtContact>1</disappearAtContact>
+    <airRotation>1</airRotation>
+  </FxRound>
+  <FxRound_9mm base="FxRound">
+    <model>
+      \dz\weapons\projectiles\9mm_SingleRound.p3d
+    </model>
+  </FxRound_9mm>
+  <FxRound_45acp base="FxRound">
+    <model>
+      \dz\weapons\projectiles\45acp_SingleRound.p3d
+    </model>
+  </FxRound_45acp>
+  <FxRound_357 base="FxRound">
+    <model>
+      \dz\weapons\projectiles\357_SingleRound.p3d
+    </model>
+  </FxRound_357>
+  <FxRound_556 base="FxRound">
+    <model>
+      \dz\weapons\projectiles\556_SingleRound.p3d
+    </model>
+  </FxRound_556>
+  <FxRound_762 base="FxRound">
+    <model>
+      \dz\weapons\projectiles\762_SingleRound.p3d
+    </model>
+  </FxRound_762>
+  <FxRound_762x39 base="FxRound">
+    <model>
+      \dz\weapons\projectiles\762x39_SingleRound.p3d
+    </model>
+  </FxRound_762x39>
+  <FxRound_12Pellet base="FxRound">
+    <model>
+      \dz\weapons\projectiles\shotgunshell_pellets.p3d
+    </model>
+  </FxRound_12Pellet>
+  <FxRound_12Slug base="FxRound">
+    <model>
+      \dz\weapons\projectiles\shotgunshell_slug.p3d
+    </model>
+  </FxRound_12Slug>
+  <FxRound_12RubberSlug base="FxRound">
+    <model>
+      \dz\weapons\projectiles\shotgunshell_rubber.p3d
+    </model>
+  </FxRound_12RubberSlug>
+  <FxRound_12Beanbag base="FxRound">
+    <model>
+      \dz\weapons\projectiles\shotgunshell_beanbag.p3d
+    </model>
+  </FxRound_12Beanbag>
+  <FxRound_22 base="FxRound">
+    <model>
+      \dz\weapons\projectiles\22_SingleRound.p3d
+    </model>
+  </FxRound_22>
+  <FxRound_308Win base="FxRound">
+    <model>
+      \dz\weapons\projectiles\308Win_SingleRound.p3d
+    </model>
+  </FxRound_308Win>
+  <FxRound_HuntingBolt base="FxRound">
+    <model>\dz\weapons\projectiles\bolt_biggame.p3d</model>
+  </FxRound_HuntingBolt>
+  <FxRound_ImprovisedBolt_1 base="FxRound">
+    <model>\dz\weapons\projectiles\bolt_crude.p3d</model>
+  </FxRound_ImprovisedBolt_1>
+  <FxRound_ImprovisedBolt_2 base="FxRound">
+    <model>\dz\weapons\projectiles\bolt_crafted.p3d</model>
+  </FxRound_ImprovisedBolt_2>
+  <FxRound_Flare base="FxRound">
+    <model>
+      \dz\weapons\projectiles\Flare_SingleRound.p3d
+    </model>
+  </FxRound_Flare>
+  <FxRound_Flare_Red base="FxRound">
+    <model>
+      \dz\weapons\projectiles\Flare_SingleRound_Red.p3d
+    </model>
+  </FxRound_Flare_Red>
+  <FxRound_Flare_Green base="FxRound">
+    <model>
+      \dz\weapons\projectiles\Flare_SingleRound_Green.p3d
+    </model>
+  </FxRound_Flare_Green>
+  <FxRound_Flare_Blue base="FxRound">
+    <model>
+      \dz\weapons\projectiles\Flare_SingleRound_Blue.p3d
+    </model>
+  </FxRound_Flare_Blue>
+  <FxRound_40mm base="FxRound">
+    <model>
+      \dz\weapons\projectiles\40mm_grenade_SingleRound.p3d
+    </model>
+  </FxRound_40mm>
+  <FxRound_40mmChemGas base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\40mm_grenade_ChemGas_SingleRound.p3d
+    </model>
+  </FxRound_40mmChemGas>
+  <FxRound_40mmRed base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\40mm_grenade_smoke_r_SingleRound.p3d
+    </model>
+  </FxRound_40mmRed>
+  <FxRound_40mmGreen base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\40mm_grenade_smoke_g_SingleRound.p3d
+    </model>
+  </FxRound_40mmGreen>
+  <FxRound_40mmWhite base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\40mm_grenade_smoke_w_SingleRound.p3d
+    </model>
+  </FxRound_40mmWhite>
+  <FxRound_40mmBlack base="FxCartridge">
+    <model>
+      \dz\weapons\projectiles\40mm_grenade_smoke_b_SingleRound.p3d
+    </model>
+  </FxRound_40mmBlack>
+</CfgVehicles>

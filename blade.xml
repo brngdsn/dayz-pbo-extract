@@ -1,0 +1,1950 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Melee_Blade>
+    <units type="array"></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Weapons_Melee</item></requiredAddons>
+  </DZ_Weapons_Melee_Blade>
+</CfgPatches>
+<CfgVehicles>
+  <Inventory_Base>
+  </Inventory_Base>
+  <WoodAxe base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_WoodAxe0</displayName>
+    <descriptionShort>STR_CfgVehicles_WoodAxe1</descriptionShort>
+    <model>\dz\weapons\melee\blade\woodaxe.p3d</model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <repairableWithKits type="array"><item>4</item></repairableWithKits>
+    <repairCosts type="array"><item>20</item></repairCosts>
+    <rotationFlags>12</rotationFlags>
+    <weight>1360</weight>
+    <itemSize type="array"><item>2</item><item>6</item></itemSize>
+    <itemBehaviour>2</itemBehaviour>
+    <fragility>0.01</fragility>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <lootCategory>Tools</lootCategory>
+    <lootTag type="array"><item>Work</item><item>Forester</item><item>Camping</item></lootTag>
+    <dismantle_action_type>74</dismantle_action_type>
+    <openItemSpillRange type="array"><item>20</item><item>40</item></openItemSpillRange>
+    <itemInfo type="array"><item>Axe</item></itemInfo>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <suicideAnim>woodaxe</suicideAnim>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeAxe</ammo>
+        <range>1.8</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeAxe_Heavy</ammo>
+        <range>1.8</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeAxe_Heavy</ammo>
+        <range>3.7</range>
+      </Sprint>
+    </MeleeModes>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>0.02</item><item>0.15</item><item>0</item></position>
+        <orientation type="array"><item>130</item><item>0</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>0.02</item><item>0.15</item><item>0.02</item></position>
+        <orientation type="array"><item>30</item><item>0</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blade\data\axe.rvmat</item><item>DZ\weapons\melee\blade\data\axe_view_metal.rvmat</item><item>DZ\weapons\melee\blade\data\axe_view_wood.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blade\data\axe.rvmat</item><item>DZ\weapons\melee\blade\data\axe_view_metal.rvmat</item><item>DZ\weapons\melee\blade\data\axe_view_wood.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blade\data\axe_damage.rvmat</item><item>DZ\weapons\melee\blade\data\axe_view_metal_damage.rvmat</item><item>DZ\weapons\melee\blade\data\axe_view_wood_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blade\data\axe_damage.rvmat</item><item>DZ\weapons\melee\blade\data\axe_view_metal_damage.rvmat</item><item>DZ\weapons\melee\blade\data\axe_view_wood_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blade\data\axe_destruct.rvmat</item><item>DZ\weapons\melee\blade\data\axe_view_metal_destruct.rvmat</item><item>DZ\weapons\melee\blade\data\axe_view_wood_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <soundImpactType>metal</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <pickup_light>
+          <soundSet>hatchet_pickup_light_SoundSet</soundSet>
+          <id>796</id>
+        </pickup_light>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>woodaxe_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+        <FirefighterAxe_loop_SoundSet>
+          <soundSet>FirefighterAxe_loop_SoundSet</soundSet>
+          <id>1121</id>
+        </FirefighterAxe_loop_SoundSet>
+        <FirefighterAxe_end_SoundSet>
+          <soundSet>FirefighterAxe_end_SoundSet</soundSet>
+          <id>1122</id>
+        </FirefighterAxe_end_SoundSet>
+        <ShoulderR_Hide>
+          <soundset>ShoulderR_Hide_SoundSet</soundset>
+          <id>1210</id>
+        </ShoulderR_Hide>
+        <ShoulderR_Show>
+          <soundset>ShoulderR_Show_SoundSet</soundset>
+          <id>1211</id>
+        </ShoulderR_Show>
+        <animalSkinning_in>
+          <soundSet>animalSkinning_in_SoundSet</soundSet>
+          <id>516</id>
+        </animalSkinning_in>
+        <animalSkinning>
+          <soundSet>animalSkinning_SoundSet</soundSet>
+          <id>517</id>
+        </animalSkinning>
+        <animalSkinning_out>
+          <soundSet>animalSkinning_out_SoundSet</soundSet>
+          <id>518</id>
+        </animalSkinning_out>
+      </SoundWeapon>
+    </AnimEvents>
+  </WoodAxe>
+  <Hatchet base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_Hatchet0</displayName>
+    <descriptionShort>STR_CfgVehicles_Hatchet1</descriptionShort>
+    <model>\dz\weapons\melee\blade\hatchet.p3d</model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <build_action_type>10</build_action_type>
+    <dismantle_action_type>74</dismantle_action_type>
+    <repairableWithKits type="array"><item>4</item></repairableWithKits>
+    <repairCosts type="array"><item>18</item></repairCosts>
+    <rotationFlags>17</rotationFlags>
+    <weight>1133</weight>
+    <itemSize type="array"><item>2</item><item>4</item></itemSize>
+    <fragility>0.01</fragility>
+    <inventorySlot type="array"><item></item></inventorySlot>
+    <lootCategory>Tools</lootCategory>
+    <lootTag type="array"><item>Work</item><item>Forester</item><item>Camping</item></lootTag>
+    <itemInfo type="array"><item>Axe</item></itemInfo>
+    <openItemSpillRange type="array"><item>20</item><item>40</item></openItemSpillRange>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>150</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blade\data\hatchet.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blade\data\hatchet.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blade\data\hatchet_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blade\data\hatchet_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blade\data\hatchet_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeHatchet</ammo>
+        <range>1.4</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeHatchet_Heavy</ammo>
+        <range>1.4</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeHatchet_Heavy</ammo>
+        <range>3.3</range>
+      </Sprint>
+    </MeleeModes>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <suicideAnim>woodaxe</suicideAnim>
+    <soundImpactType>metal</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <pickup_light>
+          <soundSet>hatchet_pickup_light_SoundSet</soundSet>
+          <id>796</id>
+        </pickup_light>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>woodaxe_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+        <FirefighterAxe_loop_SoundSet>
+          <soundSet>FirefighterAxe_loop_SoundSet</soundSet>
+          <id>1121</id>
+        </FirefighterAxe_loop_SoundSet>
+        <FirefighterAxe_end_SoundSet>
+          <soundSet>FirefighterAxe_end_SoundSet</soundSet>
+          <id>1122</id>
+        </FirefighterAxe_end_SoundSet>
+        <ShoulderR_Hide>
+          <soundset>ShoulderR_Hide_SoundSet</soundset>
+          <id>1210</id>
+        </ShoulderR_Hide>
+        <ShoulderR_Show>
+          <soundset>ShoulderR_Show_SoundSet</soundset>
+          <id>1211</id>
+        </ShoulderR_Show>
+        <WoodHammer_SoundSet>
+          <soundSet>WoodHammer_SoundSet</soundSet>
+          <id>11161</id>
+        </WoodHammer_SoundSet>
+        <animalSkinning_in>
+          <soundSet>animalSkinning_in_SoundSet</soundSet>
+          <id>516</id>
+        </animalSkinning_in>
+        <animalSkinning>
+          <soundSet>animalSkinning_SoundSet</soundSet>
+          <id>517</id>
+        </animalSkinning>
+        <animalSkinning_out>
+          <soundSet>animalSkinning_out_SoundSet</soundSet>
+          <id>518</id>
+        </animalSkinning_out>
+      </SoundWeapon>
+    </AnimEvents>
+  </Hatchet>
+  <FirefighterAxe base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_FirefighterAxe0</displayName>
+    <descriptionShort>STR_CfgVehicles_FirefighterAxe1</descriptionShort>
+    <model>
+      \dz\weapons\melee\blade\FirefighterAxe.p3d
+    </model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\melee\blade\data\ffax_co.paa</item></hiddenSelectionsTextures>
+    <repairableWithKits type="array"><item>4</item></repairableWithKits>
+    <repairCosts type="array"><item>20</item></repairCosts>
+    <rotationFlags>12</rotationFlags>
+    <weight>1360</weight>
+    <itemSize type="array"><item>2</item><item>7</item></itemSize>
+    <itemBehaviour>2</itemBehaviour>
+    <fragility>0.01</fragility>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <lootCategory>Tools</lootCategory>
+    <lootTag type="array"><item>Work</item><item>Forester</item><item>Camping</item></lootTag>
+    <dismantle_action_type>74</dismantle_action_type>
+    <openItemSpillRange type="array"><item>20</item><item>40</item></openItemSpillRange>
+    <itemInfo type="array"><item>Axe</item></itemInfo>
+    <soundImpactType>metal</soundImpactType>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <suicideAnim>fireaxe</suicideAnim>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blade\data\ffax.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blade\data\ffax.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blade\data\ffax_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blade\data\ffax_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blade\data\ffax_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeFireAxe</ammo>
+        <range>1.8</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeFireAxe_Heavy</ammo>
+        <range>1.8</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeFireAxe_Heavy</ammo>
+        <range>3.7</range>
+      </Sprint>
+    </MeleeModes>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>0</item><item>0.075</item><item>0</item></position>
+        <orientation type="array"><item>150</item><item>0</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>0</item><item>0.05</item><item>0.02</item></position>
+        <orientation type="array"><item>30</item><item>0</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <AnimEvents>
+      <SoundWeapon>
+        <pickup_light>
+          <soundSet>hatchet_pickup_light_SoundSet</soundSet>
+          <id>796</id>
+        </pickup_light>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>woodaxe_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+        <FirefighterAxe_loop_SoundSet>
+          <soundSet>FirefighterAxe_loop_SoundSet</soundSet>
+          <id>1121</id>
+        </FirefighterAxe_loop_SoundSet>
+        <FirefighterAxe_end_SoundSet>
+          <soundSet>FirefighterAxe_end_SoundSet</soundSet>
+          <id>1122</id>
+        </FirefighterAxe_end_SoundSet>
+        <ShoulderR_Hide>
+          <soundset>ShoulderR_Hide_SoundSet</soundset>
+          <id>1210</id>
+        </ShoulderR_Hide>
+        <ShoulderR_Show>
+          <soundset>ShoulderR_Show_SoundSet</soundset>
+          <id>1211</id>
+        </ShoulderR_Show>
+        <animalSkinning_in>
+          <soundSet>animalSkinning_in_SoundSet</soundSet>
+          <id>516</id>
+        </animalSkinning_in>
+        <animalSkinning>
+          <soundSet>animalSkinning_SoundSet</soundSet>
+          <id>517</id>
+        </animalSkinning>
+        <animalSkinning_out>
+          <soundSet>animalSkinning_out_SoundSet</soundSet>
+          <id>518</id>
+        </animalSkinning_out>
+      </SoundWeapon>
+    </AnimEvents>
+  </FirefighterAxe>
+  <FirefighterAxe_Black base="FirefighterAxe">
+    <scope>2</scope>
+    <color>Black</color>
+    <lootCategory>Crafted</lootCategory>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.15,0.15,0.15,1.0,CO)</item></hiddenSelectionsTextures>
+  </FirefighterAxe_Black>
+  <FirefighterAxe_Green base="FirefighterAxe">
+    <scope>2</scope>
+    <color>Green</color>
+    <lootCategory>Crafted</lootCategory>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.35,0.37,0.28,1.0,CO)</item></hiddenSelectionsTextures>
+  </FirefighterAxe_Green>
+  <Cleaver base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_Cleaver0</displayName>
+    <descriptionShort>STR_CfgVehicles_Cleaver1</descriptionShort>
+    <model>\dz\weapons\melee\blade\meat_cleaver.p3d</model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <inventorySlot type="array"><item></item></inventorySlot>
+    <repairableWithKits type="array"><item>4</item></repairableWithKits>
+    <repairCosts type="array"><item>15</item></repairCosts>
+    <rotationFlags>17</rotationFlags>
+    <canSkinBodies>1</canSkinBodies>
+    <weight>500</weight>
+    <itemSize type="array"><item>2</item><item>3</item></itemSize>
+    <lootTag type="array"><item>Kitchen</item><item>Civilian</item></lootTag>
+    <lootCategory>Tools</lootCategory>
+    <openItemSpillRange type="array"><item>10</item><item>35</item></openItemSpillRange>
+    <itemInfo type="array"><item>Knife</item></itemInfo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>140</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blade\data\meat_cleaver.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blade\data\meat_cleaver.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blade\data\meat_cleaver_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blade\data\meat_cleaver_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blade\data\meat_cleaver_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <suicideAnim>onehanded</suicideAnim>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeMachete</ammo>
+        <range>1.4</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeMachete_Heavy</ammo>
+        <range>1.4</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeMachete_Heavy</ammo>
+        <range>3.3</range>
+      </Sprint>
+    </MeleeModes>
+    <soundImpactType>metal</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <animalSkinning_in>
+          <soundSet>animalSkinning_in_SoundSet</soundSet>
+          <id>516</id>
+        </animalSkinning_in>
+        <animalSkinning>
+          <soundSet>animalSkinning_SoundSet</soundSet>
+          <id>517</id>
+        </animalSkinning>
+        <animalSkinning_out>
+          <soundSet>animalSkinning_out_SoundSet</soundSet>
+          <id>518</id>
+        </animalSkinning_out>
+        <CutTies_end>
+          <soundSet>CutTies_end_SoundSet</soundSet>
+          <id>519</id>
+        </CutTies_end>
+        <CutTies_loop>
+          <soundSet>CutTies_loop_SoundSet</soundSet>
+          <id>520</id>
+        </CutTies_loop>
+        <shaving_knife_clean>
+          <soundSet>shaving_knife_clean_SoundSet</soundSet>
+          <id>600</id>
+        </shaving_knife_clean>
+        <shaving_knife1>
+          <soundSet>shaving_knife1_SoundSet</soundSet>
+          <id>601</id>
+        </shaving_knife1>
+        <shaving_knife2>
+          <soundSet>shaving_knife2_SoundSet</soundSet>
+          <id>602</id>
+        </shaving_knife2>
+        <shaving_knife3>
+          <soundSet>shaving_knife3_SoundSet</soundSet>
+          <id>603</id>
+        </shaving_knife3>
+        <shaving_knife4>
+          <soundSet>shaving_knife4_SoundSet</soundSet>
+          <id>604</id>
+        </shaving_knife4>
+        <shaving_knife5>
+          <soundSet>shaving_knife5_SoundSet</soundSet>
+          <id>605</id>
+        </shaving_knife5>
+        <shaving_knife6>
+          <soundSet>shaving_knife6_SoundSet</soundSet>
+          <id>606</id>
+        </shaving_knife6>
+        <shaving_knife7>
+          <soundSet>shaving_knife7_SoundSet</soundSet>
+          <id>607</id>
+        </shaving_knife7>
+        <shaving_knife8>
+          <soundSet>shaving_knife8_SoundSet</soundSet>
+          <id>608</id>
+        </shaving_knife8>
+        <shaving_knife9>
+          <soundSet>shaving_knife9_SoundSet</soundSet>
+          <id>609</id>
+        </shaving_knife9>
+        <shaving_knife10>
+          <soundSet>shaving_knife10_SoundSet</soundSet>
+          <id>610</id>
+        </shaving_knife10>
+        <shaving_knife11>
+          <soundSet>shaving_knife11_SoundSet</soundSet>
+          <id>611</id>
+        </shaving_knife11>
+        <shaving_knife12>
+          <soundSet>shaving_knife12_SoundSet</soundSet>
+          <id>612</id>
+        </shaving_knife12>
+        <shaving_knife13>
+          <soundSet>shaving_knife13_SoundSet</soundSet>
+          <id>613</id>
+        </shaving_knife13>
+        <shaving_knife14>
+          <soundSet>shaving_knife14_SoundSet</soundSet>
+          <id>614</id>
+        </shaving_knife14>
+        <shaving_knife15>
+          <soundSet>shaving_knife15_SoundSet</soundSet>
+          <id>615</id>
+        </shaving_knife15>
+        <shaving_knife16>
+          <soundSet>shaving_knife16_SoundSet</soundSet>
+          <id>616</id>
+        </shaving_knife16>
+        <shaving_knife17>
+          <soundSet>shaving_knife17_SoundSet</soundSet>
+          <id>617</id>
+        </shaving_knife17>
+        <shaving_knife18>
+          <soundSet>shaving_knife18_SoundSet</soundSet>
+          <id>618</id>
+        </shaving_knife18>
+        <shaving_knife19>
+          <soundSet>shaving_knife19_SoundSet</soundSet>
+          <id>619</id>
+        </shaving_knife19>
+        <shaving_knife20>
+          <soundSet>shaving_knife20_SoundSet</soundSet>
+          <id>620</id>
+        </shaving_knife20>
+        <shaving_knife21>
+          <soundSet>shaving_knife21_SoundSet</soundSet>
+          <id>621</id>
+        </shaving_knife21>
+        <pickup_light>
+          <soundSet>hatchet_pickup_light_SoundSet</soundSet>
+          <id>796</id>
+        </pickup_light>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>woodaxe_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+        <FirefighterAxe_loop_SoundSet>
+          <soundSet>FirefighterAxe_loop_SoundSet</soundSet>
+          <id>1121</id>
+        </FirefighterAxe_loop_SoundSet>
+        <FirefighterAxe_end_SoundSet>
+          <soundSet>FirefighterAxe_end_SoundSet</soundSet>
+          <id>1122</id>
+        </FirefighterAxe_end_SoundSet>
+      </SoundWeapon>
+    </AnimEvents>
+  </Cleaver>
+  <CombatKnife base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_CombatKnife0</displayName>
+    <descriptionShort>STR_CfgVehicles_CombatKnife1</descriptionShort>
+    <model>\dz\weapons\melee\blade\combatknife.p3d</model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <animClass>Knife</animClass>
+    <repairableWithKits type="array"><item>4</item></repairableWithKits>
+    <repairCosts type="array"><item>10</item></repairCosts>
+    <inventorySlot type="array"><item>Knife</item></inventorySlot>
+    <rotationFlags>17</rotationFlags>
+    <canSkinBodies>1</canSkinBodies>
+    <RestrainUnlockType>1</RestrainUnlockType>
+    <weight>312</weight>
+    <itemSize type="array"><item>1</item><item>3</item></itemSize>
+    <lootTag type="array"><item>Military_east</item><item>Military_west</item></lootTag>
+    <lootCategory>Tools</lootCategory>
+    <itemInfo type="array"><item>Knife</item></itemInfo>
+    <openItemSpillRange type="array"><item>10</item><item>20</item></openItemSpillRange>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>150</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blade\data\combat_knife.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blade\data\combat_knife.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blade\data\combat_knife_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blade\data\combat_knife_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blade\data\combat_knife_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <suicideAnim>onehanded</suicideAnim>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeMachete</ammo>
+        <range>1.2</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeMachete_Heavy</ammo>
+        <range>1.2</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeMachete_Heavy</ammo>
+        <range>3.3</range>
+      </Sprint>
+    </MeleeModes>
+    <soundImpactType>metal</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <animalSkinning_in>
+          <soundSet>animalSkinning_in_SoundSet</soundSet>
+          <id>516</id>
+        </animalSkinning_in>
+        <animalSkinning>
+          <soundSet>animalSkinning_SoundSet</soundSet>
+          <id>517</id>
+        </animalSkinning>
+        <animalSkinning_out>
+          <soundSet>animalSkinning_out_SoundSet</soundSet>
+          <id>518</id>
+        </animalSkinning_out>
+        <CutTies_end>
+          <soundSet>CutTies_end_SoundSet</soundSet>
+          <id>519</id>
+        </CutTies_end>
+        <CutTies_loop>
+          <soundSet>CutTies_loop_SoundSet</soundSet>
+          <id>520</id>
+        </CutTies_loop>
+        <shaving_knife_clean>
+          <soundSet>shaving_knife_clean_SoundSet</soundSet>
+          <id>600</id>
+        </shaving_knife_clean>
+        <shaving_knife1>
+          <soundSet>shaving_knife1_SoundSet</soundSet>
+          <id>601</id>
+        </shaving_knife1>
+        <shaving_knife2>
+          <soundSet>shaving_knife2_SoundSet</soundSet>
+          <id>602</id>
+        </shaving_knife2>
+        <shaving_knife3>
+          <soundSet>shaving_knife3_SoundSet</soundSet>
+          <id>603</id>
+        </shaving_knife3>
+        <shaving_knife4>
+          <soundSet>shaving_knife4_SoundSet</soundSet>
+          <id>604</id>
+        </shaving_knife4>
+        <shaving_knife5>
+          <soundSet>shaving_knife5_SoundSet</soundSet>
+          <id>605</id>
+        </shaving_knife5>
+        <shaving_knife6>
+          <soundSet>shaving_knife6_SoundSet</soundSet>
+          <id>606</id>
+        </shaving_knife6>
+        <shaving_knife7>
+          <soundSet>shaving_knife7_SoundSet</soundSet>
+          <id>607</id>
+        </shaving_knife7>
+        <shaving_knife8>
+          <soundSet>shaving_knife8_SoundSet</soundSet>
+          <id>608</id>
+        </shaving_knife8>
+        <shaving_knife9>
+          <soundSet>shaving_knife9_SoundSet</soundSet>
+          <id>609</id>
+        </shaving_knife9>
+        <shaving_knife10>
+          <soundSet>shaving_knife10_SoundSet</soundSet>
+          <id>610</id>
+        </shaving_knife10>
+        <shaving_knife11>
+          <soundSet>shaving_knife11_SoundSet</soundSet>
+          <id>611</id>
+        </shaving_knife11>
+        <shaving_knife12>
+          <soundSet>shaving_knife12_SoundSet</soundSet>
+          <id>612</id>
+        </shaving_knife12>
+        <shaving_knife13>
+          <soundSet>shaving_knife13_SoundSet</soundSet>
+          <id>613</id>
+        </shaving_knife13>
+        <shaving_knife14>
+          <soundSet>shaving_knife14_SoundSet</soundSet>
+          <id>614</id>
+        </shaving_knife14>
+        <shaving_knife15>
+          <soundSet>shaving_knife15_SoundSet</soundSet>
+          <id>615</id>
+        </shaving_knife15>
+        <shaving_knife16>
+          <soundSet>shaving_knife16_SoundSet</soundSet>
+          <id>616</id>
+        </shaving_knife16>
+        <shaving_knife17>
+          <soundSet>shaving_knife17_SoundSet</soundSet>
+          <id>617</id>
+        </shaving_knife17>
+        <shaving_knife18>
+          <soundSet>shaving_knife18_SoundSet</soundSet>
+          <id>618</id>
+        </shaving_knife18>
+        <shaving_knife19>
+          <soundSet>shaving_knife19_SoundSet</soundSet>
+          <id>619</id>
+        </shaving_knife19>
+        <shaving_knife20>
+          <soundSet>shaving_knife20_SoundSet</soundSet>
+          <id>620</id>
+        </shaving_knife20>
+        <shaving_knife21>
+          <soundSet>shaving_knife21_SoundSet</soundSet>
+          <id>621</id>
+        </shaving_knife21>
+        <drop>
+          <soundset>combatknife_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+      </SoundWeapon>
+    </AnimEvents>
+  </CombatKnife>
+  <HuntingKnife base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_HuntingKnife0</displayName>
+    <descriptionShort>STR_CfgVehicles_HuntingKnife1</descriptionShort>
+    <model>
+      \dz\weapons\melee\blade\Hunting_knife.p3d
+    </model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <inventorySlot type="array"><item>Knife</item></inventorySlot>
+    <repairableWithKits type="array"><item>4</item></repairableWithKits>
+    <repairCosts type="array"><item>10</item></repairCosts>
+    <rotationFlags>17</rotationFlags>
+    <RestrainUnlockType>1</RestrainUnlockType>
+    <canSkinBodies>1</canSkinBodies>
+    <weight>200</weight>
+    <itemSize type="array"><item>1</item><item>3</item></itemSize>
+    <lootTag type="array"><item>Hunting</item><item>Camping</item></lootTag>
+    <lootCategory>Tools</lootCategory>
+    <itemInfo type="array"><item>Knife</item></itemInfo>
+    <openItemSpillRange type="array"><item>10</item><item>20</item></openItemSpillRange>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>130</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blade\data\Hunting_knife.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blade\data\Hunting_knife.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blade\data\Hunting_knife_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blade\data\Hunting_knife_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blade\data\Hunting_knife_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <suicideAnim>onehanded</suicideAnim>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeKnife</ammo>
+        <range>1.2</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeKnife_Heavy</ammo>
+        <range>1.2</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeKnife_Heavy</ammo>
+        <range>3.3</range>
+      </Sprint>
+    </MeleeModes>
+    <soundImpactType>metal</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <animalSkinning_in>
+          <soundSet>animalSkinning_in_SoundSet</soundSet>
+          <id>516</id>
+        </animalSkinning_in>
+        <animalSkinning>
+          <soundSet>animalSkinning_SoundSet</soundSet>
+          <id>517</id>
+        </animalSkinning>
+        <animalSkinning_out>
+          <soundSet>animalSkinning_out_SoundSet</soundSet>
+          <id>518</id>
+        </animalSkinning_out>
+        <CutTies_end>
+          <soundSet>CutTies_end_SoundSet</soundSet>
+          <id>519</id>
+        </CutTies_end>
+        <CutTies_loop>
+          <soundSet>CutTies_loop_SoundSet</soundSet>
+          <id>520</id>
+        </CutTies_loop>
+        <shaving_knife_clean>
+          <soundSet>shaving_knife_clean_SoundSet</soundSet>
+          <id>600</id>
+        </shaving_knife_clean>
+        <shaving_knife1>
+          <soundSet>shaving_knife1_SoundSet</soundSet>
+          <id>601</id>
+        </shaving_knife1>
+        <shaving_knife2>
+          <soundSet>shaving_knife2_SoundSet</soundSet>
+          <id>602</id>
+        </shaving_knife2>
+        <shaving_knife3>
+          <soundSet>shaving_knife3_SoundSet</soundSet>
+          <id>603</id>
+        </shaving_knife3>
+        <shaving_knife4>
+          <soundSet>shaving_knife4_SoundSet</soundSet>
+          <id>604</id>
+        </shaving_knife4>
+        <shaving_knife5>
+          <soundSet>shaving_knife5_SoundSet</soundSet>
+          <id>605</id>
+        </shaving_knife5>
+        <shaving_knife6>
+          <soundSet>shaving_knife6_SoundSet</soundSet>
+          <id>606</id>
+        </shaving_knife6>
+        <shaving_knife7>
+          <soundSet>shaving_knife7_SoundSet</soundSet>
+          <id>607</id>
+        </shaving_knife7>
+        <shaving_knife8>
+          <soundSet>shaving_knife8_SoundSet</soundSet>
+          <id>608</id>
+        </shaving_knife8>
+        <shaving_knife9>
+          <soundSet>shaving_knife9_SoundSet</soundSet>
+          <id>609</id>
+        </shaving_knife9>
+        <shaving_knife10>
+          <soundSet>shaving_knife10_SoundSet</soundSet>
+          <id>610</id>
+        </shaving_knife10>
+        <shaving_knife11>
+          <soundSet>shaving_knife11_SoundSet</soundSet>
+          <id>611</id>
+        </shaving_knife11>
+        <shaving_knife12>
+          <soundSet>shaving_knife12_SoundSet</soundSet>
+          <id>612</id>
+        </shaving_knife12>
+        <shaving_knife13>
+          <soundSet>shaving_knife13_SoundSet</soundSet>
+          <id>613</id>
+        </shaving_knife13>
+        <shaving_knife14>
+          <soundSet>shaving_knife14_SoundSet</soundSet>
+          <id>614</id>
+        </shaving_knife14>
+        <shaving_knife15>
+          <soundSet>shaving_knife15_SoundSet</soundSet>
+          <id>615</id>
+        </shaving_knife15>
+        <shaving_knife16>
+          <soundSet>shaving_knife16_SoundSet</soundSet>
+          <id>616</id>
+        </shaving_knife16>
+        <shaving_knife17>
+          <soundSet>shaving_knife17_SoundSet</soundSet>
+          <id>617</id>
+        </shaving_knife17>
+        <shaving_knife18>
+          <soundSet>shaving_knife18_SoundSet</soundSet>
+          <id>618</id>
+        </shaving_knife18>
+        <shaving_knife19>
+          <soundSet>shaving_knife19_SoundSet</soundSet>
+          <id>619</id>
+        </shaving_knife19>
+        <shaving_knife20>
+          <soundSet>shaving_knife20_SoundSet</soundSet>
+          <id>620</id>
+        </shaving_knife20>
+        <shaving_knife21>
+          <soundSet>shaving_knife21_SoundSet</soundSet>
+          <id>621</id>
+        </shaving_knife21>
+        <pickup_light>
+          <soundSet>hatchet_pickup_light_SoundSet</soundSet>
+          <id>796</id>
+        </pickup_light>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>woodaxe_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+        <FirefighterAxe_loop_SoundSet>
+          <soundSet>FirefighterAxe_loop_SoundSet</soundSet>
+          <id>1121</id>
+        </FirefighterAxe_loop_SoundSet>
+        <FirefighterAxe_end_SoundSet>
+          <soundSet>FirefighterAxe_end_SoundSet</soundSet>
+          <id>1122</id>
+        </FirefighterAxe_end_SoundSet>
+      </SoundWeapon>
+    </AnimEvents>
+  </HuntingKnife>
+  <Machete base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_Machete0</displayName>
+    <descriptionShort>STR_CfgVehicles_Machete1</descriptionShort>
+    <model>\dz\weapons\melee\blade\machete.p3d</model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <animClass>Knife</animClass>
+    <RestrainUnlockType>1</RestrainUnlockType>
+    <repairableWithKits type="array"><item>4</item></repairableWithKits>
+    <repairCosts type="array"><item>12</item></repairCosts>
+    <inventorySlot type="array"><item></item></inventorySlot>
+    <rotationFlags>17</rotationFlags>
+    <canSkinBodies>1</canSkinBodies>
+    <weight>500</weight>
+    <itemSize type="array"><item>1</item><item>4</item></itemSize>
+    <lootTag type="array"><item>Work</item><item>Forester</item><item>Hunting</item><item>Farm</item></lootTag>
+    <lootCategory>Tools</lootCategory>
+    <itemInfo type="array"><item>Knife</item></itemInfo>
+    <openItemSpillRange type="array"><item>10</item><item>20</item></openItemSpillRange>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blade\data\machete.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blade\data\machete.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blade\data\machete_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blade\data\machete_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blade\data\machete_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <suicideAnim>onehanded</suicideAnim>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeMachete</ammo>
+        <range>1.4</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeMachete_Heavy</ammo>
+        <range>1.4</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeMachete_Heavy</ammo>
+        <range>3.3</range>
+      </Sprint>
+    </MeleeModes>
+    <soundImpactType>metal</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <animalSkinning_in>
+          <soundSet>animalSkinning_in_SoundSet</soundSet>
+          <id>516</id>
+        </animalSkinning_in>
+        <animalSkinning>
+          <soundSet>animalSkinning_SoundSet</soundSet>
+          <id>517</id>
+        </animalSkinning>
+        <animalSkinning_out>
+          <soundSet>animalSkinning_out_SoundSet</soundSet>
+          <id>518</id>
+        </animalSkinning_out>
+        <CutTies_end>
+          <soundSet>CutTies_end_SoundSet</soundSet>
+          <id>519</id>
+        </CutTies_end>
+        <CutTies_loop>
+          <soundSet>CutTies_loop_SoundSet</soundSet>
+          <id>520</id>
+        </CutTies_loop>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>woodaxe_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+      </SoundWeapon>
+    </AnimEvents>
+  </Machete>
+  <Pitchfork base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_Pitchfork0</displayName>
+    <descriptionShort>STR_CfgVehicles_Pitchfork1</descriptionShort>
+    <model>\dz\weapons\melee\blade\Hay_Fork.p3d</model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <rotationFlags>17</rotationFlags>
+    <itemSize type="array"><item>2</item><item>8</item></itemSize>
+    <weight>1500</weight>
+    <itemBehaviour>2</itemBehaviour>
+    <lootTag type="array"><item>Farm</item></lootTag>
+    <lootCategory>Tools</lootCategory>
+    <openItemSpillRange type="array"><item>30</item><item>60</item></openItemSpillRange>
+    <soundImpactType>metal</soundImpactType>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <suicideAnim>pitchfork</suicideAnim>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleePitchfork</ammo>
+        <range>2</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleePitchfork_Heavy</ammo>
+        <range>2.5</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleePitchfork_Heavy</ammo>
+        <range>4.1</range>
+      </Sprint>
+    </MeleeModes>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blade\data\Hay_Fork_metal.rvmat</item><item>DZ\weapons\melee\blade\data\Hay_Fork_wood.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blade\data\Hay_Fork_metal.rvmat</item><item>DZ\weapons\melee\blade\data\Hay_Fork_wood.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blade\data\Hay_Fork_metal_damage.rvmat</item><item>DZ\weapons\melee\blade\data\Hay_Fork_wood_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blade\data\Hay_Fork_metal_damage.rvmat</item><item>DZ\weapons\melee\blade\data\Hay_Fork_wood_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blade\data\Hay_Fork_metal_destruct.rvmat</item><item>DZ\weapons\melee\blade\data\Hay_Fork_wood_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <AnimEvents>
+      <SoundWeapon>
+        <animalSkinning_in>
+          <soundSet>animalSkinning_in_SoundSet</soundSet>
+          <id>516</id>
+        </animalSkinning_in>
+        <animalSkinning>
+          <soundSet>animalSkinning_SoundSet</soundSet>
+          <id>517</id>
+        </animalSkinning>
+        <animalSkinning_out>
+          <soundSet>animalSkinning_out_SoundSet</soundSet>
+          <id>518</id>
+        </animalSkinning_out>
+        <CutTies_end>
+          <soundSet>CutTies_end_SoundSet</soundSet>
+          <id>519</id>
+        </CutTies_end>
+        <CutTies_loop>
+          <soundSet>CutTies_loop_SoundSet</soundSet>
+          <id>520</id>
+        </CutTies_loop>
+        <shaving_knife_clean>
+          <soundSet>shaving_knife_clean_SoundSet</soundSet>
+          <id>600</id>
+        </shaving_knife_clean>
+        <shaving_knife1>
+          <soundSet>shaving_knife1_SoundSet</soundSet>
+          <id>601</id>
+        </shaving_knife1>
+        <shaving_knife2>
+          <soundSet>shaving_knife2_SoundSet</soundSet>
+          <id>602</id>
+        </shaving_knife2>
+        <shaving_knife3>
+          <soundSet>shaving_knife3_SoundSet</soundSet>
+          <id>603</id>
+        </shaving_knife3>
+        <shaving_knife4>
+          <soundSet>shaving_knife4_SoundSet</soundSet>
+          <id>604</id>
+        </shaving_knife4>
+        <shaving_knife5>
+          <soundSet>shaving_knife5_SoundSet</soundSet>
+          <id>605</id>
+        </shaving_knife5>
+        <shaving_knife6>
+          <soundSet>shaving_knife6_SoundSet</soundSet>
+          <id>606</id>
+        </shaving_knife6>
+        <shaving_knife7>
+          <soundSet>shaving_knife7_SoundSet</soundSet>
+          <id>607</id>
+        </shaving_knife7>
+        <shaving_knife8>
+          <soundSet>shaving_knife8_SoundSet</soundSet>
+          <id>608</id>
+        </shaving_knife8>
+        <shaving_knife9>
+          <soundSet>shaving_knife9_SoundSet</soundSet>
+          <id>609</id>
+        </shaving_knife9>
+        <shaving_knife10>
+          <soundSet>shaving_knife10_SoundSet</soundSet>
+          <id>610</id>
+        </shaving_knife10>
+        <shaving_knife11>
+          <soundSet>shaving_knife11_SoundSet</soundSet>
+          <id>611</id>
+        </shaving_knife11>
+        <shaving_knife12>
+          <soundSet>shaving_knife12_SoundSet</soundSet>
+          <id>612</id>
+        </shaving_knife12>
+        <shaving_knife13>
+          <soundSet>shaving_knife13_SoundSet</soundSet>
+          <id>613</id>
+        </shaving_knife13>
+        <shaving_knife14>
+          <soundSet>shaving_knife14_SoundSet</soundSet>
+          <id>614</id>
+        </shaving_knife14>
+        <shaving_knife15>
+          <soundSet>shaving_knife15_SoundSet</soundSet>
+          <id>615</id>
+        </shaving_knife15>
+        <shaving_knife16>
+          <soundSet>shaving_knife16_SoundSet</soundSet>
+          <id>616</id>
+        </shaving_knife16>
+        <shaving_knife17>
+          <soundSet>shaving_knife17_SoundSet</soundSet>
+          <id>617</id>
+        </shaving_knife17>
+        <shaving_knife18>
+          <soundSet>shaving_knife18_SoundSet</soundSet>
+          <id>618</id>
+        </shaving_knife18>
+        <shaving_knife19>
+          <soundSet>shaving_knife19_SoundSet</soundSet>
+          <id>619</id>
+        </shaving_knife19>
+        <shaving_knife20>
+          <soundSet>shaving_knife20_SoundSet</soundSet>
+          <id>620</id>
+        </shaving_knife20>
+        <shaving_knife21>
+          <soundSet>shaving_knife21_SoundSet</soundSet>
+          <id>621</id>
+        </shaving_knife21>
+        <pickup_light>
+          <soundSet>hatchet_pickup_light_SoundSet</soundSet>
+          <id>796</id>
+        </pickup_light>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>woodaxe_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+        <FirefighterAxe_loop_SoundSet>
+          <soundSet>FirefighterAxe_loop_SoundSet</soundSet>
+          <id>1121</id>
+        </FirefighterAxe_loop_SoundSet>
+        <FirefighterAxe_end_SoundSet>
+          <soundSet>FirefighterAxe_end_SoundSet</soundSet>
+          <id>1122</id>
+        </FirefighterAxe_end_SoundSet>
+      </SoundWeapon>
+    </AnimEvents>
+  </Pitchfork>
+  <Pickaxe base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_Pickaxe0</displayName>
+    <descriptionShort>STR_CfgVehicles_Pickaxe1</descriptionShort>
+    <model>\dz\weapons\melee\blade\Pickaxe.p3d</model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <rotationFlags>12</rotationFlags>
+    <repairableWithKits type="array"><item>4</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <build_action_type>36</build_action_type>
+    <dismantle_action_type>46</dismantle_action_type>
+    <itemInfo type="array"><item>Pickaxe</item></itemInfo>
+    <RestrainUnlockType>1</RestrainUnlockType>
+    <itemSize type="array"><item>3</item><item>6</item></itemSize>
+    <weight>1300</weight>
+    <itemBehaviour>2</itemBehaviour>
+    <lootTag type="array"><item>Work</item></lootTag>
+    <lootCategory>Tools</lootCategory>
+    <openItemSpillRange type="array"><item>40</item><item>70</item></openItemSpillRange>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\melee\blade\data\Pickaxe_co.paa</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blade\data\Pickaxe.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blade\data\Pickaxe.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blade\data\Pickaxe_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blade\data\Pickaxe_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blade\data\Pickaxe_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <suicideAnim>fireaxe</suicideAnim>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleePickaxe</ammo>
+        <range>1.8</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleePickaxe_Heavy</ammo>
+        <range>1.8</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleePickaxe_Heavy</ammo>
+        <range>3.7</range>
+      </Sprint>
+    </MeleeModes>
+    <Horticulture>
+      <ToolAnim>CHOPPINGWOOD</ToolAnim>
+      <DiggingTimeToComplete>4.5</DiggingTimeToComplete>
+    </Horticulture>
+    <soundImpactType>metal</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <pickup_light>
+          <soundSet>pickUpShovelLight_SoundSet</soundSet>
+          <id>796</id>
+        </pickup_light>
+        <pickup>
+          <soundSet>pickUpShovel_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>woodaxe_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+        <FirefighterAxe_loop_SoundSet>
+          <soundSet>FirefighterAxe_loop_SoundSet</soundSet>
+          <id>1121</id>
+        </FirefighterAxe_loop_SoundSet>
+        <FirefighterAxe_end_SoundSet>
+          <soundSet>FirefighterAxe_end_SoundSet</soundSet>
+          <id>1122</id>
+        </FirefighterAxe_end_SoundSet>
+        <ShoulderR_Hide>
+          <soundset>ShoulderR_Hide_SoundSet</soundset>
+          <id>1210</id>
+        </ShoulderR_Hide>
+        <ShoulderR_Show>
+          <soundset>ShoulderR_Show_SoundSet</soundset>
+          <id>1211</id>
+        </ShoulderR_Show>
+        <animalSkinning_in>
+          <soundSet>animalSkinning_in_SoundSet</soundSet>
+          <id>516</id>
+        </animalSkinning_in>
+        <animalSkinning>
+          <soundSet>animalSkinning_SoundSet</soundSet>
+          <id>517</id>
+        </animalSkinning>
+        <animalSkinning_out>
+          <soundSet>animalSkinning_out_SoundSet</soundSet>
+          <id>518</id>
+        </animalSkinning_out>
+      </SoundWeapon>
+    </AnimEvents>
+  </Pickaxe>
+  <Sword base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_Sword0</displayName>
+    <descriptionShort>STR_CfgVehicles_Sword1</descriptionShort>
+    <model>
+      \dz\weapons\melee\blade\medieval_sword.p3d
+    </model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <repairableWithKits type="array"><item>4</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <RestrainUnlockType>1</RestrainUnlockType>
+    <rotationFlags>12</rotationFlags>
+    <itemSize type="array"><item>2</item><item>8</item></itemSize>
+    <weight>1500</weight>
+    <itemBehaviour>2</itemBehaviour>
+    <itemInfo type="array"><item>Axe</item></itemInfo>
+    <openItemSpillRange type="array"><item>40</item><item>60</item></openItemSpillRange>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blade\data\medieval_sword.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blade\data\medieval_sword.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blade\data\medieval_sword_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blade\data\medieval_sword_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blade\data\medieval_sword_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <suicideAnim>sword</suicideAnim>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeSword</ammo>
+        <range>1.8</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeSword_Heavy</ammo>
+        <range>1.8</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeSword_Heavy</ammo>
+        <range>3.7</range>
+      </Sprint>
+    </MeleeModes>
+    <soundImpactType>metal</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <animalSkinning_in>
+          <soundSet>animalSkinning_in_SoundSet</soundSet>
+          <id>516</id>
+        </animalSkinning_in>
+        <animalSkinning>
+          <soundSet>animalSkinning_SoundSet</soundSet>
+          <id>517</id>
+        </animalSkinning>
+        <animalSkinning_out>
+          <soundSet>animalSkinning_out_SoundSet</soundSet>
+          <id>518</id>
+        </animalSkinning_out>
+        <CutTies_end>
+          <soundSet>CutTies_end_SoundSet</soundSet>
+          <id>519</id>
+        </CutTies_end>
+        <CutTies_loop>
+          <soundSet>CutTies_loop_SoundSet</soundSet>
+          <id>520</id>
+        </CutTies_loop>
+        <shaving_knife_clean>
+          <soundSet>shaving_knife_clean_SoundSet</soundSet>
+          <id>600</id>
+        </shaving_knife_clean>
+        <shaving_knife1>
+          <soundSet>shaving_knife1_SoundSet</soundSet>
+          <id>601</id>
+        </shaving_knife1>
+        <shaving_knife2>
+          <soundSet>shaving_knife2_SoundSet</soundSet>
+          <id>602</id>
+        </shaving_knife2>
+        <shaving_knife3>
+          <soundSet>shaving_knife3_SoundSet</soundSet>
+          <id>603</id>
+        </shaving_knife3>
+        <shaving_knife4>
+          <soundSet>shaving_knife4_SoundSet</soundSet>
+          <id>604</id>
+        </shaving_knife4>
+        <shaving_knife5>
+          <soundSet>shaving_knife5_SoundSet</soundSet>
+          <id>605</id>
+        </shaving_knife5>
+        <shaving_knife6>
+          <soundSet>shaving_knife6_SoundSet</soundSet>
+          <id>606</id>
+        </shaving_knife6>
+        <shaving_knife7>
+          <soundSet>shaving_knife7_SoundSet</soundSet>
+          <id>607</id>
+        </shaving_knife7>
+        <shaving_knife8>
+          <soundSet>shaving_knife8_SoundSet</soundSet>
+          <id>608</id>
+        </shaving_knife8>
+        <shaving_knife9>
+          <soundSet>shaving_knife9_SoundSet</soundSet>
+          <id>609</id>
+        </shaving_knife9>
+        <shaving_knife10>
+          <soundSet>shaving_knife10_SoundSet</soundSet>
+          <id>610</id>
+        </shaving_knife10>
+        <shaving_knife11>
+          <soundSet>shaving_knife11_SoundSet</soundSet>
+          <id>611</id>
+        </shaving_knife11>
+        <shaving_knife12>
+          <soundSet>shaving_knife12_SoundSet</soundSet>
+          <id>612</id>
+        </shaving_knife12>
+        <shaving_knife13>
+          <soundSet>shaving_knife13_SoundSet</soundSet>
+          <id>613</id>
+        </shaving_knife13>
+        <shaving_knife14>
+          <soundSet>shaving_knife14_SoundSet</soundSet>
+          <id>614</id>
+        </shaving_knife14>
+        <shaving_knife15>
+          <soundSet>shaving_knife15_SoundSet</soundSet>
+          <id>615</id>
+        </shaving_knife15>
+        <shaving_knife16>
+          <soundSet>shaving_knife16_SoundSet</soundSet>
+          <id>616</id>
+        </shaving_knife16>
+        <shaving_knife17>
+          <soundSet>shaving_knife17_SoundSet</soundSet>
+          <id>617</id>
+        </shaving_knife17>
+        <shaving_knife18>
+          <soundSet>shaving_knife18_SoundSet</soundSet>
+          <id>618</id>
+        </shaving_knife18>
+        <shaving_knife19>
+          <soundSet>shaving_knife19_SoundSet</soundSet>
+          <id>619</id>
+        </shaving_knife19>
+        <shaving_knife20>
+          <soundSet>shaving_knife20_SoundSet</soundSet>
+          <id>620</id>
+        </shaving_knife20>
+        <shaving_knife21>
+          <soundSet>shaving_knife21_SoundSet</soundSet>
+          <id>621</id>
+        </shaving_knife21>
+        <pickup_light>
+          <soundSet>hatchet_pickup_light_SoundSet</soundSet>
+          <id>796</id>
+        </pickup_light>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>woodaxe_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+        <FirefighterAxe_loop_SoundSet>
+          <soundSet>FirefighterAxe_loop_SoundSet</soundSet>
+          <id>1121</id>
+        </FirefighterAxe_loop_SoundSet>
+        <FirefighterAxe_end_SoundSet>
+          <soundSet>FirefighterAxe_end_SoundSet</soundSet>
+          <id>1122</id>
+        </FirefighterAxe_end_SoundSet>
+      </SoundWeapon>
+    </AnimEvents>
+  </Sword>
+  <KukriKnife base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_KukriKnife0</displayName>
+    <descriptionShort>STR_CfgVehicles_KukriKnife1</descriptionShort>
+    <model>\dz\weapons\melee\blade\kukri_knife.p3d</model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <repairableWithKits type="array"><item>4</item></repairableWithKits>
+    <repairCosts type="array"><item>10</item></repairCosts>
+    <rotationFlags>17</rotationFlags>
+    <RestrainUnlockType>1</RestrainUnlockType>
+    <canSkinBodies>1</canSkinBodies>
+    <weight>250</weight>
+    <itemSize type="array"><item>1</item><item>4</item></itemSize>
+    <openItemSpillRange type="array"><item>10</item><item>20</item></openItemSpillRange>
+    <itemInfo type="array"><item>Knife</item></itemInfo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>150</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blade\data\kukri_knife.rvmat</item><item>DZ\weapons\melee\blade\data\kukri_knife_wood.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blade\data\kukri_knife.rvmat</item><item>DZ\weapons\melee\blade\data\kukri_knife_wood.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blade\data\kukri_knife_damage.rvmat</item><item>DZ\weapons\melee\blade\data\kukri_knife_wood_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blade\data\kukri_knife_damage.rvmat</item><item>DZ\weapons\melee\blade\data\kukri_knife_wood_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blade\data\kukri_knife_destruct.rvmat</item><item>DZ\weapons\melee\blade\data\kukri_knife_wood_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <suicideAnim>onehanded</suicideAnim>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeMachete</ammo>
+        <range>1.4</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeMachete_Heavy</ammo>
+        <range>1.4</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeMachete_Heavy</ammo>
+        <range>3.3</range>
+      </Sprint>
+    </MeleeModes>
+    <soundImpactType>metal</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <animalSkinning_in>
+          <soundSet>animalSkinning_in_SoundSet</soundSet>
+          <id>516</id>
+        </animalSkinning_in>
+        <animalSkinning>
+          <soundSet>animalSkinning_SoundSet</soundSet>
+          <id>517</id>
+        </animalSkinning>
+        <animalSkinning_out>
+          <soundSet>animalSkinning_out_SoundSet</soundSet>
+          <id>518</id>
+        </animalSkinning_out>
+        <CutTies_end>
+          <soundSet>CutTies_end_SoundSet</soundSet>
+          <id>519</id>
+        </CutTies_end>
+        <CutTies_loop>
+          <soundSet>CutTies_loop_SoundSet</soundSet>
+          <id>520</id>
+        </CutTies_loop>
+        <shaving_knife_clean>
+          <soundSet>shaving_knife_clean_SoundSet</soundSet>
+          <id>600</id>
+        </shaving_knife_clean>
+        <shaving_knife1>
+          <soundSet>shaving_knife1_SoundSet</soundSet>
+          <id>601</id>
+        </shaving_knife1>
+        <shaving_knife2>
+          <soundSet>shaving_knife2_SoundSet</soundSet>
+          <id>602</id>
+        </shaving_knife2>
+        <shaving_knife3>
+          <soundSet>shaving_knife3_SoundSet</soundSet>
+          <id>603</id>
+        </shaving_knife3>
+        <shaving_knife4>
+          <soundSet>shaving_knife4_SoundSet</soundSet>
+          <id>604</id>
+        </shaving_knife4>
+        <shaving_knife5>
+          <soundSet>shaving_knife5_SoundSet</soundSet>
+          <id>605</id>
+        </shaving_knife5>
+        <shaving_knife6>
+          <soundSet>shaving_knife6_SoundSet</soundSet>
+          <id>606</id>
+        </shaving_knife6>
+        <shaving_knife7>
+          <soundSet>shaving_knife7_SoundSet</soundSet>
+          <id>607</id>
+        </shaving_knife7>
+        <shaving_knife8>
+          <soundSet>shaving_knife8_SoundSet</soundSet>
+          <id>608</id>
+        </shaving_knife8>
+        <shaving_knife9>
+          <soundSet>shaving_knife9_SoundSet</soundSet>
+          <id>609</id>
+        </shaving_knife9>
+        <shaving_knife10>
+          <soundSet>shaving_knife10_SoundSet</soundSet>
+          <id>610</id>
+        </shaving_knife10>
+        <shaving_knife11>
+          <soundSet>shaving_knife11_SoundSet</soundSet>
+          <id>611</id>
+        </shaving_knife11>
+        <shaving_knife12>
+          <soundSet>shaving_knife12_SoundSet</soundSet>
+          <id>612</id>
+        </shaving_knife12>
+        <shaving_knife13>
+          <soundSet>shaving_knife13_SoundSet</soundSet>
+          <id>613</id>
+        </shaving_knife13>
+        <shaving_knife14>
+          <soundSet>shaving_knife14_SoundSet</soundSet>
+          <id>614</id>
+        </shaving_knife14>
+        <shaving_knife15>
+          <soundSet>shaving_knife15_SoundSet</soundSet>
+          <id>615</id>
+        </shaving_knife15>
+        <shaving_knife16>
+          <soundSet>shaving_knife16_SoundSet</soundSet>
+          <id>616</id>
+        </shaving_knife16>
+        <shaving_knife17>
+          <soundSet>shaving_knife17_SoundSet</soundSet>
+          <id>617</id>
+        </shaving_knife17>
+        <shaving_knife18>
+          <soundSet>shaving_knife18_SoundSet</soundSet>
+          <id>618</id>
+        </shaving_knife18>
+        <shaving_knife19>
+          <soundSet>shaving_knife19_SoundSet</soundSet>
+          <id>619</id>
+        </shaving_knife19>
+        <shaving_knife20>
+          <soundSet>shaving_knife20_SoundSet</soundSet>
+          <id>620</id>
+        </shaving_knife20>
+        <shaving_knife21>
+          <soundSet>shaving_knife21_SoundSet</soundSet>
+          <id>621</id>
+        </shaving_knife21>
+        <pickup_light>
+          <soundSet>hatchet_pickup_light_SoundSet</soundSet>
+          <id>796</id>
+        </pickup_light>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>woodaxe_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+        <FirefighterAxe_loop_SoundSet>
+          <soundSet>FirefighterAxe_loop_SoundSet</soundSet>
+          <id>1121</id>
+        </FirefighterAxe_loop_SoundSet>
+        <FirefighterAxe_end_SoundSet>
+          <soundSet>FirefighterAxe_end_SoundSet</soundSet>
+          <id>1122</id>
+        </FirefighterAxe_end_SoundSet>
+      </SoundWeapon>
+    </AnimEvents>
+  </KukriKnife>
+  <FangeKnife base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_FangeKnife0</displayName>
+    <descriptionShort>STR_CfgVehicles_FangeKnife1</descriptionShort>
+    <model>\dz\weapons\melee\blade\fange_knife.p3d</model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <inventorySlot type="array"><item>Knife</item></inventorySlot>
+    <repairableWithKits type="array"><item>4</item></repairableWithKits>
+    <repairCosts type="array"><item>10</item></repairCosts>
+    <rotationFlags>17</rotationFlags>
+    <RestrainUnlockType>1</RestrainUnlockType>
+    <canSkinBodies>1</canSkinBodies>
+    <weight>200</weight>
+    <itemSize type="array"><item>1</item><item>4</item></itemSize>
+    <openItemSpillRange type="array"><item>10</item><item>20</item></openItemSpillRange>
+    <itemInfo type="array"><item>Knife</item></itemInfo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>130</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blade\data\fange_knife_blade.rvmat</item><item>DZ\weapons\melee\blade\data\fange_knife_handle.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blade\data\fange_knife_blade.rvmat</item><item>DZ\weapons\melee\blade\data\fange_knife_handle.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blade\data\fange_knife_blade_damage.rvmat</item><item>DZ\weapons\melee\blade\data\fange_knife_handle_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blade\data\fange_knife_blade_damage.rvmat</item><item>DZ\weapons\melee\blade\data\fange_knife_handle_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blade\data\fange_knife_blade_destruct.rvmat</item><item>DZ\weapons\melee\blade\data\fange_knife_handle_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <suicideAnim>onehanded</suicideAnim>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeMachete</ammo>
+        <range>1.4</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeMachete_Heavy</ammo>
+        <range>1.4</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeMachete_Heavy</ammo>
+        <range>3.3</range>
+      </Sprint>
+    </MeleeModes>
+    <soundImpactType>metal</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <animalSkinning_in>
+          <soundSet>animalSkinning_in_SoundSet</soundSet>
+          <id>516</id>
+        </animalSkinning_in>
+        <animalSkinning>
+          <soundSet>animalSkinning_SoundSet</soundSet>
+          <id>517</id>
+        </animalSkinning>
+        <animalSkinning_out>
+          <soundSet>animalSkinning_out_SoundSet</soundSet>
+          <id>518</id>
+        </animalSkinning_out>
+        <CutTies_end>
+          <soundSet>CutTies_end_SoundSet</soundSet>
+          <id>519</id>
+        </CutTies_end>
+        <CutTies_loop>
+          <soundSet>CutTies_loop_SoundSet</soundSet>
+          <id>520</id>
+        </CutTies_loop>
+        <shaving_knife_clean>
+          <soundSet>shaving_knife_clean_SoundSet</soundSet>
+          <id>600</id>
+        </shaving_knife_clean>
+        <shaving_knife1>
+          <soundSet>shaving_knife1_SoundSet</soundSet>
+          <id>601</id>
+        </shaving_knife1>
+        <shaving_knife2>
+          <soundSet>shaving_knife2_SoundSet</soundSet>
+          <id>602</id>
+        </shaving_knife2>
+        <shaving_knife3>
+          <soundSet>shaving_knife3_SoundSet</soundSet>
+          <id>603</id>
+        </shaving_knife3>
+        <shaving_knife4>
+          <soundSet>shaving_knife4_SoundSet</soundSet>
+          <id>604</id>
+        </shaving_knife4>
+        <shaving_knife5>
+          <soundSet>shaving_knife5_SoundSet</soundSet>
+          <id>605</id>
+        </shaving_knife5>
+        <shaving_knife6>
+          <soundSet>shaving_knife6_SoundSet</soundSet>
+          <id>606</id>
+        </shaving_knife6>
+        <shaving_knife7>
+          <soundSet>shaving_knife7_SoundSet</soundSet>
+          <id>607</id>
+        </shaving_knife7>
+        <shaving_knife8>
+          <soundSet>shaving_knife8_SoundSet</soundSet>
+          <id>608</id>
+        </shaving_knife8>
+        <shaving_knife9>
+          <soundSet>shaving_knife9_SoundSet</soundSet>
+          <id>609</id>
+        </shaving_knife9>
+        <shaving_knife10>
+          <soundSet>shaving_knife10_SoundSet</soundSet>
+          <id>610</id>
+        </shaving_knife10>
+        <shaving_knife11>
+          <soundSet>shaving_knife11_SoundSet</soundSet>
+          <id>611</id>
+        </shaving_knife11>
+        <shaving_knife12>
+          <soundSet>shaving_knife12_SoundSet</soundSet>
+          <id>612</id>
+        </shaving_knife12>
+        <shaving_knife13>
+          <soundSet>shaving_knife13_SoundSet</soundSet>
+          <id>613</id>
+        </shaving_knife13>
+        <shaving_knife14>
+          <soundSet>shaving_knife14_SoundSet</soundSet>
+          <id>614</id>
+        </shaving_knife14>
+        <shaving_knife15>
+          <soundSet>shaving_knife15_SoundSet</soundSet>
+          <id>615</id>
+        </shaving_knife15>
+        <shaving_knife16>
+          <soundSet>shaving_knife16_SoundSet</soundSet>
+          <id>616</id>
+        </shaving_knife16>
+        <shaving_knife17>
+          <soundSet>shaving_knife17_SoundSet</soundSet>
+          <id>617</id>
+        </shaving_knife17>
+        <shaving_knife18>
+          <soundSet>shaving_knife18_SoundSet</soundSet>
+          <id>618</id>
+        </shaving_knife18>
+        <shaving_knife19>
+          <soundSet>shaving_knife19_SoundSet</soundSet>
+          <id>619</id>
+        </shaving_knife19>
+        <shaving_knife20>
+          <soundSet>shaving_knife20_SoundSet</soundSet>
+          <id>620</id>
+        </shaving_knife20>
+        <shaving_knife21>
+          <soundSet>shaving_knife21_SoundSet</soundSet>
+          <id>621</id>
+        </shaving_knife21>
+        <pickup_light>
+          <soundSet>hatchet_pickup_light_SoundSet</soundSet>
+          <id>796</id>
+        </pickup_light>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>woodaxe_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+        <FirefighterAxe_loop_SoundSet>
+          <soundSet>FirefighterAxe_loop_SoundSet</soundSet>
+          <id>1121</id>
+        </FirefighterAxe_loop_SoundSet>
+        <FirefighterAxe_end_SoundSet>
+          <soundSet>FirefighterAxe_end_SoundSet</soundSet>
+          <id>1122</id>
+        </FirefighterAxe_end_SoundSet>
+      </SoundWeapon>
+    </AnimEvents>
+  </FangeKnife>
+  <CrudeMachete base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CrudeMachete0</displayName>
+    <descriptionShort>STR_CrudeMachete1</descriptionShort>
+    <model>
+      \dz\weapons\melee\blade\machete_tactical.p3d
+    </model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <animClass>Knife</animClass>
+    <RestrainUnlockType>1</RestrainUnlockType>
+    <repairableWithKits type="array"><item>4</item></repairableWithKits>
+    <repairCosts type="array"><item>12</item></repairCosts>
+    <inventorySlot type="array"><item></item></inventorySlot>
+    <rotationFlags>17</rotationFlags>
+    <canSkinBodies>1</canSkinBodies>
+    <weight>500</weight>
+    <itemSize type="array"><item>1</item><item>4</item></itemSize>
+    <itemInfo type="array"><item>Knife</item></itemInfo>
+    <openItemSpillRange type="array"><item>10</item><item>20</item></openItemSpillRange>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blade\data\machete_tactical.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blade\data\machete_tactical.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blade\data\machete_tactical_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blade\data\machete_tactical_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blade\data\machete_tactical_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <suicideAnim>onehanded</suicideAnim>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeMachete</ammo>
+        <range>1.4</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeMachete_Heavy</ammo>
+        <range>1.4</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeMachete_Heavy</ammo>
+        <range>3.3</range>
+      </Sprint>
+    </MeleeModes>
+    <soundImpactType>metal</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <animalSkinning_in>
+          <soundSet>animalSkinning_in_SoundSet</soundSet>
+          <id>516</id>
+        </animalSkinning_in>
+        <animalSkinning>
+          <soundSet>animalSkinning_SoundSet</soundSet>
+          <id>517</id>
+        </animalSkinning>
+        <animalSkinning_out>
+          <soundSet>animalSkinning_out_SoundSet</soundSet>
+          <id>518</id>
+        </animalSkinning_out>
+        <CutTies_end>
+          <soundSet>CutTies_end_SoundSet</soundSet>
+          <id>519</id>
+        </CutTies_end>
+        <CutTies_loop>
+          <soundSet>CutTies_loop_SoundSet</soundSet>
+          <id>520</id>
+        </CutTies_loop>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>woodaxe_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+      </SoundWeapon>
+    </AnimEvents>
+  </CrudeMachete>
+  <OrientalMachete base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_OrientalMachete0</displayName>
+    <descriptionShort>STR_OrientalMachete1</descriptionShort>
+    <model>
+      \dz\weapons\melee\blade\machete_oriental.p3d
+    </model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <animClass>Knife</animClass>
+    <RestrainUnlockType>1</RestrainUnlockType>
+    <repairableWithKits type="array"><item>4</item></repairableWithKits>
+    <repairCosts type="array"><item>12</item></repairCosts>
+    <inventorySlot type="array"><item></item></inventorySlot>
+    <rotationFlags>17</rotationFlags>
+    <canSkinBodies>1</canSkinBodies>
+    <weight>500</weight>
+    <itemSize type="array"><item>1</item><item>4</item></itemSize>
+    <itemInfo type="array"><item>Knife</item></itemInfo>
+    <openItemSpillRange type="array"><item>10</item><item>20</item></openItemSpillRange>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blade\data\machete_oriental.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blade\data\machete_oriental.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blade\data\machete_oriental_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blade\data\machete_oriental_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blade\data\machete_oriental_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <suicideAnim>onehanded</suicideAnim>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeMachete</ammo>
+        <range>1.4</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeMachete_Heavy</ammo>
+        <range>1.4</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeMachete_Heavy</ammo>
+        <range>3.3</range>
+      </Sprint>
+    </MeleeModes>
+    <soundImpactType>metal</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <animalSkinning_in>
+          <soundSet>animalSkinning_in_SoundSet</soundSet>
+          <id>516</id>
+        </animalSkinning_in>
+        <animalSkinning>
+          <soundSet>animalSkinning_SoundSet</soundSet>
+          <id>517</id>
+        </animalSkinning>
+        <animalSkinning_out>
+          <soundSet>animalSkinning_out_SoundSet</soundSet>
+          <id>518</id>
+        </animalSkinning_out>
+        <CutTies_end>
+          <soundSet>CutTies_end_SoundSet</soundSet>
+          <id>519</id>
+        </CutTies_end>
+        <CutTies_loop>
+          <soundSet>CutTies_loop_SoundSet</soundSet>
+          <id>520</id>
+        </CutTies_loop>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>woodaxe_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+      </SoundWeapon>
+    </AnimEvents>
+  </OrientalMachete>
+</CfgVehicles>
+<CfgNonAIVehicles>
+  <ProxyAttachment>
+  </ProxyAttachment>
+  <Proxycombatknife base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>Knife</inventorySlot>
+    <model>\DZ\weapons\melee\blade\combatknife.p3d</model>
+  </Proxycombatknife>
+</CfgNonAIVehicles>

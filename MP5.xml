@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_MP5>
+    <units type="array"><item>MP5K</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_MP5>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <MP5K_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>1840</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.75</item>
+      <item>40</item>
+      <item>180</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <ironsightsExcludingOptics type="array">
+      <item>M4_CarryHandleOptic</item>
+      <item>BUISOptic</item>
+      <item>M68Optic</item>
+      <item>M4_T3NRDSOptic</item>
+      <item>ReflexOptic</item>
+    </ironsightsExcludingOptics>
+    <WeaponLength>0.583269</WeaponLength>
+    <barrelArmor>1.25</barrelArmor>
+    <initSpeedMultiplier>1.05</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_9x19</item></chamberableFrom>
+    <magazines type="array"><item>Mag_MP5_15Rnd</item><item>Mag_MP5_30Rnd</item></magazines>
+    <magazineSwitchTime>0.5</magazineSwitchTime>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>1.2</item><item>1.2</item><item>1</item></swayModifier>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item></simpleHiddenSelections>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <NoiseShoot>
+      <strength>66</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item><item>Burst</item><item>FullAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>MP5K_Shot_SoundSet</item><item>MP5K_Tail_SoundSet</item><item>MP5K_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>MP5K_silencerPro_SoundSet</item><item>MP5K_silencerTail_SoundSet</item><item>MP5K_silencerInteriorTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.12</reloadTime>
+      <recoil>recoil_mp5</recoil>
+      <recoilProne>recoil_mp5_prone</recoilProne>
+      <dispersion>0.003</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <Burst base="Mode_Burst">
+      <soundSetShot type="array"><item>MP5K_Shot_SoundSet</item><item>MP5K_Tail_SoundSet</item><item>MP5K_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>MP5K_silencerPro_SoundSet</item><item>MP5K_silencerTail_SoundSet</item><item>MP5K_silencerInteriorTail_SoundSet</item></item></soundSetShotExt>
+      <burst>3</burst>
+      <reloadTime>0.065</reloadTime>
+      <recoil>recoil_mp5</recoil>
+      <recoilProne>recoil_mp5_prone</recoilProne>
+      <dispersion>0.003</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Burst>
+    <FullAuto base="Mode_FullAuto">
+      <soundSetShot type="array"><item>MP5K_Shot_SoundSet</item><item>MP5K_Tail_SoundSet</item><item>MP5K_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>MP5K_silencerPro_SoundSet</item><item>MP5K_silencerTail_SoundSet</item><item>MP5K_silencerInteriorTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.065</reloadTime>
+      <recoil>recoil_mp5</recoil>
+      <recoilProne>recoil_mp5_prone</recoilProne>
+      <dispersion>0.003</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </FullAuto>
+    <OpticsInfo base="OpticsInfoRifle">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+      <discreteDistance type="array"><item>25</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>-0.1</item><item>0.01</item><item>0</item></position>
+        <orientation type="array"><item>0</item><item>-8</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>-0.1</item><item>0.01</item><item>-0.02</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <Particles>
+      <OnFire>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_mp5k_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+        </MuzzleFlash>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke_small</overrideParticle>
+        </SmokeCloud>
+        <ChamberSmokeBurst>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+          <overrideDirectionPoint>Nabojniceend</overrideDirectionPoint>
+        </ChamberSmokeBurst>
+      </OnFire>
+      <OnOverheating>
+        <shotsToStartOverheating>15</shotsToStartOverheating>
+        <maxOverheatingValue>30</maxOverheatingValue>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <SmokingBarrel>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>0.8</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrel>
+        <SmokingBarrelHotSteam>
+          <overrideParticle>smoking_barrel_steam_small</overrideParticle>
+          <positionOffset type="array"><item>0.1</item><item>0.02</item><item>0</item></positionOffset>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>1</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0.2</item><item>1</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteam>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\MP5\w_mp5k_states.anm
+    </weaponStateAnim>
+  </MP5K_Base>
+  <MP5K base="MP5K_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_MP5K0</displayName>
+    <descriptionShort>STR_cfgWeapons_MP5K1</descriptionShort>
+    <model>\dz\weapons\firearms\MP5\MP5K.p3d</model>
+    <attachments type="array">
+      <item>weaponButtstockMP5</item>
+      <item>WeaponHandguardMP5</item>
+      <item>weaponOptics</item>
+      <item>weaponFlashlight</item>
+      <item>weaponMuzzleMP5</item>
+      <item>pistolMuzzle</item>
+    </attachments>
+    <itemSize type="array"><item>5</item><item>3</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\MP5\data\mp5k_body_CO.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>DZ\weapons\firearms\MP5\data\mp5k_body.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\MP5\data\mp5k_body.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\MP5\data\mp5k_body.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\MP5\data\mp5k_body_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\MP5\data\mp5k_body_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\MP5\data\mp5k_body_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </MP5K>
+</cfgWeapons>

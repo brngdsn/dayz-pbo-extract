@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_Scout>
+    <units type="array"><item>Scout</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_Scout>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Single>
+</Mode_Single>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <BoltActionRifle_ExternalMagazine_Base>
+  </BoltActionRifle_ExternalMagazine_Base>
+  <Scout_Base base="BoltActionRifle_ExternalMagazine_Base">
+    <scope>0</scope>
+    <weight>3000</weight>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <modelOptics>-</modelOptics>
+    <distanceZoomMin>100</distanceZoomMin>
+    <distanceZoomMax>100</distanceZoomMax>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>50</item>
+      <item>160</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <opticsFlare>0</opticsFlare>
+    <winchesterTypeOpticsMount>1</winchesterTypeOpticsMount>
+    <ironsightsExcludingOptics type="array"><item>HuntingOptic</item></ironsightsExcludingOptics>
+    <WeaponLength>0.934214</WeaponLength>
+    <barrelArmor>1.111</barrelArmor>
+    <initSpeedMultiplier>1.15</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_556x45</item><item>Ammo_556x45Tracer</item></chamberableFrom>
+    <magazines type="array"><item>Mag_Scout_5Rnd</item></magazines>
+    <magazineSwitchTime>0.38</magazineSwitchTime>
+    <ejectType>0</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>0.85</item><item>0.85</item><item>0.85</item></swayModifier>
+    <dispersionModifier>-0.00025</dispersionModifier>
+    <dexterityModifier>-0.2</dexterityModifier>
+    <hiddenSelections type="array"><item>camo</item><item>badge_cherno</item></hiddenSelections>
+    <NoiseShoot>
+      <strength>100</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_Single">
+      <soundSetShot type="array"><item>SCOUT_Shot_SoundSet</item><item>SCOUT_Tail_SoundSet</item><item>SCOUT_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>SCOUT_silencer_SoundSet</item><item>SCOUT_silencerTail_SoundSet</item><item>SCOUT_silencerInteriorTail_SoundSet</item></item><item type="array"><item>SCOUT_silencerHomeMade_SoundSet</item><item>SCOUT_silencerHomeMadeTail_SoundSet</item><item>SCOUT_silencerInteriorTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>2</reloadTime>
+      <recoil>recoil_scout</recoil>
+      <recoilProne>recoil_scout_prone</recoilProne>
+      <dispersion>0.0015</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <OpticsInfo base="OpticsInfoRifle">
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>0</item><item>-0.02</item><item>-0.05</item></position>
+        <orientation type="array"><item>0</item><item>-30</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>0</item><item>0</item><item>0.05</item></position>
+        <orientation type="array"><item>0</item><item>30</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_cz527_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <positionOffset type="array"><item>-0.05</item><item>0</item><item>0</item></positionOffset>
+        </MuzzleFlash>
+      </OnFire>
+      <OnOverheating>
+        <shotsToStartOverheating>1</shotsToStartOverheating>
+        <maxOverheatingValue>4</maxOverheatingValue>
+        <overheatingDecayInterval>3</overheatingDecayInterval>
+        <BarrelSmoke>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+        </BarrelSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\Scout\w_Scout_states.anm
+    </weaponStateAnim>
+  </Scout_Base>
+  <Scout base="Scout_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_Scout0</displayName>
+    <descriptionShort>STR_cfgWeapons_Scout1</descriptionShort>
+    <model>\dz\weapons\firearms\scout\scout.p3d</model>
+    <attachments type="array"><item>weaponWrap</item><item>weaponOptics</item><item>weaponMuzzleM4</item></attachments>
+    <itemSize type="array"><item>9</item><item>3</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\scout\data\scout_co.paa</item><item></item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\scout\data\scout.rvmat</item><item></item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\scout\data\scout.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\scout\data\scout.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\scout\data\scout_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\scout\data\scout_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\scout\data\scout_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Scout>
+  <Scout_Chernarus base="Scout">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\scout\data\scout_co.paa</item><item>#(argb,8,8,3)color(0.2,0.2,0.2,1.0,co)</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\scout\data\scout.rvmat</item><item>dz\weapons\firearms\scout\data\badge_cherno.rvmat</item></hiddenSelectionsMaterials>
+  </Scout_Chernarus>
+  <Scout_Livonia base="Scout">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\scout\data\scout_co.paa</item><item>#(argb,8,8,3)color(0.2,0.2,0.2,1.0,co)</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\scout\data\scout.rvmat</item><item>dz\weapons\firearms\scout\data\badge_livonia.rvmat</item></hiddenSelectionsMaterials>
+  </Scout_Livonia>
+</cfgWeapons>

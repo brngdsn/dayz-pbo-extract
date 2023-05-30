@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_M4>
+    <units type="array"><item>M4A1</item><item>M4A1_Green</item><item>M4A1_Black</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_M4>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <Launcher_Base>
+  </Launcher_Base>
+  <M4A1_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>2276</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.6</item>
+      <item>50</item>
+      <item>200</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <ironsightsExcludingOptics type="array">
+      <item>M4_CarryHandleOptic</item>
+      <item>BUISOptic</item>
+      <item>M68Optic</item>
+      <item>M4_T3NRDSOptic</item>
+      <item>ReflexOptic</item>
+      <item>ACOGOptic</item>
+    </ironsightsExcludingOptics>
+    <WeaponLength>0.814784</WeaponLength>
+    <barrelArmor>2.5</barrelArmor>
+    <initSpeedMultiplier>0.9</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_556x45</item><item>Ammo_556x45Tracer</item></chamberableFrom>
+    <magazines type="array">
+      <item>Mag_STANAG_30Rnd</item>
+      <item>Mag_STANAGCoupled_30Rnd</item>
+      <item>Mag_STANAG_60Rnd</item>
+      <item>Mag_CMAG_10Rnd</item>
+      <item>Mag_CMAG_20Rnd</item>
+      <item>Mag_CMAG_30Rnd</item>
+      <item>Mag_CMAG_40Rnd</item>
+      <item>Mag_CMAG_10Rnd_Green</item>
+      <item>Mag_CMAG_20Rnd_Green</item>
+      <item>Mag_CMAG_30Rnd_Green</item>
+      <item>Mag_CMAG_40Rnd_Green</item>
+      <item>Mag_CMAG_10Rnd_Black</item>
+      <item>Mag_CMAG_20Rnd_Black</item>
+      <item>Mag_CMAG_30Rnd_Black</item>
+      <item>Mag_CMAG_40Rnd_Black</item>
+    </magazines>
+    <magazineSwitchTime>0.5</magazineSwitchTime>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>2</item><item>2</item><item>1.1</item></swayModifier>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item></simpleHiddenSelections>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <NoiseShoot>
+      <strength>82</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item><item>FullAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>M4_Shot_SoundSet</item><item>M4_Tail_SoundSet</item><item>M4_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>M4_silencer_SoundSet</item><item>M4_silencerTail_SoundSet</item><item>M4_silencerInteriorTail_SoundSet</item></item><item type="array"><item>M4_silencerHomeMade_SoundSet</item><item>M4_silencerHomeMadeTail_SoundSet</item><item>M4_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.12</reloadTime>
+      <recoil>recoil_m4</recoil>
+      <recoilProne>recoil_m4_prone</recoilProne>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <FullAuto base="Mode_FullAuto">
+      <soundSetShot type="array"><item>M4_Shot_SoundSet</item><item>M4_Tail_SoundSet</item><item>M4_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>M4_silencer_SoundSet</item><item>M4_silencerTail_SoundSet</item><item>M4_silencerInteriorTail_SoundSet</item></item><item type="array"><item>M4_silencerHomeMade_SoundSet</item><item>M4_silencerHomeMadeTail_SoundSet</item><item>M4_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.065</reloadTime>
+      <recoil>recoil_m4</recoil>
+      <recoilProne>recoil_m4_prone</recoilProne>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </FullAuto>
+    <OpticsInfo base="OpticsInfoRifle">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <discreteDistance type="array"><item>25</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>25</distanceZoomMin>
+      <distanceZoomMax>25</distanceZoomMax>
+    </OpticsInfo>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\M4A1\w_M4A1_states.anm
+    </weaponStateAnim>
+  </M4A1_Base>
+  <M4A1 base="M4A1_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_M4A10</displayName>
+    <descriptionShort>STR_cfgWeapons_M4A11</descriptionShort>
+    <model>\dz\weapons\firearms\m4\m4a1.p3d</model>
+    <attachments type="array">
+      <item>weaponButtstockM4</item>
+      <item>WeaponHandguardM4</item>
+      <item>weaponWrap</item>
+      <item>weaponOptics</item>
+      <item>weaponFlashlight</item>
+      <item>weaponMuzzleM4</item>
+      <item>weaponBayonet</item>
+    </attachments>
+    <itemSize type="array"><item>8</item><item>3</item></itemSize>
+    <spawnDamageRange type="array"><item>0</item><item>0.6</item></spawnDamageRange>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\m4\data\m4_body_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\m4\data\m4_body.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\M4\Data\m4_body.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\M4\Data\m4_body.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\M4\Data\m4_body_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\M4\Data\m4_body_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\M4\Data\m4_body_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_ump45_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+        </MuzzleFlash>
+        <ChamberSmokeBurst>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+          <overrideDirectionPoint>Nabojniceend</overrideDirectionPoint>
+        </ChamberSmokeBurst>
+      </OnFire>
+      <OnOverheating>
+        <maxOverheatingValue>60</maxOverheatingValue>
+        <shotsToStartOverheating>25</shotsToStartOverheating>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <SmokingBarrel1>
+          <positionOffset type="array"><item>0.2</item><item>0</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>0.2</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrel1>
+        <SmokingBarrelHot1>
+          <positionOffset type="array"><item>0.2</item><item>0</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.2</item><item>0.6</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot1>
+        <SmokingBarrelHot3>
+          <positionOffset type="array"><item>0.2</item><item>0</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel_heavy</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.6</item><item>1</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot3>
+        <SmokingBarrelHotSteam>
+          <overrideParticle>smoking_barrel_steam</overrideParticle>
+          <positionOffset type="array"><item>0.35</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>1</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0.2</item><item>1</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteam>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+  </M4A1>
+  <M4A1_Green base="M4A1">
+    <scope>2</scope>
+    <color>Green</color>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\m4\data\m4_body_green_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\m4\data\m4_body_camo.rvmat</item></hiddenSelectionsMaterials>
+  </M4A1_Green>
+  <M4A1_Black base="M4A1">
+    <scope>2</scope>
+    <color>Black</color>
+  </M4A1_Black>
+  <UnderSlugGrenadeM4 base="Launcher_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_UnderSlugGrenadeM40</displayName>
+    <descriptionShort>STR_cfgWeapons_UnderSlugGrenadeM41</descriptionShort>
+    <model>
+      \DZ\weapons\firearms\ots14\ots14_launcher.p3d
+    </model>
+    <handheld>true</handheld>
+    <armAction>Disarm</armAction>
+    <rotationFlags>12</rotationFlags>
+    <inventorySlot type="array"><item>weaponUnderSlugM4</item></inventorySlot>
+    <simulation>undersluglauncher</simulation>
+    <weight>1954</weight>
+    <itemSize type="array"><item>3</item><item>2</item></itemSize>
+    <dispersionModifier>-0.0002</dispersionModifier>
+    <dispersionCondition>true</dispersionCondition>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\ots14\data\ots14_launcher_co.paa</item></hiddenSelectionsTextures>
+    <Melee>
+      <range>1</range>
+      <swingTime>0.5</swingTime>
+      <action>MeleeKnifeSlash</action>
+      <ammo>MeleeLightBlunt</ammo>
+      <useCursor>0</useCursor>
+    </Melee>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <magazines type="array"></magazines>
+    <chamberableFrom type="array"><item>Ammo_GrenadeM4</item></chamberableFrom>
+    <ejectType>2</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_SemiAuto">
+      <begin1 type="array"><item>dz\sounds\weapons\firearms\CZ75\CZ75_single_0</item><item>3.16228</item><item>1</item><item>1000</item></begin1>
+      <begin2 type="array"><item>dz\sounds\weapons\firearms\CZ75\CZ75_single_1</item><item>3.16228</item><item>1</item><item>1000</item></begin2>
+      <soundBegin type="array">
+        <item>begin1</item>
+        <item>0.33333</item>
+        <item>begin2</item>
+        <item>0.33333</item>
+        <item>begin1</item>
+        <item>0.33333</item>
+        <item>begin2</item>
+        <item>0.33333</item>
+      </soundBegin>
+      <reloadTime>0.13</reloadTime>
+      <recoil>recoil_flaregun</recoil>
+      <recoilProne>recoil_flaregun_prone</recoilProne>
+      <dispersion>0.03</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+  </UnderSlugGrenadeM4>
+</cfgWeapons>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Pistols_Magnum>
+    <units type="array"><item>magnum</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Pistols</item></requiredAddons>
+  </DZ_Pistols_Magnum>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Single>
+</Mode_Single>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<Muzzle_Base>
+</Muzzle_Base>
+<OpticsInfoPistol>
+</OpticsInfoPistol>
+<cfgWeapons>
+  <Pistol_Base>
+  </Pistol_Base>
+  <Magnum_Base base="Pistol_Base">
+    <scope>0</scope>
+    <weight>1400</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.9</item>
+      <item>10</item>
+      <item>250</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.63</WeaponLength>
+    <barrelArmor>1.758</barrelArmor>
+    <initSpeedMultiplier>0.9</initSpeedMultiplier>
+    <DisplayMagazine>0</DisplayMagazine>
+    <attachments type="array"><item>RevolverCylinder</item><item>RevolverEjector</item></attachments>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <magazines type="array"></magazines>
+    <chamberableFrom type="array"><item>Ammo_357</item><item>Mag_357Speedloader_6Rnd</item></chamberableFrom>
+    <ejectType>8</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>1.15</item><item>1.15</item><item>0.8</item></swayModifier>
+    <NoiseShoot>
+      <strength>82</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_Single">
+      <soundSetShot type="array"><item>Magnum_Shot_SoundSet</item><item>Magnum_Tail_SoundSet</item><item>Magnum_InteriorTail_SoundSet</item></soundSetShot>
+      <reloadTime>0.13</reloadTime>
+      <dispersion>0.0045</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <OpticsInfoMagnumBase base="OpticsInfoPistol">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <discreteDistance type="array"><item>25</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+    </OpticsInfoMagnumBase>
+    <OpticsInfo base="OpticsInfoMagnumBase">
+    </OpticsInfo>
+    <muzzles type="array">
+      <item>this</item>
+      <item>SecondMuzzle</item>
+      <item>ThirdMuzzle</item>
+      <item>FourthMuzzle</item>
+      <item>FifthMuzzle</item>
+      <item>SixthMuzzle</item>
+    </muzzles>
+    <SecondMuzzle base="Muzzle_Base">
+      <chamberSize>1</chamberSize>
+      <muzzlePos>usti hlavne</muzzlePos>
+      <muzzleEnd>konec hlavne</muzzleEnd>
+      <cartridgePos>nabojnicestart_2</cartridgePos>
+      <cartridgeVel>nabojniceend_2</cartridgeVel>
+      <modes type="array"><item>Single</item></modes>
+      <magazines type="array"></magazines>
+      <chamberableFrom type="array"><item>Ammo_357</item></chamberableFrom>
+      <barrelArmor>1.758</barrelArmor>
+      <initSpeedMultiplier>0.9</initSpeedMultiplier>
+      <Single base="Mode_Single">
+        <soundSetShot type="array"><item>Magnum_Shot_SoundSet</item><item>Magnum_Tail_SoundSet</item><item>Magnum_InteriorTail_SoundSet</item></soundSetShot>
+        <reloadTime>0.08</reloadTime>
+        <dispersion>0.0045</dispersion>
+        <magazineSlot>magazine</magazineSlot>
+      </Single>
+      <OpticsInfo base="OpticsInfoMagnumBase">
+      </OpticsInfo>
+    </SecondMuzzle>
+    <ThirdMuzzle base="SecondMuzzle">
+      <cartridgePos>nabojnicestart_3</cartridgePos>
+      <cartridgeVel>nabojniceend_3</cartridgeVel>
+    </ThirdMuzzle>
+    <FourthMuzzle base="SecondMuzzle">
+      <cartridgePos>nabojnicestart_4</cartridgePos>
+      <cartridgeVel>nabojniceend_4</cartridgeVel>
+    </FourthMuzzle>
+    <FifthMuzzle base="SecondMuzzle">
+      <cartridgePos>nabojnicestart_5</cartridgePos>
+      <cartridgeVel>nabojniceend_5</cartridgeVel>
+    </FifthMuzzle>
+    <SixthMuzzle base="SecondMuzzle">
+      <cartridgePos>nabojnicestart_6</cartridgePos>
+      <cartridgeVel>nabojniceend_6</cartridgeVel>
+    </SixthMuzzle>
+    <Particles>
+      <OnFire>
+        <MuzzleFlashForward>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <overrideParticle>weapon_shot_fnx_01</overrideParticle>
+        </MuzzleFlashForward>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke_small</overrideParticle>
+        </SmokeCloud>
+      </OnFire>
+      <OnOverheating>
+        <shotsToStartOverheating>1</shotsToStartOverheating>
+        <maxOverheatingValue>4</maxOverheatingValue>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\Magnum\w_magnum_states.anm
+    </weaponStateAnim>
+    <boneRemap type="array">
+      <item>bolt</item>
+      <item>Weapon_Bolt</item>
+      <item>magazine</item>
+      <item>Weapon_Magazine</item>
+      <item>bullet</item>
+      <item>Weapon_Bullet</item>
+      <item>trigger</item>
+      <item>Weapon_Trigger</item>
+      <item>hammer</item>
+      <item>Weapon_Bone_01</item>
+      <item>cylinder_arm</item>
+      <item>Weapon_Bone_03</item>
+      <item>ejector</item>
+      <item>Weapon_Bone_04</item>
+    </boneRemap>
+  </Magnum_Base>
+  <Magnum base="Magnum_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_Magnum0</displayName>
+    <descriptionShort>STR_cfgWeapons_Magnum1</descriptionShort>
+    <model>\dz\weapons\pistols\magnum\magnum.p3d</model>
+    <itemSize type="array"><item>4</item><item>2</item></itemSize>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Magnum>
+  <SawedoffMagnum base="Magnum_Base">
+    <scope>2</scope>
+    <displayName>STR_SawedoffMagnum0</displayName>
+    <descriptionShort>STR_SawedoffMagnum1</descriptionShort>
+    <model>
+      \dz\weapons\pistols\magnum\magnum_sawn.p3d
+    </model>
+    <weight>1000</weight>
+    <initSpeedMultiplier>0.8</initSpeedMultiplier>
+    <itemSize type="array"><item>2</item><item>2</item></itemSize>
+    <WeaponLength>0.53</WeaponLength>
+    <recoilModifier type="array"><item>1.5</item><item>1.5</item><item>1</item></recoilModifier>
+    <Single base="Single">
+      <initSpeedMultiplier>0.8</initSpeedMultiplier>
+      <dispersion>0.009</dispersion>
+    </Single>
+    <SecondMuzzle base="SecondMuzzle">
+      <initSpeedMultiplier>0.8</initSpeedMultiplier>
+      <Single base="Single">
+        <dispersion>0.009</dispersion>
+      </Single>
+    </SecondMuzzle>
+    <ThirdMuzzle base="ThirdMuzzle">
+      <initSpeedMultiplier>0.8</initSpeedMultiplier>
+      <Single base="Single">
+        <dispersion>0.009</dispersion>
+      </Single>
+    </ThirdMuzzle>
+    <FourthMuzzle base="FourthMuzzle">
+      <initSpeedMultiplier>0.8</initSpeedMultiplier>
+      <Single base="Single">
+        <dispersion>0.009</dispersion>
+      </Single>
+    </FourthMuzzle>
+    <FifthMuzzle base="FifthMuzzle">
+      <initSpeedMultiplier>0.8</initSpeedMultiplier>
+      <Single base="Single">
+        <dispersion>0.009</dispersion>
+      </Single>
+    </FifthMuzzle>
+    <SixthMuzzle base="SixthMuzzle">
+      <initSpeedMultiplier>0.8</initSpeedMultiplier>
+      <Single base="Single">
+        <dispersion>0.009</dispersion>
+      </Single>
+    </SixthMuzzle>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>180</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </SawedoffMagnum>
+</cfgWeapons>
+<cfgVehicles>
+  <Inventory_Base>
+  </Inventory_Base>
+  <Magnum_Cylinder base="Inventory_Base">
+    <scope>2</scope>
+    <model>
+      \dz\weapons\pistols\magnum\proxy\magnum_cylinder.p3d
+    </model>
+    <weight>1</weight>
+    <inventorySlot type="array"><item>RevolverCylinder</item></inventorySlot>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <AnimationSources>
+      <Rotate_Cylinder>
+        <source>user</source>
+        <animPeriod>1</animPeriod>
+        <initPhase>0</initPhase>
+      </Rotate_Cylinder>
+      <Rotate_Cylinder_Back>
+        <source>user</source>
+        <animPeriod>0.0001</animPeriod>
+        <initPhase>0</initPhase>
+      </Rotate_Cylinder_Back>
+      <bullet>
+        <source>user</source>
+        <initPhase>1</initPhase>
+        <animPeriod>0.01</animPeriod>
+      </bullet>
+      <bullet_2>
+        <source>user</source>
+        <initPhase>1</initPhase>
+        <animPeriod>0.01</animPeriod>
+      </bullet_2>
+      <bullet_3>
+        <source>user</source>
+        <initPhase>1</initPhase>
+        <animPeriod>0.01</animPeriod>
+      </bullet_3>
+      <bullet_4>
+        <source>user</source>
+        <initPhase>1</initPhase>
+        <animPeriod>0.01</animPeriod>
+      </bullet_4>
+      <bullet_5>
+        <source>user</source>
+        <initPhase>1</initPhase>
+        <animPeriod>0.01</animPeriod>
+      </bullet_5>
+      <bullet_6>
+        <source>user</source>
+        <initPhase>1</initPhase>
+        <animPeriod>0.01</animPeriod>
+      </bullet_6>
+      <bullet_nose>
+        <source>user</source>
+        <initPhase>1</initPhase>
+        <animPeriod>0.01</animPeriod>
+      </bullet_nose>
+      <bullet_nose_2>
+        <source>user</source>
+        <initPhase>1</initPhase>
+        <animPeriod>0.01</animPeriod>
+      </bullet_nose_2>
+      <bullet_nose_3>
+        <source>user</source>
+        <initPhase>1</initPhase>
+        <animPeriod>0.01</animPeriod>
+      </bullet_nose_3>
+      <bullet_nose_4>
+        <source>user</source>
+        <initPhase>1</initPhase>
+        <animPeriod>0.01</animPeriod>
+      </bullet_nose_4>
+      <bullet_nose_5>
+        <source>user</source>
+        <initPhase>1</initPhase>
+        <animPeriod>0.01</animPeriod>
+      </bullet_nose_5>
+      <bullet_nose_6>
+        <source>user</source>
+        <initPhase>1</initPhase>
+        <animPeriod>0.01</animPeriod>
+      </bullet_nose_6>
+    </AnimationSources>
+  </Magnum_Cylinder>
+  <Magnum_Ejector base="Inventory_Base">
+    <scope>2</scope>
+    <model>
+      \dz\weapons\pistols\magnum\proxy\magnum_ejector.p3d
+    </model>
+    <weight>1</weight>
+    <inventorySlot type="array"><item>RevolverEjector</item></inventorySlot>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\magnum\data\magnum_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <AnimationSources>
+      <Rotate_Ejector>
+        <source>user</source>
+        <animPeriod>1</animPeriod>
+        <initPhase>0</initPhase>
+      </Rotate_Ejector>
+    </AnimationSources>
+  </Magnum_Ejector>
+</cfgVehicles>
+<CfgNonAIVehicles>
+  <ProxyAttachment>
+  </ProxyAttachment>
+  <Proxymagnum base="ProxyAttachment">
+    <scope>2</scope>
+  </Proxymagnum>
+  <Proxymagnum_cylinder base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>RevolverCylinder</inventorySlot>
+    <model>
+      \dz\weapons\pistols\magnum\proxy\magnum_cylinder.p3d
+    </model>
+  </Proxymagnum_cylinder>
+  <Proxymagnum_ejector base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>RevolverEjector</inventorySlot>
+    <model>
+      \dz\weapons\pistols\magnum\proxy\magnum_ejector.p3d
+    </model>
+  </Proxymagnum_ejector>
+</CfgNonAIVehicles>

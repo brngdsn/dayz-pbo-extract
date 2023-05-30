@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_SSG82>
+    <units type="array"><item>SSG82</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_SSG82>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Single>
+</Mode_Single>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <BoltActionRifle_ExternalMagazine_Base>
+  </BoltActionRifle_ExternalMagazine_Base>
+  <SSG82_Base base="BoltActionRifle_ExternalMagazine_Base">
+    <scope>0</scope>
+    <animName>cz527</animName>
+    <weight>4500</weight>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.1</item>
+      <item>20</item>
+      <item>200</item>
+      <item>10</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.96</WeaponLength>
+    <barrelArmor>0.8</barrelArmor>
+    <initSpeedMultiplier>1</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_545x39</item><item>Ammo_545x39Tracer</item></chamberableFrom>
+    <magazines type="array"><item>Mag_SSG82_5rnd</item></magazines>
+    <magazineSwitchTime>0.38</magazineSwitchTime>
+    <ejectType>0</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>1</item><item>1</item><item>1</item></swayModifier>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item></simpleHiddenSelections>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <NoiseShoot>
+      <strength>100</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_Single">
+      <soundSetShot type="array"><item>SSG82_Shot_SoundSet</item><item>SSG82_Tail_SoundSet</item><item>SSG82_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>SSG82_silencerHomeMade_SoundSet</item><item>SSG82_silencerHomeMadeTail_SoundSet</item><item>SSG82_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>1</reloadTime>
+      <dispersion>0.00075</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <OpticsInfo base="OpticsInfoRifle">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+      <discreteDistance type="array"><item>100</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>0.02</item><item>-0.02</item><item>-0.02</item></position>
+        <orientation type="array"><item>0</item><item>-30</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>0.02</item><item>0</item><item>0.01</item></position>
+        <orientation type="array"><item>0</item><item>30</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_cz527_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <positionOffset type="array"><item>-0.05</item><item>0</item><item>0</item></positionOffset>
+        </MuzzleFlash>
+      </OnFire>
+      <OnOverheating>
+        <shotsToStartOverheating>1</shotsToStartOverheating>
+        <maxOverheatingValue>4</maxOverheatingValue>
+        <overheatingDecayInterval>3</overheatingDecayInterval>
+        <BarrelSmoke>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+        </BarrelSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\SSG82\w_SSG82_states.anm
+    </weaponStateAnim>
+  </SSG82_Base>
+  <SSG82 base="SSG82_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgweapons_SSG820</displayName>
+    <descriptionShort>STR_cfgweapons_SSG821</descriptionShort>
+    <model>\dz\weapons\firearms\ssg82\ssg82.p3d</model>
+    <attachments type="array"><item>weaponWrap</item><item>weaponOpticsAug</item><item>suppressorImpro</item></attachments>
+    <itemSize type="array"><item>9</item><item>3</item></itemSize>
+    <hiddenSelections type="array"><item>camo_01</item><item>camo_02</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\ssg82\data\ssg82_01_co.paa</item><item>dz\weapons\firearms\ssg82\data\ssg82_02_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\ssg82\data\ssg82_01.rvmat</item><item>dz\weapons\firearms\ssg82\data\ssg82_02.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\ssg82\data\ssg82_01.rvmat</item><item>DZ\weapons\firearms\ssg82\data\ssg82_02.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\ssg82\data\ssg82_01.rvmat</item><item>DZ\weapons\firearms\ssg82\data\ssg82_02.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\ssg82\data\ssg82_01_damage.rvmat</item><item>DZ\weapons\firearms\ssg82\data\ssg82_02_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\ssg82\data\ssg82_01_damage.rvmat</item><item>DZ\weapons\firearms\ssg82\data\ssg82_02_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\ssg82\data\ssg82_01_destruct.rvmat</item><item>DZ\weapons\firearms\ssg82\data\ssg82_02_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </SSG82>
+</cfgWeapons>
+<cfgVehicles>
+  <Inventory_Base>
+  </Inventory_Base>
+  <ItemOptics base="Inventory_Base">
+  </ItemOptics>
+  <SSG82Optic base="ItemOptics">
+    <scope>2</scope>
+    <model>
+      \dz\weapons\firearms\ssg82\proxy\optic_SSG82.p3d
+    </model>
+    <weight>1</weight>
+    <inventorySlot type="array"><item>weaponOpticsAug</item></inventorySlot>
+    <reversed>0</reversed>
+    <OpticsInfo>
+      <memoryPointCamera>eyeScope</memoryPointCamera>
+      <cameraDir>cameraDir</cameraDir>
+      <modelOptics>-</modelOptics>
+      <opticsDisablePeripherialVision>0.67</opticsDisablePeripherialVision>
+      <opticsFlare>1</opticsFlare>
+      <opticsPPEffects type="array"></opticsPPEffects>
+      <opticsZoomMin>0.3926/4</opticsZoomMin>
+      <opticsZoomMax>0.3926/4</opticsZoomMax>
+      <opticsZoomInit>0.3926/4</opticsZoomInit>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+      <discreteDistance type="array"><item>100</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <PPMaskProperties type="array"><item>0.5</item><item>0.5</item><item>0.26</item><item>0.085</item></PPMaskProperties>
+      <PPLensProperties type="array"><item>0.75</item><item>0.75</item><item>0</item><item>0</item></PPLensProperties>
+      <PPBlurProperties>0.4</PPBlurProperties>
+    </OpticsInfo>
+  </SSG82Optic>
+</cfgVehicles>
+<CfgNonAIVehicles>
+  <ProxyAttachment>
+  </ProxyAttachment>
+  <Proxyscope base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>weaponOpticsAug</inventorySlot>
+    <model>
+      \dz\weapons\firearms\ssg82\proxy\optic_SSG82.p3d
+    </model>
+  </Proxyscope>
+</CfgNonAIVehicles>

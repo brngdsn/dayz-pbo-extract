@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Pistols_Encore>
+    <units type="array"><item>LongHorn</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Pistols</item></requiredAddons>
+  </DZ_Pistols_Encore>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Single>
+</Mode_Single>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Pistol_Base>
+  </Pistol_Base>
+  <LongHorn_Base base="Pistol_Base">
+    <scope>0</scope>
+    <weight>2050</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <WeaponLength>0.7</WeaponLength>
+    <initSpeedMultiplier>0.8</initSpeedMultiplier>
+    <barrelArmor>2</barrelArmor>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.9</item>
+      <item>10</item>
+      <item>150</item>
+      <item>5</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <distanceZoomMin>100</distanceZoomMin>
+    <distanceZoomMax>100</distanceZoomMax>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <magazines type="array"></magazines>
+    <chamberableFrom type="array"><item>Ammo_308Win</item><item>Ammo_308WinTracer</item></chamberableFrom>
+    <ejectType>2</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <NoiseShoot>
+      <strength>82</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_Single">
+      <soundSetShot type="array"><item>LongHorn_Shot_SoundSet</item><item>LongHorn_Tail_SoundSet</item><item>LongHorn_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>LongHorn_silencerHomeMade_SoundSet</item><item>LongHorn_silencerHomeMadeTail_SoundSet</item><item>LongHorn_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>1</reloadTime>
+      <recoil>recoil_longhorn</recoil>
+      <recoilProne>recoil_longhorn_prone</recoilProne>
+      <dispersion>0.003</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <Particles>
+      <OnFire>
+        <MuzzleFlashForward>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <overrideParticle>weapon_shot_fnx_01</overrideParticle>
+        </MuzzleFlashForward>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke_small</overrideParticle>
+        </SmokeCloud>
+      </OnFire>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\LongHorn\w_longhorn_states.anm
+    </weaponStateAnim>
+    <boneRemap type="array">
+      <item>latch</item>
+      <item>Weapon_Bone_01</item>
+      <item>hammer</item>
+      <item>Weapon_Bone_02</item>
+      <item>reload</item>
+      <item>Weapon_Bolt</item>
+      <item>trigger</item>
+      <item>Weapon_Trigger</item>
+      <item>bullet</item>
+      <item>Weapon_Bullet</item>
+    </boneRemap>
+  </LongHorn_Base>
+  <LongHorn base="LongHorn_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_LongHorn0</displayName>
+    <descriptionShort>STR_cfgWeapons_LongHorn1</descriptionShort>
+    <model>
+      \dz\weapons\pistols\LongHorn\LongHorn.p3d
+    </model>
+    <attachments type="array"><item>weaponOpticsCrossbow</item><item>suppressorImpro</item></attachments>
+    <DisplayMagazine>0</DisplayMagazine>
+    <itemSize type="array"><item>5</item><item>2</item></itemSize>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\LongHorn\data\LongHorn.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\LongHorn\data\LongHorn.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\LongHorn\data\LongHorn_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\LongHorn\data\LongHorn_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\LongHorn\data\LongHorn_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </LongHorn>
+</cfgWeapons>
+<CfgNonAIVehicles>
+  <ProxyAttachment>
+  </ProxyAttachment>
+  <ProxyLongHorn base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>pistol</inventorySlot>
+    <model>
+      \dz\weapons\pistols\LongHorn\LongHorn.p3d
+    </model>
+  </ProxyLongHorn>
+</CfgNonAIVehicles>

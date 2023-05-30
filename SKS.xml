@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_SKS>
+    <units type="array"><item>SKS</item><item>SKS_Black</item><item>SKS_Green</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_SKS>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <SKS_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>3850</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.6</item>
+      <item>50</item>
+      <item>160</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <DisplayMagazine>0</DisplayMagazine>
+    <WeaponLength>1.11042</WeaponLength>
+    <barrelArmor>1.667</barrelArmor>
+    <initSpeedMultiplier>1.1</initSpeedMultiplier>
+    <chamberSize>10</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_762x39</item><item>Mag_CLIP762x39_10Rnd</item><item>Ammo_762x39Tracer</item></chamberableFrom>
+    <magazines type="array"></magazines>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>2.4</item><item>2.4</item><item>1.3</item></swayModifier>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item></simpleHiddenSelections>
+    <cursor>aimBowGhost</cursor>
+    <hiddenSelections type="array"><item>camoGround</item><item>Clip_rounds</item><item>clip</item></hiddenSelections>
+    <NoiseShoot>
+      <strength>100</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>SKS_Shot_SoundSet</item><item>SKS_Tail_SoundSet</item><item>SKS_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>SKS_silencerHomeMade_SoundSet</item><item>SKS_silencerHomeMadeTail_SoundSet</item><item>SKS_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <envShootingDecrease>0.8</envShootingDecrease>
+      <envShootingDecreaseExt type="array"><item>0.05</item><item>0.05</item></envShootingDecreaseExt>
+      <reloadTime>0.12</reloadTime>
+      <recoil>recoil_sks</recoil>
+      <recoilProne>recoil_sks_prone</recoilProne>
+      <dispersion>0.0015</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <OpticsInfo base="OpticsInfoRifle">
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>0</item><item>0</item><item>-0.05</item></position>
+        <orientation type="array"><item>0</item><item>-40</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>0</item><item>0</item><item>0.05</item></position>
+        <orientation type="array"><item>0</item><item>40</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <AnimationSources>
+      <Clip_rounds>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>1</initPhase>
+      </Clip_rounds>
+      <Clip>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>1</initPhase>
+      </Clip>
+    </AnimationSources>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_sks_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <positionOffset type="array"><item>-0.05</item><item>0</item><item>0</item></positionOffset>
+        </MuzzleFlash>
+        <ChamberSmoke>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+          <overrideDirectionPoint>Nabojniceend</overrideDirectionPoint>
+        </ChamberSmoke>
+      </OnFire>
+      <OnOverheating>
+        <maxOverheatingValue>20</maxOverheatingValue>
+        <shotsToStartOverheating>5</shotsToStartOverheating>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <SmokingBarrel1>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>0.5</item></onlyWithinOverheatLimits>
+          <positionOffset type="array"><item>0.1</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrel1>
+        <SmokingBarrelHot1>
+          <overrideParticle>smoking_barrel</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.5</item><item>0.8</item></onlyWithinOverheatLimits>
+          <positionOffset type="array"><item>0.1</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot1>
+        <SmokingBarrelHot3>
+          <overrideParticle>smoking_barrel_heavy</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.8</item><item>1</item></onlyWithinOverheatLimits>
+          <positionOffset type="array"><item>0.1</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot3>
+        <SmokingBarrelHotSteamSmall>
+          <overrideParticle>smoking_barrel_steam_small</overrideParticle>
+          <positionOffset type="array"><item>0.3</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0.2</item><item>0.5</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteamSmall>
+        <SmokingBarrelHotSteam>
+          <overrideParticle>smoking_barrel_steam</overrideParticle>
+          <positionOffset type="array"><item>0.3</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0.5</item><item>1</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteam>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\SKS\w_SKS_states.anm
+    </weaponStateAnim>
+    <boneRemap type="array">
+      <item>bolt</item>
+      <item>Weapon_Bolt</item>
+      <item>trigger</item>
+      <item>Weapon_Trigger</item>
+      <item>bullet</item>
+      <item>Weapon_Bullet</item>
+      <item>follower</item>
+      <item>Weapon_Bone_02</item>
+      <item>clip</item>
+      <item>Weapon_Magazine</item>
+      <item>cliprounds</item>
+      <item>Weapon_Bone_01</item>
+    </boneRemap>
+  </SKS_Base>
+  <SKS base="SKS_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_SKS0</displayName>
+    <descriptionShort>STR_cfgWeapons_SKS1</descriptionShort>
+    <model>\dz\weapons\firearms\SKS\SKS.p3d</model>
+    <attachments type="array"><item>weaponWrap</item><item>weaponOpticsMosin</item><item>suppressorImpro</item><item>weaponBayonetSKS</item></attachments>
+    <itemSize type="array"><item>9</item><item>3</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\SKS\data\sks_co.paa</item><item></item><item></item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\SKS\data\sks.rvmat</item><item></item><item></item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>300</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\SKS\data\sks.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\SKS\data\sks.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\SKS\data\sks_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\SKS\data\sks_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\SKS\data\sks_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </SKS>
+  <SKS_Black base="SKS">
+    <scope>2</scope>
+    <descriptionShort>STR_cfgWeapons_SKS_Black0</descriptionShort>
+    <color>Black</color>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\SKS\data\sks_black_co.paa</item><item></item><item></item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\SKS\data\sks_painted.rvmat</item><item></item><item></item></hiddenSelectionsMaterials>
+  </SKS_Black>
+  <SKS_Green base="SKS">
+    <scope>2</scope>
+    <descriptionShort>STR_cfgWeapons_SKS_Green0</descriptionShort>
+    <color>Green</color>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\SKS\data\sks_green_co.paa</item><item></item><item></item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\SKS\data\sks_painted.rvmat</item><item></item><item></item></hiddenSelectionsMaterials>
+  </SKS_Green>
+</cfgWeapons>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_Ruger1022>
+    <units type="array"><item>Ruger1022</item><item>Ruger1022_Black</item><item>Ruger1022_Green</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_Ruger1022>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <Ruger1022_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>2300</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>50</item>
+      <item>160</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>1.18986</WeaponLength>
+    <barrelArmor>2.019</barrelArmor>
+    <initSpeedMultiplier>1.15</initSpeedMultiplier>
+    <winchesterTypeOpticsMount>1</winchesterTypeOpticsMount>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_22</item></chamberableFrom>
+    <magazines type="array"><item>Mag_Ruger1022_30Rnd</item><item>Mag_Ruger1022_15Rnd</item></magazines>
+    <magazineSwitchTime>0.4</magazineSwitchTime>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>2</item><item>2</item><item>1.1</item></swayModifier>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item></simpleHiddenSelections>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <NoiseShoot>
+      <strength>50</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>Ruger1022_Shot_SoundSet</item><item>Ruger1022_Tail_SoundSet</item><item>Ruger1022_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>Ruger1022_silencerHomeMade_SoundSet</item><item>Ruger1022_silencerHomeMadeTail_SoundSet</item><item>Ruger1022_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <envShootingDecrease>0.05</envShootingDecrease>
+      <envShootingDecreaseExt type="array"><item>0.05</item><item>0.05</item></envShootingDecreaseExt>
+      <reloadTime>0.1</reloadTime>
+      <dispersion>0.00075</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <OpticsInfo base="OpticsInfoRifle">
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>50</distanceZoomMin>
+      <distanceZoomMax>50</distanceZoomMax>
+      <discreteDistance type="array"><item>100</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>0</item><item>0</item><item>-0.035</item></position>
+        <orientation type="array"><item>0</item><item>-20</item><item>-4</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>0</item><item>0</item><item>0</item></position>
+        <orientation type="array"><item>0</item><item>20</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\Ruger1022\w_Ruger1022_states.anm
+    </weaponStateAnim>
+  </Ruger1022_Base>
+  <Ruger1022 base="Ruger1022_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_Ruger10220</displayName>
+    <descriptionShort>STR_cfgWeapons_Ruger10221</descriptionShort>
+    <model>
+      \dz\weapons\firearms\Ruger1022\Ruger1022.p3d
+    </model>
+    <itemSize type="array"><item>9</item><item>3</item></itemSize>
+    <attachments type="array"><item>weaponWrap</item><item>weaponOpticsHunting</item><item>suppressorImpro</item></attachments>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\Ruger1022\data\ruger1022_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\Ruger1022\data\ruger1022.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\Ruger1022\data\ruger1022.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\Ruger1022\data\ruger1022.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\Ruger1022\data\ruger1022_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\Ruger1022\data\ruger1022_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\Ruger1022\data\ruger1022_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Particles>
+      <OnFire>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_fnx_02</overrideParticle>
+        </MuzzleFlash>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke_small</overrideParticle>
+        </SmokeCloud>
+      </OnFire>
+      <OnOverheating>
+        <shotsToStartOverheating>10</shotsToStartOverheating>
+        <maxOverheatingValue>20</maxOverheatingValue>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+    </Particles>
+  </Ruger1022>
+</cfgWeapons>

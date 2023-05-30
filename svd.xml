@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_SVD>
+    <units type="array"><item>SVD</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_SVD>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <SVD_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>3700</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>50</item>
+      <item>180</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <ironsightsExcludingOptics type="array"><item>GrozaOptic</item><item>KobraOptic</item></ironsightsExcludingOptics>
+    <WeaponLength>1.18986</WeaponLength>
+    <barrelArmor>1.6</barrelArmor>
+    <initSpeedMultiplier>1</initSpeedMultiplier>
+    <chamberedRound></chamberedRound>
+    <chamberSize>1</chamberSize>
+    <chamberableFrom type="array"><item>Ammo_762x54</item><item>Ammo_762x54Tracer</item></chamberableFrom>
+    <magazines type="array"><item>Mag_SVD_10Rnd</item></magazines>
+    <magazineSwitchTime>0.25</magazineSwitchTime>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>1</item><item>1</item><item>1</item></swayModifier>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item></simpleHiddenSelections>
+    <NoiseShoot>
+      <strength>100</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>SVD_Shot_SoundSet</item><item>SVD_Tail_SoundSet</item><item>SVD_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>SVD_silencerHomeMade_SoundSet</item><item>SVD_silencerHomeMadeTail_SoundSet</item><item>SVD_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <envShootingDecrease>0.8</envShootingDecrease>
+      <envShootingDecreaseExt type="array"><item>0.05</item><item>0.05</item></envShootingDecreaseExt>
+      <reloadTime>0.12</reloadTime>
+      <recoil>recoil_svd</recoil>
+      <recoilProne>recoil_svd_prone</recoilProne>
+      <dispersion>0.0005</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <OpticsInfo base="OpticsInfoRifle">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+      <discreteDistance type="array">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+      </discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>0</item><item>-0.02</item><item>0</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>0</item><item>-0.02</item><item>0</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <AnimEvents>
+      <SoundWeapon>
+        <walkErc_L>
+          <soundSet>
+            Weapon_Movement_HRifle_walkErc_L_SoundSet
+          </soundSet>
+          <id>1</id>
+        </walkErc_L>
+        <walkErc_R>
+          <soundSet>
+            Weapon_Movement_HRifle_walkErc_R_SoundSet
+          </soundSet>
+          <id>2</id>
+        </walkErc_R>
+        <runErc_L>
+          <soundSet>Weapon_Movement_HRifle_runErc_L_SoundSet</soundSet>
+          <id>3</id>
+        </runErc_L>
+        <runErc_R>
+          <soundSet>Weapon_Movement_HRifle_runErc_R_SoundSet</soundSet>
+          <id>4</id>
+        </runErc_R>
+        <sprintErc_L>
+          <soundSet>
+            Weapon_Movement_HRifle_sprintErc_SoundSet
+          </soundSet>
+          <id>5</id>
+        </sprintErc_L>
+        <sprintErc_R>
+          <soundSet>
+            Weapon_Movement_HRifle_sprintErc_SoundSet
+          </soundSet>
+          <id>6</id>
+        </sprintErc_R>
+        <walkCro_L>
+          <soundSet>Weapon_Movement_HRifle_walkCro_SoundSet</soundSet>
+          <id>21</id>
+        </walkCro_L>
+        <walkCro_R>
+          <soundSet>Weapon_Movement_HRifle_walkCro_SoundSet</soundSet>
+          <id>22</id>
+        </walkCro_R>
+        <runCro_L>
+          <soundSet>Weapon_Movement_HRifle_runCro_SoundSet</soundSet>
+          <id>23</id>
+        </runCro_L>
+        <runCro_R>
+          <soundSet>Weapon_Movement_HRifle_runCro_SoundSet</soundSet>
+          <id>24</id>
+        </runCro_R>
+        <walkProne_L>
+          <soundSet>Weapon_Movement_HRifle_walkCro_SoundSet</soundSet>
+          <id>31</id>
+        </walkProne_L>
+        <walkProne_R>
+          <soundSet>Weapon_Movement_HRifle_walkCro_SoundSet</soundSet>
+          <id>32</id>
+        </walkProne_R>
+        <runProne_L>
+          <soundSet>Weapon_Movement_HRifle_runCro_SoundSet</soundSet>
+          <id>33</id>
+        </runProne_L>
+        <runProne_R>
+          <soundSet>Weapon_Movement_HRifle_runCro_SoundSet</soundSet>
+          <id>34</id>
+        </runProne_R>
+        <jumpErc_L>
+          <soundSet>Weapon_Movement_HRifle_runErc_L_SoundSet</soundSet>
+          <id>35</id>
+        </jumpErc_L>
+        <jumpErc_R>
+          <soundSet>Weapon_Movement_HRifle_runErc_L_SoundSet</soundSet>
+          <id>36</id>
+        </jumpErc_R>
+        <landFootErc_L>
+          <soundSet>
+            Weapon_Movement_HRifle_landFootErc_SoundSet
+          </soundSet>
+          <id>37</id>
+        </landFootErc_L>
+        <landFootErc_R>
+          <soundSet>
+            Weapon_Movement_HRifle_landFootErc_SoundSet
+          </soundSet>
+          <id>38</id>
+        </landFootErc_R>
+        <walkRasErc_L>
+          <soundSet>
+            Weapon_Movement_HRifle_walkRasErc_SoundSet
+          </soundSet>
+          <id>51</id>
+        </walkRasErc_L>
+        <walkRasErc_R>
+          <soundSet>
+            Weapon_Movement_HRifle_walkRasErc_SoundSet
+          </soundSet>
+          <id>52</id>
+        </walkRasErc_R>
+        <runRasErc_L>
+          <soundSet>
+            Weapon_Movement_HRifle_runRasErc_SoundSet
+          </soundSet>
+          <id>53</id>
+        </runRasErc_L>
+        <runRasErc_R>
+          <soundSet>
+            Weapon_Movement_HRifle_runRasErc_SoundSet
+          </soundSet>
+          <id>54</id>
+        </runRasErc_R>
+        <HandStep_L>
+          <soundSet>
+            Weapon_Movement_HRifle_walkErc_L_SoundSet
+          </soundSet>
+          <id>61</id>
+        </HandStep_L>
+        <HandStep_R>
+          <soundSet>
+            Weapon_Movement_HRifle_walkErc_L_SoundSet
+          </soundSet>
+          <id>62</id>
+        </HandStep_R>
+        <HandStep_Hard_L>
+          <soundSet>Weapon_Movement_HRifle_runErc_L_SoundSet</soundSet>
+          <id>63</id>
+        </HandStep_Hard_L>
+        <HandStep_Hard_R>
+          <soundSet>Weapon_Movement_HRifle_runErc_L_SoundSet</soundSet>
+          <id>64</id>
+        </HandStep_Hard_R>
+        <landFeetErc>
+          <soundSet>
+            Weapon_Movement_HRifle_landFeetErc_SoundSet
+          </soundSet>
+          <id>100</id>
+        </landFeetErc>
+        <Weapon_Movement_HRifle_Walk>
+          <soundSet>
+            Weapon_Movement_HRifle_walkErc_L_SoundSet
+          </soundSet>
+          <id>101</id>
+        </Weapon_Movement_HRifle_Walk>
+        <Weapon_Movement_HRifle_Run>
+          <soundSet>Weapon_Movement_HRifle_runErc_L_SoundSet</soundSet>
+          <id>102</id>
+        </Weapon_Movement_HRifle_Run>
+        <Weapon_Movement_HRifle_Sprint>
+          <soundSet>
+            Weapon_Movement_HRifle_sprintErc_SoundSet
+          </soundSet>
+          <id>103</id>
+        </Weapon_Movement_HRifle_Sprint>
+        <Weapon_Movement_HRifle_Land>
+          <soundSet>
+            Weapon_Movement_HRifle_landFeetErc_SoundSet
+          </soundSet>
+          <id>104</id>
+        </Weapon_Movement_HRifle_Land>
+        <Char_Gestures_Hand_Grab_Rifle>
+          <soundSet>
+            Char_Gestures_Hand_Grab_FabricRifle_SoundSet
+          </soundSet>
+          <id>892</id>
+        </Char_Gestures_Hand_Grab_Rifle>
+      </SoundWeapon>
+    </AnimEvents>
+    <Particles>
+      <OnFire>
+        <MuzzleFlash>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <overrideParticle>weapon_shot_mosin9130_01</overrideParticle>
+        </MuzzleFlash>
+        <SmokeCloud1>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud1>
+        <MuzzleFlash2>
+          <overrideParticle>weapon_shot_m4a1_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+        </MuzzleFlash2>
+        <MuzzleFlashStar>
+          <overrideParticle>weapon_shot_Flame_3D_4star</overrideParticle>
+          <overridePoint>StarFlash</overridePoint>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+        </MuzzleFlashStar>
+        <GasPistonBurstR>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>GasPiston</overridePoint>
+          <overrideDirectionVector type="array"><item>0</item><item>0</item><item>0</item></overrideDirectionVector>
+        </GasPistonBurstR>
+        <GasPistonBurstL>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>GasPiston</overridePoint>
+          <overrideDirectionVector type="array"><item>180</item><item>0</item><item>0</item></overrideDirectionVector>
+        </GasPistonBurstL>
+        <GasPistonSmokeRaiseR>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>GasPiston</overridePoint>
+          <overrideDirectionVector type="array"><item>0</item><item>0</item><item>0</item></overrideDirectionVector>
+        </GasPistonSmokeRaiseR>
+        <GasPistonSmokeRaiseL>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>GasPiston</overridePoint>
+          <overrideDirectionVector type="array"><item>180</item><item>0</item><item>0</item></overrideDirectionVector>
+        </GasPistonSmokeRaiseL>
+      </OnFire>
+      <OnOverheating>
+        <shotsToStartOverheating>5</shotsToStartOverheating>
+        <maxOverheatingValue>20</maxOverheatingValue>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <SmokingBarrel1>
+          <overridePoint>GasPiston</overridePoint>
+          <positionOffset type="array"><item>0.05</item><item>-0.02</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>0.2</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrel1>
+        <SmokingBarrelHot1>
+          <overridePoint>GasPiston</overridePoint>
+          <positionOffset type="array"><item>0.12</item><item>-0.02</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.2</item><item>0.6</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot1>
+        <SmokingBarrelHot3>
+          <overridePoint>GasPiston</overridePoint>
+          <positionOffset type="array"><item>0.21</item><item>-0.02</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel_heavy</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.6</item><item>1</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot3>
+        <Steam>
+          <overrideParticle>smoking_barrel_steam_small</overrideParticle>
+          <positionOffset type="array"><item>0.4</item><item>0.02</item><item>0</item></positionOffset>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>0.5</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0.2</item><item>1</item></onlyWithinRainLimits>
+        </Steam>
+        <Steam2>
+          <overrideParticle>smoking_barrel_steam</overrideParticle>
+          <positionOffset type="array"><item>0.45</item><item>0.02</item><item>0</item></positionOffset>
+          <onlyWithinOverheatLimits type="array"><item>0.5</item><item>1</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0.2</item><item>1</item></onlyWithinRainLimits>
+        </Steam2>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>1</item></onlyWithinOverheatLimits>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\SVD\w_SVD_states.anm
+    </weaponStateAnim>
+  </SVD_Base>
+  <SVD base="SVD_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_SVD0</displayName>
+    <descriptionShort>STR_cfgWeapons_SVD1</descriptionShort>
+    <model>\dz\weapons\firearms\svd\svd.p3d</model>
+    <attachments type="array"><item>weaponWrap</item><item>weaponOpticsAK</item><item>weaponMuzzleAK</item></attachments>
+    <itemSize type="array"><item>10</item><item>3</item></itemSize>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\svd\data\SVD.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\svd\data\SVD.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\svd\data\SVD_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\svd\data\SVD_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\svd\data\SVD_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </SVD>
+</cfgWeapons>

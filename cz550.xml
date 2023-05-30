@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_CZ550>
+    <units type="array"><item>cz550</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_CZ550>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Single>
+</Mode_Single>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <BoltActionRifle_ExternalMagazine_Base>
+  </BoltActionRifle_ExternalMagazine_Base>
+  <CZ550_Base base="BoltActionRifle_ExternalMagazine_Base">
+    <scope>0</scope>
+    <animName>cz527</animName>
+    <weight>3300</weight>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>50</item>
+      <item>160</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <opticsFlare>0</opticsFlare>
+    <winchesterTypeOpticsMount>1</winchesterTypeOpticsMount>
+    <ironsightsExcludingOptics type="array"><item>HuntingOptic</item></ironsightsExcludingOptics>
+    <WeaponLength>0.931718</WeaponLength>
+    <barrelArmor>1.6</barrelArmor>
+    <initSpeedMultiplier>1.15</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_308Win</item><item>Ammo_308WinTracer</item></chamberableFrom>
+    <magazines type="array"><item>Mag_CZ550_4rnd</item><item>Mag_CZ550_10rnd</item></magazines>
+    <magazineSwitchTime>0.38</magazineSwitchTime>
+    <ejectType>0</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>2.2</item><item>2.2</item><item>1.2</item></swayModifier>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item></simpleHiddenSelections>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <NoiseShoot>
+      <strength>100</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_Single">
+      <soundSetShot type="array"><item>CZ550_Shot_SoundSet</item><item>CZ550_Tail_SoundSet</item><item>CZ550_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>CZ550_silencerHomeMade_SoundSet</item><item>CZ550_silencerHomeMadeTail_SoundSet</item><item>CZ550_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>1</reloadTime>
+      <dispersion>0.00075</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <OpticsInfo base="OpticsInfoRifle">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>200</distanceZoomMin>
+      <distanceZoomMax>200</distanceZoomMax>
+      <discreteDistance type="array"><item>200</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+    </OpticsInfo>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_cz527_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <positionOffset type="array"><item>-0.05</item><item>0</item><item>0</item></positionOffset>
+        </MuzzleFlash>
+      </OnFire>
+      <OnOverheating>
+        <shotsToStartOverheating>1</shotsToStartOverheating>
+        <maxOverheatingValue>4</maxOverheatingValue>
+        <overheatingDecayInterval>3</overheatingDecayInterval>
+        <BarrelSmoke>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+        </BarrelSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\cz550\w_cz550_states.anm
+    </weaponStateAnim>
+  </CZ550_Base>
+  <CZ550 base="CZ550_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgweapons_cz5500</displayName>
+    <descriptionShort>STR_cfgweapons_cz5501</descriptionShort>
+    <model>\dz\weapons\firearms\cz550\cz550.p3d</model>
+    <attachments type="array"><item>weaponWrap</item><item>weaponOpticsHunting</item><item>suppressorImpro</item></attachments>
+    <itemSize type="array"><item>10</item><item>3</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\cz550\data\cz550_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\cz550\data\cz550.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>300</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\cz550\Data\cz550.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\cz550\Data\cz550.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\cz550\Data\cz550_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\cz550\Data\cz550_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\cz550\Data\cz550_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </CZ550>
+</cfgWeapons>

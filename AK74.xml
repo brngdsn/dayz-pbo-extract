@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_AK74>
+    <units type="array">
+      <item>AK74</item>
+      <item>AK74_Black</item>
+      <item>AK74_Green</item>
+      <item>AKS74U</item>
+      <item>AKS74U_Black</item>
+      <item>AKS74U_Green</item>
+    </units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_AK74>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <AK74_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>3070</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>50</item>
+      <item>160</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.56</WeaponLength>
+    <barrelArmor>2.743</barrelArmor>
+    <initSpeedMultiplier>0.7</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_545x39</item><item>Ammo_545x39Tracer</item></chamberableFrom>
+    <magazines type="array"><item>Mag_AK74_30Rnd</item><item>Mag_AK74_30Rnd_Black</item><item>Mag_AK74_30Rnd_Green</item><item>Mag_AK74_45Rnd</item></magazines>
+    <magazineSwitchTime>0.2</magazineSwitchTime>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>2.2</item><item>2.2</item><item>1.2</item></swayModifier>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item><item>magazine</item></simpleHiddenSelections>
+    <hiddenSelections type="array"><item>camo</item><item>magazine</item></hiddenSelections>
+    <NoiseShoot>
+      <strength>82</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item><item>FullAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>AK_Shot_SoundSet</item><item>AK_Tail_SoundSet</item><item>AK_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>AK_silencer_SoundSet</item><item>AK_silencerTail_SoundSet</item><item>AK_silencerInteriorTail_SoundSet</item></item><item type="array"><item>AK_silencerHomeMade_SoundSet</item><item>AK_silencerHomeMadeTail_SoundSet</item><item>AK_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.12</reloadTime>
+      <recoil>recoil_AK74</recoil>
+      <recoilProne>recoil_AK74_prone</recoilProne>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <FullAuto base="Mode_FullAuto">
+      <soundSetShot type="array"><item>AK_Shot_SoundSet</item><item>AK_Tail_SoundSet</item><item>AK_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>AK_silencer_SoundSet</item><item>AK_silencerTail_SoundSet</item><item>AK_silencerInteriorTail_SoundSet</item></item><item type="array"><item>AK_silencerHomeMade_SoundSet</item><item>AK_silencerHomeMadeTail_SoundSet</item><item>AK_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.098</reloadTime>
+      <recoil>recoil_AK74</recoil>
+      <recoilProne>recoil_AK74_prone</recoilProne>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </FullAuto>
+    <OpticsInfo base="OpticsInfoRifle">
+    </OpticsInfo>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_ak74_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <positionOffset type="array"><item>-0.1</item><item>0</item><item>0</item></positionOffset>
+        </MuzzleFlash>
+        <ChamberSmokeBurst>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+          <overrideDirectionPoint>Nabojniceend</overrideDirectionPoint>
+        </ChamberSmokeBurst>
+      </OnFire>
+      <OnOverheating>
+        <maxOverheatingValue>60</maxOverheatingValue>
+        <shotsToStartOverheating>25</shotsToStartOverheating>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <SmokingBarrel1>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>0.5</item></onlyWithinOverheatLimits>
+          <positionOffset type="array"><item>0.1</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrel1>
+        <SmokingBarrelHot1>
+          <overrideParticle>smoking_barrel</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.5</item><item>0.8</item></onlyWithinOverheatLimits>
+          <positionOffset type="array"><item>0.1</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot1>
+        <SmokingBarrelHot3>
+          <overrideParticle>smoking_barrel_heavy</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.8</item><item>1</item></onlyWithinOverheatLimits>
+          <positionOffset type="array"><item>0.1</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot3>
+        <SmokingBarrelHotSteamSmall>
+          <overrideParticle>smoking_barrel_steam_small</overrideParticle>
+          <positionOffset type="array"><item>0.3</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0.2</item><item>0.5</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteamSmall>
+        <SmokingBarrelHotSteam>
+          <overrideParticle>smoking_barrel_steam</overrideParticle>
+          <positionOffset type="array"><item>0.3</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0.5</item><item>1</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteam>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\AKS74U\w_AKS74U_states.anm
+    </weaponStateAnim>
+  </AK74_Base>
+  <AK74 base="AK74_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_AK740</displayName>
+    <descriptionShort>STR_cfgWeapons_AK741</descriptionShort>
+    <model>\dz\weapons\firearms\AK101\ak101.p3d</model>
+    <attachments type="array">
+      <item>weaponButtstockAK</item>
+      <item>WeaponHandguardAK</item>
+      <item>weaponWrap</item>
+      <item>weaponOpticsAK</item>
+      <item>weaponFlashlight</item>
+      <item>weaponMuzzleAK</item>
+      <item>weaponBayonetAK</item>
+    </attachments>
+    <itemSize type="array"><item>8</item><item>3</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\AK101\data\ak101_co.paa</item><item>DZ\weapons\attachments\magazine\data\magazine_ak74_tan_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\AK101\data\ak101.rvmat</item><item>DZ\weapons\attachments\magazine\data\magazine_ak74_tan.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\AK101\Data\ak101.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\AK101\Data\ak101.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\AK101\Data\ak101_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\AK101\Data\ak101_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\AK101\Data\ak101_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </AK74>
+  <AK74_Black base="AK74">
+    <scope>2</scope>
+    <color>Black</color>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.15,0.15,0.15,1.0,CO)</item><item>#(argb,8,8,3)color(0.15,0.15,0.15,1.0,CO)</item></hiddenSelectionsTextures>
+  </AK74_Black>
+  <AK74_Green base="AK74">
+    <scope>2</scope>
+    <color>Green</color>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.35,0.36,0.28,1.0,CO)</item><item>#(argb,8,8,3)color(0.15,0.15,0.15,1.0,CO)</item></hiddenSelectionsTextures>
+  </AK74_Green>
+  <AKS74U base="AK74_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_AKS74U0</displayName>
+    <descriptionShort>STR_cfgWeapons_AKS74U1</descriptionShort>
+    <model>\dz\weapons\firearms\AK74\aks74u.p3d</model>
+    <attachments type="array"><item>weaponButtstockAK</item><item>weaponWrap</item><item>weaponMuzzleAK</item></attachments>
+    <weight>2700</weight>
+    <itemSize type="array"><item>6</item><item>3</item></itemSize>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>50</item>
+      <item>175</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.476735</WeaponLength>
+    <initSpeedMultiplier>0.57</initSpeedMultiplier>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>1.8</item><item>1.8</item><item>1</item></swayModifier>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\AK74\data\aks74u_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\AK74\data\aks74u.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\ak74\Data\aks74u.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\ak74\Data\aks74u.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\ak74\Data\aks74u_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\ak74\Data\aks74u_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\ak74\Data\aks74u_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <FullAuto base="Mode_FullAuto">
+      <soundSetShot type="array"><item>AK_Shot_SoundSet</item><item>AK_Tail_SoundSet</item><item>AK_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>AK_silencer_SoundSet</item><item>AK_silencerTail_SoundSet</item><item>AK_silencerInteriorTail_SoundSet</item></item><item type="array"><item>AK_silencerHomeMade_SoundSet</item><item>AK_silencerHomeMadeTail_SoundSet</item><item>AK_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.098</reloadTime>
+      <recoil>recoil_AK74</recoil>
+      <recoilProne>recoil_AK74_prone</recoilProne>
+      <dispersion>0.003</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </FullAuto>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>AK_Shot_SoundSet</item><item>AK_Tail_SoundSet</item><item>AK_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>AK_silencer_SoundSet</item><item>AK_silencerTail_SoundSet</item><item>AK_silencerInteriorTail_SoundSet</item></item><item type="array"><item>AK_silencerHomeMade_SoundSet</item><item>AK_silencerHomeMadeTail_SoundSet</item><item>AK_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.12</reloadTime>
+      <recoil>recoil_AK74</recoil>
+      <recoilProne>recoil_AK74_prone</recoilProne>
+      <dispersion>0.003</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+  </AKS74U>
+  <AKS74U_Black base="AKS74U">
+    <scope>2</scope>
+    <descriptionShort>STR_cfgWeapons_AKS74U_Black0</descriptionShort>
+    <color>Black</color>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.15,0.15,0.15,1.0,CO)</item></hiddenSelectionsTextures>
+  </AKS74U_Black>
+  <AKS74U_Green base="AKS74U">
+    <scope>2</scope>
+    <descriptionShort>STR_cfgWeapons_AKS74U_Green0</descriptionShort>
+    <color>Green</color>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.35,0.37,0.28,1.0,CO)</item></hiddenSelectionsTextures>
+  </AKS74U_Green>
+</cfgWeapons>

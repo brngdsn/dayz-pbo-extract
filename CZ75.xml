@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Pistols_CZ75>
+    <units type="array"><item>CZ75</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Pistols</item></requiredAddons>
+  </DZ_Pistols_CZ75>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoPistol>
+</OpticsInfoPistol>
+<cfgWeapons>
+  <Pistol_Base>
+  </Pistol_Base>
+  <CZ75_Base base="Pistol_Base">
+    <scope>0</scope>
+    <weight>1000</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.55</item>
+      <item>10</item>
+      <item>280</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.635576</WeaponLength>
+    <barrelArmor>2</barrelArmor>
+    <initSpeedMultiplier>1</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <magazines type="array"><item>Mag_CZ75_15Rnd</item></magazines>
+    <chamberableFrom type="array"><item>Ammo_9x19</item></chamberableFrom>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>1.2</item><item>1.2</item><item>0.8</item></swayModifier>
+    <NoiseShoot>
+      <strength>50</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>CZ75_Shot_SoundSet</item><item>CZ75_Tail_SoundSet</item><item>CZ75_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>CZ75_silencerPro_SoundSet</item><item>CZ75_silencerTail_SoundSet</item><item>CZ75_silencerInteriorTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.13</reloadTime>
+      <recoil>recoil_cz75</recoil>
+      <recoilProne>recoil_cz75_prone</recoilProne>
+      <dispersion>0.0045</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <OpticsInfo base="OpticsInfoPistol">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <discreteDistance type="array"><item>25</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+    </OpticsInfo>
+    <Particles>
+      <OnFire>
+        <MuzzleFlashForward>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <overrideParticle>weapon_shot_cz75_01</overrideParticle>
+        </MuzzleFlashForward>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke_small</overrideParticle>
+        </SmokeCloud>
+      </OnFire>
+      <OnOverheating>
+        <shotsToStartOverheating>5</shotsToStartOverheating>
+        <maxOverheatingValue>15</maxOverheatingValue>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\CZ75\w_CZ75_states.anm
+    </weaponStateAnim>
+  </CZ75_Base>
+  <CZ75 base="CZ75_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_CZ750</displayName>
+    <descriptionShort>STR_cfgWeapons_CZ751</descriptionShort>
+    <model>\dz\weapons\pistols\CZ75\cz75.p3d</model>
+    <attachments type="array"><item>pistolOptics</item><item>pistolFlashlight</item><item>pistolMuzzle</item></attachments>
+    <itemSize type="array"><item>3</item><item>2</item></itemSize>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>170</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\cz75\data\cz75.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\cz75\data\cz75.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\cz75\data\cz75_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\cz75\data\cz75_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\cz75\data\cz75_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </CZ75>
+</cfgWeapons>
+<CfgNonAIVehicles>
+  <ProxyAttachment>
+  </ProxyAttachment>
+  <ProxyCZ75 base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>pistol</inventorySlot>
+    <model>\dz\weapons\pistols\CZ75\cz75.p3d</model>
+  </ProxyCZ75>
+</CfgNonAIVehicles>

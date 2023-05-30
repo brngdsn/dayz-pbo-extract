@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_B95>
+    <units type="array"><item>b95</item><item>b95_Black</item><item>b95_Green</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_B95>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Single>
+</Mode_Single>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_Double>
+</Mode_Double>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<Muzzle_Base>
+</Muzzle_Base>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <B95_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>2820</weight>
+    <itemSize type="array"><item>9</item><item>3</item></itemSize>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_308Win</item><item>Ammo_308WinTracer</item><item>Mag_308WinSnaploader_2Rnd</item></chamberableFrom>
+    <magazines type="array"></magazines>
+    <DisplayMagazine>0</DisplayMagazine>
+    <winchesterTypeOpticsMount>1</winchesterTypeOpticsMount>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>50</item>
+      <item>160</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.85</WeaponLength>
+    <barrelArmor>1.6</barrelArmor>
+    <initSpeedMultiplier>1.05</initSpeedMultiplier>
+    <muzzles type="array"><item>this</item><item>SecondMuzzle</item></muzzles>
+    <ejectType>3</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>2.2</item><item>2.2</item><item>1</item></swayModifier>
+    <hiddenSelections type="array"><item>camoGround</item></hiddenSelections>
+    <simpleHiddenSelections type="array"><item>bullet</item><item>bullet2</item><item>hide_barrel</item></simpleHiddenSelections>
+    <NoiseShoot>
+      <strength>100</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>Single</item><item>Double</item></modes>
+    <Single base="Mode_Single">
+      <soundSetShot type="array"><item>B95_Shot_SoundSet</item><item>B95_Tail_SoundSet</item><item>B95_InteriorTail_SoundSet</item></soundSetShot>
+      <reloadTime>0.1</reloadTime>
+      <dispersion>0.00075</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <Double base="Mode_Double">
+      <soundSetShot type="array"><item>B95_Shot_SoundSet</item><item>B95_Tail_SoundSet</item><item>B95_InteriorTail_SoundSet</item></soundSetShot>
+      <reloadTime>0.1</reloadTime>
+      <dispersion>0.0015</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Double>
+    <SecondMuzzle base="Muzzle_Base">
+      <chamberSize>1</chamberSize>
+      <muzzlePos>usti hlavne_2</muzzlePos>
+      <muzzleEnd>konec hlavne_2</muzzleEnd>
+      <cartridgePos>nabojnicestart_2</cartridgePos>
+      <cartridgeVel>nabojniceend_2</cartridgeVel>
+      <magazines type="array"></magazines>
+      <chamberableFrom type="array"><item>Ammo_308Win</item><item>Ammo_308WinTracer</item><item>Mag_308WinSnaploader_2Rnd</item></chamberableFrom>
+      <barrelArmor>1.6</barrelArmor>
+      <initSpeedMultiplier>1.05</initSpeedMultiplier>
+      <irDistance>0</irDistance>
+      <irLaserPos>laser pos</irLaserPos>
+      <irLaserEnd>laser dir</irLaserEnd>
+      <modes type="array"><item>Single</item><item>Double</item></modes>
+      <Single base="Mode_Single">
+        <soundSetShot type="array"><item>B95_Shot_SoundSet</item><item>B95_Tail_SoundSet</item><item>B95_InteriorTail_SoundSet</item></soundSetShot>
+        <reloadTime>0.1</reloadTime>
+        <dispersion>0.00075</dispersion>
+        <magazineSlot>magazine</magazineSlot>
+      </Single>
+      <Double base="Mode_Double">
+        <soundSetShot type="array"><item>B95_Shot_SoundSet</item><item>B95_Tail_SoundSet</item><item>B95_InteriorTail_SoundSet</item></soundSetShot>
+        <reloadTime>0.1</reloadTime>
+        <dispersion>0.0015</dispersion>
+        <magazineSlot>magazine</magazineSlot>
+      </Double>
+      <OpticsInfo base="OpticsInfoRifle">
+        <memoryPointCamera>eye</memoryPointCamera>
+        <modelOptics>-</modelOptics>
+        <distanceZoomMin>50</distanceZoomMin>
+        <distanceZoomMax>200</distanceZoomMax>
+        <discreteDistance type="array"><item>50</item><item>100</item><item>200</item></discreteDistance>
+        <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      </OpticsInfo>
+    </SecondMuzzle>
+    <OpticsInfo base="OpticsInfoRifle">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>50</distanceZoomMin>
+      <distanceZoomMax>200</distanceZoomMax>
+      <discreteDistance type="array"><item>50</item><item>100</item><item>200</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+    </OpticsInfo>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+          <muzzleIndex>0</muzzleIndex>
+        </SmokeCloud>
+        <SmokeCloud_2>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+          <overridePoint>Usti hlavne_2</overridePoint>
+          <muzzleIndex>1</muzzleIndex>
+        </SmokeCloud_2>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_winch70_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+        </MuzzleFlash>
+        <MuzzleFlash_2>
+          <overrideParticle>weapon_shot_winch70_01</overrideParticle>
+          <overridePoint>Usti hlavne_2</overridePoint>
+          <illuminateWorld>1</illuminateWorld>
+          <muzzleIndex>1</muzzleIndex>
+        </MuzzleFlash_2>
+      </OnFire>
+      <OnOverheating>
+        <shotsToStartOverheating>1</shotsToStartOverheating>
+        <maxOverheatingValue>3</maxOverheatingValue>
+        <overheatingDecayInterval>4</overheatingDecayInterval>
+        <BarrelSmoke>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+        </BarrelSmoke>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\B95\w_B95_states.anm
+    </weaponStateAnim>
+    <boneRemap type="array">
+      <item>release</item>
+      <item>Weapon_Bone_02</item>
+      <item>barrel</item>
+      <item>Weapon_Bone_01</item>
+      <item>trigger</item>
+      <item>Weapon_Trigger</item>
+      <item>ejector</item>
+      <item>Weapon_Bone_03</item>
+      <item>bullet</item>
+      <item>Weapon_Bullet</item>
+      <item>bullet2</item>
+      <item>Weapon_Bone_04</item>
+      <item>snaploader</item>
+      <item>Weapon_Bone_05</item>
+    </boneRemap>
+  </B95_Base>
+  <B95 base="B95_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_B950</displayName>
+    <descriptionShort>STR_cfgWeapons_B951</descriptionShort>
+    <model>\dz\weapons\firearms\B95\b95.p3d</model>
+    <attachments type="array"><item>weaponWrap</item><item>weaponOpticsHunting</item></attachments>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\B95\data\b95_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\B95\data\b95.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\B95\Data\b95.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\B95\Data\b95.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\B95\Data\b95_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\B95\Data\b95_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\B95\Data\b95_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>0</item><item>0</item><item>0</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>0</item><item>0</item><item>0</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+  </B95>
+  <B95_Black base="B95">
+    <scope>2</scope>
+    <color>Black</color>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.15,0.15,0.15,1.0,CO)</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\B95\data\b95_painted.rvmat</item></hiddenSelectionsMaterials>
+  </B95_Black>
+  <B95_Green base="B95">
+    <scope>2</scope>
+    <color>Green</color>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.35,0.36,0.28,1.0,CO)</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\B95\data\b95_painted.rvmat</item></hiddenSelectionsMaterials>
+  </B95_Green>
+  <SawedoffB95 base="B95_Base">
+    <scope>2</scope>
+    <displayName>STR_SawedoffB950</displayName>
+    <descriptionShort>STR_SawedoffB951</descriptionShort>
+    <model>\dz\weapons\firearms\B95\b95_sawn.p3d</model>
+    <weight>2000</weight>
+    <itemSize type="array"><item>5</item><item>2</item></itemSize>
+    <initSpeedMultiplier>0.75</initSpeedMultiplier>
+    <WeaponLength>0.56</WeaponLength>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\B95\Data\b95.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\B95\Data\b95.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\B95\Data\b95_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\B95\Data\b95_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\B95\Data\b95_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Single base="Single">
+      <dispersion>0.0025</dispersion>
+    </Single>
+    <Double base="Double">
+      <dispersion>0.003</dispersion>
+    </Double>
+    <SecondMuzzle base="SecondMuzzle">
+      <initSpeedMultiplier>0.75</initSpeedMultiplier>
+      <Single base="Single">
+        <dispersion>0.0025</dispersion>
+      </Single>
+      <Double base="Double">
+        <dispersion>0.003</dispersion>
+      </Double>
+    </SecondMuzzle>
+    <attachments type="array"><item>weaponOpticsHunting</item></attachments>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>-0.05</item><item>-0.01</item><item>0.01</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>-10</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>-0.05</item><item>-0.01</item><item>-0.03</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>-10</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+  </SawedoffB95>
+</cfgWeapons>

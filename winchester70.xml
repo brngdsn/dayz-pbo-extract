@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_Winchester70>
+    <units type="array"><item>Winchester70</item><item>Winchester70_Black</item><item>Winchester70_Green</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_Winchester70>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Single>
+</Mode_Single>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <BoltActionRifle_InnerMagazine_Base>
+  </BoltActionRifle_InnerMagazine_Base>
+  <Winchester70_Base base="BoltActionRifle_InnerMagazine_Base">
+    <scope>0</scope>
+    <animName>Winchester70</animName>
+    <weight>2721</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>20</item>
+      <item>170</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.931718</WeaponLength>
+    <barrelArmor>3.125</barrelArmor>
+    <winchesterTypeOpticsMount>1</winchesterTypeOpticsMount>
+    <initSpeedMultiplier>1.15</initSpeedMultiplier>
+    <chamberSize>5</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_308Win</item><item>Ammo_308WinTracer</item></chamberableFrom>
+    <magazines type="array"></magazines>
+    <DisplayMagazine>0</DisplayMagazine>
+    <ejectType>0</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>2.2</item><item>2.2</item><item>1.2</item></swayModifier>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item></simpleHiddenSelections>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <NoiseShoot>
+      <strength>100</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_Single">
+      <soundSetShot type="array"><item>Win_Shot_SoundSet</item><item>Win_Tail_SoundSet</item><item>Win_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>Win_silencerHomeMade_SoundSet</item><item>Win_silencerHomeMadeTail_SoundSet</item><item>Win_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>1</reloadTime>
+      <recoil>recoil_Winchester</recoil>
+      <recoilProne>recoil_Winchester_prone</recoilProne>
+      <dispersion>0.0005</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <OpticsInfo base="OpticsInfoRifle">
+      <discreteDistance type="array"><item>200</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <distanceZoomMin>200</distanceZoomMin>
+      <distanceZoomMax>200</distanceZoomMax>
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>0</item><item>-0.01</item><item>0.01</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>0</item><item>-0.01</item><item>-0.03</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\Winchester70\w_winchester70_states.anm
+    </weaponStateAnim>
+  </Winchester70_Base>
+  <Winchester70 base="Winchester70_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_Winchester700</displayName>
+    <descriptionShort>STR_cfgWeapons_Winchester701</descriptionShort>
+    <model>
+      \dz\weapons\firearms\winchester70\winchester70.p3d
+    </model>
+    <attachments type="array"><item>weaponWrap</item><item>weaponOpticsHunting</item><item>suppressorImpro</item></attachments>
+    <itemSize type="array"><item>10</item><item>3</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\winchester70\data\winchester70_CO.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\winchester70\data\winchester70.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\winchester70\data\winchester70.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\winchester70\data\winchester70.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\winchester70\data\winchester70_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\winchester70\data\winchester70_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\winchester70\data\winchester70_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_winch70_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <positionOffset type="array"><item>0.1</item><item>0</item><item>0</item></positionOffset>
+        </MuzzleFlash>
+      </OnFire>
+      <OnOverheating>
+        <shotsToStartOverheating>1</shotsToStartOverheating>
+        <maxOverheatingValue>3</maxOverheatingValue>
+        <overheatingDecayInterval>4</overheatingDecayInterval>
+        <BarrelSmoke>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+        </BarrelSmoke>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+  </Winchester70>
+  <Winchester70_Black base="Winchester70">
+    <scope>2</scope>
+    <descriptionShort>STR_cfgWeapons_Winchester70_Black0</descriptionShort>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.15,0.15,0.15,1.0,CO)</item></hiddenSelectionsTextures>
+  </Winchester70_Black>
+  <Winchester70_Green base="Winchester70">
+    <scope>2</scope>
+    <descriptionShort>STR_cfgWeapons_Winchester70_Green0</descriptionShort>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.35,0.36,0.28,1.0,CO)</item></hiddenSelectionsTextures>
+  </Winchester70_Green>
+</cfgWeapons>

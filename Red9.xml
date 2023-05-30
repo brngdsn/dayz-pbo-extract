@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Pistols_Red9>
+    <units type="array"><item>Red9</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Pistols</item></requiredAddons>
+  </DZ_Pistols_Red9>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<cfgWeapons>
+  <Pistol_Base>
+  </Pistol_Base>
+  <Red9_Base base="Pistol_Base">
+    <scope>0</scope>
+    <debug_ItemCategory>1</debug_ItemCategory>
+    <weight>960</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <modelOptics>-</modelOptics>
+    <weaponInfoType>RscWeaponZeroing</weaponInfoType>
+    <distanceZoomMin>100</distanceZoomMin>
+    <distanceZoomMax>100</distanceZoomMax>
+    <discreteDistance type="array"><item>50</item><item>100</item><item>200</item><item>300</item></discreteDistance>
+    <discreteDistanceInitIndex>1</discreteDistanceInitIndex>
+    <value>0</value>
+    <chamberSize>10</chamberSize>
+    <chamberedRound></chamberedRound>
+    <magazines type="array"></magazines>
+    <chamberableFrom type="array"><item>Ammo_9x19</item><item>Mag_CLIP9x19_10Rnd</item></chamberableFrom>
+    <damagePerShot type="array"><item>0.05</item><item>0.05</item></damagePerShot>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <modes type="array"><item>SemiAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>Red9_Shot_SoundSet</item><item>Red9_Tail_SoundSet</item><item>Red9_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>Red9_silencerHomeMade_SoundSet</item><item>Red9_silencerHomeMadeTail_SoundSet</item><item>Red9_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.18</reloadTime>
+      <recoil>recoil_red9</recoil>
+      <recoilProne>recoil_red9_prone</recoilProne>
+      <dispersion>0.009</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+  </Red9_Base>
+  <Red9 base="Red9_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_Red90</displayName>
+    <descriptionShort>STR_cfgWeapons_Red91</descriptionShort>
+    <model>\dz\weapons\pistols\Red9\Red9.p3d</model>
+    <attachments type="array"><item>weaponButtstockRed9</item><item>suppressorImpro</item></attachments>
+    <itemSize type="array"><item>4</item><item>2</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\pistols\Red9\data\red9_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\pistols\Red9\data\red9.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\Red9\data\red9.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\Red9\data\red9.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\Red9\data\red9_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\Red9\data\red9_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\Red9\data\red9_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Red9>
+</cfgWeapons>
+<CfgNonAIVehicles>
+  <ProxyAttachment>
+  </ProxyAttachment>
+  <ProxyRed9 base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>pistol</inventorySlot>
+    <model>\dz\weapons\pistols\Red9\Red9.p3d</model>
+  </ProxyRed9>
+</CfgNonAIVehicles>

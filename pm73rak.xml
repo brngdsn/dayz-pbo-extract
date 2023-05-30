@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_pm73rak>
+    <units type="array"><item>PM73Rak</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_pm73rak>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<CfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <PM73Rak_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>1600</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_380</item></chamberableFrom>
+    <magazines type="array"><item>Mag_PM73_25Rnd</item><item>Mag_PM73_15Rnd</item></magazines>
+    <magazineSwitchTime>0.35</magazineSwitchTime>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <modes type="array"><item>FullAuto</item></modes>
+    <FullAuto base="Mode_FullAuto">
+      <soundSetShot type="array"><item>PM73_Shot_SoundSet</item><item>PM73_Tail_SoundSet</item><item>PM73_InteriorTail_SoundSet</item></soundSetShot>
+      <reloadTime>0.092</reloadTime>
+      <recoil>recoil_rak</recoil>
+      <recoilProne>recoil_rak_prone</recoilProne>
+      <dispersion>0.003</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </FullAuto>
+    <OpticsInfo base="OpticsInfoRifle">
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+    </OpticsInfo>
+  </PM73Rak_Base>
+  <PM73Rak base="PM73Rak_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgWeapons_PM73Rak0</displayName>
+    <descriptionShort>STR_CfgWeapons_PM73Rak1</descriptionShort>
+    <model>\dz\weapons\firearms\pm73rak\pm73rak.p3d</model>
+    <attachments type="array"></attachments>
+    <itemSize type="array"><item>6</item><item>3</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\pm73rak\data\pm73_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\pm73rak\data\pm73.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\pm73rak\Data\pm73.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\pm73rak\Data\pm73.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\pm73rak\Data\pm73_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\pm73rak\Data\pm73_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\pm73rak\Data\pm73_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </PM73Rak>
+</CfgWeapons>

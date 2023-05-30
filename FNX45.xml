@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Pistols_FNX45>
+    <units type="array"><item>FNX45</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Pistols</item></requiredAddons>
+  </DZ_Pistols_FNX45>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoPistol>
+</OpticsInfoPistol>
+<cfgWeapons>
+  <Pistol_Base>
+  </Pistol_Base>
+  <FNX45_Base base="Pistol_Base">
+    <scope>0</scope>
+    <weight>950</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>10</item>
+      <item>250</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <ironsightsExcludingOptics type="array"><item>FNP45_MRDSOptic</item></ironsightsExcludingOptics>
+    <WeaponLength>0.634148</WeaponLength>
+    <barrelArmor>1.7</barrelArmor>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <magazines type="array"><item>Mag_FNX45_15Rnd</item></magazines>
+    <chamberableFrom type="array"><item>Ammo_45ACP</item></chamberableFrom>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>1.3</item><item>1.3</item><item>0.8</item></swayModifier>
+    <NoiseShoot>
+      <strength>50</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>FNX45_Shot_SoundSet</item><item>FNX45_Tail_SoundSet</item><item>FNX45_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>FNX45_silencerPro_SoundSet</item><item>FNX45_silencerTail_SoundSet</item><item>FNX45_silencerInteriorTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.13</reloadTime>
+      <recoil>recoil_fnx</recoil>
+      <recoilProne>recoil_fnx_prone</recoilProne>
+      <dispersion>0.003</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <OpticsInfo base="OpticsInfoPistol">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <discreteDistance type="array"><item>25</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+    </OpticsInfo>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\FNP45\w_fnp45_states.anm
+    </weaponStateAnim>
+    <boneRemap type="array">
+      <item>bolt</item>
+      <item>Weapon_Bolt</item>
+      <item>magazine</item>
+      <item>Weapon_Magazine</item>
+      <item>bullet</item>
+      <item>Weapon_Bullet</item>
+      <item>trigger</item>
+      <item>Weapon_Trigger</item>
+      <item>hammer</item>
+      <item>Weapon_Bone_01</item>
+    </boneRemap>
+  </FNX45_Base>
+  <FNX45 base="FNX45_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_FNX450</displayName>
+    <descriptionShort>STR_cfgWeapons_FNX451</descriptionShort>
+    <model>\dz\weapons\pistols\fnx45\fnp45.p3d</model>
+    <attachments type="array"><item>pistolOptics</item><item>pistolFlashlight</item><item>pistolMuzzle</item></attachments>
+    <itemSize type="array"><item>3</item><item>2</item></itemSize>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>150</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\fnx45\data\herstal45.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\fnx45\data\herstal45.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\fnx45\data\herstal45_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\fnx45\data\herstal45_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\fnx45\data\herstal45_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Particles>
+      <OnFire>
+        <MuzzleFlashForward>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <overrideParticle>weapon_shot_fnx_01</overrideParticle>
+        </MuzzleFlashForward>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke_small</overrideParticle>
+        </SmokeCloud>
+      </OnFire>
+      <OnOverheating>
+        <shotsToStartOverheating>5</shotsToStartOverheating>
+        <maxOverheatingValue>15</maxOverheatingValue>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+  </FNX45>
+  <FNX45_arrow base="FNX45">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_FNX450</displayName>
+    <descriptionShort>STR_cfgWeapons_FNX451</descriptionShort>
+    <model>\dz\weapons\pistols\fnx45\fnp45.p3d</model>
+    <attachments type="array"><item>pistolMuzzle</item><item>pistolOptics</item><item>pistolFlashlight</item></attachments>
+    <itemSize type="array"><item>3</item><item>2</item></itemSize>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <dispersion>0.1</dispersion>
+    <magazines type="array"><item>Mag_FNX45_15Rnd</item></magazines>
+    <chamberableFrom type="array"><item>Ammo_HuntingArrow</item><item>Ammo_ImprovisedArrow</item></chamberableFrom>
+    <Particles>
+      <OnFire>
+        <MuzzleFlashForward>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <overrideParticle>weapon_shot_fnx_01</overrideParticle>
+        </MuzzleFlashForward>
+        <ChamberSmoke>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+          <overrideDirectionPoint>Nabojniceend</overrideDirectionPoint>
+        </ChamberSmoke>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnFire>
+    </Particles>
+  </FNX45_arrow>
+</cfgWeapons>
+<CfgNonAIVehicles>
+  <ProxyAttachment>
+  </ProxyAttachment>
+  <ProxyFNP45 base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>pistol</inventorySlot>
+    <model>\dz\weapons\pistols\fnx45\fnp45.p3d</model>
+  </ProxyFNP45>
+</CfgNonAIVehicles>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Misc>
+    <units type="array"></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"></requiredAddons>
+  </DZ_Weapons_Misc>
+</CfgPatches>
+<cfgWeapons>
+  <DefaultWeapon>
+  </DefaultWeapon>
+</cfgWeapons>

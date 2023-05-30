@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Nonlethal>
+    <units type="array"></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Sounds_Weapons</item></requiredAddons>
+  </DZ_Nonlethal>
+</CfgPatches>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Safe base="Mode_SemiAuto">
+  <magazines type="array"></magazines>
+</Mode_Safe>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<cfgWeapons>
+  <DefaultWeapon>
+  </DefaultWeapon>
+  <NonlethalCore base="DefaultWeapon">
+    <scope>0</scope>
+    <targetCategory>loot</targetCategory>
+    <type>1</type>
+    <autoReload>0</autoReload>
+    <rotationFlags>17</rotationFlags>
+    <storageCategory>1</storageCategory>
+    <Single base="Mode_SemiAuto">
+    </Single>
+    <NoiseShoot>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <opticsZoomMin>0.414215</opticsZoomMin>
+    <opticsZoomInit>0.57737</opticsZoomInit>
+    <opticsZoomMax>0.70022</opticsZoomMax>
+    <barrelArmor>400</barrelArmor>
+    <magazineSlot>magazine</magazineSlot>
+  </NonlethalCore>
+  <NonlethalPistol base="NonlethalCore">
+    <itemSize type="array"><item>4</item><item>2</item></itemSize>
+    <cursor>aimGunGhost</cursor>
+    <cursorAim>aimPistol</cursorAim>
+    <inventorySlot type="array"><item>Pistol</item></inventorySlot>
+    <animClass>Pistol</animClass>
+    <armAction>HandGun</armAction>
+  </NonlethalPistol>
+  <NonlethalRifle base="NonlethalCore">
+    <itemSize type="array"><item>8</item><item>2</item></itemSize>
+    <cursor>aimGunGhost</cursor>
+    <cursorAim>aimRifle</cursorAim>
+    <inventorySlot type="array"><item>Shoulder</item></inventorySlot>
+    <animClass>Rifle</animClass>
+  </NonlethalRifle>
+</cfgWeapons>

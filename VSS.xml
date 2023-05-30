@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_VSS>
+    <units type="array"><item>VSS</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_VSS>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <VSS_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>2600</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>50</item>
+      <item>150</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.78</WeaponLength>
+    <barrelArmor>2.4</barrelArmor>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_9x39</item><item>Ammo_9x39AP</item></chamberableFrom>
+    <magazines type="array"><item>Mag_VSS_10Rnd</item><item>Mag_VAL_20Rnd</item></magazines>
+    <magazineSwitchTime>0.38</magazineSwitchTime>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>2.2</item><item>2.2</item><item>1.2</item></swayModifier>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item></simpleHiddenSelections>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <NoiseShoot>
+      <strength>5</strength>
+      <type>sound</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item><item>FullAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>VSS_Vintorez_Shot_SoundSet</item><item>VSS_Vintorez_Tail_SoundSet</item><item>VSS_Vintorez_InteriorTail_SoundSet</item></soundSetShot>
+      <envShootingDecrease>0.05</envShootingDecrease>
+      <reloadTime>0.12</reloadTime>
+      <recoil>recoil_VSS</recoil>
+      <recoilProne>recoil_VSS_prone</recoilProne>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <FullAuto base="Mode_FullAuto">
+      <soundSetShot type="array"><item>VSS_Vintorez_Shot_SoundSet</item><item>VSS_Vintorez_Tail_SoundSet</item><item>VSS_Vintorez_InteriorTail_SoundSet</item></soundSetShot>
+      <reloadTime>0.065</reloadTime>
+      <recoil>recoil_VSS</recoil>
+      <recoilProne>recoil_VSS_prone</recoilProne>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </FullAuto>
+    <OpticsInfo base="OpticsInfoRifle">
+      <discreteDistance type="array"><item>100</item><item>200</item><item>300</item><item>400</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>-0.1</item><item>0</item><item>0</item></position>
+        <orientation type="array"><item>0</item><item>-17</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>-0.1</item><item>-0.01</item><item>0</item></position>
+        <orientation type="array"><item>0</item><item>20</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_vss_01</overrideParticle>
+          <positionOffset type="array"><item>-0.05</item><item>0</item><item>0</item></positionOffset>
+        </MuzzleFlash>
+        <ChamberSmokeBurst>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+          <overrideDirectionPoint>Nabojniceend</overrideDirectionPoint>
+        </ChamberSmokeBurst>
+      </OnFire>
+      <OnOverheating>
+        <maxOverheatingValue>30</maxOverheatingValue>
+        <shotsToStartOverheating>15</shotsToStartOverheating>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <SmokingBarrel1>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>1</item></onlyWithinOverheatLimits>
+          <positionOffset type="array"><item>0.1</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrel1>
+        <SmokingBarrelHotSteamSmall>
+          <overrideParticle>smoking_barrel_steam_small</overrideParticle>
+          <positionOffset type="array"><item>0.3</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0.2</item><item>0.5</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteamSmall>
+        <SmokingBarrelHotSteam>
+          <overrideParticle>smoking_barrel_steam</overrideParticle>
+          <positionOffset type="array"><item>0.3</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0.5</item><item>1</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteam>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\VSS\w_VSS_states.anm
+    </weaponStateAnim>
+  </VSS_Base>
+  <VSS base="VSS_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_VSS0</displayName>
+    <descriptionShort>STR_cfgWeapons_VSS1</descriptionShort>
+    <model>\dz\weapons\firearms\VSS\VSS.p3d</model>
+    <attachments type="array"><item>weaponWrap</item><item>weaponOpticsAK</item></attachments>
+    <itemSize type="array"><item>8</item><item>3</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\VSS\data\vss_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\VSS\data\vss.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\VSS\data\vss.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\VSS\data\vss.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\VSS\data\vss_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\VSS\data\vss_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\VSS\data\vss_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </VSS>
+  <ASVAL base="VSS_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_ASVAL0</displayName>
+    <descriptionShort>STR_cfgWeapons_ASVAL1</descriptionShort>
+    <model>\dz\weapons\firearms\VSS\VAL.p3d</model>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>50</item>
+      <item>180.1</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <attachments type="array"><item>weaponWrap</item><item>WeaponOptics</item><item>weaponFlashlight</item></attachments>
+    <magazines type="array"><item>Mag_VSS_10Rnd</item><item>Mag_VAL_20Rnd</item></magazines>
+    <itemSize type="array"><item>8</item><item>3</item></itemSize>
+    <hiddenSelections type="array"><item>camo</item><item>camo_rails</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\VSS\data\val_co.paa</item><item>dz\weapons\firearms\VSS\data\val_rails_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\VSS\data\val.rvmat</item><item>dz\weapons\firearms\VSS\data\val_rails.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>dz\weapons\firearms\VSS\data\val.rvmat</item><item>dz\weapons\firearms\VSS\data\val_rails.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>dz\weapons\firearms\VSS\data\val.rvmat</item><item>dz\weapons\firearms\VSS\data\val_rails.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>dz\weapons\firearms\VSS\data\val_damage.rvmat</item><item>dz\weapons\firearms\VSS\data\val_rails_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>dz\weapons\firearms\VSS\data\val_damage.rvmat</item><item>dz\weapons\firearms\VSS\data\val_rails_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>dz\weapons\firearms\VSS\data\val_destruct.rvmat</item><item>dz\weapons\firearms\VSS\data\val_rails_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <OpticsInfo base="OpticsInfoRifle">
+      <discreteDistance type="array"><item>160</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>160</distanceZoomMin>
+      <distanceZoomMax>160</distanceZoomMax>
+    </OpticsInfo>
+  </ASVAL>
+</cfgWeapons>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Launchers_LAW>
+    <units type="array"><item>LAW</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Launchers</item></requiredAddons>
+  </DZ_Weapons_Launchers_LAW>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <Launcher_Base>
+  </Launcher_Base>
+  <LAWBase base="Launcher_Base">
+    <cursorAim></cursorAim>
+    <cursor></cursor>
+    <cursorSize>1</cursorSize>
+    <autoAimEnabled>0</autoAimEnabled>
+    <opticsDisablePeripherialVision>1</opticsDisablePeripherialVision>
+    <magazineReloadTime>12</magazineReloadTime>
+    <reloadTime>0</reloadTime>
+    <initSpeed>30</initSpeed>
+    <canLock>0</canLock>
+    <aiRateOfFire>10</aiRateOfFire>
+    <aiRateOfFireDistance>500</aiRateOfFireDistance>
+    <opticsZoomMin>0.25</opticsZoomMin>
+    <opticsZoomMax>1.1</opticsZoomMax>
+    <opticsZoomInit>0.5</opticsZoomInit>
+    <minRange>20</minRange>
+    <minRangeProbab>0.3</minRangeProbab>
+    <midRange>150</midRange>
+    <midRangeProbab>0.58</midRangeProbab>
+    <maxRange>500</maxRange>
+    <maxRangeProbab>0.04</maxRangeProbab>
+    <scope>1</scope>
+    <weight>7000</weight>
+    <itemSize type="array"><item>4</item><item>1</item></itemSize>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <modelOptics>-</modelOptics>
+    <memoryPointCamera>eye</memoryPointCamera>
+    <distanceZoomMin>100</distanceZoomMin>
+    <distanceZoomMax>100</distanceZoomMax>
+    <primary>1</primary>
+    <value>0</value>
+    <model>\dz\weapons\launchers\law\law.p3d</model>
+    <autoReload>0</autoReload>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <magazines type="array"></magazines>
+    <chamberableFrom type="array"><item>Ammo_LAW_HE</item></chamberableFrom>
+    <barrelArmor>2000</barrelArmor>
+    <ejectType>4</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_SemiAuto">
+      <begin1 type="array"><item>dz\sounds\weapons\firearms\CZ75\CZ75_single_0</item><item>3.16228</item><item>1</item><item>1000</item></begin1>
+      <begin2 type="array"><item>dz\sounds\weapons\firearms\CZ75\CZ75_single_1</item><item>3.16228</item><item>1</item><item>1000</item></begin2>
+      <soundBegin type="array">
+        <item>begin1</item>
+        <item>0.33333</item>
+        <item>begin2</item>
+        <item>0.33333</item>
+        <item>begin1</item>
+        <item>0.33333</item>
+        <item>begin2</item>
+        <item>0.33333</item>
+      </soundBegin>
+      <reloadTime>0.13</reloadTime>
+      <recoil>recoil_flaregun</recoil>
+      <recoilProne>recoil_flaregun_prone</recoilProne>
+      <dispersion>0.03</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+  </LAWBase>
+  <LAW base="LAWBase">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_LAW0</displayName>
+    <descriptionShort>STR_cfgWeapons_LAW1</descriptionShort>
+    <model>\dz\weapons\launchers\law\law.p3d</model>
+    <attachments type="array"></attachments>
+    <Damage>
+      <tex type="array"></tex>
+      <mat type="array"><item>DZ\weapons\launchers\law\data\law.rvmat</item><item>DZ\weapons\launchers\law\data\law_damage.rvmat</item><item>DZ\weapons\launchers\law\data\law_destruct.rvmat</item></mat>
+    </Damage>
+    <AnimationSources>
+      <hammer>
+        <source>user</source>
+        <animPeriod>0.5</animPeriod>
+        <initPhase>0</initPhase>
+      </hammer>
+      <fold base="hammer">
+        <animPeriod>3</animPeriod>
+        <initPhase>1</initPhase>
+      </fold>
+    </AnimationSources>
+  </LAW>
+</cfgWeapons>

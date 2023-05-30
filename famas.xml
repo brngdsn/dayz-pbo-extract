@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_Famas>
+    <units type="array"><item>Famas</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_Famas>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<CfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <Famas_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>3600</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.1</item>
+      <item>20</item>
+      <item>200</item>
+      <item>10</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.48</WeaponLength>
+    <barrelArmor>2.3</barrelArmor>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_556x45</item><item>Ammo_556x45Tracer</item></chamberableFrom>
+    <magazines type="array"><item>Mag_FAMAS_25Rnd</item></magazines>
+    <magazineSwitchTime>0.3</magazineSwitchTime>
+    <initSpeedMultiplier>1</initSpeedMultiplier>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>1.1</item><item>1.1</item><item>1</item></swayModifier>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\famas\data\famas_rifle1.rvmat</item><item>DZ\weapons\firearms\famas\data\famas_rifle2.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\famas\data\famas_rifle1.rvmat</item><item>DZ\weapons\firearms\famas\data\famas_rifle2.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\famas\data\famas_rifle1_damage.rvmat</item><item>DZ\weapons\firearms\famas\data\famas_rifle2_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\famas\data\famas_rifle1_damage.rvmat</item><item>DZ\weapons\firearms\famas\data\famas_rifle2_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\famas\data\famas_rifle1_destruct.rvmat</item><item>DZ\weapons\firearms\famas\data\famas_rifle2_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item></simpleHiddenSelections>
+    <hiddenSelections type="array"><item>camo1</item><item>camo2</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\famas\data\famas_rifle1_co.paa</item><item>dz\weapons\firearms\famas\data\famas_rifle2_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\famas\data\famas_rifle1.rvmat</item><item>dz\weapons\firearms\famas\data\famas_rifle2.rvmat</item></hiddenSelectionsMaterials>
+    <NoiseShoot>
+      <strength>82</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item><item>Burst</item><item>FullAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>Famas_Shot_SoundSet</item><item>Famas_Tail_SoundSet</item><item>Famas_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>Famas_silencer_SoundSet</item><item>Famas_silencerTail_SoundSet</item><item>Famas_silencerInteriorTail_SoundSet</item></item><item type="array"><item>Famas_silencerHomeMade_SoundSet</item><item>Famas_silencerHomeMadeTail_SoundSet</item><item>Famas_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.12</reloadTime>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <Burst base="Mode_Burst">
+      <soundSetShot type="array"><item>Famas_Shot_SoundSet</item><item>Famas_Tail_SoundSet</item><item>Famas_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>Famas_silencer_SoundSet</item><item>Famas_silencerTail_SoundSet</item><item>Famas_silencerInteriorTail_SoundSet</item></item><item type="array"><item>Famas_silencerHomeMade_SoundSet</item><item>Famas_silencerHomeMadeTail_SoundSet</item><item>Famas_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <burst>3</burst>
+      <reloadTime>0.065</reloadTime>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Burst>
+    <FullAuto base="Mode_FullAuto">
+      <soundSetShot type="array"><item>Famas_Shot_SoundSet</item><item>Famas_Tail_SoundSet</item><item>Famas_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>Famas_silencer_SoundSet</item><item>Famas_silencerTail_SoundSet</item><item>Famas_silencerInteriorTail_SoundSet</item></item><item type="array"><item>Famas_silencerHomeMade_SoundSet</item><item>Famas_silencerHomeMadeTail_SoundSet</item><item>Famas_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.065</reloadTime>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </FullAuto>
+    <OpticsInfo base="OpticsInfoRifle">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <discreteDistance type="array"><item>25</item><item>50</item><item>100</item><item>200</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <opticsZoomMin>0.5236</opticsZoomMin>
+      <opticsZoomMax>0.5236</opticsZoomMax>
+      <opticsZoomInit>0.5236</opticsZoomInit>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>25</distanceZoomMin>
+      <distanceZoomMax>200</distanceZoomMax>
+      <PPMaskProperties type="array"><item>0.5</item><item>0.5</item><item>0.1</item><item>0.05</item></PPMaskProperties>
+      <PPLensProperties type="array"><item>0</item><item>0</item><item>0</item><item>0</item></PPLensProperties>
+      <PPBlurProperties>0.2</PPBlurProperties>
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>-0.25</item><item>0.035</item><item>0</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>-0.25</item><item>0.035</item><item>-0.03</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_ump45_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+        </MuzzleFlash>
+        <ChamberSmokeBurst>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+          <overrideDirectionPoint>Nabojniceend</overrideDirectionPoint>
+        </ChamberSmokeBurst>
+      </OnFire>
+      <OnOverheating>
+        <maxOverheatingValue>60</maxOverheatingValue>
+        <shotsToStartOverheating>25</shotsToStartOverheating>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <SmokingBarrel1>
+          <positionOffset type="array"><item>0.2</item><item>0</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>0.2</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrel1>
+        <SmokingBarrelHot1>
+          <positionOffset type="array"><item>0.2</item><item>0</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.2</item><item>0.6</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot1>
+        <SmokingBarrelHot3>
+          <positionOffset type="array"><item>0.2</item><item>0</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel_heavy</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.6</item><item>1</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot3>
+        <SmokingBarrelHotSteam>
+          <overrideParticle>smoking_barrel_steam</overrideParticle>
+          <positionOffset type="array"><item>0.35</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>1</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0.2</item><item>1</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteam>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\Famas\w_famas_states.anm
+    </weaponStateAnim>
+  </Famas_Base>
+  <FAMAS base="Famas_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgWeapons_FAMAS0</displayName>
+    <descriptionShort>STR_CfgWeapons_FAMAS1</descriptionShort>
+    <model>\dz\weapons\firearms\famas\famas.p3d</model>
+    <attachments type="array"><item>weaponWrap</item><item>suppressorImpro</item></attachments>
+    <itemSize type="array"><item>6</item><item>3</item></itemSize>
+  </FAMAS>
+  <SawedoffFAMAS base="Famas_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgWeapons_SawedoffFAMAS0</displayName>
+    <descriptionShort>STR_CfgWeapons_SawedoffFAMAS1</descriptionShort>
+    <model>
+      \dz\weapons\firearms\famas\SawedoffFAMAS.p3d
+    </model>
+    <attachments type="array"><item>weaponWrap</item><item>suppressorImpro</item></attachments>
+    <itemSize type="array"><item>6</item><item>3</item></itemSize>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>180</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\famas\data\famas_rifle1.rvmat</item><item>DZ\weapons\firearms\famas\data\famas_rifle2.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\famas\data\famas_rifle1.rvmat</item><item>DZ\weapons\firearms\famas\data\famas_rifle2.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\famas\data\famas_rifle1_damage.rvmat</item><item>DZ\weapons\firearms\famas\data\famas_rifle2_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\famas\data\famas_rifle1_damage.rvmat</item><item>DZ\weapons\firearms\famas\data\famas_rifle2_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\famas\data\famas_rifle1_destruct.rvmat</item><item>DZ\weapons\firearms\famas\data\famas_rifle2_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </SawedoffFAMAS>
+</CfgWeapons>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_AKM>
+    <units type="array"><item>AKM</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_AKM>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <AKM_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>2140</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>50</item>
+      <item>160</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <ironsightsExcludingOptics type="array"><item>KashtanOptic</item><item>GrozaOptic</item><item>KobraOptic</item></ironsightsExcludingOptics>
+    <WeaponLength>0.829067</WeaponLength>
+    <barrelArmor>4.444</barrelArmor>
+    <initSpeedMultiplier>0.9</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_762x39</item><item>Ammo_762x39Tracer</item></chamberableFrom>
+    <magazines type="array">
+      <item>Mag_AKM_30Rnd</item>
+      <item>Mag_AKM_Palm30Rnd</item>
+      <item>Mag_AKM_Palm30Rnd_Black</item>
+      <item>Mag_AKM_Palm30Rnd_Green</item>
+      <item>Mag_AKM_Drum75Rnd</item>
+      <item>Mag_AKM_Drum75Rnd_Green</item>
+      <item>Mag_AKM_Drum75Rnd_Black</item>
+      <item>Mag_AKM_Drum_TEST</item>
+    </magazines>
+    <magazineSwitchTime>0.2</magazineSwitchTime>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>2</item><item>2</item><item>1.1</item></swayModifier>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item></simpleHiddenSelections>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <modes type="array"><item>SemiAuto</item><item>FullAuto</item></modes>
+    <NoiseShoot>
+      <strength>82</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>AK_Shot_SoundSet</item><item>AK_Tail_SoundSet</item><item>AK_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>AK_silencer_SoundSet</item><item>AK_silencerTail_SoundSet</item><item>AK_silencerInteriorTail_SoundSet</item></item><item type="array"><item>AK_silencerHomeMade_SoundSet</item><item>AK_silencerHomeMadeTail_SoundSet</item><item>AK_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.12</reloadTime>
+      <recoil>recoil_AKM</recoil>
+      <recoilProne>recoil_AKM_prone</recoilProne>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <FullAuto base="Mode_FullAuto">
+      <soundSetShot type="array"><item>AK_Shot_SoundSet</item><item>AK_Tail_SoundSet</item><item>AK_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>AK_silencer_SoundSet</item><item>AK_silencerTail_SoundSet</item><item>AK_silencerInteriorTail_SoundSet</item></item><item type="array"><item>AK_silencerHomeMade_SoundSet</item><item>AK_silencerHomeMadeTail_SoundSet</item><item>AK_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.098</reloadTime>
+      <recoil>recoil_AKM</recoil>
+      <recoilProne>recoil_AKM_prone</recoilProne>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </FullAuto>
+    <OpticsInfo base="OpticsInfoRifle">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <discreteDistance type="array">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+      </discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>1000</distanceZoomMax>
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>0</item><item>0</item><item>0.1</item></position>
+        <orientation type="array"><item>0</item><item>45</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>0</item><item>0</item><item>-0.1</item></position>
+        <orientation type="array"><item>0</item><item>-45</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\AKM\w_AKM_states.anm
+    </weaponStateAnim>
+  </AKM_Base>
+  <AKM base="AKM_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_AKM0</displayName>
+    <descriptionShort>STR_cfgWeapons_AKM1</descriptionShort>
+    <model>\dz\weapons\firearms\AKM\AKM.p3d</model>
+    <attachments type="array">
+      <item>weaponButtstockAK</item>
+      <item>WeaponHandguardAK</item>
+      <item>weaponWrap</item>
+      <item>weaponOpticsAK</item>
+      <item>weaponFlashlight</item>
+      <item>weaponMuzzleAK</item>
+      <item>weaponBayonetAK</item>
+    </attachments>
+    <itemSize type="array"><item>8</item><item>3</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\AKM\data\akm_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\AKM\data\AKM.rvmat</item></hiddenSelectionsMaterials>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_akm_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <positionOffset type="array"><item>-0.05</item><item>0</item><item>0</item></positionOffset>
+        </MuzzleFlash>
+        <ChamberSmokeBurst>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+          <overrideDirectionPoint>Nabojniceend</overrideDirectionPoint>
+        </ChamberSmokeBurst>
+      </OnFire>
+      <OnOverheating>
+        <maxOverheatingValue>60</maxOverheatingValue>
+        <shotsToStartOverheating>25</shotsToStartOverheating>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <SmokingBarrel1>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>0.5</item></onlyWithinOverheatLimits>
+          <positionOffset type="array"><item>0.1</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrel1>
+        <SmokingBarrelHot1>
+          <overrideParticle>smoking_barrel</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.5</item><item>0.8</item></onlyWithinOverheatLimits>
+          <positionOffset type="array"><item>0.1</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot1>
+        <SmokingBarrelHot3>
+          <overrideParticle>smoking_barrel_heavy</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.8</item><item>1</item></onlyWithinOverheatLimits>
+          <positionOffset type="array"><item>0.1</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot3>
+        <SmokingBarrelHotSteamSmall>
+          <overrideParticle>smoking_barrel_steam_small</overrideParticle>
+          <positionOffset type="array"><item>0.3</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0.2</item><item>0.5</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteamSmall>
+        <SmokingBarrelHotSteam>
+          <overrideParticle>smoking_barrel_steam</overrideParticle>
+          <positionOffset type="array"><item>0.3</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0.5</item><item>1</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteam>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>300</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\AKM\data\AKM.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\AKM\data\AKM.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\AKM\data\AKM_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\AKM\data\AKM_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\AKM\data\AKM_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </AKM>
+  <AKM_TESTBED base="AKM">
+    <displayName>testing AKM</displayName>
+    <descriptionShort>you should not be reading this</descriptionShort>
+    <model>\dz\weapons\firearms\AKM\akm_TESTBED.p3d</model>
+  </AKM_TESTBED>
+</cfgWeapons>

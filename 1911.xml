@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Pistols_1911>
+    <units type="array"><item>Colt1911</item><item>1911_Engraved</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Pistols</item></requiredAddons>
+  </DZ_Pistols_1911>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoPistol>
+</OpticsInfoPistol>
+<cfgWeapons>
+  <Pistol_Base>
+  </Pistol_Base>
+  <Colt1911_Base base="Pistol_Base">
+    <scope>0</scope>
+    <weight>1106</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.9</item>
+      <item>10</item>
+      <item>250</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.634148</WeaponLength>
+    <barrelArmor>1.523</barrelArmor>
+    <initSpeedMultiplier>1</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <magazines type="array"><item>Mag_1911_7Rnd</item></magazines>
+    <chamberableFrom type="array"><item>Ammo_45ACP</item></chamberableFrom>
+    <magazineSwitchTime>0.24</magazineSwitchTime>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>1.3</item><item>1.3</item><item>0.8</item></swayModifier>
+    <hiddenSelections type="array"><item>camoGround</item></hiddenSelections>
+    <NoiseShoot>
+      <strength>50</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>Colt1911_Shot_SoundSet</item><item>Colt1911_Tail_SoundSet</item><item>Colt1911_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>Colt1911_silencerPro_SoundSet</item><item>Colt1911_silencerTail_SoundSet</item><item>Colt1911_silencerInteriorTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.13</reloadTime>
+      <recoil>recoil_1911</recoil>
+      <recoilProne>recoil_1911_prone</recoilProne>
+      <dispersion>0.0045</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <OpticsInfo base="OpticsInfoPistol">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <discreteDistance type="array"><item>25</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+    </OpticsInfo>
+    <Particles>
+      <OnFire>
+        <MuzzleFlashForward>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <overrideParticle>weapon_shot_fnx_01</overrideParticle>
+        </MuzzleFlashForward>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke_small</overrideParticle>
+        </SmokeCloud>
+      </OnFire>
+      <OnOverheating>
+        <shotsToStartOverheating>5</shotsToStartOverheating>
+        <maxOverheatingValue>15</maxOverheatingValue>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\1911\w_1911_states.anm
+    </weaponStateAnim>
+  </Colt1911_Base>
+  <Colt1911 base="Colt1911_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_Colt19110</displayName>
+    <descriptionShort>STR_cfgWeapons_Colt19111</descriptionShort>
+    <hiddenSelections type="array"><item>camoGround</item></hiddenSelections>
+    <model>\dz\weapons\pistols\1911\1911.p3d</model>
+    <attachments type="array"><item>pistolFlashlight</item><item>pistolMuzzle</item></attachments>
+    <itemSize type="array"><item>3</item><item>2</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\pistols\1911\data\1911_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\pistols\1911\data\1911.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\1911\data\1911.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\1911\data\1911.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\1911\data\1911_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\1911\data\1911_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\1911\data\1911_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Colt1911>
+  <Engraved1911 base="Colt1911_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgweapons_engraved19110</displayName>
+    <descriptionShort>STR_cfgweapons_engraved19111</descriptionShort>
+    <model>\dz\weapons\pistols\1911\1911.p3d</model>
+    <attachments type="array"><item>pistolFlashlight</item><item>pistolMuzzle</item></attachments>
+    <itemSize type="array"><item>3</item><item>2</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\pistols\1911\data\1911_engraved_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\pistols\1911\data\1911_engraved.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\1911\data\1911.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\1911\data\1911_engraved.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\1911\data\1911_engraved_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\1911\data\1911_engraved_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\1911\data\1911_engraved_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Engraved1911>
+</cfgWeapons>
+<CfgNonAIVehicles>
+  <ProxyAttachment>
+  </ProxyAttachment>
+  <Proxy1911 base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>pistol</inventorySlot>
+    <model>\dz\weapons\pistols\1911\1911.p3d</model>
+  </Proxy1911>
+</CfgNonAIVehicles>

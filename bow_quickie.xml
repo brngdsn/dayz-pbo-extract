@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Archery_Bow_Quickie>
+    <units type="array"><item>Bow_Quickie</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Archery</item></requiredAddons>
+  </DZ_Weapons_Archery_Bow_Quickie>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<cfgWeapons>
+  <Archery_Base>
+  </Archery_Base>
+  <QuickieBow base="Archery_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_QuickieBow0</displayName>
+    <descriptionShort>STR_cfgWeapons_QuickieBow1</descriptionShort>
+    <model>
+      \dz\weapons\archery\bow_quickie\bow_quickie.p3d
+    </model>
+    <debug_ItemCategory>1</debug_ItemCategory>
+    <animClass>Bow</animClass>
+    <rotationFlags>17</rotationFlags>
+    <weight>950</weight>
+    <itemSize type="array"><item>4</item><item>9</item></itemSize>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <magazines type="array"></magazines>
+    <chamberableFrom type="array">
+      <item>Ammo_ArrowComposite</item>
+      <item>Ammo_ArrowPrimitive</item>
+      <item>Ammo_ArrowBoned</item>
+      <item>Ammo_SharpStick</item>
+      <item>Mag_Arrows_Quiver</item>
+    </chamberableFrom>
+  </QuickieBow>
+</cfgWeapons>

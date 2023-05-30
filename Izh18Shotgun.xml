@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Shotguns_Izh18Shotgun>
+    <units type="array"><item>Izh18Shotgun</item><item>Izh18Shotgun_Sawedoff</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Sounds_Weapons</item></requiredAddons>
+  </DZ_Weapons_Shotguns_Izh18Shotgun>
+</CfgPatches>
+<Mode_Single>
+</Mode_Single>
+<Muzzle_Base>
+</Muzzle_Base>
+<OpticsInfoShotgun>
+</OpticsInfoShotgun>
+<cfgWeapons>
+  <Shotgun_Base>
+  </Shotgun_Base>
+  <Izh18Shotgun_Base base="Shotgun_Base">
+    <scope>0</scope>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array">
+      <item>Ammo_12gaPellets</item>
+      <item>Ammo_12gaSlug</item>
+      <item>Ammo_12gaRubberSlug</item>
+      <item>Ammo_12gaBeanbag</item>
+      <item>Mag_12gaSnaploader_2Rnd</item>
+    </chamberableFrom>
+    <DisplayMagazine>0</DisplayMagazine>
+    <magazines type="array"></magazines>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>10</item>
+      <item>155</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.981055</WeaponLength>
+    <barrelArmor>1.875</barrelArmor>
+    <initSpeedMultiplier>1.25</initSpeedMultiplier>
+    <ejectType>3</ejectType>
+    <muzzles type="array"><item>this</item></muzzles>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_Single">
+      <soundSetShot type="array"><item>IZH43_Shot_SoundSet</item><item>IZH43_Tail_SoundSet</item><item>IZH43_InteriorTail_SoundSet</item></soundSetShot>
+      <reloadTime>1</reloadTime>
+      <dispersion>0.01</dispersion>
+      <firespreadangle>1.5</firespreadangle>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <OpticsInfo base="OpticsInfoShotgun">
+    </OpticsInfo>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+          <muzzleIndex>0</muzzleIndex>
+        </SmokeCloud>
+        <SmokeCloud2 base="SmokeCloud">
+        </SmokeCloud2>
+        <SmokeCloud3BadlyDamaged base="SmokeCloud">
+          <onlyWithinHealthLabel type="array"><item>3</item><item>4</item></onlyWithinHealthLabel>
+        </SmokeCloud3BadlyDamaged>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_mp133_01</overrideParticle>
+          <illuminateWorld>1</illuminateWorld>
+          <muzzleIndex>0</muzzleIndex>
+        </MuzzleFlash>
+        <BadlyDamagedChamberSmoke>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+          <overrideDirectionPoint>Nabojniceend</overrideDirectionPoint>
+          <onlyWithinHealthLabel type="array"><item>3</item><item>4</item></onlyWithinHealthLabel>
+          <muzzleIndex>0</muzzleIndex>
+        </BadlyDamagedChamberSmoke>
+        <BadlyDamagedChamberSmokeRaise base="BadlyDamagedChamberSmoke">
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+        </BadlyDamagedChamberSmokeRaise>
+        <SmokeCloud_2 base="SmokeCloud">
+          <overridePoint>Usti hlavne_2</overridePoint>
+          <muzzleIndex>1</muzzleIndex>
+        </SmokeCloud_2>
+        <SmokeCloud2_2 base="SmokeCloud_2">
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+          <overridePoint>Usti hlavne_2</overridePoint>
+          <muzzleIndex>1</muzzleIndex>
+        </SmokeCloud2_2>
+        <SmokeCloud3BadlyDamaged_2 base="SmokeCloud2_2">
+          <onlyWithinHealthLabel type="array"><item>3</item><item>4</item></onlyWithinHealthLabel>
+        </SmokeCloud3BadlyDamaged_2>
+        <MuzzleFlash_2 base="MuzzleFlash">
+          <overridePoint>Usti hlavne_2</overridePoint>
+          <muzzleIndex>1</muzzleIndex>
+        </MuzzleFlash_2>
+        <BadlyDamagedChamberSmoke_2>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>Nabojnicestart_2</overridePoint>
+          <overrideDirectionPoint>Nabojniceend</overrideDirectionPoint>
+          <onlyWithinHealthLabel type="array"><item>3</item><item>4</item></onlyWithinHealthLabel>
+          <muzzleIndex>1</muzzleIndex>
+        </BadlyDamagedChamberSmoke_2>
+        <BadlyDamagedChamberSmokeRaise_2 base="BadlyDamagedChamberSmoke_2">
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+        </BadlyDamagedChamberSmokeRaise_2>
+      </OnFire>
+      <OnOverheating>
+        <maxOverheatingValue>4</maxOverheatingValue>
+        <shotsToStartOverheating>1</shotsToStartOverheating>
+        <overheatingDecayInterval>3</overheatingDecayInterval>
+        <SmokingBarrel>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+        </SmokingBarrel>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\IZH18Spartan\w_izh18Spartan_states.anm
+    </weaponStateAnim>
+    <boneRemap type="array">
+      <item>release</item>
+      <item>Weapon_Bone_02</item>
+      <item>barrel</item>
+      <item>Weapon_Bone_01</item>
+      <item>trigger</item>
+      <item>Weapon_Trigger</item>
+      <item>ejector</item>
+      <item>Weapon_Bone_03</item>
+      <item>bullet</item>
+      <item>Weapon_Bullet</item>
+    </boneRemap>
+  </Izh18Shotgun_Base>
+  <Izh18Shotgun base="Izh18Shotgun_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_Izh18Shotgun0</displayName>
+    <descriptionShort>STR_cfgWeapons_Izh18Shotgun1</descriptionShort>
+    <model>
+      \dz\weapons\shotguns\Izh18Shotgun\Izh18Shotgun.p3d
+    </model>
+    <attachments type="array"><item>weaponWrap</item></attachments>
+    <itemSize type="array"><item>9</item><item>3</item></itemSize>
+    <weight>3200</weight>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>2.2</item><item>2.2</item><item>1.2</item></swayModifier>
+    <initSpeedMultiplier>1.25</initSpeedMultiplier>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\shotguns\Izh18Shotgun\data\Izh18Shotgun_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\shotguns\Izh18Shotgun\data\Izh18Shotgun.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>300</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\shotguns\Izh18Shotgun\data\Izh18Shotgun.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\shotguns\Izh18Shotgun\data\Izh18Shotgun.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\shotguns\Izh18Shotgun\data\Izh18Shotgun_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\shotguns\Izh18Shotgun\data\Izh18Shotgun_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\shotguns\Izh18Shotgun\data\Izh18Shotgun_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Izh18Shotgun>
+  <SawedoffIzh18Shotgun base="Izh18Shotgun_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_SawedoffIzh18Shotgun0</displayName>
+    <descriptionShort>STR_cfgWeapons_SawedoffIzh18Shotgun1</descriptionShort>
+    <model>
+      \dz\weapons\shotguns\Izh18Shotgun\Izh18Shotgun_sawedoff.p3d
+    </model>
+    <itemSize type="array"><item>5</item><item>2</item></itemSize>
+    <weight>2600</weight>
+    <firespreadangle>3</firespreadangle>
+    <recoilModifier type="array"><item>2</item><item>2</item><item>1</item></recoilModifier>
+    <swayModifier type="array">
+      <item>1</item>
+      <item>5</item>
+      <item>1</item>
+      <item>5</item>
+      <item>1</item>
+    </swayModifier>
+    <WeaponLength>0.41</WeaponLength>
+    <initSpeedMultiplier>0.9</initSpeedMultiplier>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\shotguns\Izh18Shotgun\data\Izh18Shotgun_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\shotguns\Izh18Shotgun\data\Izh18Shotgun.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>300</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\shotguns\Izh18Shotgun\data\Izh18Shotgun.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\shotguns\Izh18Shotgun\data\Izh18Shotgun.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\shotguns\Izh18Shotgun\data\Izh18Shotgun_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\shotguns\Izh18Shotgun\data\Izh18Shotgun_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\shotguns\Izh18Shotgun\data\Izh18Shotgun_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Single base="Mode_Single">
+      <soundSetShot type="array"><item>IZH43sawed_Shot_SoundSet</item><item>IZH43_Tail_SoundSet</item><item>IZH43_InteriorTail_SoundSet</item></soundSetShot>
+      <reloadTime>1</reloadTime>
+      <dispersion>0.08</dispersion>
+      <firespreadangle>1.5</firespreadangle>
+    </Single>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>-0.15</item><item>-0.02</item><item>0</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>-13</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>-0.15</item><item>0</item><item>-0.02</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>-13</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+  </SawedoffIzh18Shotgun>
+</cfgWeapons>

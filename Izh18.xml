@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_IZH18>
+    <units type="array"><item>ShotgunIzh43</item><item>ShotgunIzh43_Sawedoff</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_IZH18>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Single>
+</Mode_Single>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <Izh18_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>3200</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>10</item>
+      <item>170</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <ironsightsExcludingOptics type="array"><item>HuntingOptic</item></ironsightsExcludingOptics>
+    <DisplayMagazine>0</DisplayMagazine>
+    <WeaponLength>0.981055</WeaponLength>
+    <barrelArmor>1.875</barrelArmor>
+    <initSpeedMultiplier>1.05</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_762x39</item><item>Ammo_762x39Tracer</item></chamberableFrom>
+    <magazines type="array"></magazines>
+    <ejectType>3</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>2.25</item><item>2.25</item><item>1.2</item></swayModifier>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <NoiseShoot>
+      <strength>100</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_Single">
+      <soundSetShot type="array"><item>IZH18_Shot_SoundSet</item><item>IZH18_Tail_SoundSet</item><item>IZH18_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>IZH18_silencerHomeMade_SoundSet</item><item>IZH18_silencerHomeMadeTail_SoundSet</item><item>IZH18_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>1</reloadTime>
+      <recoil>recoil_izh18</recoil>
+      <recoilProne>recoil_izh18_prone</recoilProne>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <OpticsInfo base="OpticsInfoRifle">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <discreteDistance type="array"><item>200</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>200</distanceZoomMin>
+      <distanceZoomMax>200</distanceZoomMax>
+    </OpticsInfo>
+    <Particles>
+      <OnFire>
+        <MuzzleFlash>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <overridePoint>Usti hlavne</overridePoint>
+        </MuzzleFlash>
+        <ChamberFlash>
+          <overridePoint>dust_point</overridePoint>
+          <overrideParticle>weapon_dust_izh18_01</overrideParticle>
+        </ChamberFlash>
+      </OnFire>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\IZH18\w_izh18_states.anm
+    </weaponStateAnim>
+    <boneRemap type="array">
+      <item>release</item>
+      <item>Weapon_Bone_02</item>
+      <item>barrel</item>
+      <item>Weapon_Bone_01</item>
+      <item>trigger</item>
+      <item>Weapon_Trigger</item>
+      <item>ejector</item>
+      <item>Weapon_Bone_03</item>
+      <item>bullet</item>
+      <item>Weapon_Bullet</item>
+    </boneRemap>
+  </Izh18_Base>
+  <Izh18 base="Izh18_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_Izh180</displayName>
+    <descriptionShort>STR_cfgWeapons_Izh181</descriptionShort>
+    <model>\dz\weapons\firearms\Izh18\Izh18.p3d</model>
+    <attachments type="array"><item>weaponWrap</item><item>suppressorImpro</item></attachments>
+    <itemSize type="array"><item>9</item><item>3</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\Izh18\data\Izh18_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\Izh18\data\Izh18.rvmat</item></hiddenSelectionsMaterials>
+    <Particles>
+      <OnFire>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_izh18_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+        </MuzzleFlash>
+      </OnFire>
+    </Particles>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\Izh18\data\Izh18.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\Izh18\data\Izh18.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\Izh18\data\Izh18_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\Izh18\data\Izh18_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\Izh18\data\Izh18_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Izh18>
+  <SawedoffIzh18 base="Izh18">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_SawedoffIzh180</displayName>
+    <descriptionShort>STR_cfgWeapons_SawedoffIzh181</descriptionShort>
+    <model>
+      \dz\weapons\firearms\Izh18\Izh18_sawedoff.p3d
+    </model>
+    <itemSize type="array"><item>5</item><item>2</item></itemSize>
+    <weight>2800</weight>
+    <attachments type="array"></attachments>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>1.5</item><item>1.5</item><item>1</item></swayModifier>
+    <firespreadangle>3</firespreadangle>
+    <WeaponLength>0.41</WeaponLength>
+    <initSpeedMultiplier>0.75</initSpeedMultiplier>
+    <Single base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>IZH18_Shot_SoundSet</item><item>IZH18_Tail_SoundSet</item><item>IZH18_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>IZH18_silencerHomeMade_SoundSet</item><item>IZH18_silencerHomeMadeTail_SoundSet</item><item>IZH18_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>1</reloadTime>
+      <dispersion>0.045</dispersion>
+      <recoil>recoil_izh18sawedoff</recoil>
+      <recoilProne>recoil_izh18sawedoff</recoilProne>
+    </Single>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>-0.15</item><item>-0.02</item><item>0</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>-13</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>-0.15</item><item>0</item><item>-0.02</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>-13</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+  </SawedoffIzh18>
+</cfgWeapons>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Pistols_Derringer>
+    <units type="array"><item>Derringer_Black</item><item>Derringer_Grey</item><item>Derringer_Pink</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Pistols</item></requiredAddons>
+  </DZ_Pistols_Derringer>
+</CfgPatches>
+<Mode_Single>
+</Mode_Single>
+<Mode_Double>
+</Mode_Double>
+<Muzzle_Base>
+</Muzzle_Base>
+<OpticsInfoPistol>
+</OpticsInfoPistol>
+<cfgWeapons>
+  <Pistol_Base>
+  </Pistol_Base>
+  <Derringer_Base base="Pistol_Base">
+    <scope>0</scope>
+    <displayName>STR_cfgweapons_derringer_base0</displayName>
+    <descriptionShort>STR_cfgWeapons_Derringer_Base1</descriptionShort>
+    <model>
+      \dz\weapons\pistols\derringer\derringer.p3d
+    </model>
+    <weight>350</weight>
+    <itemSize type="array"><item>2</item><item>1</item></itemSize>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <attachments type="array"></attachments>
+    <modelOptics>-</modelOptics>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>1</item>
+      <item>10</item>
+      <item>200</item>
+      <item>10</item>
+      <item>1</item>
+    </PPDOFProperties>
+    <WeaponLength>0.635576</WeaponLength>
+    <barrelArmor>1.333</barrelArmor>
+    <initSpeedMultiplier>0.8</initSpeedMultiplier>
+    <muzzles type="array"><item>this</item><item>SecondMuzzle</item></muzzles>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <magazines type="array"></magazines>
+    <chamberableFrom type="array"><item>Ammo_357</item></chamberableFrom>
+    <DisplayMagazine>0</DisplayMagazine>
+    <ejectType>2</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <hiddenSelections type="array"><item>camoGround</item></hiddenSelections>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\pistols\derringer\data\derringer_1.rvmat</item></hiddenSelectionsMaterials>
+    <NoiseShoot>
+      <strength>82</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\derringer\data\derringer_1.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\derringer\data\derringer_1.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\derringer\data\derringer_1_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\derringer\data\derringer_1_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\derringer\data\derringer_1_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_Single">
+      <soundSetShot type="array"><item>Derringer_Shot_SoundSet</item><item>Derringer_Tail_SoundSet</item><item>Derringer_InteriorTail_SoundSet</item></soundSetShot>
+      <recoil>recoil_derringer</recoil>
+      <recoilProne>recoil_derringer_prone</recoilProne>
+      <dispersion>0.006</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <SecondMuzzle base="Muzzle_Base">
+      <chamberSize>1</chamberSize>
+      <muzzlePos>usti hlavne</muzzlePos>
+      <muzzleEnd>konec hlavne</muzzleEnd>
+      <modes type="array"><item>Single</item></modes>
+      <magazines type="array"></magazines>
+      <chamberableFrom type="array"><item>Ammo_357</item></chamberableFrom>
+      <barrelArmor>1.333</barrelArmor>
+      <initSpeedMultiplier>0.8</initSpeedMultiplier>
+      <Single base="Mode_Single">
+        <soundSetShot type="array"><item>Derringer_Shot_SoundSet</item><item>Derringer_Tail_SoundSet</item><item>Derringer_InteriorTail_SoundSet</item></soundSetShot>
+        <reloadTime>1</reloadTime>
+        <dispersion>0.006</dispersion>
+        <magazineSlot>magazine</magazineSlot>
+      </Single>
+      <OpticsInfo base="OpticsInfoPistol">
+        <memoryPointCamera>eye</memoryPointCamera>
+        <modelOptics>-</modelOptics>
+        <distanceZoomMin>25</distanceZoomMin>
+        <distanceZoomMax>25</distanceZoomMax>
+        <discreteDistance type="array"><item>25</item></discreteDistance>
+        <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      </OpticsInfo>
+    </SecondMuzzle>
+    <OpticsInfo base="OpticsInfoPistol">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>25</distanceZoomMin>
+      <distanceZoomMax>25</distanceZoomMax>
+      <discreteDistance type="array"><item>25</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+    </OpticsInfo>
+    <Particles>
+      <OnFire>
+        <MuzzleFlashForward>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <overrideParticle>weapon_shot_cz75_01</overrideParticle>
+        </MuzzleFlashForward>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke_small</overrideParticle>
+        </SmokeCloud>
+      </OnFire>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\Derringer\w_derringer_states.anm
+    </weaponStateAnim>
+    <boneRemap type="array">
+      <item>release</item>
+      <item>Weapon_Bone_02</item>
+      <item>barrel</item>
+      <item>Weapon_Bone_01</item>
+      <item>trigger</item>
+      <item>Weapon_Trigger</item>
+      <item>hammer</item>
+      <item>Weapon_Bone_03</item>
+      <item>bullet</item>
+      <item>Weapon_Bullet</item>
+      <item>bullet2</item>
+      <item>Weapon_Bone_04</item>
+      <item>snaploader</item>
+      <item>Weapon_Bone_05</item>
+    </boneRemap>
+  </Derringer_Base>
+  <Derringer_Black base="Derringer_Base">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\pistols\derringer\data\derringer_black_co.paa</item></hiddenSelectionsTextures>
+  </Derringer_Black>
+  <Derringer_Pink base="Derringer_Base">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\pistols\derringer\data\derringer_pink_co.paa</item></hiddenSelectionsTextures>
+  </Derringer_Pink>
+  <Derringer_Grey base="Derringer_Base">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\pistols\derringer\data\derringer_grey_co.paa</item></hiddenSelectionsTextures>
+  </Derringer_Grey>
+</cfgWeapons>

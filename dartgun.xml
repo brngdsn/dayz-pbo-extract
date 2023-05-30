@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_weapons_nonlethal_DartGun>
+    <units type="array"></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item></requiredAddons>
+  </DZ_weapons_nonlethal_DartGun>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<cfgWeapons>
+  <NonlethalPistol>
+  </NonlethalPistol>
+  <DartGun base="NonlethalPistol">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_DartGun0</displayName>
+    <descriptionShort>STR_cfgWeapons_DartGun1</descriptionShort>
+    <model>
+      \dz\weapons\nonlethal\dartgun\dartgun.p3d
+    </model>
+    <weight>950</weight>
+    <itemSize type="array"><item>6</item><item>3</item></itemSize>
+    <absorbency>0</absorbency>
+    <attachments type="array"><item>weaponOptics</item></attachments>
+    <chamberedRound>D_Syringe</chamberedRound>
+    <magazines type="array"><item>D_Syringe_Single</item><item>Mag_Dartgun_CO2</item></magazines>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <modes type="array"><item>Single</item></modes>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <modelOptics>-</modelOptics>
+    <distanceZoomMin>100</distanceZoomMin>
+    <distanceZoomMax>100</distanceZoomMax>
+    <value>0</value>
+    <Single base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>Dartgun_Shot_SoundSet</item><item>Dartgun_Tail_SoundSet</item><item>Dartgun_InteriorTail_SoundSet</item></soundSetShot>
+      <reloadTime>0.7</reloadTime>
+      <recoil>recoil_bow</recoil>
+      <recoilProne>recoil_bow</recoilProne>
+      <dispersion>0.003</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <Damage>
+      <tex type="array"></tex>
+      <mat type="array"><item>DZ\weapons\nonlethal\dartgun\data\dartgun.rvmat</item><item>DZ\weapons\nonlethal\dartgun\data\dartgun_damage.rvmat</item><item>DZ\weapons\nonlethal\dartgun\data\dartgun_destruct.rvmat</item></mat>
+    </Damage>
+    <NoiseShoot>
+      <strength>10</strength>
+      <type>shot</type>
+    </NoiseShoot>
+  </DartGun>
+</cfgWeapons>

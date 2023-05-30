@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_groza>
+    <units type="array"><item>Groza</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_groza>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <Groza_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>2700</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_9x39</item><item>Ammo_9x39AP</item></chamberableFrom>
+    <magazines type="array"><item>Mag_Groza_20Rnd</item><item>Mag_VSS_10Rnd</item></magazines>
+    <magazineSwitchTime>0.38</magazineSwitchTime>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <modes type="array"><item>FullAuto</item><item>SemiAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>ots14_Shot_SoundSet</item><item>ots14_Tail_SoundSet</item><item>ots14_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>ots14_silencerPro_SoundSet</item><item>ots14_silencerTail_SoundSet</item><item>ots14_silencerInteriorTail_SoundSet</item></item><item type="array"><item>ots14_silencerHomeMade_SoundSet</item><item>ots14_silencerHomeMadeTail_SoundSet</item><item>ots14_silencerInteriorTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.1</reloadTime>
+      <recoil>recoil_VSS</recoil>
+      <recoilProne>recoil_VSS_prone</recoilProne>
+      <dispersion>0.0021</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <FullAuto base="Mode_FullAuto">
+      <soundSetShot type="array"><item>ots14_Shot_SoundSet</item><item>ots14_Tail_SoundSet</item><item>ots14_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>ots14_silencerPro_SoundSet</item><item>ots14_silencerTail_SoundSet</item><item>ots14_silencerInteriorTail_SoundSet</item></item><item type="array"><item>ots14_silencerHomeMade_SoundSet</item><item>ots14_silencerHomeMadeTail_SoundSet</item><item>ots14_silencerInteriorTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.085</reloadTime>
+      <recoil>recoil_VSS</recoil>
+      <recoilProne>recoil_VSS_prone</recoilProne>
+      <dispersion>0.0021</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </FullAuto>
+    <OpticsInfo base="OpticsInfoRifle">
+    </OpticsInfo>
+  </Groza_Base>
+  <Groza base="Groza_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_Groza0</displayName>
+    <descriptionShort>STR_cfgWeapons_Groza1</descriptionShort>
+    <model>\dz\weapons\firearms\ots14\ots14.p3d</model>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\ots14\data\ots14_co.paa</item></hiddenSelectionsTextures>
+    <attachments type="array"><item>weaponButtstockAK</item><item>weaponOpticsAK</item><item>weaponMuzzleAK</item></attachments>
+    <itemSize type="array"><item>5</item><item>3</item></itemSize>
+    <spawnDamageRange type="array"><item>0</item><item>0.6</item></spawnDamageRange>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\ots14\Data\ots14.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\ots14\Data\ots14.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\ots14\Data\ots14_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\ots14\Data\ots14_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\ots14\Data\ots14_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Groza>
+</cfgWeapons>

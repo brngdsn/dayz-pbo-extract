@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Pistols_p1>
+    <units type="array"><item>P1</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Pistols</item></requiredAddons>
+  </DZ_Pistols_p1>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoPistol>
+</OpticsInfoPistol>
+<cfgWeapons>
+  <Pistol_Base>
+  </Pistol_Base>
+  <P1_Base base="Pistol_Base">
+    <scope>0</scope>
+    <weight>960</weight>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.55</item>
+      <item>10</item>
+      <item>240</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.635576</WeaponLength>
+    <barrelArmor>2</barrelArmor>
+    <initSpeedMultiplier>0.9</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <magazines type="array"><item>Mag_P1_8Rnd</item></magazines>
+    <chamberableFrom type="array"><item>Ammo_9x19</item></chamberableFrom>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <NoiseShoot>
+      <strength>50</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>WaltherP1_Shot_SoundSet</item><item>WaltherP1_Tail_SoundSet</item><item>WaltherP1_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>WaltherP1_silencerPro_SoundSet</item><item>WaltherP1_silencerTail_SoundSet</item><item>WaltherP1_silencerInteriorTail_SoundSet</item></item><item type="array"><item>WaltherP1_silencerHomeMade_SoundSet</item><item>WaltherP1_silencerHomeMadeTail_SoundSet</item><item>WaltherP1_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.13</reloadTime>
+      <recoil>recoil_p1</recoil>
+      <recoilProne>recoil_p1_prone</recoilProne>
+      <dispersion>0.011</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <OpticsInfo base="OpticsInfoPistol">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <discreteDistance type="array"><item>25</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+    </OpticsInfo>
+    <Particles>
+      <OnFire>
+        <MuzzleFlashForward>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <overrideParticle>weapon_shot_cz75_01</overrideParticle>
+        </MuzzleFlashForward>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke_small</overrideParticle>
+        </SmokeCloud>
+      </OnFire>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\P1\w_states_p1.anm
+    </weaponStateAnim>
+  </P1_Base>
+  <P1 base="P1_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_P10</displayName>
+    <descriptionShort>STR_cfgWeapons_P11</descriptionShort>
+    <model>\dz\weapons\pistols\p1\p1.p3d</model>
+    <attachments type="array"><item>suppressorImpro</item></attachments>
+    <itemSize type="array"><item>3</item><item>2</item></itemSize>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\p1\data\p38.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\p1\data\p38.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\p1\data\p38_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\p1\data\p38_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\p1\data\p38_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </P1>
+</cfgWeapons>
+<CfgNonAIVehicles>
+  <ProxyAttachment>
+  </ProxyAttachment>
+  <ProxyP1 base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>pistol</inventorySlot>
+    <model>\dz\weapons\pistols\p1\p1.p3d</model>
+  </ProxyP1>
+</CfgNonAIVehicles>

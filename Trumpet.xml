@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_Trumpet>
+    <units type="array"><item>Trumpet</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Sounds_Weapons</item></requiredAddons>
+  </DZ_Weapons_Firearms_Trumpet>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Single>
+</Mode_Single>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <Trumpet_Base base="Rifle_Base">
+    <scope>0</scope>
+    <animName>Trumpet</animName>
+    <animClass>Shotgun</animClass>
+    <weight>2000</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <chamberSize>7</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_22</item></chamberableFrom>
+    <magazines type="array"></magazines>
+    <ejectType>0</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_Single">
+      <soundSetShot type="array"><item>Trumpet_Shot_SoundSet</item><item>Trumpet_Tail_SoundSet</item><item>Trumpet_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>Trumpet_silencerHomeMade_SoundSet</item><item>Trumpet_silencerHomeMadeTail_SoundSet</item><item>Trumpet_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>1</reloadTime>
+      <recoil>recoil_single_primary_1outof10</recoil>
+      <recoilProne>recoil_single_primary_1outof10</recoilProne>
+      <dispersion>0.0015</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <OpticsInfo base="OpticsInfoRifle">
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+    </OpticsInfo>
+  </Trumpet_Base>
+  <Trumpet base="Trumpet_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_Trumpet0</displayName>
+    <descriptionShort>STR_cfgWeapons_Trumpet1</descriptionShort>
+    <model>\dz\weapons\firearms\Trumpet\trumpet.p3d</model>
+    <attachments type="array"><item>weaponOpticsHunting</item><item>suppressorImpro</item></attachments>
+    <itemSize type="array"><item>9</item><item>3</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\Trumpet\data\trombone_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\Trumpet\data\trumpet.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\Trumpet\data\trumpet.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\Trumpet\data\trumpet.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\Trumpet\data\trumpet_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\Trumpet\data\trumpet_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\Trumpet\data\trumpet_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Trumpet>
+</cfgWeapons>
+<CfgVehicles>
+  <Inventory_Base>
+  </Inventory_Base>
+  <TrumpetParts base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_TrumpetParts0</displayName>
+    <descriptionShort>STR_CfgVehicles_TrumpetParts1</descriptionShort>
+    <model>
+      \dz\weapons\firearms\Trumpet\trumpet_parts.p3d
+    </model>
+    <handheld>true</handheld>
+    <armAction>Disarm</armAction>
+    <itemSize type="array"><item>3</item><item>6</item></itemSize>
+    <weight>2000</weight>
+    <absorbency>0.1</absorbency>
+    <barrelArmor>600</barrelArmor>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\Trumpet\data\trumpet.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\Trumpet\data\trumpet.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\Trumpet\data\trumpet_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\Trumpet\data\trumpet_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\Trumpet\data\trumpet_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Melee>
+      <range>1</range>
+      <swingTime>0.5</swingTime>
+      <action>GestureMeleeBayonetStab</action>
+      <ammo>MeleeFist</ammo>
+      <useCursor>1</useCursor>
+    </Melee>
+  </TrumpetParts>
+</CfgVehicles>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Launchers_GP25>
+    <units type="array"><item>GP25</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Launchers_GP25>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <GP25Base base="Rifle_Base">
+    <scope>1</scope>
+  </GP25Base>
+  <GP25 base="GP25Base">
+    <scope>2</scope>
+    <model>\DZ\weapons\launchers\gp25\ubgl_gp25.p3d</model>
+  </GP25>
+  <GP25_Standalone base="GP25Base">
+    <scope>2</scope>
+    <model>\DZ\weapons\launchers\gp25\ubgl_gp25.p3d</model>
+  </GP25_Standalone>
+</cfgWeapons>

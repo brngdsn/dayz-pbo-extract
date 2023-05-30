@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Launchers_M203>
+    <units type="array"><item>M203</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Launchers_M203>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <M203Base base="Rifle_Base">
+    <scope>1</scope>
+  </M203Base>
+  <M203 base="M203Base">
+    <scope>2</scope>
+    <model>\DZ\weapons\launchers\m203\m203.p3d</model>
+  </M203>
+  <M203_Standalone base="M203Base">
+    <scope>2</scope>
+    <model>\DZ\weapons\launchers\m203\m203.p3d</model>
+  </M203_Standalone>
+</cfgWeapons>

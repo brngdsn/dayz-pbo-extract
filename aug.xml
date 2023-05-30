@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_aug>
+    <units type="array"><item>AugSteyr</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_aug>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <Aug_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>3600</weight>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_556x45</item><item>Ammo_556x45Tracer</item></chamberableFrom>
+    <magazineSwitchTime>0.38</magazineSwitchTime>
+    <initSpeedMultiplier>1</initSpeedMultiplier>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>1.1</item><item>1.1</item><item>1</item></swayModifier>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.1</item>
+      <item>20</item>
+      <item>200</item>
+      <item>10</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.8</WeaponLength>
+    <barrelArmor>2.3</barrelArmor>
+    <NoiseShoot>
+      <strength>82</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item><item>Burst</item><item>FullAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>AUG_Shot_SoundSet</item><item>AUG_Tail_SoundSet</item><item>AUG_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>AUG_silencer_SoundSet</item><item>AUG_silencerTail_SoundSet</item><item>AUG_silencerInteriorTail_SoundSet</item></item><item type="array"><item>AUG_silencerHomeMade_SoundSet</item><item>AUG_silencerHomeMadeTail_SoundSet</item><item>AUG_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.085</reloadTime>
+      <dispersion>0.0015</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <Burst base="Mode_Burst">
+      <soundSetShot type="array"><item>AUG_Shot_SoundSet</item><item>AUG_Tail_SoundSet</item><item>AUG_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>AUG_silencer_SoundSet</item><item>AUG_silencerTail_SoundSet</item><item>AUG_silencerInteriorTail_SoundSet</item></item><item type="array"><item>AUG_silencerHomeMade_SoundSet</item><item>AUG_silencerHomeMadeTail_SoundSet</item><item>AUG_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <burst>3</burst>
+      <reloadTime>0.098</reloadTime>
+      <dispersion>0.0015</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Burst>
+    <FullAuto base="Mode_FullAuto">
+      <soundSetShot type="array"><item>AUG_Shot_SoundSet</item><item>AUG_Tail_SoundSet</item><item>AUG_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>AUG_silencer_SoundSet</item><item>AUG_silencerTail_SoundSet</item><item>AUG_silencerInteriorTail_SoundSet</item></item><item type="array"><item>AUG_silencerHomeMade_SoundSet</item><item>AUG_silencerHomeMadeTail_SoundSet</item><item>AUG_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.09</reloadTime>
+      <dispersion>0.0015</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </FullAuto>
+    <OpticsInfo base="OpticsInfoRifle">
+      <modelOptics>-</modelOptics>
+      <opticsZoomMin>0.28</opticsZoomMin>
+      <opticsZoomMax>0.28</opticsZoomMax>
+      <opticsZoomInit>0.28</opticsZoomInit>
+      <distanceZoomMin>300</distanceZoomMin>
+      <distanceZoomMax>300</distanceZoomMax>
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>-0.2</item><item>0</item><item>0</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>-0.15</item><item>0</item><item>-0.02</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_ump45_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+        </MuzzleFlash>
+        <ChamberSmokeBurst>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+          <overrideDirectionPoint>Nabojniceend</overrideDirectionPoint>
+        </ChamberSmokeBurst>
+      </OnFire>
+      <OnOverheating>
+        <maxOverheatingValue>60</maxOverheatingValue>
+        <shotsToStartOverheating>25</shotsToStartOverheating>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <SmokingBarrel1>
+          <positionOffset type="array"><item>0.2</item><item>0</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>0.2</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrel1>
+        <SmokingBarrelHot1>
+          <positionOffset type="array"><item>0.2</item><item>0</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.2</item><item>0.6</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot1>
+        <SmokingBarrelHot3>
+          <positionOffset type="array"><item>0.2</item><item>0</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel_heavy</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.6</item><item>1</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot3>
+        <SmokingBarrelHotSteam>
+          <overrideParticle>smoking_barrel_steam</overrideParticle>
+          <positionOffset type="array"><item>0.35</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>1</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0.2</item><item>1</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteam>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\AUG\w_aug_states.anm
+    </weaponStateAnim>
+  </Aug_Base>
+  <Aug base="Aug_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_AugSteyr0</displayName>
+    <descriptionShort>STR_cfgWeapons_AugSteyr1</descriptionShort>
+    <model>\dz\weapons\firearms\aug\aug.p3d</model>
+    <weight>3600</weight>
+    <magazines type="array">
+      <item>Mag_Aug_30Rnd</item>
+      <item>Mag_STANAG_30Rnd</item>
+      <item>Mag_STANAGCoupled_30Rnd</item>
+      <item>Mag_STANAG_60Rnd</item>
+      <item>Mag_CMAG_10Rnd</item>
+      <item>Mag_CMAG_20Rnd</item>
+      <item>Mag_CMAG_30Rnd</item>
+      <item>Mag_CMAG_40Rnd</item>
+      <item>Mag_CMAG_10Rnd_Green</item>
+      <item>Mag_CMAG_20Rnd_Green</item>
+      <item>Mag_CMAG_30Rnd_Green</item>
+      <item>Mag_CMAG_40Rnd_Green</item>
+      <item>Mag_CMAG_10Rnd_Black</item>
+      <item>Mag_CMAG_20Rnd_Black</item>
+      <item>Mag_CMAG_30Rnd_Black</item>
+      <item>Mag_CMAG_40Rnd_Black</item>
+    </magazines>
+    <attachments type="array"><item>weaponWrap</item><item>weaponMuzzleM4</item><item>weaponOptics</item><item>weaponFlashlight</item></attachments>
+    <itemSize type="array"><item>8</item><item>3</item></itemSize>
+    <spawnDamageRange type="array"><item>0</item><item>0.6</item></spawnDamageRange>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>300</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\aug\data\aug_barrel.rvmat</item><item>DZ\weapons\firearms\aug\data\aug_stock.rvmat</item><item>DZ\weapons\firearms\aug\data\rail.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\aug\data\aug_barrel.rvmat</item><item>DZ\weapons\firearms\aug\data\aug_stock.rvmat</item><item>DZ\weapons\firearms\aug\data\rail.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\aug\data\aug_barrel_damage.rvmat</item><item>DZ\weapons\firearms\aug\data\aug_stock_damage.rvmat</item><item>DZ\weapons\firearms\aug\data\rail_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\aug\data\aug_barrel_damage.rvmat</item><item>DZ\weapons\firearms\aug\data\aug_stock_damage.rvmat</item><item>DZ\weapons\firearms\aug\data\rail_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\aug\data\aug_barrel_destruct.rvmat</item><item>DZ\weapons\firearms\aug\data\aug_stock_destruct.rvmat</item><item>DZ\weapons\firearms\aug\data\rail_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Aug>
+  <AugShort base="Aug_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_AugSteyr_Short0</displayName>
+    <descriptionShort>STR_cfgWeapons_AugSteyr_Short1</descriptionShort>
+    <model>\dz\weapons\firearms\aug\aug_short.p3d</model>
+    <weight>3200</weight>
+    <WeaponLength>0.48</WeaponLength>
+    <magazines type="array"><item>Mag_Aug_30Rnd</item></magazines>
+    <attachments type="array"><item>weaponWrap</item><item>weaponOpticsAug</item><item>suppressorImpro</item></attachments>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item></simpleHiddenSelections>
+    <initSpeedMultiplier>0.85</initSpeedMultiplier>
+    <itemSize type="array"><item>6</item><item>3</item></itemSize>
+    <spawnDamageRange type="array"><item>0</item><item>0.6</item></spawnDamageRange>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>300</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\aug\data\aug_barrel.rvmat</item><item>DZ\weapons\firearms\aug\data\aug_stock.rvmat</item><item>DZ\weapons\firearms\aug\data\scope.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\aug\data\aug_barrel.rvmat</item><item>DZ\weapons\firearms\aug\data\aug_stock.rvmat</item><item>DZ\weapons\firearms\aug\data\scope.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\aug\data\aug_barrel_damage.rvmat</item><item>DZ\weapons\firearms\aug\data\aug_stock_damage.rvmat</item><item>DZ\weapons\firearms\aug\data\scope_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\aug\data\aug_barrel_damage.rvmat</item><item>DZ\weapons\firearms\aug\data\aug_stock_damage.rvmat</item><item>DZ\weapons\firearms\aug\data\scope_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\aug\data\aug_barrel_destruct.rvmat</item><item>DZ\weapons\firearms\aug\data\aug_stock_destruct.rvmat</item><item>DZ\weapons\firearms\aug\data\scope_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </AugShort>
+</cfgWeapons>
+<cfgVehicles>
+  <Inventory_Base>
+  </Inventory_Base>
+  <ItemOptics base="Inventory_Base">
+    <AnimEvents>
+      <SoundWeapon>
+        <pickup>
+          <soundSet>PSO11Optic_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>PSO11Optic_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+      </SoundWeapon>
+    </AnimEvents>
+  </ItemOptics>
+  <AugOptic base="ItemOptics">
+    <scope>2</scope>
+    <model>\dz\weapons\firearms\aug\proxy\scope.p3d</model>
+    <weight>1</weight>
+    <inventorySlot type="array"><item>weaponOpticsAug</item></inventorySlot>
+    <reversed>0</reversed>
+    <OpticsInfo>
+      <memoryPointCamera>eyeScope</memoryPointCamera>
+      <cameraDir>cameraDir</cameraDir>
+      <modelOptics>-</modelOptics>
+      <opticsDisablePeripherialVision>0.67</opticsDisablePeripherialVision>
+      <opticsFlare>1</opticsFlare>
+      <opticsPPEffects type="array"></opticsPPEffects>
+      <opticsZoomMin>0.5236/1.5</opticsZoomMin>
+      <opticsZoomMax>0.5236/1.5</opticsZoomMax>
+      <opticsZoomInit>0.5236/1.5</opticsZoomInit>
+      <distanceZoomMin>50</distanceZoomMin>
+      <distanceZoomMax>400</distanceZoomMax>
+      <discreteDistance type="array">
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+      </discreteDistance>
+      <discreteDistanceInitIndex>1</discreteDistanceInitIndex>
+      <PPMaskProperties type="array"><item>0.5</item><item>0.5</item><item>0.185</item><item>0.01</item></PPMaskProperties>
+      <PPLensProperties type="array"><item>0.5</item><item>0.15</item><item>0</item><item>0</item></PPLensProperties>
+      <PPBlurProperties>0.1</PPBlurProperties>
+    </OpticsInfo>
+    <OpticsInfoWeaponOverride>
+      <memoryPointCamera>eyeIronsights</memoryPointCamera>
+      <cameraDir>cameraDirIronsights</cameraDir>
+      <opticsZoomMin>0.5236</opticsZoomMin>
+      <opticsZoomMax>0.5236</opticsZoomMax>
+      <opticsZoomInit>0.5236</opticsZoomInit>
+      <distanceZoomMin>50</distanceZoomMin>
+      <distanceZoomMax>400</distanceZoomMax>
+      <discreteDistance type="array">
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+      </discreteDistance>
+      <discreteDistanceInitIndex>1</discreteDistanceInitIndex>
+      <PPDOFProperties type="array">
+        <item>1</item>
+        <item>0.1</item>
+        <item>20</item>
+        <item>200</item>
+        <item>4</item>
+        <item>10</item>
+      </PPDOFProperties>
+    </OpticsInfoWeaponOverride>
+  </AugOptic>
+</cfgVehicles>
+<CfgNonAIVehicles>
+  <ProxyAttachment>
+  </ProxyAttachment>
+  <Proxyscope base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>weaponOpticsAug</inventorySlot>
+    <model>\dz\weapons\firearms\aug\proxy\scope.p3d</model>
+  </Proxyscope>
+</CfgNonAIVehicles>

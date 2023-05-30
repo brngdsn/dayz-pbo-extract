@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Melee_Powered>
+    <units type="array"></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Weapons_Melee</item></requiredAddons>
+  </DZ_Weapons_Melee_Powered>
+</CfgPatches>
+<CfgVehicles>
+  <Inventory_Base>
+  </Inventory_Base>
+  <Powered_Base>
+  </Powered_Base>
+  <Switchable_Base>
+  </Switchable_Base>
+  <Chainsaw base="Switchable_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_Chainsaw0</displayName>
+    <descriptionShort>STR_CfgVehicles_Chainsaw1</descriptionShort>
+    <model>\dz\weapons\melee\powered\chainsaw.p3d</model>
+    <animClass>Chainsaw</animClass>
+    <weight>5800</weight>
+    <itemSize type="array"><item>10</item><item>5</item></itemSize>
+    <absorbency>0</absorbency>
+    <openItemSpillRange type="array"><item>40</item><item>60</item></openItemSpillRange>
+    <repairableWithKits type="array"><item>7</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <hiddenSelections type="array"><item>flame</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item></item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>300</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\powered\Data\chainsaw.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\powered\Data\chainsaw.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\powered\Data\chainsaw_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\powered\Data\chainsaw_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\powered\Data\chainsaw_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <EnergyManager>
+      <hasIcon>1</hasIcon>
+      <energyAtSpawn>0</energyAtSpawn>
+      <energyUsagePerSecond>1</energyUsagePerSecond>
+      <energyStorageMax>600</energyStorageMax>
+    </EnergyManager>
+    <flame>
+      <sound>Sound_FlareFlame</sound>
+      <texture>
+        dz\gear\consumables\data\flame_red_ca.paa
+      </texture>
+    </flame>
+  </Chainsaw>
+  <CattleProd base="Powered_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_CattleProd0</displayName>
+    <descriptionShort>STR_CfgVehicles_CattleProd1</descriptionShort>
+    <model>\dz\gear\tools\Catle_Prod.p3d</model>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <rotationFlags>1</rotationFlags>
+    <weight>2700</weight>
+    <itemSize type="array"><item>1</item><item>6</item></itemSize>
+    <itemBehaviour>1</itemBehaviour>
+    <fragility>0.008</fragility>
+    <lootTag type="array"><item>Farm</item></lootTag>
+    <lootCategory>Tools</lootCategory>
+    <energyResources type="array"><item type="array"><item>power</item><item>0.1</item></item></energyResources>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>150</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\powered\Data\chainsaw.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\powered\Data\chainsaw.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\powered\Data\chainsaw_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\powered\Data\chainsaw_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\powered\Data\chainsaw_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <repairableWithKits type="array"><item>7</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <EnergyManager>
+      <hasIcon>1</hasIcon>
+      <plugType>1</plugType>
+      <energyUsagePerSecond>1.5</energyUsagePerSecond>
+      <attachmentAction>1</attachmentAction>
+      <wetnessExposure>0.1</wetnessExposure>
+    </EnergyManager>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeLightBlunt</ammo>
+        <range>1.6</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeLightBlunt_Heavy</ammo>
+        <range>1.6</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeLightBlunt_Heavy</ammo>
+        <range>2.2</range>
+      </Sprint>
+      <Default_SwitchedOn>
+        <ammo>MeleeLightBluntShock</ammo>
+        <range>1.6</range>
+      </Default_SwitchedOn>
+      <Heavy_SwitchedOn>
+        <ammo>MeleeLightBluntShock_Heavy</ammo>
+        <range>1.6</range>
+      </Heavy_SwitchedOn>
+      <Sprint_SwitchedOn>
+        <ammo>MeleeLightBluntShock_Heavy</ammo>
+        <range>2.2</range>
+      </Sprint_SwitchedOn>
+    </MeleeModes>
+  </CattleProd>
+  <StunBaton base="Powered_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_StunBaton0</displayName>
+    <descriptionShort>STR_CfgVehicles_StunBaton1</descriptionShort>
+    <model>\dz\weapons\melee\powered\Stun_Baton.p3d</model>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <rotationFlags>1</rotationFlags>
+    <weight>800</weight>
+    <itemSize type="array"><item>1</item><item>4</item></itemSize>
+    <itemBehaviour>1</itemBehaviour>
+    <fragility>0.008</fragility>
+    <lootTag type="array"><item>Police</item></lootTag>
+    <lootCategory>Tools</lootCategory>
+    <energyResources type="array"><item type="array"><item>power</item><item>0.1</item></item></energyResources>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\powered\Data\Stun_Baton.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\powered\Data\Stun_Baton.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\powered\Data\Stun_Baton_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\powered\Data\Stun_Baton_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\powered\Data\Stun_Baton_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <repairableWithKits type="array"><item>7</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <EnergyManager>
+      <hasIcon>1</hasIcon>
+      <plugType>1</plugType>
+      <energyUsagePerSecond>3</energyUsagePerSecond>
+      <attachmentAction>1</attachmentAction>
+      <wetnessExposure>0.1</wetnessExposure>
+    </EnergyManager>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeLightBlunt</ammo>
+        <range>1.5</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeLightBlunt_Heavy</ammo>
+        <range>1.5</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeLightBlunt_Heavy</ammo>
+        <range>2</range>
+      </Sprint>
+      <Default_SwitchedOn>
+        <ammo>MeleeLightBluntShock</ammo>
+        <range>1.5</range>
+      </Default_SwitchedOn>
+      <Heavy_SwitchedOn>
+        <ammo>MeleeLightBluntShock_Heavy</ammo>
+        <range>1.5</range>
+      </Heavy_SwitchedOn>
+      <Sprint_SwitchedOn>
+        <ammo>MeleeLightBluntShock_Heavy</ammo>
+        <range>2</range>
+      </Sprint_SwitchedOn>
+    </MeleeModes>
+  </StunBaton>
+</CfgVehicles>

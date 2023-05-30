@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_M249Para>
+    <units type="array"><item>M249Para</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_M249Para>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <M249_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>7500</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_556x45</item><item>Ammo_556x45Tracer</item></chamberableFrom>
+    <magazines type="array"><item>Mag_M249_Box200Rnd</item></magazines>
+    <magazineSwitchTime>6.5</magazineSwitchTime>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <modes type="array"><item>FullAuto</item></modes>
+    <FullAuto base="Mode_FullAuto">
+      <begin1 type="array"><item>dz\sounds\weapons\firearms\m4a1\m4_single_1</item><item>1.77828</item><item>1</item><item>1000</item></begin1>
+      <begin2 type="array"><item>dz\sounds\weapons\firearms\m4a1\m4_single_2</item><item>1.77828</item><item>1</item><item>1000</item></begin2>
+      <begin3 type="array"><item>dz\sounds\weapons\firearms\m4a1\m4_single_3</item><item>1.77828</item><item>1</item><item>1000</item></begin3>
+      <soundBegin type="array">
+        <item>begin1</item>
+        <item>0.33333</item>
+        <item>begin2</item>
+        <item>0.33333</item>
+        <item>begin2</item>
+        <item>0.33333</item>
+      </soundBegin>
+      <reloadTime>60/800</reloadTime>
+      <recoil>recoil_m249</recoil>
+      <recoilProne>recoil_m249_prone</recoilProne>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+      <beginSilenced_Pro1 type="array"><item>dz\sounds\weapons\firearms\m4a1\m4Silenced</item><item>1</item><item>1</item><item>75</item></beginSilenced_Pro1>
+      <beginSilenced_Pro2 type="array"><item>dz\sounds\weapons\firearms\m4a1\m4Silenced2</item><item>1</item><item>1</item><item>75</item></beginSilenced_Pro2>
+      <beginSilenced_HomeMade type="array"><item>ddz\sounds\weapons\firearms\m4a1\m4Silenced</item><item>1</item><item>1</item><item>150</item></beginSilenced_HomeMade>
+      <soundBeginExt type="array"><item type="array"><item>beginSilenced_Pro1</item><item>0.5</item><item>beginSilenced_Pro2</item><item>0.5</item></item><item type="array"><item>beginSilenced_HomeMade</item><item>1</item></item></soundBeginExt>
+    </FullAuto>
+    <OpticsInfo base="OpticsInfoRifle">
+    </OpticsInfo>
+  </M249_Base>
+  <M249 base="M249_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_M2490</displayName>
+    <descriptionShort>STR_cfgWeapons_M2491</descriptionShort>
+    <model>\dz\weapons\firearms\m249\m249.p3d</model>
+    <attachments type="array"><item>weaponOptics</item><item>weaponMuzzleM4</item><item>weaponHandguardM249</item><item>Att_Handguard_M249_Ris</item></attachments>
+    <itemSize type="array"><item>9</item><item>3</item></itemSize>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\m249\Data\m249.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\m249\Data\m249.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\m249\Data\m249_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\m249\Data\m249_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\m249\Data\m249_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </M249>
+</cfgWeapons>

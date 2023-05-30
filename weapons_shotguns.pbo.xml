@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Shotguns>
+    <units type="array"></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Sounds_Weapons</item></requiredAddons>
+  </DZ_Weapons_Shotguns>
+</CfgPatches>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<Mode_Safe base="Mode_SemiAuto">
+  <magazines type="array"></magazines>
+</Mode_Safe>
+<cfgWeapons>
+  <Shotgun_Base>
+  </Shotgun_Base>
+</cfgWeapons>

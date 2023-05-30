@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_CZ527>
+    <units type="array">
+      <item>cz527</item>
+      <item>cz527_Black</item>
+      <item>cz527_Green</item>
+      <item>cz527_Green_Black</item>
+      <item>cz527_Black_Green</item>
+    </units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_CZ527>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Single>
+</Mode_Single>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <BoltActionRifle_ExternalMagazine_Base>
+  </BoltActionRifle_ExternalMagazine_Base>
+  <CZ527_Base base="BoltActionRifle_ExternalMagazine_Base">
+    <scope>0</scope>
+    <animName>cz527</animName>
+    <weight>2720</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <modelOptics>-</modelOptics>
+    <distanceZoomMin>100</distanceZoomMin>
+    <distanceZoomMax>100</distanceZoomMax>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>50</item>
+      <item>160</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <opticsFlare>0</opticsFlare>
+    <winchesterTypeOpticsMount>1</winchesterTypeOpticsMount>
+    <ironsightsExcludingOptics type="array"><item>HuntingOptic</item></ironsightsExcludingOptics>
+    <WeaponLength>0.934214</WeaponLength>
+    <barrelArmor>1.111</barrelArmor>
+    <initSpeedMultiplier>1.2</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_762x39</item><item>Ammo_762x39Tracer</item></chamberableFrom>
+    <magazines type="array"><item>Mag_CZ527_5rnd</item></magazines>
+    <magazineSwitchTime>0.38</magazineSwitchTime>
+    <ejectType>0</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>2.2</item><item>2.2</item><item>1.2</item></swayModifier>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item></simpleHiddenSelections>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <NoiseShoot>
+      <strength>100</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_Single">
+      <soundSetShot type="array"><item>CR527_Shot_SoundSet</item><item>CR527_Tail_SoundSet</item><item>CR527_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>CR527_silencerHomeMade_SoundSet</item><item>CR527_silencerHomeMadeTail_SoundSet</item><item>CR527_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>1</reloadTime>
+      <recoil>recoil_cz527</recoil>
+      <recoilProne>recoil_cz527_prone</recoilProne>
+      <dispersion>0.001</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <OpticsInfo base="OpticsInfoRifle">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>200</distanceZoomMin>
+      <distanceZoomMax>200</distanceZoomMax>
+      <discreteDistance type="array"><item>200</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>-0.07</item><item>0</item><item>-0.07</item></position>
+        <orientation type="array"><item>-7</item><item>-55</item><item>5</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>-0.07</item><item>0</item><item>0.05</item></position>
+        <orientation type="array"><item>2</item><item>55</item><item>-5</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_cz527_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <positionOffset type="array"><item>-0.05</item><item>0</item><item>0</item></positionOffset>
+        </MuzzleFlash>
+      </OnFire>
+      <OnOverheating>
+        <shotsToStartOverheating>1</shotsToStartOverheating>
+        <maxOverheatingValue>4</maxOverheatingValue>
+        <overheatingDecayInterval>3</overheatingDecayInterval>
+        <BarrelSmoke>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+        </BarrelSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\cz527\w_cz527_states.anm
+    </weaponStateAnim>
+  </CZ527_Base>
+  <CZ527 base="CZ527_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_CZ5270</displayName>
+    <descriptionShort>STR_cfgWeapons_CZ5271</descriptionShort>
+    <model>\dz\weapons\firearms\cz527\cz527.p3d</model>
+    <attachments type="array"><item>weaponWrap</item><item>weaponOpticsHunting</item><item>suppressorImpro</item></attachments>
+    <itemSize type="array"><item>9</item><item>3</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\cz527\data\cz527_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\cz527\data\cz527.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>300</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\cz527\Data\cz527.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\cz527\Data\cz527.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\cz527\Data\cz527_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\cz527\Data\cz527_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\cz527\Data\cz527_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </CZ527>
+  <CZ527_Black base="CZ527">
+    <scope>2</scope>
+    <descriptionShort>STR_cfgWeapons_CZ527_Black0</descriptionShort>
+    <color>Black</color>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.15,0.15,0.15,1.0,CO)</item></hiddenSelectionsTextures>
+  </CZ527_Black>
+  <CZ527_Green base="CZ527">
+    <scope>2</scope>
+    <descriptionShort>STR_cfgWeapons_CZ527_Green0</descriptionShort>
+    <color>Green</color>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.35,0.36,0.28,1.0,CO)</item></hiddenSelectionsTextures>
+  </CZ527_Green>
+  <CZ527_Camo base="CZ527">
+    <scope>2</scope>
+    <descriptionShort>STR_cfgWeapons_CZ527_Camo0</descriptionShort>
+    <color>Camo</color>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\cz527\data\cz527_camo_co.paa</item></hiddenSelectionsTextures>
+  </CZ527_Camo>
+</cfgWeapons>

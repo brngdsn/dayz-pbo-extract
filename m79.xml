@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Launchers_M79>
+    <units type="array"><item>M79</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Launchers</item></requiredAddons>
+  </DZ_Weapons_Launchers_M79>
+</CfgPatches>
+<Mode_Single>
+</Mode_Single>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <M79_Base base="Rifle_Base">
+    <scope>0</scope>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>10</item>
+      <item>170</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.981055</WeaponLength>
+    <barrelArmor>1.875</barrelArmor>
+    <initSpeedMultiplier>1</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array">
+      <item>Ammo_40mm_Explosive</item>
+      <item>Ammo_40mm_ChemGas</item>
+      <item>Ammo_40mm_Smoke_Red</item>
+      <item>Ammo_40mm_Smoke_Green</item>
+      <item>Ammo_40mm_Smoke_White</item>
+      <item>Ammo_40mm_Smoke_Black</item>
+    </chamberableFrom>
+    <magazines type="array"></magazines>
+    <DisplayMagazine>0</DisplayMagazine>
+    <ejectType>3</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>1</item><item>1</item><item>1</item></swayModifier>
+    <NoiseShoot>
+      <strength>50</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_Single">
+      <soundSetShot type="array"><item>M79_Shot_SoundSet</item><item>M79_Tail_SoundSet</item><item>M79_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>IZH18_silencerHomeMade_SoundSet</item><item>IZH18_silencerHomeMadeTail_SoundSet</item><item>IZH18_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <envShootingDecrease>0.05</envShootingDecrease>
+      <reloadTime>1</reloadTime>
+      <dispersion>0.025</dispersion>
+    </Single>
+    <OpticsInfo base="OpticsInfoRifle">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <discreteDistance type="array"><item>75</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>75</distanceZoomMin>
+      <distanceZoomMax>75</distanceZoomMax>
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>-0.15</item><item>0.08</item><item>0.015</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>-5</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>-0.15</item><item>0.1</item><item>-0.03</item></position>
+        <orientation type="array"><item>0</item><item>0</item><item>-5</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <Particles>
+      <OnFire>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_mosin9130_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>0</illuminateWorld>
+          <positionOffset type="array"><item>-0.03</item><item>0</item><item>0</item></positionOffset>
+        </MuzzleFlash>
+      </OnFire>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\M79\w_m79_states.anm
+    </weaponStateAnim>
+    <boneRemap type="array">
+      <item>release</item>
+      <item>Weapon_Bone_02</item>
+      <item>barrel</item>
+      <item>Weapon_Bone_01</item>
+      <item>trigger</item>
+      <item>Weapon_Trigger</item>
+      <item>extractor</item>
+      <item>Weapon_Bone_03</item>
+      <item>bullet</item>
+      <item>Weapon_Bullet</item>
+      <item>charging</item>
+      <item>Weapon_Bone_04</item>
+    </boneRemap>
+  </M79_Base>
+  <M79 base="M79_Base">
+    <scope>2</scope>
+    <displayName>STR_M790</displayName>
+    <descriptionShort>STR_M791</descriptionShort>
+    <model>\dz\weapons\launchers\m79\m79.p3d</model>
+    <weight>2700</weight>
+    <itemSize type="array"><item>6</item><item>3</item></itemSize>
+    <attachments type="array"><item>weaponOpticsAug</item></attachments>
+    <hiddenSelections type="array"><item>camo_a</item><item>camo_b</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>\dz\weapons\launchers\m79\data\m79_a_co.paa</item><item>\dz\weapons\launchers\m79\data\m79_b_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\launchers\m79\data\m79_a.rvmat</item><item>dz\weapons\launchers\m79\data\m79_b.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\launchers\m79\data\m79_a.rvmat</item><item>DZ\weapons\launchers\m79\data\m79_b.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\launchers\m79\data\m79_a.rvmat</item><item>DZ\weapons\launchers\m79\data\m79_b.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\launchers\m79\data\m79_a_damage.rvmat</item><item>DZ\weapons\launchers\m79\data\m79_b_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\launchers\m79\data\m79_a_damage.rvmat</item><item>DZ\weapons\launchers\m79\data\m79_b_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\launchers\m79\data\m79_a_destruct.rvmat</item><item>DZ\weapons\launchers\m79\data\m79_b_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </M79>
+</cfgWeapons>
+<cfgVehicles>
+  <Inventory_Base>
+  </Inventory_Base>
+  <ItemOptics base="Inventory_Base">
+    <AnimEvents>
+      <SoundWeapon>
+        <pickup>
+          <soundSet>PSO11Optic_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>PSO11Optic_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+      </SoundWeapon>
+    </AnimEvents>
+  </ItemOptics>
+  <M79DummyOptics base="ItemOptics">
+    <scope>2</scope>
+    <model>
+      \dz\weapons\launchers\m79\proxy\dummyscope.p3d
+    </model>
+    <weight>1</weight>
+    <inventorySlot type="array"><item>weaponOpticsAug</item></inventorySlot>
+    <reversed>0</reversed>
+    <OpticsInfo>
+      <memoryPointCamera>eyeScope</memoryPointCamera>
+      <cameraDir>cameraDir</cameraDir>
+      <modelOptics>-</modelOptics>
+      <opticsZoomMin>0.5236</opticsZoomMin>
+      <opticsZoomMax>0.5236</opticsZoomMax>
+      <opticsZoomInit>0.5236</opticsZoomInit>
+      <distanceZoomMin>75</distanceZoomMin>
+      <distanceZoomMax>75</distanceZoomMax>
+      <discreteDistance type="array"><item>75</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+    </OpticsInfo>
+  </M79DummyOptics>
+</cfgVehicles>
+<CfgNonAIVehicles>
+  <ProxyAttachment>
+  </ProxyAttachment>
+  <Proxydummyscope base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>weaponOpticsAug</inventorySlot>
+    <model>
+      \dz\weapons\firearms\aug\proxy\dummyscope.p3d
+    </model>
+  </Proxydummyscope>
+</CfgNonAIVehicles>

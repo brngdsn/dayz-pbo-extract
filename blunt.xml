@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Melee_Blunt>
+    <units type="array"></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Weapons_Melee</item></requiredAddons>
+  </DZ_Weapons_Melee_Blunt>
+</CfgPatches>
+<CfgVehicles>
+  <Inventory_Base>
+  </Inventory_Base>
+  <BaseballBat base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_BaseballBat0</displayName>
+    <descriptionShort>STR_CfgVehicles_BaseballBat1</descriptionShort>
+    <model>\dz\weapons\melee\blunt\baseballbat.p3d</model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <weight>566</weight>
+    <itemSize type="array"><item>1</item><item>7</item></itemSize>
+    <itemBehaviour>2</itemBehaviour>
+    <fragility>0.02</fragility>
+    <openItemSpillRange type="array"><item>40</item><item>80</item></openItemSpillRange>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeBat</ammo>
+        <range>1.8</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeBat_Heavy</ammo>
+        <range>1.8</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeBat_Heavy</ammo>
+        <range>3.7</range>
+      </Sprint>
+    </MeleeModes>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <soundImpactType>wood</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <pickUp_Light>
+          <soundSet>hatchet_pickup_light_SoundSet</soundSet>
+          <id>796</id>
+        </pickUp_Light>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>baseballbat_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+      </SoundWeapon>
+    </AnimEvents>
+  </BaseballBat>
+  <NailedBaseballBat base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_NailedBaseballBat0</displayName>
+    <descriptionShort>STR_CfgVehicles_NailedBaseballBat1</descriptionShort>
+    <model>
+      \dz\weapons\melee\blunt\Baseballbat_nailed.p3d
+    </model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <weight>600</weight>
+    <itemSize type="array"><item>1</item><item>7</item></itemSize>
+    <itemBehaviour>2</itemBehaviour>
+    <fragility>0.02</fragility>
+    <openItemSpillRange type="array"><item>40</item><item>70</item></openItemSpillRange>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeBatNails</ammo>
+        <range>1.8</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeBatNails_Heavy</ammo>
+        <range>1.8</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeBatNails_Heavy</ammo>
+        <range>3.7</range>
+      </Sprint>
+    </MeleeModes>
+    <soundImpactType>wood</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <pickUp_Light>
+          <soundSet>hatchet_pickup_light_SoundSet</soundSet>
+          <id>796</id>
+        </pickUp_Light>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>baseballbat_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+      </SoundWeapon>
+    </AnimEvents>
+  </NailedBaseballBat>
+  <BarbedBaseballBat base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_BarbedBaseballBat0</displayName>
+    <descriptionShort>STR_CfgVehicles_BarbedBaseballBat1</descriptionShort>
+    <model>
+      \dz\weapons\melee\blunt\Baseballbat_barbed.p3d
+    </model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <weight>600</weight>
+    <itemSize type="array"><item>1</item><item>7</item></itemSize>
+    <itemBehaviour>2</itemBehaviour>
+    <fragility>0.02</fragility>
+    <openItemSpillRange type="array"><item>40</item><item>70</item></openItemSpillRange>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat_barbed.rvmat</item><item>DZ\weapons\melee\blunt\Data\Barbed_wire_bloody.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat_barbed.rvmat</item><item>DZ\weapons\melee\blunt\Data\Barbed_wire_bloody.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat_barbed_damage.rvmat</item><item>DZ\weapons\melee\blunt\Data\Barbed_wire_bloody_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat_barbed_damage.rvmat</item><item>DZ\weapons\melee\blunt\Data\Barbed_wire_bloody_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blunt\Data\BaseballBat_barbed_destruct.rvmat</item><item>DZ\weapons\melee\blunt\Data\Barbed_wire_bloody_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeBatNails</ammo>
+        <range>1.8</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeBatNails_Heavy</ammo>
+        <range>1.8</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeBatNails_Heavy</ammo>
+        <range>3.7</range>
+      </Sprint>
+    </MeleeModes>
+    <soundImpactType>wood</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <pickUp_Light>
+          <soundSet>hatchet_pickup_light_SoundSet</soundSet>
+          <id>796</id>
+        </pickUp_Light>
+        <pickup>
+          <soundSet>hatchet_pickup_SoundSet</soundSet>
+          <id>797</id>
+        </pickup>
+        <drop>
+          <soundset>baseballbat_drop_SoundSet</soundset>
+          <id>898</id>
+        </drop>
+      </SoundWeapon>
+    </AnimEvents>
+  </BarbedBaseballBat>
+  <PipeWrench base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_PipeWrench0</displayName>
+    <descriptionShort>STR_CfgVehicles_PipeWrench1</descriptionShort>
+    <model>\dz\weapons\melee\blunt\pipewrench.p3d</model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <rotationFlags>12</rotationFlags>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <weight>4400</weight>
+    <itemSize type="array"><item>2</item><item>5</item></itemSize>
+    <itemBehaviour>1</itemBehaviour>
+    <fragility>0.002</fragility>
+    <openItemSpillRange type="array"><item>30</item><item>60</item></openItemSpillRange>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleePipeWrench</ammo>
+        <range>1.5</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleePipeWrench_Heavy</ammo>
+        <range>1.5</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleePipeWrench_Heavy</ammo>
+        <range>4.1</range>
+      </Sprint>
+    </MeleeModes>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>400</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blunt\Data\pipewrench.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blunt\Data\pipewrench.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blunt\Data\pipewrench_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blunt\Data\pipewrench_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blunt\Data\pipewrench_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <soundImpactType>metal</soundImpactType>
+  </PipeWrench>
+  <BrassKnuckles_ColorBase base="Inventory_Base">
+    <displayName>STR_CfgVehicles_BrassKnuckles_ColorBase0</displayName>
+    <descriptionShort>STR_CfgVehicles_BrassKnuckles_ColorBase1</descriptionShort>
+    <model>
+      \dz\weapons\melee\blunt\Brassknuckles.p3d
+    </model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <inventorySlot type="array"><item></item></inventorySlot>
+    <weight>142</weight>
+    <itemSize type="array"><item>1</item><item>2</item></itemSize>
+    <fragility>0.002</fragility>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeBrassKnuckles</ammo>
+        <range>1</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeBrassKnuckles_Heavy</ammo>
+        <range>1</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeBrassKnuckles_Heavy</ammo>
+        <range>2.8</range>
+      </Sprint>
+    </MeleeModes>
+    <soundImpactType>metal</soundImpactType>
+  </BrassKnuckles_ColorBase>
+  <BrassKnuckles_Dull base="BrassKnuckles_ColorBase">
+    <scope>2</scope>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\melee\blunt\data\Brassknuckles_dull.rvmat</item></hiddenSelectionsMaterials>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\melee\blunt\data\BrassKnuckles_dull_co.paa</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>400</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blunt\Data\brassknuckles_dull.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blunt\Data\brassknuckles_dull.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blunt\Data\brassknuckles_dull_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blunt\Data\brassknuckles_dull_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blunt\Data\brassknuckles_dull_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </BrassKnuckles_Dull>
+  <BrassKnuckles_Shiny base="BrassKnuckles_ColorBase">
+    <scope>2</scope>
+    <weight>162</weight>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\melee\blunt\Data\Brassknuckles_shiny.rvmat</item></hiddenSelectionsMaterials>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\melee\blunt\data\BrassKnuckles_shiny_co.paa</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>400</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Brassknuckles_shiny.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Brassknuckles_shiny.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Brassknuckles_shiny_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Brassknuckles_shiny_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Brassknuckles_shiny_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </BrassKnuckles_Shiny>
+  <TelescopicBaton base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_TelescopicBaton0</displayName>
+    <descriptionShort>STR_CfgVehicles_TelescopicBaton1</descriptionShort>
+    <model>
+      \dz\weapons\melee\blunt\TelescopingBaton.p3d
+    </model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <weight>252</weight>
+    <itemSize type="array"><item>2</item><item>5</item></itemSize>
+    <itemBehaviour>1</itemBehaviour>
+    <fragility>0.002</fragility>
+    <openItemSpillRange type="array"><item>35</item><item>55</item></openItemSpillRange>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blunt\Data\TelescopingBaton.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blunt\Data\TelescopingBaton.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blunt\Data\TelescopingBaton_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blunt\Data\TelescopingBaton_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blunt\Data\TelescopingBaton_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeLightBlunt</ammo>
+        <range>1</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeLightBlunt_Heavy</ammo>
+        <range>1</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeLightBlunt_Heavy</ammo>
+        <range>2.8</range>
+      </Sprint>
+      <Default_Opened>
+        <ammo>MeleeBlunt</ammo>
+        <range>1.6</range>
+      </Default_Opened>
+      <Heavy_Opened>
+        <ammo>MeleeBlunt_Heavy</ammo>
+        <range>1.6</range>
+      </Heavy_Opened>
+      <Sprint_Opened>
+        <ammo>MeleeBlunt_Heavy</ammo>
+        <range>4.1</range>
+      </Sprint_Opened>
+    </MeleeModes>
+    <soundImpactType>plastic</soundImpactType>
+    <AnimEvents>
+      <SoundWeapon>
+        <Baton_deploy>
+          <soundSet>Baton_deploy_SoundSet</soundSet>
+          <id>201</id>
+        </Baton_deploy>
+        <Baton_retract>
+          <soundSet>Baton_retract_SoundSet</soundSet>
+          <id>202</id>
+        </Baton_retract>
+      </SoundWeapon>
+    </AnimEvents>
+    <AnimationSources>
+      <Doors1>
+        <source>user</source>
+        <initPhase>1</initPhase>
+        <animPeriod>0.001</animPeriod>
+      </Doors1>
+    </AnimationSources>
+  </TelescopicBaton>
+  <HockeyStick base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_HockeyStick0</displayName>
+    <descriptionShort>STR_CfgVehicles_HockeyStick1</descriptionShort>
+    <model>
+      \dz\weapons\melee\blunt\hockey_stick_peters.p3d
+    </model>
+    <rotationFlags>12</rotationFlags>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <weight>650</weight>
+    <itemSize type="array"><item>2</item><item>10</item></itemSize>
+    <itemBehaviour>2</itemBehaviour>
+    <fragility>0.02</fragility>
+    <openItemSpillRange type="array"><item>40</item><item>80</item></openItemSpillRange>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Hockey_Stick.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Hockey_Stick.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Hockey_Stick_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Hockey_Stick_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Hockey_Stick_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeWoodBlunt</ammo>
+        <range>1.8</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeWoodBlunt_Heavy</ammo>
+        <range>1.8</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeWoodBlunt_Heavy</ammo>
+        <range>3.7</range>
+      </Sprint>
+    </MeleeModes>
+    <soundImpactType>wood</soundImpactType>
+  </HockeyStick>
+  <NewHockeyStick base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_NewHockeyStick0</displayName>
+    <descriptionShort>STR_CfgVehicles_NewHockeyStick1</descriptionShort>
+    <model>
+      \dz\weapons\melee\blunt\hockey_stick_peters.p3d
+    </model>
+    <rotationFlags>12</rotationFlags>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <weight>650</weight>
+    <itemSize type="array"><item>2</item><item>10</item></itemSize>
+    <itemBehaviour>2</itemBehaviour>
+    <fragility>0.02</fragility>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeBat</ammo>
+        <range>1.8</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeBat_Heavy</ammo>
+        <range>1.8</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeBat_Heavy</ammo>
+        <range>3.7</range>
+      </Sprint>
+    </MeleeModes>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>250</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Hockey_Stick.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Hockey_Stick.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Hockey_Stick_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Hockey_Stick_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blunt\Data\Hockey_Stick_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <soundImpactType>wood</soundImpactType>
+  </NewHockeyStick>
+  <PoliceBaton base="Inventory_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_PoliceBaton0</displayName>
+    <descriptionShort>STR_CfgVehicles_PoliceBaton1</descriptionShort>
+    <model>\dz\weapons\melee\blunt\Police_baton.p3d</model>
+    <debug_ItemCategory>2</debug_ItemCategory>
+    <rotationFlags>16</rotationFlags>
+    <inventorySlot type="array"><item>Shoulder</item><item>Melee</item></inventorySlot>
+    <weight>540</weight>
+    <itemSize type="array"><item>2</item><item>5</item></itemSize>
+    <itemBehaviour>1</itemBehaviour>
+    <fragility>0.002</fragility>
+    <openItemSpillRange type="array"><item>35</item><item>55</item></openItemSpillRange>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>300</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\melee\blunt\Data\baton.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\melee\blunt\Data\baton.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\melee\blunt\Data\baton_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\melee\blunt\Data\baton_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\melee\blunt\Data\baton_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <isMeleeWeapon>1</isMeleeWeapon>
+    <MeleeModes>
+      <Default>
+        <ammo>MeleeBlunt</ammo>
+        <range>1.6</range>
+      </Default>
+      <Heavy>
+        <ammo>MeleeBlunt_Heavy</ammo>
+        <range>1.6</range>
+      </Heavy>
+      <Sprint>
+        <ammo>MeleeBlunt_Heavy</ammo>
+        <range>4.1</range>
+      </Sprint>
+    </MeleeModes>
+    <soundImpactType>plastic</soundImpactType>
+  </PoliceBaton>
+</CfgVehicles>

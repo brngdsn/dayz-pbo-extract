@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Nonlethal_Shockpistol>
+    <units type="array"><item>Shockpistol</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Nonlethal</item></requiredAddons>
+  </DZ_Nonlethal_Shockpistol>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<cfgWeapons>
+  <NonlethalPistol>
+  </NonlethalPistol>
+  <Shockpistol_Base base="NonlethalPistol">
+    <scope>0</scope>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <value>0</value>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <magazines type="array"><item>Mag_ShockCartridge</item></magazines>
+    <chamberableFrom type="array"><item>Ammo_9x19</item></chamberableFrom>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <modes type="array"><item>Single</item></modes>
+    <Single base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>Shockpistol_Shot_SoundSet</item><item>Shockpistol_Tail_SoundSet</item><item>Shockpistol_InteriorTail_SoundSet</item></soundSetShot>
+      <reloadTime>0.13</reloadTime>
+      <recoil>recoil_shockpistol</recoil>
+      <recoilProne>recoil_shockpistol</recoilProne>
+      <dispersion>0.006</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Single>
+    <Damage>
+      <tex type="array"></tex>
+      <mat type="array"><item>DZ\weapons\nonlethal\shockpistol\data\shockpistol_main.rvmat</item><item>DZ\weapons\nonlethal\shockpistol\data\shockpistol_main_damage.rvmat</item><item>DZ\weapons\nonlethal\shockpistol\data\shockpistol_main_destruct.rvmat</item></mat>
+    </Damage>
+  </Shockpistol_Base>
+  <Shockpistol base="Shockpistol_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_Shockpistol0</displayName>
+    <descriptionShort>STR_cfgWeapons_Shockpistol1</descriptionShort>
+    <model>
+      \dz\weapons\nonlethal\shockpistol\shockpistol.p3d
+    </model>
+    <itemSize type="array"><item>4</item><item>3</item></itemSize>
+    <weight>1000</weight>
+    <modelOptics>-</modelOptics>
+    <distanceZoomMin>100</distanceZoomMin>
+    <distanceZoomMax>100</distanceZoomMax>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>\dz\weapons\nonlethal\shockpistol\data\shockpistol_main_yel_co.paa</item></hiddenSelectionsTextures>
+  </Shockpistol>
+  <Shockpistol_Black base="Shockpistol">
+    <descriptionShort>STR_cfgWeapons_Shockpistol_Black0</descriptionShort>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>\dz\weapons\nonlethal\shockpistol\data\shockpistol_main_bk_co.paa</item></hiddenSelectionsTextures>
+  </Shockpistol_Black>
+</cfgWeapons>
+<CfgNonAIVehicles>
+  <ProxyAttachment>
+  </ProxyAttachment>
+  <ProxyShockpistol base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>pistol</inventorySlot>
+    <model>
+      \dz\weapons\nonlethal\shockpistol\shockpistol.p3d
+    </model>
+  </ProxyShockpistol>
+</CfgNonAIVehicles>

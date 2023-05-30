@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Archery_Bow_Recurve>
+    <units type="array"><item>bow_recurve</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Archery</item></requiredAddons>
+  </DZ_Weapons_Archery_Bow_Recurve>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<cfgWeapons>
+  <Archery_Base>
+  </Archery_Base>
+  <RecurveBow base="Archery_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_RecurveBow0</displayName>
+    <descriptionShort>STR_cfgWeapons_RecurveBow1</descriptionShort>
+    <model>
+      \dz\weapons\archery\bow_Recurve\bow_recurve.p3d
+    </model>
+    <animClass>Bow</animClass>
+    <rotationFlags>17</rotationFlags>
+    <weight>550</weight>
+    <itemSize type="array"><item>6</item><item>10</item></itemSize>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <magazines type="array"></magazines>
+    <chamberableFrom type="array">
+      <item>Ammo_ArrowComposite</item>
+      <item>Ammo_ArrowPrimitive</item>
+      <item>Ammo_ArrowBoned</item>
+      <item>Ammo_SharpStick</item>
+      <item>Mag_Arrows_Quiver</item>
+    </chamberableFrom>
+  </RecurveBow>
+</cfgWeapons>

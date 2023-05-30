@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Explosives>
+    <units type="array">
+      <item>SmokeGrenade</item>
+      <item>FlashGrenade</item>
+      <item>Grenade</item>
+      <item>GrenadeRDG5</item>
+      <item>smokegrenade_rdg2</item>
+    </units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item></requiredAddons>
+  </DZ_Weapons_Explosives>
+</CfgPatches>
+<CfgAmmo>
+  <DefaultAmmo>
+  </DefaultAmmo>
+  <RGD5Grenade_Ammo base="DefaultAmmo">
+    <indirectHit>1</indirectHit>
+    <indirectHitRange>3</indirectHitRange>
+    <indirectHitRangeMultiplier>4</indirectHitRangeMultiplier>
+    <explosive>1</explosive>
+    <typicalSpeed>3</typicalSpeed>
+    <initSpeed>3</initSpeed>
+    <simulation>shotShell</simulation>
+    <simulationStep>0.05</simulationStep>
+    <soundSetExplosion type="array"><item>Grenade_explosion_SoundSet</item><item>Grenade_Tail_SoundSet</item></soundSetExplosion>
+    <DamageApplied>
+      <type>FragGrenade</type>
+      <Health>
+        <damage>50</damage>
+      </Health>
+      <Blood>
+        <damage>0</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseExplosion>
+      <strength>200</strength>
+      <type>shot</type>
+    </NoiseExplosion>
+  </RGD5Grenade_Ammo>
+  <M67Grenade_Ammo base="DefaultAmmo">
+    <indirectHit>1</indirectHit>
+    <indirectHitRange>5</indirectHitRange>
+    <indirectHitRangeMultiplier>4</indirectHitRangeMultiplier>
+    <explosive>1</explosive>
+    <typicalSpeed>3</typicalSpeed>
+    <initSpeed>3</initSpeed>
+    <simulation>shotShell</simulation>
+    <simulationStep>0.05</simulationStep>
+    <soundSetExplosion type="array"><item>Grenade_explosion_SoundSet</item><item>Grenade_Tail_SoundSet</item></soundSetExplosion>
+    <DamageApplied>
+      <type>FragGrenade</type>
+      <Health>
+        <damage>50</damage>
+      </Health>
+      <Blood>
+        <damage>0</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseExplosion>
+      <strength>200</strength>
+      <type>shot</type>
+    </NoiseExplosion>
+  </M67Grenade_Ammo>
+  <FlashGrenade_Ammo base="DefaultAmmo">
+    <indirectHit>1</indirectHit>
+    <indirectHitRange>5</indirectHitRange>
+    <indirectHitRangeMultiplier>4</indirectHitRangeMultiplier>
+    <explosive>1</explosive>
+    <typicalSpeed>3</typicalSpeed>
+    <initSpeed>3</initSpeed>
+    <slowdownThreshold>100</slowdownThreshold>
+    <simulation>shotShell</simulation>
+    <simulationStep>0.05</simulationStep>
+    <soundSetExplosion type="array"><item>Flashgrenade_Explosion_SoundSet</item><item>Flashgrenade_Explosion_Tail_SoundSet</item></soundSetExplosion>
+    <DamageApplied>
+      <type>FragGrenade</type>
+      <Health>
+        <damage>5</damage>
+      </Health>
+      <Blood>
+        <damage>0</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseExplosion>
+      <strength>60</strength>
+      <type>shot</type>
+    </NoiseExplosion>
+  </FlashGrenade_Ammo>
+  <GasCanister_Ammo base="FlashGrenade_Ammo">
+    <indirectHitRange>1</indirectHitRange>
+    <indirectHitRangeMultiplier>2</indirectHitRangeMultiplier>
+    <soundSetExplosion type="array"><item>GasCanister_Explosion_SoundSet</item><item>GasCanister_Explosion_Tail_SoundSet</item></soundSetExplosion>
+    <DamageApplied>
+      <type>FragGrenade</type>
+      <Health>
+        <damage>5</damage>
+      </Health>
+      <Blood>
+        <damage>0</damage>
+      </Blood>
+      <Shock>
+        <damage>8</damage>
+      </Shock>
+    </DamageApplied>
+  </GasCanister_Ammo>
+  <LandFuelFeed_Ammo base="DefaultAmmo">
+    <indirectHit>1</indirectHit>
+    <indirectHitRange>5</indirectHitRange>
+    <indirectHitRangeMultiplier>4</indirectHitRangeMultiplier>
+    <explosive>1</explosive>
+    <typicalSpeed>3</typicalSpeed>
+    <initSpeed>3</initSpeed>
+    <simulation>shotShell</simulation>
+    <simulationStep>0.05</simulationStep>
+    <soundSetExplosion type="array"><item>GasStation_Explosion_SoundSet</item><item>GasStation_Explosion_Tail_SoundSet</item></soundSetExplosion>
+    <DamageApplied>
+      <type>FragGrenade</type>
+      <Health>
+        <damage>50</damage>
+      </Health>
+      <Blood>
+        <damage>0</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseExplosion>
+      <strength>100</strength>
+      <type>shot</type>
+    </NoiseExplosion>
+  </LandFuelFeed_Ammo>
+  <Plastic_Explosive_Ammo base="DefaultAmmo">
+    <indirectHit>1</indirectHit>
+    <indirectHitRange>1</indirectHitRange>
+    <indirectHitRangeMultiplier>20</indirectHitRangeMultiplier>
+    <explosive>1</explosive>
+    <typicalSpeed>3</typicalSpeed>
+    <initSpeed>3</initSpeed>
+    <simulation>shotShell</simulation>
+    <simulationStep>0.05</simulationStep>
+    <soundSetExplosion type="array"><item>Plastic_Explosion_SoundSet</item><item>Plastic_Explosion_Tail_SoundSet</item></soundSetExplosion>
+    <DamageApplied>
+      <type>FragGrenade</type>
+      <Health>
+        <damage>350</damage>
+      </Health>
+      <Blood>
+        <damage>0</damage>
+      </Blood>
+      <Shock>
+        <damage>100</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseExplosion>
+      <strength>300</strength>
+      <type>shot</type>
+    </NoiseExplosion>
+  </Plastic_Explosive_Ammo>
+  <ClaymoreMine_Ammo base="DefaultAmmo">
+    <indirectHit>1</indirectHit>
+    <indirectHitRange>10</indirectHitRange>
+    <indirectHitRangeMultiplier>3</indirectHitRangeMultiplier>
+    <explosive>1</explosive>
+    <typicalSpeed>3</typicalSpeed>
+    <initSpeed>3</initSpeed>
+    <indirectHitAngle1>45</indirectHitAngle1>
+    <indirectHitAngle2>45</indirectHitAngle2>
+    <explosionType>directional</explosionType>
+    <simulation>shotShell</simulation>
+    <simulationStep>0.05</simulationStep>
+    <soundSetExplosion type="array"><item>ClaymoreMine_explosion_SoundSet</item><item>Grenade_Tail_SoundSet</item></soundSetExplosion>
+    <DamageApplied>
+      <type>FragGrenade</type>
+      <Health>
+        <damage>100</damage>
+      </Health>
+      <Blood>
+        <damage>0</damage>
+      </Blood>
+      <Shock>
+        <damage>100</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseExplosion>
+      <strength>200</strength>
+      <type>shot</type>
+    </NoiseExplosion>
+  </ClaymoreMine_Ammo>
+  <ClaymoreMine_Secondary_Ammo base="DefaultAmmo">
+    <indirectHit>1</indirectHit>
+    <indirectHitRange>1</indirectHitRange>
+    <indirectHitRangeMultiplier>4</indirectHitRangeMultiplier>
+    <explosive>1</explosive>
+    <simulation>shotShell</simulation>
+    <simulationStep>0.05</simulationStep>
+    <soundSetExplosion type="array"></soundSetExplosion>
+    <DamageApplied>
+      <type>FragGrenade</type>
+      <Health>
+        <damage>20</damage>
+      </Health>
+      <Blood>
+        <damage>0</damage>
+      </Blood>
+      <Shock>
+        <damage>20</damage>
+      </Shock>
+    </DamageApplied>
+  </ClaymoreMine_Secondary_Ammo>
+  <Fireworks_Ammo base="DefaultAmmo">
+    <indirectHit>1</indirectHit>
+    <indirectHitRange>1</indirectHitRange>
+    <indirectHitRangeMultiplier>2</indirectHitRangeMultiplier>
+    <explosive>1</explosive>
+    <typicalSpeed>1</typicalSpeed>
+    <initSpeed>1</initSpeed>
+    <slowdownThreshold>100</slowdownThreshold>
+    <simulation>shotShell</simulation>
+    <simulationStep>0.05</simulationStep>
+    <soundSetExplosion type="array"></soundSetExplosion>
+    <DamageApplied>
+      <type>FragGrenade</type>
+      <Health>
+        <damage>1</damage>
+      </Health>
+      <Blood>
+        <damage>0</damage>
+      </Blood>
+      <Shock>
+        <damage>1</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseExplosion>
+      <strength>100</strength>
+      <type>shot</type>
+    </NoiseExplosion>
+    <Effects>
+      <CameraShake>
+        <radius>1</radius>
+        <strength>1</strength>
+        <modifierClose>1</modifierClose>
+        <modifierFar>0</modifierFar>
+      </CameraShake>
+    </Effects>
+  </Fireworks_Ammo>
+  <Explosion_40mm_Ammo base="DefaultAmmo">
+    <indirectHit>1</indirectHit>
+    <indirectHitRange>5</indirectHitRange>
+    <indirectHitRangeMultiplier>4</indirectHitRangeMultiplier>
+    <explosive>1</explosive>
+    <caliber>1</caliber>
+    <deflecting>0</deflecting>
+    <soundSetExplosion type="array"><item>Grenade_explosion_SoundSet</item><item>Grenade_Tail_SoundSet</item></soundSetExplosion>
+    <DamageApplied>
+      <type>FragGrenade</type>
+      <Health>
+        <damage>50</damage>
+      </Health>
+      <Blood>
+        <damage>0</damage>
+      </Blood>
+      <Shock>
+        <damage>0</damage>
+      </Shock>
+    </DamageApplied>
+    <NoiseHit>
+      <strength>200</strength>
+      <type>shot</type>
+    </NoiseHit>
+  </Explosion_40mm_Ammo>
+</CfgAmmo>
+<CfgVehicles>
+  <Inventory_Base>
+  </Inventory_Base>
+  <ExplosivesBase base="Inventory_Base">
+    <AnimationSources>
+    </AnimationSources>
+  </ExplosivesBase>
+  <Grenade_Base>
+  </Grenade_Base>
+  <RGD5Grenade base="Grenade_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_RGD5Grenade0</displayName>
+    <descriptionShort>STR_CfgVehicles_RGD5Grenade1</descriptionShort>
+    <model>\dz\weapons\explosives\frag_RGD5.p3d</model>
+    <weight>350</weight>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\frag_RGD5_CO.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\explosives\data\frag_RGD5.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>50</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\explosives\data\frag_RGD5.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\explosives\data\frag_RGD5.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\explosives\data\frag_RGD5_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\explosives\data\frag_RGD5_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\explosives\data\frag_RGD5_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <AnimEvents>
+      <SoundWeapon>
+        <Grenade_unpin>
+          <soundSet>Grenade_unpin_SoundSet</soundSet>
+          <id>201</id>
+        </Grenade_unpin>
+        <turnOnRadio_Pin>
+          <soundSet>Grenade_pin_SoundSet</soundSet>
+          <id>1006</id>
+        </turnOnRadio_Pin>
+      </SoundWeapon>
+    </AnimEvents>
+  </RGD5Grenade>
+  <M67Grenade base="Grenade_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_M67Grenade0</displayName>
+    <descriptionShort>STR_CfgVehicles_M67Grenade1</descriptionShort>
+    <model>\dz\weapons\explosives\grenade.p3d</model>
+    <weight>400</weight>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\grenade_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\explosives\data\grenade.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>50</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\explosives\data\grenade.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\explosives\data\grenade.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\explosives\data\grenade_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\explosives\data\grenade_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\explosives\data\grenade_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <AnimEvents>
+      <SoundWeapon>
+        <Grenade_unpin>
+          <soundSet>Grenade_unpin_SoundSet</soundSet>
+          <id>201</id>
+        </Grenade_unpin>
+        <turnOnRadio_Pin>
+          <soundSet>Grenade_pin_SoundSet</soundSet>
+          <id>1006</id>
+        </turnOnRadio_Pin>
+      </SoundWeapon>
+    </AnimEvents>
+  </M67Grenade>
+  <M18SmokeGrenade_ColorBase base="Grenade_Base">
+    <displayName>
+      STR_CfgVehicles_M18SmokeGrenade_ColorBase0
+    </displayName>
+    <descriptionShort>
+      STR_CfgVehicles_M18SmokeGrenade_ColorBase1
+    </descriptionShort>
+    <model>\dz\weapons\explosives\smokegrenade.p3d</model>
+    <rotationFlags>17</rotationFlags>
+    <weight>500</weight>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\explosives\data\smokegrenade.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>20</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\explosives\data\smokegrenade.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\explosives\data\smokegrenade.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\explosives\data\smokegrenade_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\explosives\data\smokegrenade_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\explosives\data\smokegrenade_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <EnergyManager>
+      <energyAtSpawn>90</energyAtSpawn>
+      <energyUsagePerSecond>1</energyUsagePerSecond>
+      <wetnessExposure>0.1</wetnessExposure>
+      <updateInterval>5</updateInterval>
+    </EnergyManager>
+    <NoiseSmokeGrenade>
+      <strength>30</strength>
+      <type>sound</type>
+    </NoiseSmokeGrenade>
+    <AnimEvents>
+      <SoundWeapon>
+        <Unpin>
+          <soundSet>
+            SmokegGrenades_M18_oneshot_ignite_SoundSet
+          </soundSet>
+          <id>201</id>
+        </Unpin>
+      </SoundWeapon>
+    </AnimEvents>
+  </M18SmokeGrenade_ColorBase>
+  <M18SmokeGrenade_Red base="M18SmokeGrenade_ColorBase">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\smokegrenade_red_co.paa</item></hiddenSelectionsTextures>
+  </M18SmokeGrenade_Red>
+  <M18SmokeGrenade_Red_Contaminated base="M18SmokeGrenade_Red">
+  </M18SmokeGrenade_Red_Contaminated>
+  <M18SmokeGrenade_Green base="M18SmokeGrenade_ColorBase">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\smokegrenade_green_co.paa</item></hiddenSelectionsTextures>
+  </M18SmokeGrenade_Green>
+  <M18SmokeGrenade_Yellow base="M18SmokeGrenade_ColorBase">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\smokegrenade_yellow_co.paa</item></hiddenSelectionsTextures>
+  </M18SmokeGrenade_Yellow>
+  <M18SmokeGrenade_Purple base="M18SmokeGrenade_ColorBase">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\smokegrenade_violet_co.paa</item></hiddenSelectionsTextures>
+  </M18SmokeGrenade_Purple>
+  <M18SmokeGrenade_White base="M18SmokeGrenade_ColorBase">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\smokegrenade_white_co.paa</item></hiddenSelectionsTextures>
+  </M18SmokeGrenade_White>
+  <RDG2SmokeGrenade_ColorBase base="Grenade_Base">
+    <displayName>
+      STR_CfgVehicles_RDG2SmokeGrenade_ColorBase0
+    </displayName>
+    <descriptionShort>
+      STR_CfgVehicles_RDG2SmokeGrenade_ColorBase1
+    </descriptionShort>
+    <model>
+      \dz\weapons\explosives\smokegrenade_rdg2.p3d
+    </model>
+    <rotationFlags>17</rotationFlags>
+    <weight>300</weight>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\explosives\data\smokegrenade_rdg2.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>20</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\explosives\data\smokegrenade_rdg2.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\explosives\data\smokegrenade_rdg2.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\explosives\data\smokegrenade_rdg2_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\explosives\data\smokegrenade_rdg2_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\explosives\data\smokegrenade_rdg2_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <EnergyManager>
+      <energyAtSpawn>90</energyAtSpawn>
+      <energyUsagePerSecond>1</energyUsagePerSecond>
+      <wetnessExposure>0.1</wetnessExposure>
+      <updateInterval>5</updateInterval>
+    </EnergyManager>
+    <NoiseSmokeGrenade>
+      <strength>30</strength>
+      <type>sound</type>
+    </NoiseSmokeGrenade>
+    <AnimEvents>
+      <SoundWeapon>
+        <Unpin>
+          <soundSet>
+            SmokegGrenades_RDG2_oneshot_ignite_SoundSet
+          </soundSet>
+          <id>201</id>
+        </Unpin>
+      </SoundWeapon>
+    </AnimEvents>
+  </RDG2SmokeGrenade_ColorBase>
+  <RDG2SmokeGrenade_Black base="RDG2SmokeGrenade_ColorBase">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\smokegrenade_rdg2_black_co.paa</item></hiddenSelectionsTextures>
+  </RDG2SmokeGrenade_Black>
+  <RDG2SmokeGrenade_White base="RDG2SmokeGrenade_ColorBase">
+    <scope>2</scope>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\smokegrenade_rdg2_white_co.paa</item></hiddenSelectionsTextures>
+  </RDG2SmokeGrenade_White>
+  <FlashGrenade base="Grenade_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_FlashGrenade0</displayName>
+    <descriptionShort>STR_CfgVehicles_FlashGrenade1</descriptionShort>
+    <model>\dz\weapons\explosives\flashbang.p3d</model>
+    <rotationFlags>17</rotationFlags>
+    <weight>300</weight>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\flashbang_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\explosives\data\flashbang.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>20</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\explosives\data\flashbang.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\explosives\data\flashbang.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\explosives\data\flashbang_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\explosives\data\flashbang_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\explosives\data\flashbang_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <AnimEvents>
+      <SoundWeapon>
+        <Grenade_unpin>
+          <soundSet>Grenade_unpin_SoundSet</soundSet>
+          <id>201</id>
+        </Grenade_unpin>
+        <turnOnRadio_Pin>
+          <soundSet>Grenade_pin_SoundSet</soundSet>
+          <id>1006</id>
+        </turnOnRadio_Pin>
+      </SoundWeapon>
+    </AnimEvents>
+  </FlashGrenade>
+  <Grenade_ChemGas base="Grenade_Base">
+    <scope>2</scope>
+    <displayName>STR_Grenade_ChemGas0</displayName>
+    <descriptionShort>STR_Grenade_ChemGas1</descriptionShort>
+    <model>
+      \dz\weapons\explosives\Grenade_ChemGas.p3d
+    </model>
+    <weight>500</weight>
+    <itemSize type="array"><item>1</item><item>1</item></itemSize>
+    <inventorySlot type="array"><item>IEDExplosiveA</item><item>IEDExplosiveB</item></inventorySlot>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>5</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\explosives\data\Grenade_ChemGas.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\explosives\data\Grenade_ChemGas.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\explosives\data\Grenade_ChemGas_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\explosives\data\Grenade_ChemGas_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\explosives\data\Grenade_ChemGas_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Grenade_ChemGas>
+  <Plastic_Explosive base="ExplosivesBase">
+    <scope>2</scope>
+    <displayName>STR_PlasticExplosive0</displayName>
+    <descriptionShort>STR_PlasticExplosive1</descriptionShort>
+    <model>
+      \dz\weapons\explosives\Plastic_Explosive.p3d
+    </model>
+    <weight>400</weight>
+    <itemSize type="array"><item>3</item><item>2</item></itemSize>
+    <itemBehaviour>1</itemBehaviour>
+    <slopeTolerance>0.5</slopeTolerance>
+    <alignHologramToTerain>1</alignHologramToTerain>
+    <yawPitchRollLimit type="array"><item>20</item><item>20</item><item>20</item></yawPitchRollLimit>
+    <hologramMaterial>plastic_explosive</hologramMaterial>
+    <hologramMaterialPath>dz\weapons\explosives\data</hologramMaterialPath>
+    <projectionTypename>Plastic_Explosive_Placing</projectionTypename>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\Plastic_Explosive.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\explosives\data\Plastic_Explosive.rvmat</item></hiddenSelectionsMaterials>
+    <attachments type="array"><item>TriggerRemoteDetonator_Receiver</item></attachments>
+    <AnimationSources base="AnimationSources">
+      <TriggerRemote>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>1</initPhase>
+      </TriggerRemote>
+    </AnimationSources>
+    <AnimEvents>
+      <SoundWeapon>
+        <Grenade_unpin>
+          <soundSet>Grenade_unpin_SoundSet</soundSet>
+          <id>201</id>
+        </Grenade_unpin>
+        <turnOnRadio_Pin>
+          <soundSet>Grenade_pin_SoundSet</soundSet>
+          <id>1006</id>
+        </turnOnRadio_Pin>
+      </SoundWeapon>
+    </AnimEvents>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>50</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\explosives\data\Plastic_Explosive.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\explosives\data\Plastic_Explosive.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\explosives\data\Plastic_Explosive_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\explosives\data\Plastic_Explosive_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\explosives\data\Plastic_Explosive_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Plastic_Explosive>
+  <Plastic_Explosive_Placing base="Plastic_Explosive">
+    <model>
+      \dz\weapons\explosives\Plastic_Explosive_Placing.p3d
+    </model>
+    <hiddenSelections type="array"><item>placing</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\Plastic_Explosive.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\explosives\data\Plastic_Explosive.rvmat</item></hiddenSelectionsMaterials>
+    <AnimationSources>
+      <Placing>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>0</initPhase>
+      </Placing>
+    </AnimationSources>
+  </Plastic_Explosive_Placing>
+  <ClaymoreMine base="ExplosivesBase">
+    <scope>2</scope>
+    <displayName>STR_ClaymoreMine0</displayName>
+    <descriptionShort>STR_ClaymoreMine1</descriptionShort>
+    <model>\DZ\weapons\explosives\ClaymoreMine.p3d</model>
+    <rotationFlags>2</rotationFlags>
+    <itemBehaviour>2</itemBehaviour>
+    <slopeTolerance>0.15</slopeTolerance>
+    <yawPitchRollLimit type="array"><item>60</item><item>60</item><item>60</item></yawPitchRollLimit>
+    <hologramMaterial>claymore</hologramMaterial>
+    <hologramMaterialPath>dz\weapons\explosives\data</hologramMaterialPath>
+    <projectionTypename>ClaymoreMinePlacing</projectionTypename>
+    <itemSize type="array"><item>4</item><item>3</item></itemSize>
+    <weight>3000</weight>
+    <inventorySlot type="array"></inventorySlot>
+    <hiddenSelections type="array"><item>LED</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\claymore_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>DZ\gear\tools\data\RemoteDetonator_LED.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>50</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\explosives\data\Claymore.rvmat</item><item>DZ\weapons\explosives\data\Claymore_Bag.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\explosives\data\Claymore.rvmat</item><item>DZ\weapons\explosives\data\Claymore_Bag.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\explosives\data\Claymore_damage.rvmat</item><item>DZ\weapons\explosives\data\Claymore_Bag_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\explosives\data\Claymore_damage.rvmat</item><item>DZ\weapons\explosives\data\Claymore_Bag_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\explosives\data\Claymore_destruct.rvmat</item><item>DZ\weapons\explosives\data\Claymore_Bag_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <AnimationSources>
+      <Bag>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>0</initPhase>
+      </Bag>
+      <Mine>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>1</initPhase>
+      </Mine>
+    </AnimationSources>
+  </ClaymoreMine>
+  <ClaymoreMinePlacing base="ClaymoreMine">
+    <model>
+      \DZ\weapons\explosives\ClaymoreMinePlacing.p3d
+    </model>
+    <hiddenSelections type="array"><item>placing</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\claymore_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\explosives\data\claymore.rvmat</item></hiddenSelectionsMaterials>
+    <AnimationSources>
+      <Inventory>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>0</initPhase>
+      </Inventory>
+      <Placing>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>0</initPhase>
+      </Placing>
+    </AnimationSources>
+  </ClaymoreMinePlacing>
+  <ImprovisedExplosive base="ExplosivesBase">
+    <scope>2</scope>
+    <displayName>STR_ImprovisedExplosive0</displayName>
+    <descriptionShort>STR_ImprovisedExplosive1</descriptionShort>
+    <model>
+      \DZ\weapons\explosives\ImprovisedExplosive.p3d
+    </model>
+    <rotationFlags>2</rotationFlags>
+    <itemBehaviour>2</itemBehaviour>
+    <itemSize type="array"><item>4</item><item>3</item></itemSize>
+    <weight>2000</weight>
+    <inventorySlot type="array"></inventorySlot>
+    <slopeTolerance>0.5</slopeTolerance>
+    <alignHologramToTerain>1</alignHologramToTerain>
+    <yawPitchRollLimit type="array"><item>20</item><item>20</item><item>20</item></yawPitchRollLimit>
+    <hologramMaterial>protector_case</hologramMaterial>
+    <hologramMaterialPath>dz\gear\containers\data</hologramMaterialPath>
+    <projectionTypename>ImprovisedExplosivePlacing</projectionTypename>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\ied_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\explosives\data\ied.rvmat</item></hiddenSelectionsMaterials>
+    <attachments type="array">
+      <item>TriggerAlarmClock</item>
+      <item>TriggerKitchenTimer</item>
+      <item>TriggerRemoteDetonator_Receiver</item>
+      <item>IEDExplosiveA</item>
+      <item>IEDExplosiveB</item>
+    </attachments>
+    <AnimationSources>
+      <TriggerEmpty>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>0</initPhase>
+      </TriggerEmpty>
+      <TriggerTimer>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>1</initPhase>
+      </TriggerTimer>
+      <TriggerClock>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>1</initPhase>
+      </TriggerClock>
+      <TriggerRemote>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>1</initPhase>
+      </TriggerRemote>
+      <Inventory>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>0</initPhase>
+      </Inventory>
+      <Placing>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>0</initPhase>
+      </Placing>
+    </AnimationSources>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>50</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\explosives\data\ied.rvmat</item><item>DZ\gear\containers\data\Protector_Case.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\explosives\data\ied.rvmat</item><item>DZ\gear\containers\data\Protector_Case.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\explosives\data\ied_damage.rvmat</item><item>DZ\gear\containers\data\Protector_Case_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\explosives\data\ied_damage.rvmat</item><item>DZ\gear\containers\data\Protector_Case_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\explosives\data\ied_destruct.rvmat</item><item>DZ\gear\containers\data\Protector_Case_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </ImprovisedExplosive>
+  <ImprovisedExplosivePlacing base="ImprovisedExplosive">
+    <model>
+      \DZ\weapons\explosives\ImprovisedExplosivePlacing.p3d
+    </model>
+    <hiddenSelections type="array"><item>placing</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\gear\containers\data\loot_protectorcase_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\gear\containers\data\protector_case.rvmat</item></hiddenSelectionsMaterials>
+    <AnimationSources>
+      <Placing>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>0</initPhase>
+      </Placing>
+    </AnimationSources>
+  </ImprovisedExplosivePlacing>
+</CfgVehicles>
+<CfgNonAIVehicles>
+  <ProxyAttachment>
+  </ProxyAttachment>
+  <Proxyfrag_RGD5 base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>tripWireAttachment</inventorySlot>
+    <model>\dz\weapons\explosives\frag_RGD5.p3d</model>
+  </Proxyfrag_RGD5>
+  <Proxygrenade base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>tripWireAttachment</inventorySlot>
+    <model>\dz\weapons\explosives\grenade.p3d</model>
+  </Proxygrenade>
+  <Proxysmokegrenade base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>tripWireAttachment</inventorySlot>
+    <model>\dz\weapons\explosives\smokegrenade.p3d</model>
+  </Proxysmokegrenade>
+  <Proxysmokegrenade_rdg2 base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>tripWireAttachment</inventorySlot>
+    <model>
+      \dz\weapons\explosives\smokegrenade_rdg2.p3d
+    </model>
+  </Proxysmokegrenade_rdg2>
+  <Proxyflashbang base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>tripWireAttachment</inventorySlot>
+    <model>\dz\weapons\explosives\flashbang.p3d</model>
+  </Proxyflashbang>
+</CfgNonAIVehicles>

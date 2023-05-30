@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Pistols_mkii>
+    <units type="array"><item>mkii</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Pistols</item></requiredAddons>
+  </DZ_Pistols_mkii>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoPistol>
+</OpticsInfoPistol>
+<cfgWeapons>
+  <Pistol_Base>
+  </Pistol_Base>
+  <MKII_Base base="Pistol_Base">
+    <scope>0</scope>
+    <weight>1300</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>10</item>
+      <item>280</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.560518</WeaponLength>
+    <barrelArmor>3.205</barrelArmor>
+    <initSpeedMultiplier>0.85</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <magazines type="array"><item>Mag_MKII_10Rnd</item></magazines>
+    <chamberableFrom type="array"><item>Ammo_22</item></chamberableFrom>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>1</item><item>1</item><item>0.7</item></swayModifier>
+    <NoiseShoot>
+      <strength>5</strength>
+      <type>sound</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>AmphibianS_Shot_SoundSet</item><item>AmphibianS_Tail_SoundSet</item><item>AmphibianS_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>AmphibianS_silencerHomeMade_SoundSet</item><item>AmphibianS_silencerHomeMadeTail_SoundSet</item><item>AmphibianS_InteriorTail_SoundSet</item></item></soundSetShotExt>
+      <envShootingDecrease>0.05</envShootingDecrease>
+      <envShootingDecreaseExt type="array"><item>0.05</item><item>0.05</item></envShootingDecreaseExt>
+      <reloadTime>0.13</reloadTime>
+      <recoil>recoil_mkii</recoil>
+      <recoilProne>recoil_mkii_prone</recoilProne>
+      <dispersion>0.006</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <OpticsInfo base="OpticsInfoPistol">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <discreteDistance type="array"><item>25</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>100</distanceZoomMin>
+      <distanceZoomMax>100</distanceZoomMax>
+    </OpticsInfo>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\RugerMK2\w_MK2_states.anm
+    </weaponStateAnim>
+  </MKII_Base>
+  <MKII base="MKII_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgWeapons_MKII0</displayName>
+    <descriptionShort>STR_cfgWeapons_MKII1</descriptionShort>
+    <model>\dz\weapons\pistols\mkii\rugerMKII.p3d</model>
+    <attachments type="array"></attachments>
+    <itemSize type="array"><item>4</item><item>2</item></itemSize>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>120</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\mkii\data\ruger_metal_1.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\mkii\data\ruger_metal_1.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\mkii\data\ruger_metal_1_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\mkii\data\ruger_metal_1_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\mkii\data\ruger_metal_1_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Particles>
+      <OnFire>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_fnx_02</overrideParticle>
+        </MuzzleFlash>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke_small</overrideParticle>
+        </SmokeCloud>
+      </OnFire>
+      <OnOverheating>
+        <shotsToStartOverheating>5</shotsToStartOverheating>
+        <maxOverheatingValue>15</maxOverheatingValue>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+  </MKII>
+</cfgWeapons>
+<CfgNonAIVehicles>
+  <ProxyAttachment>
+  </ProxyAttachment>
+  <Proxymkii base="ProxyAttachment">
+    <scope>2</scope>
+    <inventorySlot>pistol</inventorySlot>
+    <model>\dz\weapons\pistols\mkii\rugerMKII.p3d</model>
+  </Proxymkii>
+</CfgNonAIVehicles>

@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Ammunition>
+    <units type="array"></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Weapons_Magazines</item></requiredAddons>
+  </DZ_Weapons_Ammunition>
+</CfgPatches>
+<CfgMagazines>
+  <Magazine_Base>
+  </Magazine_Base>
+  <Ammunition_Base base="Magazine_Base">
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>2</rotationFlags>
+    <itemSize type="array"><item>1</item><item>1</item></itemSize>
+    <iconCartridge>0</iconCartridge>
+    <iconType>0</iconType>
+    <repairableWithKits type="array"></repairableWithKits>
+    <ammo></ammo>
+    <spawnDamageRange type="array"><item>0</item><item>0.6</item></spawnDamageRange>
+    <particleStrIdentifier></particleStrIdentifier>
+    <particleLifeTime>0</particleLifeTime>
+    <destroyOnEmpty>1</destroyOnEmpty>
+    <varQuantityDestroyOnMin>1</varQuantityDestroyOnMin>
+    <canBeSplit>1</canBeSplit>
+    <simpleHeap>1</simpleHeap>
+    <soundUse>craft_rounds</soundUse>
+    <emptySound>craft_rounds</emptySound>
+  </Ammunition_Base>
+  <Ammo_45ACP base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_45ACP0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_45ACP1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\45acp_LooseRounds.p3d
+    </model>
+    <iconCartridge>1</iconCartridge>
+    <weight>12</weight>
+    <count>25</count>
+    <ammo>Bullet_45ACP</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_loose.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_loose.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_loose_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_loose_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_loose_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_45ACP>
+  <Ammo_308Win base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_308Win0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_308Win1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\308Win_LooseRounds.p3d
+    </model>
+    <iconCartridge>3</iconCartridge>
+    <weight>10</weight>
+    <count>20</count>
+    <ammo>Bullet_308Win</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\308_loose.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\308_loose.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\308_loose_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\308_loose_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\308_loose_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_308Win>
+  <Ammo_308WinTracer base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_308WinTracer0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_308WinTracer1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\308Win_LooseRounds.p3d
+    </model>
+    <iconCartridge>3</iconCartridge>
+    <iconType>1</iconType>
+    <weight>9</weight>
+    <count>20</count>
+    <ammo>Bullet_308WinTracer</ammo>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\ammunition\Data\308_loose_tracer_co.paa</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\308_loose.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\308_loose.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\308_loose_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\308_loose_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\308_loose_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_308WinTracer>
+  <Ammo_9x19 base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_9x190</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_9x191</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\9mm_LooseRounds.p3d
+    </model>
+    <iconCartridge>1</iconCartridge>
+    <weight>8</weight>
+    <count>25</count>
+    <ammo>Bullet_9x19</ammo>
+    <muzzleFlashParticle>weapon_shot_mp5k_01</muzzleFlashParticle>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\9mm.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\9mm.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\9mm_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\9mm_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\9mm_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_9x19>
+  <Ammo_380 base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_3800</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_3801</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\380auto_LooseRounds.p3d
+    </model>
+    <iconCartridge>1</iconCartridge>
+    <weight>6</weight>
+    <count>35</count>
+    <ammo>Bullet_380</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>dz\weapons\ammunition\data\380_ammo.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>dz\weapons\ammunition\data\380_ammo.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>dz\weapons\ammunition\data\380_ammo_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>dz\weapons\ammunition\data\380_ammo_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>dz\weapons\ammunition\data\380_ammo_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_380>
+  <Ammo_556x45 base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_556x450</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_556x451</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\556_LooseRounds.p3d
+    </model>
+    <iconCartridge>2</iconCartridge>
+    <weight>4</weight>
+    <count>20</count>
+    <ammo>Bullet_556x45</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\556_LooseRounds5.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\556_LooseRounds5.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\556_LooseRounds5_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\556_LooseRounds5_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\556_LooseRounds5_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_556x45>
+  <Ammo_556x45Tracer base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_556x45Tracer0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_556x45Tracer1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\556_LooseRounds.p3d
+    </model>
+    <iconCartridge>2</iconCartridge>
+    <iconType>1</iconType>
+    <weight>4</weight>
+    <count>20</count>
+    <ammo>Bullet_556x45Tracer</ammo>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\ammunition\Data\556_loose_tracer_co.paa</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\556_LooseRounds5.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\556_LooseRounds5.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\556_LooseRounds5_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\556_LooseRounds5_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\556_LooseRounds5_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_556x45Tracer>
+  <Ammo_762x54 base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_762x540</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_762x541</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\762_LooseRounds.p3d
+    </model>
+    <iconCartridge>3</iconCartridge>
+    <weight>9</weight>
+    <count>20</count>
+    <ammo>Bullet_762x54</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\attachments\data\mosinclip.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\attachments\data\mosinclip.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\attachments\data\mosinclip_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\attachments\data\mosinclip_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\attachments\data\mosinclip_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_762x54>
+  <Ammo_762x54Tracer base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_762x54Tracer0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_762x54Tracer1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\762_LooseRounds.p3d
+    </model>
+    <iconCartridge>3</iconCartridge>
+    <iconType>1</iconType>
+    <weight>9</weight>
+    <count>20</count>
+    <ammo>Bullet_762x54Tracer</ammo>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\attachments\data\mosinclip_tracer_co.paa</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\attachments\data\mosinclip.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\attachments\data\mosinclip.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\attachments\data\mosinclip_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\attachments\data\mosinclip_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\attachments\data\mosinclip_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_762x54Tracer>
+  <Ammo_762x39 base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_762x390</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_762x391</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\762x39_LooseRounds.p3d
+    </model>
+    <iconCartridge>2</iconCartridge>
+    <weight>8</weight>
+    <count>20</count>
+    <ammo>Bullet_762x39</ammo>
+    <muzzleFlashParticle>weapon_shot_izh18_01</muzzleFlashParticle>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\762x39.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\762x39.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_762x39>
+  <Ammo_762x39Tracer base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_762x39Tracer0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_762x39Tracer1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\762x39_LooseRounds.p3d
+    </model>
+    <iconCartridge>2</iconCartridge>
+    <iconType>1</iconType>
+    <weight>8</weight>
+    <count>20</count>
+    <ammo>Bullet_762x39Tracer</ammo>
+    <muzzleFlashParticle>weapon_shot_izh18_01</muzzleFlashParticle>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\ammunition\data\762x39_tracer_co.paa</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\762x39.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\762x39.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_762x39Tracer>
+  <Ammo_9x39AP base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_cfgmagazines_ammo_9x39AP0</displayName>
+    <descriptionShort>STR_cfgmagazines_ammo_9x39AP1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\9x39_LooseRounds.p3d
+    </model>
+    <iconCartridge>2</iconCartridge>
+    <iconType>2</iconType>
+    <weight>16</weight>
+    <count>20</count>
+    <ammo>Bullet_9x39AP</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\attachments\magazine\data\vss_mag.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\attachments\magazine\data\vss_mag.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\attachments\magazine\data\vss_mag_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\attachments\magazine\data\vss_mag_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\attachments\magazine\data\vss_mag_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_9x39AP>
+  <Ammo_9x39 base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_9x390</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_9x391</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\9x39_LooseRounds.p3d
+    </model>
+    <iconCartridge>2</iconCartridge>
+    <weight>17</weight>
+    <count>20</count>
+    <ammo>Bullet_9x39</ammo>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\attachments\magazine\data\vss_mag_variant_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\attachments\magazine\data\vss_mag_variant.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>dz\weapons\attachments\magazine\data\vss_mag.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>dz\weapons\attachments\magazine\data\vss_mag_variant.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>dz\weapons\attachments\magazine\data\vss_mag_variant_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>dz\weapons\attachments\magazine\data\vss_mag_variant_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>dz\weapons\attachments\magazine\data\vss_mag_variant_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_9x39>
+  <Ammo_22 base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_220</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_221</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\22_LooseRounds.p3d
+    </model>
+    <iconCartridge>1</iconCartridge>
+    <weight>3</weight>
+    <count>50</count>
+    <ammo>Bullet_22</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\22lr.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\22lr.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\22lr_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\22lr_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\22lr_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_22>
+  <Ammo_12gaPellets base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_12gaPellets0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_12gaPellets1</descriptionShort>
+    <model>\dz\weapons\ammunition\12ga_00buck.p3d</model>
+    <iconCartridge>4</iconCartridge>
+    <weight>35</weight>
+    <count>10</count>
+    <ammo>Bullet_12GaugePellets</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_12gaPellets>
+  <Ammo_12gaSlug base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_12gaSlug0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_12gaSlug1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\12ga_rifled_slug.p3d
+    </model>
+    <iconCartridge>4</iconCartridge>
+    <weight>35</weight>
+    <count>10</count>
+    <ammo>Bullet_12GaugeSlug</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_12gaSlug>
+  <Ammo_12gaRubberSlug base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_12gaRubberSlug0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_12gaRubberSlug1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\12ga_RubberRifled_slug.p3d
+    </model>
+    <iconCartridge>4</iconCartridge>
+    <weight>8</weight>
+    <count>10</count>
+    <ammo>Bullet_12GaugeRubberSlug</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\12ga_lessleathalround.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\12ga_lessleathalround.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\12ga_lessleathalround_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\12ga_lessleathalround_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\12ga_lessleathalround_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_12gaRubberSlug>
+  <Ammo_12gaBeanbag base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>TODO</displayName>
+    <descriptionShort>TODO</descriptionShort>
+    <model>\dz\weapons\ammunition\12ga_beanbag.p3d</model>
+    <iconCartridge>4</iconCartridge>
+    <weight>8</weight>
+    <count>10</count>
+    <ammo>Bullet_12GaugeBeanbag</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\rem870_ammo_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_12gaBeanbag>
+  <Ammo_357 base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_3570</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_3571</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\357_looseRounds.p3d
+    </model>
+    <iconCartridge>1</iconCartridge>
+    <weight>8</weight>
+    <count>20</count>
+    <ammo>Bullet_357</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\357mag_loose.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\357mag_loose.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\357mag_loose_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\357mag_loose_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\357mag_loose_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_357>
+  <Ammo_545x39 base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_545x390</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_545x391</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\545x39_LooseRounds.p3d
+    </model>
+    <iconCartridge>2</iconCartridge>
+    <weight>4</weight>
+    <count>20</count>
+    <ammo>Bullet_545x39</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\545x39.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\545x39.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\545x39_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\545x39_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\545x39_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_545x39>
+  <Ammo_545x39Tracer base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_545x39Tracer0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_545x39Tracer1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\545x39_LooseRounds.p3d
+    </model>
+    <iconCartridge>2</iconCartridge>
+    <iconType>1</iconType>
+    <weight>4</weight>
+    <count>20</count>
+    <ammo>Bullet_545x39Tracer</ammo>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\ammunition\data\545x39_tracer_co.paa</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\545x39.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\545x39.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\545x39_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\545x39_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\545x39_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_545x39Tracer>
+  <Ammo_HuntingBolt base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_HuntingBolt0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_HuntingBolt1</descriptionShort>
+    <model>\dz\weapons\projectiles\bolt_biggame.p3d</model>
+    <rotationFlags>34</rotationFlags>
+    <weight>35</weight>
+    <itemSize type="array"><item>4</item><item>1</item></itemSize>
+    <count>5</count>
+    <ammo>Bullet_HuntingBolt</ammo>
+    <emptySound>empty_arrows</emptySound>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>120</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_biggame.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_biggame.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_biggame_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_biggame_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_biggame_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_HuntingBolt>
+  <Ammo_ImprovisedBolt_1 base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_ImprovisedBolt0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_ImprovisedBolt1</descriptionShort>
+    <model>\dz\weapons\projectiles\bolt_crude.p3d</model>
+    <rotationFlags>34</rotationFlags>
+    <weight>35</weight>
+    <itemSize type="array"><item>4</item><item>1</item></itemSize>
+    <count>5</count>
+    <ammo>Bullet_ImprovisedBolt_1</ammo>
+    <emptySound>empty_arrows</emptySound>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>65</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_crude.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_crude.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_crude_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_crude_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_crude_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_ImprovisedBolt_1>
+  <Ammo_ImprovisedBolt_2 base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_ImprovisedBolt0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_ImprovisedBolt1</descriptionShort>
+    <model>\dz\weapons\projectiles\bolt_crafted.p3d</model>
+    <rotationFlags>34</rotationFlags>
+    <weight>45</weight>
+    <itemSize type="array"><item>4</item><item>1</item></itemSize>
+    <count>5</count>
+    <ammo>Bullet_ImprovisedBolt_2</ammo>
+    <emptySound>empty_arrows</emptySound>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>85</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_crafted.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_crafted.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_crafted_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_crafted_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\projectiles\data\bolt_crafted_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_ImprovisedBolt_2>
+  <Ammo_Flare base="Ammunition_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgMagazines_Ammo_Flare0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_Flare1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\Flare_SingleRound.p3d
+    </model>
+    <rotationFlags>34</rotationFlags>
+    <weight>80</weight>
+    <count>5</count>
+    <ammo>Bullet_Flare</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_yellow.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_yellow.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_yellow_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_yellow_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_yellow_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_Flare>
+  <Ammo_FlareRed base="Ammo_Flare">
+    <model>
+      \dz\weapons\ammunition\Flare_SingleRound_Red.p3d
+    </model>
+    <ammo>Bullet_FlareRed</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_FlareRed>
+  <Ammo_FlareGreen base="Ammo_Flare">
+    <model>
+      \dz\weapons\ammunition\Flare_SingleRound_Green.p3d
+    </model>
+    <ammo>Bullet_FlareGreen</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_green.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_green.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_green_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_green_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_green_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_FlareGreen>
+  <Ammo_FlareBlue base="Ammo_Flare">
+    <model>
+      \dz\weapons\ammunition\Flare_SingleRound_Blue.p3d
+    </model>
+    <ammo>Bullet_FlareBlue</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_blue.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_blue.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_blue_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_blue_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\pistols\flaregun\data\flaregun_blue_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_FlareBlue>
+  <Ammo_RPG7_HE base="Ammunition_Base">
+    <scope>2</scope>
+    <itemSize type="array"><item>2</item><item>1</item></itemSize>
+    <displayName>STR_CfgMagazines_Ammo_RPG7_HE0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_RPG7_HE1</descriptionShort>
+    <model>\dz\weapons\ammunition\rocket_rpg7.p3d</model>
+    <rotationFlags>34</rotationFlags>
+    <weight>2200</weight>
+    <count>1</count>
+    <ammo>Rocket_RPG7_HE</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\rocket_rpg7.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\rocket_rpg7.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\rocket_rpg7_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\rocket_rpg7_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\rocket_rpg7_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_RPG7_HE>
+  <Ammo_RPG7_AP base="Ammunition_Base">
+    <scope>2</scope>
+    <itemSize type="array"><item>2</item><item>1</item></itemSize>
+    <displayName>STR_CfgMagazines_Ammo_RPG7_AP0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_RPG7_AP1</descriptionShort>
+    <model>\dz\weapons\ammunition\rocket_rpg7.p3d</model>
+    <rotationFlags>34</rotationFlags>
+    <weight>2200</weight>
+    <count>1</count>
+    <ammo>Rocket_RPG7_AP</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\rocket_rpg7.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\rocket_rpg7.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\rocket_rpg7_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\rocket_rpg7_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\rocket_rpg7_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_RPG7_AP>
+  <Ammo_LAW_HE base="Ammunition_Base">
+    <scope>2</scope>
+    <itemSize type="array"><item>2</item><item>1</item></itemSize>
+    <displayName>STR_CfgMagazines_Ammo_LAW_HE0</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_LAW_HE1</descriptionShort>
+    <model>\dz\weapons\launchers\law\law_rocket.p3d</model>
+    <rotationFlags>34</rotationFlags>
+    <weight>1800</weight>
+    <count>1</count>
+    <ammo>Rocket_LAW_HE</ammo>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\launchers\law\data\law_rocket.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\launchers\law\data\law_rocket.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\launchers\law\data\law_rocket_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\launchers\law\data\law_rocket_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\launchers\law\data\law_rocket_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_LAW_HE>
+  <Ammo_GrenadeM4 base="Ammunition_Base">
+    <scope>2</scope>
+    <itemSize type="array"><item>2</item><item>1</item></itemSize>
+    <displayName>STR_CfgMagazines_Ammo_GrenadeM40</displayName>
+    <descriptionShort>STR_CfgMagazines_Ammo_GrenadeM41</descriptionShort>
+    <model>\dz\weapons\explosives\grenade.p3d</model>
+    <weight>397</weight>
+    <count>1</count>
+    <ammo>GrenadeM4</ammo>
+    <fuseDelay>5</fuseDelay>
+    <timeToLive>0</timeToLive>
+    <hiddenSelections type="array"><item>camo</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\explosives\data\grenade_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\explosives\data\grenade.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\explosives\data\grenade.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\explosives\data\grenade.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\explosives\data\grenade_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\explosives\data\grenade_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\explosives\data\grenade_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_GrenadeM4>
+  <Ammo_40mm_Base base="Ammunition_Base">
+    <scope>0</scope>
+    <displayName>STR_Ammo_40mm_Explosive0</displayName>
+    <descriptionShort>STR_Ammo_40mm_Explosive1</descriptionShort>
+    <model>\dz\weapons\ammunition\40mm_grenade.p3d</model>
+    <iconCartridge>4</iconCartridge>
+    <itemSize type="array"><item>2</item><item>1</item></itemSize>
+    <weight>230</weight>
+    <count>1</count>
+    <ammo>Bullet_40mm_Base</ammo>
+    <inventorySlot type="array">
+      <item>IEDExplosiveA</item>
+      <item>IEDExplosiveB</item>
+      <item>VestGrenadeA</item>
+      <item>VestGrenadeB</item>
+      <item>VestGrenadeC</item>
+      <item>VestGrenadeD</item>
+    </inventorySlot>
+    <muzzleFlashParticle>weapon_shot_izh18_01</muzzleFlashParticle>
+    <AnimationSources>
+      <Visibility>
+        <source>user</source>
+        <animPeriod>0.01</animPeriod>
+        <initPhase>0</initPhase>
+      </Visibility>
+    </AnimationSources>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>50</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\40mm_grenade.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\40mm_grenade.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\40mm_grenade_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\40mm_grenade_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\40mm_grenade_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </Ammo_40mm_Base>
+  <Ammo_40mm_Explosive base="Ammo_40mm_Base">
+    <scope>2</scope>
+    <displayName>STR_Ammo_40mm_Explosive0</displayName>
+    <descriptionShort>STR_Ammo_40mm_Explosive1</descriptionShort>
+    <model>\dz\weapons\ammunition\40mm_grenade.p3d</model>
+    <ammo>Bullet_40mm_Explosive</ammo>
+  </Ammo_40mm_Explosive>
+  <Ammo_40mm_ChemGas base="Ammo_40mm_Base">
+    <scope>2</scope>
+    <displayName>STR_Ammo_40mm_ChemGas0</displayName>
+    <descriptionShort>STR_Ammo_40mm_ChemGas1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\40mm_grenade_ChemGas.p3d
+    </model>
+    <ammo>Bullet_40mm_ChemGas</ammo>
+  </Ammo_40mm_ChemGas>
+  <Ammo_40mm_Smoke_ColorBase base="Ammo_40mm_Base">
+    <displayName>STR_Ammo_40mm_Smoke0</displayName>
+    <descriptionShort>STR_Ammo_40mm_Smoke1</descriptionShort>
+    <particleLifeTime>60</particleLifeTime>
+  </Ammo_40mm_Smoke_ColorBase>
+  <Ammo_40mm_Smoke_Red base="Ammo_40mm_Smoke_ColorBase">
+    <scope>2</scope>
+    <model>
+      \dz\weapons\ammunition\40mm_grenade_smoke_r.p3d
+    </model>
+    <particleStrIdentifier>smoke_M18_red_02</particleStrIdentifier>
+    <ammo>Bullet_40mm_Smoke_Red</ammo>
+  </Ammo_40mm_Smoke_Red>
+  <Ammo_40mm_Smoke_Green base="Ammo_40mm_Smoke_ColorBase">
+    <scope>2</scope>
+    <model>
+      \dz\weapons\ammunition\40mm_grenade_smoke_g.p3d
+    </model>
+    <particleStrIdentifier>smoke_M18_green_02</particleStrIdentifier>
+    <ammo>Bullet_40mm_Smoke_Green</ammo>
+  </Ammo_40mm_Smoke_Green>
+  <Ammo_40mm_Smoke_White base="Ammo_40mm_Smoke_ColorBase">
+    <scope>2</scope>
+    <model>
+      \dz\weapons\ammunition\40mm_grenade_smoke_w.p3d
+    </model>
+    <particleStrIdentifier>smoke_M18_white_02</particleStrIdentifier>
+    <ammo>Bullet_40mm_Smoke_White</ammo>
+  </Ammo_40mm_Smoke_White>
+  <Ammo_40mm_Smoke_Black base="Ammo_40mm_Smoke_ColorBase">
+    <scope>2</scope>
+    <model>
+      \dz\weapons\ammunition\40mm_grenade_smoke_b.p3d
+    </model>
+    <particleStrIdentifier>smoke_M18_black_02</particleStrIdentifier>
+    <ammo>Bullet_40mm_Smoke_Black</ammo>
+  </Ammo_40mm_Smoke_Black>
+</CfgMagazines>
+<CfgVehicles>
+  <Box_Base>
+  </Box_Base>
+  <AmmoBox_556x45_20Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_AmmoBox_556x45_20Rnd0</displayName>
+    <descriptionShort>STR_CfgVehicles_AmmoBox_556x45_20Rnd1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\556_20RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <weight>85</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\556_20RoundBox.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\556_20RoundBox.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\556_20RoundBox_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\556_20RoundBox_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\556_20RoundBox_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_556x45>
+        <value>20</value>
+        <variable>quantity</variable>
+      </Ammo_556x45>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_556x45_20Rnd>
+  <AmmoBox_556x45Tracer_20Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>
+      STR_CfgVehicles_AmmoBox_556x45Tracer_20Rnd0
+    </displayName>
+    <descriptionShort>
+      STR_CfgVehicles_AmmoBox_556x45Tracer_20Rnd1
+    </descriptionShort>
+    <model>
+      \dz\weapons\ammunition\556_20RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <iconType>1</iconType>
+    <rotationFlags>17</rotationFlags>
+    <weight>85</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\556_20RoundBox.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\556_20RoundBox.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\556_20RoundBox_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\556_20RoundBox_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\556_20RoundBox_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_556x45Tracer>
+        <value>20</value>
+        <variable>quantity</variable>
+      </Ammo_556x45Tracer>
+    </Resources>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\ammunition\data\556_20RoundBox_tracer_CO.paa</item></hiddenSelectionsTextures>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_556x45Tracer_20Rnd>
+  <AmmoBox_308Win_20Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_AmmoBox_308Win_20Rnd0</displayName>
+    <descriptionShort>STR_CfgVehicles_AmmoBox_308Win_20Rnd1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\308Win_20RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <weight>205</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\762_box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\762_box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\762_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\762_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\762_box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_308Win>
+        <value>20</value>
+        <variable>quantity</variable>
+      </Ammo_308Win>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_308Win_20Rnd>
+  <AmmoBox_308WinTracer_20Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>
+      STR_CfgVehicles_AmmoBox_308WinTracer_20Rnd0
+    </displayName>
+    <descriptionShort>
+      STR_CfgVehicles_AmmoBox_308WinTracer_20Rnd1
+    </descriptionShort>
+    <model>
+      \dz\weapons\ammunition\308Win_20RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <iconType>1</iconType>
+    <rotationFlags>17</rotationFlags>
+    <weight>185</weight>
+    <Resources>
+      <Ammo_308WinTracer>
+        <value>20</value>
+        <variable>quantity</variable>
+      </Ammo_308WinTracer>
+    </Resources>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\ammunition\data\308Win_box_tracer_co.paa</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\762_box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\762_box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\762_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\762_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\762_box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_308WinTracer_20Rnd>
+  <AmmoBox_762x54_20Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_AmmoBox_762x54_20Rnd0</displayName>
+    <descriptionShort>STR_CfgVehicles_AmmoBox_762x54_20Rnd1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\762_20RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <weight>185</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\762_box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\762_box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\762_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\762_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\762_box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_762x54>
+        <value>20</value>
+        <variable>quantity</variable>
+      </Ammo_762x54>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_762x54_20Rnd>
+  <AmmoBox_762x54Tracer_20Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>
+      STR_CfgVehicles_AmmoBox_762x54Tracer_20Rnd0
+    </displayName>
+    <descriptionShort>
+      STR_CfgVehicles_AmmoBox_762x54Tracer_20Rnd1
+    </descriptionShort>
+    <model>
+      \dz\weapons\ammunition\762_20RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <iconType>1</iconType>
+    <rotationFlags>17</rotationFlags>
+    <weight>185</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\762_box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\762_box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\762_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\762_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\762_box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_762x54Tracer>
+        <value>20</value>
+        <variable>quantity</variable>
+      </Ammo_762x54Tracer>
+    </Resources>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\ammunition\data\762_box_tracer_co.paa</item></hiddenSelectionsTextures>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_762x54Tracer_20Rnd>
+  <AmmoBox_762x39_20Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_AmmoBox_762x39_20Rnd0</displayName>
+    <descriptionShort>STR_CfgVehicles_AmmoBox_762x39_20Rnd1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\762x39_20RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <weight>165</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_762x39>
+        <value>20</value>
+        <variable>quantity</variable>
+      </Ammo_762x39>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_762x39_20Rnd>
+  <AmmoBox_762x39Tracer_20Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>
+      STR_CfgVehicles_AmmoBox_762x39Tracer_20Rnd0
+    </displayName>
+    <descriptionShort>
+      STR_CfgVehicles_AmmoBox_762x39Tracer_20Rnd1
+    </descriptionShort>
+    <model>
+      \dz\weapons\ammunition\762x39_20RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <iconType>1</iconType>
+    <rotationFlags>17</rotationFlags>
+    <weight>165</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_762x39Tracer>
+        <value>20</value>
+        <variable>quantity</variable>
+      </Ammo_762x39Tracer>
+    </Resources>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\ammunition\data\762x39_box_tracer_co.paa</item></hiddenSelectionsTextures>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_762x39Tracer_20Rnd>
+  <AmmoBox_22_50Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_AmmoBox_22_50Rnd0</displayName>
+    <descriptionShort>STR_CfgVehicles_AmmoBox_22_50Rnd1</descriptionShort>
+    <model>\dz\weapons\ammunition\22_50RoundBox.p3d</model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>12</rotationFlags>
+    <weight>155</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\22LR_50RoundBox.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\22LR_50RoundBox.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\22LR_50RoundBox_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\22LR_50RoundBox_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\22LR_50RoundBox_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_22>
+        <value>50</value>
+        <variable>quantity</variable>
+      </Ammo_22>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_22_50Rnd>
+  <AmmoBox_357_20Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_AmmoBox_357_20Rnd0</displayName>
+    <descriptionShort>STR_CfgVehicles_AmmoBox_357_20Rnd1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\357_20RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <weight>165</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\357box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\357box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\357box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\357box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\357box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_357>
+        <value>20</value>
+        <variable>quantity</variable>
+      </Ammo_357>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_357_20Rnd>
+  <AmmoBox_45ACP_25rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_AmmoBox_45ACP_25rnd0</displayName>
+    <descriptionShort>STR_CfgVehicles_AmmoBox_45ACP_25rnd1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\45acp_25rnd_box.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <weight>305</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_45ACP>
+        <value>25</value>
+        <variable>quantity</variable>
+      </Ammo_45ACP>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_45ACP_25rnd>
+  <AmmoBox_9x19_25rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_AmmoBox_9x19_25rnd0</displayName>
+    <descriptionShort>STR_CfgVehicles_AmmoBox_9x19_25rnd1</descriptionShort>
+    <model>\dz\weapons\ammunition\9mm_25rnd_box.p3d</model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <weight>205</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\9mm_25roundbox.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\9mm_25roundbox.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\9mm_25roundbox_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\9mm_25roundbox_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\9mm_25roundbox_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_9x19>
+        <value>25</value>
+        <variable>quantity</variable>
+      </Ammo_9x19>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_9x19_25rnd>
+  <AmmoBox_380_35rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_AmmoBox_380_35rnd0</displayName>
+    <descriptionShort>STR_CfgVehicles_AmmoBox_380_35rnd1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\380auto_35RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <weight>215</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\45cal_box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_380>
+        <value>35</value>
+        <variable>quantity</variable>
+      </Ammo_380>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_380_35rnd>
+  <AmmoBox_00buck_10rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_AmmoBox_00buck_10rnd0</displayName>
+    <descriptionShort>STR_CfgVehicles_AmmoBox_00buck_10rnd1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\00Buck_10RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <weight>355</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_12gaPellets>
+        <value>10</value>
+        <variable>quantity</variable>
+      </Ammo_12gaPellets>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_00buck_10rnd>
+  <AmmoBox_12gaSlug_10Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_AmmoBox_12gaSlug_10Rnd0</displayName>
+    <descriptionShort>STR_CfgVehicles_AmmoBox_12gaSlug_10Rnd1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\00Buck_10RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <weight>355</weight>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\ammunition\data\12ga_rifledSlug_10RoundBox_co.paa</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_12gaSlug>
+        <value>10</value>
+        <variable>quantity</variable>
+      </Ammo_12gaSlug>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_12gaSlug_10Rnd>
+  <AmmoBox_12gaRubberSlug_10Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>
+      STR_CfgVehicles_AmmoBox_12gaRubberSlug_10Rnd0
+    </displayName>
+    <descriptionShort>
+      STR_CfgVehicles_AmmoBox_12gaRubberSlug_10Rnd1
+    </descriptionShort>
+    <model>
+      \dz\weapons\ammunition\00Buck_10RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <weight>85</weight>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\ammunition\data\12ga_rubberbaton_box.paa</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_12gaRubberSlug>
+        <value>10</value>
+        <variable>quantity</variable>
+      </Ammo_12gaRubberSlug>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_12gaRubberSlug_10Rnd>
+  <AmmoBox_12gaBeanbag_10Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>TODO</displayName>
+    <descriptionShort>TODO</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\00Buck_10RoundBox.p3d
+    </model>
+    <rotationFlags>17</rotationFlags>
+    <weight>85</weight>
+    <Selections type="array"><item>zbytek</item></Selections>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.35,0.36,0.28,1.0,CO)</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\00buck_box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_12gaBeanbag>
+        <value>10</value>
+        <variable>quantity</variable>
+      </Ammo_12gaBeanbag>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_12gaBeanbag_10Rnd>
+  <AmmoBox_545x39_20Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_AmmoBox_545x39_20Rnd0</displayName>
+    <descriptionShort>STR_CfgVehicles_AmmoBox_545x39_20Rnd1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\545x39_20RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <weight>85</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\545x39box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\545x39box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\545x39box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\545x39box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\545x39box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_545x39>
+        <value>20</value>
+        <variable>quantity</variable>
+      </Ammo_545x39>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_545x39_20Rnd>
+  <AmmoBox_545x39Tracer_20Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>
+      STR_CfgVehicles_AmmoBox_545x39Tracer_20Rnd0
+    </displayName>
+    <descriptionShort>
+      STR_CfgVehicles_AmmoBox_545x39Tracer_20Rnd1
+    </descriptionShort>
+    <model>
+      \dz\weapons\ammunition\545x39_20RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <iconType>1</iconType>
+    <rotationFlags>17</rotationFlags>
+    <weight>85</weight>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\ammunition\data\545x39box_tracer_co.paa</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\545x39box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\545x39box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\545x39box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\545x39box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\545x39box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_545x39Tracer>
+        <value>20</value>
+        <variable>quantity</variable>
+      </Ammo_545x39Tracer>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_545x39Tracer_20Rnd>
+  <AmmoBox_9x39AP_20Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_AmmoBox_9x39AP_20Rnd0</displayName>
+    <descriptionShort>STR_CfgVehicles_AmmoBox_9x39AP_20Rnd1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\9x39_20RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <iconType>2</iconType>
+    <rotationFlags>17</rotationFlags>
+    <weight>325</weight>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_9x39AP>
+        <value>20</value>
+        <variable>quantity</variable>
+      </Ammo_9x39AP>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_9x39AP_20Rnd>
+  <AmmoBox_9x39_20Rnd base="Box_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgVehicles_AmmoBox_9x39_20Rnd0</displayName>
+    <descriptionShort>STR_CfgVehicles_AmmoBox_9x39_20Rnd1</descriptionShort>
+    <model>
+      \dz\weapons\ammunition\9x39_20RoundBox.p3d
+    </model>
+    <debug_ItemCategory>5</debug_ItemCategory>
+    <rotationFlags>17</rotationFlags>
+    <weight>345</weight>
+    <hiddenSelections type="array"><item>zbytek</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\ammunition\data\9x39_box_variant_co.paa</item></hiddenSelectionsTextures>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>100</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\ammunition\data\762x39_box_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <Resources>
+      <Ammo_9x39>
+        <value>20</value>
+        <variable>quantity</variable>
+      </Ammo_9x39>
+    </Resources>
+    <AnimEvents>
+      <SoundWeapon>
+        <interact>
+          <soundset>ammoboxUnpack_SoundSet</soundset>
+          <id>70</id>
+        </interact>
+      </SoundWeapon>
+    </AnimEvents>
+  </AmmoBox_9x39_20Rnd>
+</CfgVehicles>

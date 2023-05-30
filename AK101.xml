@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_AK101>
+    <units type="array"><item>AK101</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_AK101>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<CfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <AK101_Base base="Rifle_Base">
+    <scope>0</scope>
+    <weight>3077</weight>
+    <absorbency>0</absorbency>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.5</item>
+      <item>50</item>
+      <item>160</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>0.56</WeaponLength>
+    <barrelArmor>1.806</barrelArmor>
+    <initSpeedMultiplier>0.9</initSpeedMultiplier>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_556x45</item><item>Ammo_556x45Tracer</item></chamberableFrom>
+    <magazines type="array"><item>Mag_AK101_30Rnd</item><item>Mag_AK101_30Rnd_Black</item><item>Mag_AK101_30Rnd_Green</item></magazines>
+    <magazineSwitchTime>0.2</magazineSwitchTime>
+    <ejectType>1</ejectType>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>2.2</item><item>2.2</item><item>1.2</item></swayModifier>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item><item>magazine</item></simpleHiddenSelections>
+    <hiddenSelections type="array"><item>camo</item><item>magazine</item></hiddenSelections>
+    <NoiseShoot>
+      <strength>82</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item><item>FullAuto</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>AK_Shot_SoundSet</item><item>AK_Tail_SoundSet</item><item>AK_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>AK_silencer_SoundSet</item><item>AK_silencerTail_SoundSet</item><item>AK_silencerInteriorTail_SoundSet</item></item><item type="array"><item>AK_silencerHomeMade_SoundSet</item><item>AK_silencerHomeMadeTail_SoundSet</item><item>AK_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.12</reloadTime>
+      <recoil>recoil_AK101</recoil>
+      <recoilProne>recoil_AK101_prone</recoilProne>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <FullAuto base="Mode_FullAuto">
+      <soundSetShot type="array"><item>AK_Shot_SoundSet</item><item>AK_Tail_SoundSet</item><item>AK_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>AK_silencer_SoundSet</item><item>AK_silencerTail_SoundSet</item><item>AK_silencerInteriorTail_SoundSet</item></item><item type="array"><item>AK_silencerHomeMade_SoundSet</item><item>AK_silencerHomeMadeTail_SoundSet</item><item>AK_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.098</reloadTime>
+      <recoil>recoil_AK101</recoil>
+      <recoilProne>recoil_AK101_prone</recoilProne>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </FullAuto>
+    <OpticsInfo base="OpticsInfoRifle">
+    </OpticsInfo>
+    <InventorySlotsOffsets>
+      <Shoulder>
+        <position type="array"><item>0</item><item>-0.015</item><item>-0.01</item></position>
+        <orientation type="array"><item>0</item><item>-20</item><item>0</item></orientation>
+      </Shoulder>
+      <Melee>
+        <position type="array"><item>0</item><item>0</item><item>0</item></position>
+        <orientation type="array"><item>0</item><item>10</item><item>0</item></orientation>
+      </Melee>
+    </InventorySlotsOffsets>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_ak101_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+          <positionOffset type="array"><item>-0.1</item><item>0</item><item>0</item></positionOffset>
+        </MuzzleFlash>
+        <ChamberSmokeBurst>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+          <overrideDirectionPoint>Nabojniceend</overrideDirectionPoint>
+        </ChamberSmokeBurst>
+      </OnFire>
+      <OnOverheating>
+        <maxOverheatingValue>60</maxOverheatingValue>
+        <shotsToStartOverheating>25</shotsToStartOverheating>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <SmokingBarrel1>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>0.5</item></onlyWithinOverheatLimits>
+          <positionOffset type="array"><item>0.1</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrel1>
+        <SmokingBarrelHot1>
+          <overrideParticle>smoking_barrel</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.5</item><item>0.8</item></onlyWithinOverheatLimits>
+          <positionOffset type="array"><item>0.1</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot1>
+        <SmokingBarrelHot3>
+          <overrideParticle>smoking_barrel_heavy</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.8</item><item>1</item></onlyWithinOverheatLimits>
+          <positionOffset type="array"><item>0.1</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot3>
+        <SmokingBarrelHotSteamSmall>
+          <overrideParticle>smoking_barrel_steam_small</overrideParticle>
+          <positionOffset type="array"><item>0.3</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0.2</item><item>0.5</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteamSmall>
+        <SmokingBarrelHotSteam>
+          <overrideParticle>smoking_barrel_steam</overrideParticle>
+          <positionOffset type="array"><item>0.3</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinRainLimits type="array"><item>0.5</item><item>1</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteam>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\AK101\w_AK101_states.anm
+    </weaponStateAnim>
+  </AK101_Base>
+  <AK101 base="AK101_Base">
+    <scope>2</scope>
+    <displayName>STR_CfgWeapons_AK1010</displayName>
+    <descriptionShort>STR_CfgWeapons_AK1011</descriptionShort>
+    <model>\dz\weapons\firearms\AK101\ak101.p3d</model>
+    <attachments type="array">
+      <item>weaponButtstockAK</item>
+      <item>WeaponHandguardAK</item>
+      <item>weaponWrap</item>
+      <item>weaponOpticsAK</item>
+      <item>weaponFlashlight</item>
+      <item>weaponMuzzleAK</item>
+      <item>weaponBayonetAK</item>
+    </attachments>
+    <itemSize type="array"><item>8</item><item>3</item></itemSize>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\AK101\data\ak101_co.paa</item><item>#(argb,8,8,3)color(0.15,0.15,0.15,1.0,CO)</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\AK101\data\ak101.rvmat</item><item>DZ\weapons\attachments\magazine\data\magazine_ak74.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>300</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\AK101\Data\ak101.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\AK101\Data\ak101.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\AK101\Data\ak101_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\AK101\Data\ak101_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\AK101\Data\ak101_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+  </AK101>
+  <AK101_Black base="AK101">
+    <scope>2</scope>
+    <color>Black</color>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.12,0.12,0.12,1.0,CO)</item></hiddenSelectionsTextures>
+  </AK101_Black>
+  <AK101_Green base="AK101">
+    <scope>2</scope>
+    <color>Green</color>
+    <hiddenSelectionsTextures type="array"><item>#(argb,8,8,3)color(0.35,0.36,0.28,1.0,CO)</item></hiddenSelectionsTextures>
+  </AK101_Green>
+</CfgWeapons>

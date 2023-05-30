@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- BIS Config File -->
+<CfgPatches>
+  <DZ_Weapons_Firearms_M16A2>
+    <units type="array"><item>M16A2</item></units>
+    <weapons type="array"></weapons>
+    <requiredVersion>0.1</requiredVersion>
+    <requiredAddons type="array"><item>DZ_Data</item><item>DZ_Weapons_Firearms</item></requiredAddons>
+  </DZ_Weapons_Firearms_M16A2>
+</CfgPatches>
+<Mode_Safe>
+</Mode_Safe>
+<Mode_SemiAuto>
+</Mode_SemiAuto>
+<Mode_Burst>
+</Mode_Burst>
+<Mode_FullAuto>
+</Mode_FullAuto>
+<OpticsInfoRifle>
+</OpticsInfoRifle>
+<cfgWeapons>
+  <Rifle_Base>
+  </Rifle_Base>
+  <Launcher_Base>
+  </Launcher_Base>
+  <M4A1_Base>
+  </M4A1_Base>
+  <M4A1>
+  </M4A1>
+  <M16A2_Base base="Rifle_Base">
+    <scope>0</scope>
+    <model>\dz\weapons\firearms\m16a2\m16a2.p3d</model>
+    <weight>2900</weight>
+    <itemSize type="array"><item>9</item><item>3</item></itemSize>
+    <repairableWithKits type="array"><item>1</item></repairableWithKits>
+    <repairCosts type="array"><item>25</item></repairCosts>
+    <PPDOFProperties type="array">
+      <item>1</item>
+      <item>0.6</item>
+      <item>50</item>
+      <item>180</item>
+      <item>4</item>
+      <item>10</item>
+    </PPDOFProperties>
+    <WeaponLength>1.03</WeaponLength>
+    <barrelArmor>2.5</barrelArmor>
+    <initSpeedMultiplier>1</initSpeedMultiplier>
+    <recoilModifier type="array"><item>1</item><item>1</item><item>1</item></recoilModifier>
+    <swayModifier type="array"><item>2.5</item><item>2.5</item><item>1.1</item></swayModifier>
+    <attachments type="array"><item>weaponWrap</item><item>weaponMuzzleM4</item><item>weaponBayonet</item></attachments>
+    <chamberSize>1</chamberSize>
+    <chamberedRound></chamberedRound>
+    <chamberableFrom type="array"><item>Ammo_556x45</item><item>Ammo_556x45Tracer</item></chamberableFrom>
+    <magazines type="array">
+      <item>Mag_STANAG_30Rnd</item>
+      <item>Mag_STANAGCoupled_30Rnd</item>
+      <item>Mag_STANAG_60Rnd</item>
+      <item>Mag_CMAG_10Rnd</item>
+      <item>Mag_CMAG_20Rnd</item>
+      <item>Mag_CMAG_30Rnd</item>
+      <item>Mag_CMAG_40Rnd</item>
+      <item>Mag_CMAG_10Rnd_Green</item>
+      <item>Mag_CMAG_20Rnd_Green</item>
+      <item>Mag_CMAG_30Rnd_Green</item>
+      <item>Mag_CMAG_40Rnd_Green</item>
+      <item>Mag_CMAG_10Rnd_Black</item>
+      <item>Mag_CMAG_20Rnd_Black</item>
+      <item>Mag_CMAG_30Rnd_Black</item>
+      <item>Mag_CMAG_40Rnd_Black</item>
+    </magazines>
+    <magazineSwitchTime>0.5</magazineSwitchTime>
+    <ejectType>1</ejectType>
+    <simpleHiddenSelections type="array"><item>hide_barrel</item></simpleHiddenSelections>
+    <hiddenSelections type="array"><item>camo1</item><item>camo2</item></hiddenSelections>
+    <hiddenSelectionsTextures type="array"><item>dz\weapons\firearms\m16a2\data\m16a2_a_co.paa</item><item>dz\weapons\firearms\m16a2\data\m16a2_b_co.paa</item></hiddenSelectionsTextures>
+    <hiddenSelectionsMaterials type="array"><item>dz\weapons\firearms\m16a2\data\m16a2_a.rvmat</item><item>dz\weapons\firearms\m16a2\data\m16a2_b.rvmat</item></hiddenSelectionsMaterials>
+    <DamageSystem>
+      <GlobalHealth>
+        <Health>
+          <hitpoints>200</hitpoints>
+          <healthLevels type="array">
+            <item type="array"><item>1</item><item type="array"><item>DZ\weapons\firearms\M16a2\Data\m16a2_a.rvmat</item><item>DZ\weapons\firearms\M16a2\Data\m16a2_b.rvmat</item></item></item>
+            <item type="array"><item>0.7</item><item type="array"><item>DZ\weapons\firearms\M16a2\Data\m16a2_a.rvmat</item><item>DZ\weapons\firearms\M16a2\Data\m16a2_b.rvmat</item></item></item>
+            <item type="array"><item>0.5</item><item type="array"><item>DZ\weapons\firearms\M16a2\Data\m16a2_a_damage.rvmat</item><item>DZ\weapons\firearms\M16a2\Data\m16a2_b_damage.rvmat</item></item></item>
+            <item type="array"><item>0.3</item><item type="array"><item>DZ\weapons\firearms\M16a2\Data\m16a2_a_damage.rvmat</item><item>DZ\weapons\firearms\M16a2\Data\m16a2_b_damage.rvmat</item></item></item>
+            <item type="array"><item>0</item><item type="array"><item>DZ\weapons\firearms\M16a2\Data\m16a2_a_destruct.rvmat</item><item>DZ\weapons\firearms\M16a2\Data\m16a2_b_destruct.rvmat</item></item></item>
+          </healthLevels>
+        </Health>
+      </GlobalHealth>
+    </DamageSystem>
+    <NoiseShoot>
+      <strength>82</strength>
+      <type>shot</type>
+    </NoiseShoot>
+    <modes type="array"><item>SemiAuto</item><item>Burst</item></modes>
+    <SemiAuto base="Mode_SemiAuto">
+      <soundSetShot type="array"><item>M16_Shot_SoundSet</item><item>M16_Tail_SoundSet</item><item>M16_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>M16_silencer_SoundSet</item><item>M16_silencerTail_SoundSet</item><item>M16_silencerInteriorTail_SoundSet</item></item><item type="array"><item>M16_silencerHomeMade_SoundSet</item><item>M16_silencerHomeMadeTail_SoundSet</item><item>M16_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <reloadTime>0.12</reloadTime>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </SemiAuto>
+    <Burst base="Mode_Burst">
+      <soundSetShot type="array"><item>M16_Shot_SoundSet</item><item>M16_Tail_SoundSet</item><item>M16_InteriorTail_SoundSet</item></soundSetShot>
+      <soundSetShotExt type="array"><item type="array"><item>M16_silencer_SoundSet</item><item>M16_silencerTail_SoundSet</item><item>M16_silencerInteriorTail_SoundSet</item></item><item type="array"><item>M16_silencerHomeMade_SoundSet</item><item>M16_silencerHomeMadeTail_SoundSet</item><item>M16_silencerInteriorHomeMadeTail_SoundSet</item></item></soundSetShotExt>
+      <burst>3</burst>
+      <reloadTime>0.065</reloadTime>
+      <dispersion>0.002</dispersion>
+      <magazineSlot>magazine</magazineSlot>
+    </Burst>
+    <OpticsInfo base="OpticsInfoRifle">
+      <memoryPointCamera>eye</memoryPointCamera>
+      <discreteDistance type="array"><item>25</item><item>50</item><item>100</item><item>200</item></discreteDistance>
+      <discreteDistanceInitIndex>0</discreteDistanceInitIndex>
+      <modelOptics>-</modelOptics>
+      <distanceZoomMin>25</distanceZoomMin>
+      <distanceZoomMax>200</distanceZoomMax>
+      <PPMaskProperties type="array"><item>0.5</item><item>0.5</item><item>0.4</item><item>0.05</item></PPMaskProperties>
+      <PPLensProperties type="array"><item>1</item><item>0.15</item><item>0</item><item>0</item></PPLensProperties>
+      <PPBlurProperties>0.2</PPBlurProperties>
+    </OpticsInfo>
+    <Particles>
+      <OnFire>
+        <SmokeCloud>
+          <overrideParticle>weapon_shot_winded_smoke</overrideParticle>
+        </SmokeCloud>
+        <MuzzleFlash>
+          <overrideParticle>weapon_shot_ump45_01</overrideParticle>
+          <ignoreIfSuppressed>1</ignoreIfSuppressed>
+          <illuminateWorld>1</illuminateWorld>
+        </MuzzleFlash>
+        <ChamberSmokeBurst>
+          <overrideParticle>weapon_shot_chamber_smoke</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+          <overrideDirectionPoint>Nabojniceend</overrideDirectionPoint>
+        </ChamberSmokeBurst>
+      </OnFire>
+      <OnOverheating>
+        <maxOverheatingValue>60</maxOverheatingValue>
+        <shotsToStartOverheating>25</shotsToStartOverheating>
+        <overheatingDecayInterval>1</overheatingDecayInterval>
+        <SmokingBarrel1>
+          <positionOffset type="array"><item>0.2</item><item>0</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>0.2</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrel1>
+        <SmokingBarrelHot1>
+          <positionOffset type="array"><item>0.2</item><item>0</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.2</item><item>0.6</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot1>
+        <SmokingBarrelHot3>
+          <positionOffset type="array"><item>0.2</item><item>0</item><item>0</item></positionOffset>
+          <overrideParticle>smoking_barrel_heavy</overrideParticle>
+          <onlyWithinOverheatLimits type="array"><item>0.6</item><item>1</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0</item><item>0.2</item></onlyWithinRainLimits>
+        </SmokingBarrelHot3>
+        <SmokingBarrelHotSteam>
+          <overrideParticle>smoking_barrel_steam</overrideParticle>
+          <positionOffset type="array"><item>0.35</item><item>0</item><item>0</item></positionOffset>
+          <onlyWithinOverheatLimits type="array"><item>0</item><item>1</item></onlyWithinOverheatLimits>
+          <onlyWithinRainLimits type="array"><item>0.2</item><item>1</item></onlyWithinRainLimits>
+        </SmokingBarrelHotSteam>
+        <OpenChamberSmoke>
+          <onlyIfBoltIsOpen>1</onlyIfBoltIsOpen>
+          <overrideParticle>smoking_barrel_small</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </OpenChamberSmoke>
+      </OnOverheating>
+      <OnBulletCasingEject>
+        <ChamberSmokeRaise>
+          <overrideParticle>weapon_shot_chamber_smoke_raise</overrideParticle>
+          <overridePoint>Nabojnicestart</overridePoint>
+        </ChamberSmokeRaise>
+      </OnBulletCasingEject>
+    </Particles>
+    <weaponStateAnim>
+      dz\anims\anm\player\reloads\m16a2\w_m16a2_states.anm
+    </weaponStateAnim>
+  </M16A2_Base>
+  <M16A2 base="M16A2_Base">
+    <scope>2</scope>
+    <displayName>STR_M16A2_0</displayName>
+    <descriptionShort>STR_M16A2_1</descriptionShort>
+  </M16A2>
+</cfgWeapons>
